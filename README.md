@@ -1,4 +1,4 @@
-# C-SAC-PUZZLE Project
+# C-SAC Project
 
 ### Author: [Wonseuk Lee](https://github.com/justin212553)
 
@@ -60,7 +60,7 @@ The structure of repository is the following :
 To run the test, you can simply run `run.bat` file to execute all Python sripts in proper order. Before running source files, you must add your API keys and (if possible) endpoints to connect with AzureOpenAI or Google AI Studio services.
 
 ## Database Properties
-C-SAC-PUZZLE Project consists of 40 different unique Mate-in-N puzzle problems. One puzzle problem provides an initial board position of the puzzle with Forsyth–Edwards Notation(FEN) and an exact & unique solution of the puzzle with Portable Game Notation (PGN). 10 unique puzzle positions are selected and controlled for difficulty at each depth N. These 10 puzzles are consisted with 5 White-to-move puzzles and 5 Black-to-move puzzles, creating a total of 40 test environments with even numbers of White-to-move and Black-to-move puzzles. Except for puzzles of N = 1, the model must generate valid response moves of the opponent, which will be always forced moves. The current state of the chessboard is encoded using the FEN.Unique Solution and Minimal Solution Sequence is validated through Stockfish engine depth of N = 20 ~ 25 provided by Chess.com. This setup aims to precisely measure the collapse phenomenon in LLM performance as N increases.
+C-SAC Project consists of 40 different unique Mate-in-N puzzle problems. One puzzle problem provides an initial board position of the puzzle with Forsyth–Edwards Notation(FEN) and an exact & unique solution of the puzzle with Portable Game Notation (PGN). 10 unique puzzle positions are selected and controlled for difficulty at each depth N. These 10 puzzles are consisted with 5 White-to-move puzzles and 5 Black-to-move puzzles, creating a total of 40 test environments with even numbers of White-to-move and Black-to-move puzzles. Except for puzzles of N = 1, the model must generate valid response moves of the opponent, which will be always forced moves. The current state of the chessboard is encoded using the FEN.Unique Solution and Minimal Solution Sequence is validated through Stockfish engine depth of N = 20 ~ 25 provided by Chess.com. This setup aims to precisely measure the collapse phenomenon in LLM performance as N increases.
 
 These puzzles are used to create test prompts to evaluate modern LLMs' iterative sequential reasoning availability and understandability of chess rules. Two types of prompt templates are used to test the robustness towards prompts of this research. LLMs are first evaluated their understandability of chess rules by generating one legal move provided with FEN of puzzles. Then LLMs are evaluated their iterative sequential reasoning availability by solving Mate-in-N puzzles. All response must be made with PGN.
 
