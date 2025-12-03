@@ -1,0 +1,35 @@
+This is a mate-in-2 puzzle. Black is to move.
+
+The white king on e5 is extremely exposed and surrounded by black pieces. The key is to find a forcing sequence of moves that leaves the white king with no escape.
+
+Let's analyze the white king's potential escape squares:
+*   d4 and f4 are controlled by the black rook on h4.
+*   d5 is controlled by the black pawn on b6.
+*   f5 and e6 are controlled by the black rook on f6.
+*   e4 is controlled by the black bishop on f3.
+
+The king is completely trapped. Black needs to deliver a check that White cannot escape from in the next move.
+
+**Candidate Moves for Black:**
+
+1.  **1... Rf5+**: This is a check, but White can simply play 2. Kxf5. After this, Black can play 2... Rh5+, but the white king can escape to e6. So, this is not the solution.
+2.  **1... R4f4+**: This is also a check. White's only reply is 2. Kxf4. Now the king is on f4. Black can check with 2... Rf5+, but the king can escape to squares like g3, g4, or e3. This is not a mate.
+3.  **1... Rh5+**: This is the most promising move. It's a check from the rook on h4.
+    *   The white king cannot move to any of its adjacent squares, as shown in the initial analysis.
+    *   The check is along the 5th rank. The only way for White to deal with the check is to block it.
+    *   The white knight on d3 can move to f4 to block the check. This is White's only legal move. So, White is forced to play **2. Nf4**.
+
+Now, after **1... Rh5+ 2. Nf4**, the position is set for the final blow. The white king is still on e5, but now there is a white knight on f4.
+
+Black's second move is **2... R6f5#**.
+*   The rook from f6 moves to f5, delivering check.
+*   Let's verify if it's checkmate:
+    *   The king cannot move to e4 (bishop on f3), d4 (rook on h5), d5 (pawn on b6), or e6 (rook on f5).
+    *   The f4 square is now occupied by the white knight.
+    *   The checking piece on f5 cannot be captured by the king because it is defended by the other black rook on h5.
+    *   The check cannot be blocked as the rook is adjacent to the king.
+
+This sequence leads to a forced checkmate.
+
+[FINAL PGN]
+1... Rh5+ 2. Nf4 R6f5#

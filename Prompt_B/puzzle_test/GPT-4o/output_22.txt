@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   Black is to move, and the goal is to checkmate the White king on g1 in exactly 3 moves.
+
+2. **Candidate moves for Black**:  
+   Black has several options to initiate the attack. The most promising moves involve using the queen or rooks to deliver checks and restrict the White king's mobility. The key is to force White into a position where checkmate is inevitable on the third move.
+
+3. **Concrete analysis of candidate moves**:  
+   - **1... Qh1+**: This forces the White king to move to f2 (the only legal move).  
+   - **2... Qg2+**: This forces the White king to move to e1 (again, the only legal move).  
+   - **3... Rf1#**: The Black rook on f6 delivers checkmate, as the White king is completely trapped.
+
+   This sequence is forced, and no earlier checkmate is possible. Other candidate moves (e.g., 1... Rf1+ or 1... Qxd4) fail to deliver mate in exactly 3 moves.
+
+4. **Verification**:  
+   - All moves are legal.  
+   - Checkmate is delivered on the third move.  
+   - There is no faster mate, and the sequence is forced.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1... Qh1+ 2. Kf2 Qg2+ 3. Ke1 Rf1#  

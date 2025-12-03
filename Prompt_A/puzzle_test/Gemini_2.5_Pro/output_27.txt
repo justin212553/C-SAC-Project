@@ -1,0 +1,27 @@
+An analysis of the position reveals that White has a powerful attack brewing against the Black king, centered around the advanced f7-pawn and the active queen and rook. Black's queen is a formidable defender and poses significant counter-threats with checks. The key to solving this puzzle is finding a sequence that is both forcing and effectively neutralizes Black's counterplay.
+
+White's first move must be a check to restrict Black's options. The most promising candidate is **1. Qc2+**. This forces the Black king to one of two squares: g8 or h8.
+
+**Case 1: Black plays 1... Kg8**
+White continues with the decisive **2. Rc8+**. This check forces Black to interpose with either the rook or the queen, but both lead to immediate checkmate.
+*   If **2... Rxc8**, White delivers mate with **3. Qxc8#**. The Black king on g8 is trapped by the White queen on c8 and the pawn on f7.
+*   If **2... Rf8**, White mates with **3. Rxf8#**. The king is similarly trapped by the rook and pawn.
+
+**Case 2: Black plays 1... Kh8**
+This is the more resilient defense, and it requires a precise and subtle continuation from White. After **1... Kh8**, Black's queen on e5 threatens checks on f4 and d5, which could prolong the game. White must find a second move that parries these threats while creating an unstoppable mate.
+
+The brilliant move is **2. Qe4!**. This quiet move accomplishes several things:
+1.  It places the White queen on a central square where it controls key lines.
+2.  It prevents the dangerous checks from the Black queen on d5 and along the e-file.
+3.  It creates multiple, decisive mating threats, primarily **Rh7#**.
+
+Now, Black has several possible responses, but none can save the game:
+*   If Black plays the only available check, **2... Qf4+**, White simply captures with **3. Qxf4#**. The Black king on h8 is trapped by the queen on f4 and the pawn on f7.
+*   If Black tries to defend against the Rh7# threat by blocking the h-file with **2... Rg8**, White promotes the pawn with **3. f8=Q#**. The Black rook on g8 is pinned to the king by the White queen on e4 and cannot capture the newly promoted queen.
+*   If Black captures the White queen with **2... Qxe4**, White again promotes with **3. f8=Q#**. This time, the Black rook on f8 is pinned by the White rook on c7, leading to checkmate.
+*   For any other Black move, such as **2... h5**, White proceeds with the original plan and delivers **3. Rh7#**.
+
+In all variations, White forces checkmate on the third move.
+
+[FINAL PGN]
+1. Qc2+ Kh8 2. Qe4 Qf4+ 3. Qxf4#

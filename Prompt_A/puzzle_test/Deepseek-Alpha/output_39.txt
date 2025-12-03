@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White has a strong attacking position with the queen on g3, the bishop on g5, and the knight on b5 threatening key squares around Black's king.
+   - Black's king is relatively exposed, and the back rank is weak due to the lack of pawn cover and the rook on h8 being inactive.
+   - The Black queen on b2 is far from the action and cannot contribute to the defense.
+
+2. **Key Candidate Moves**:
+   - White's immediate threats involve checks and sacrifices to exploit the weak dark squares around Black's king.
+   - Moves like Nc7+ or Nd6+ are worth considering to force the Black king into a vulnerable position.
+   - The White queen and bishop can coordinate to deliver a decisive attack.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: White plays Nc7+, a forcing move that checks the Black king. Black has only one legal response: Kd8.
+   - **Move 2**: After Kd8, White plays Nc6+, another check. This forces Black to capture the knight with the b-pawn (bxc6), as no other moves are legal.
+   - **Move 3**: White follows up with Qc7#, a checkmate. The Black king has no escape squares, and no piece can block or capture the queen.
+
+4. **Verification**:
+   - The sequence is forced, and Black has no alternative moves to avoid the checkmate.
+   - The solution is a clean mate in 4 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Nc7+ Kd8 2. Nc6+ bxc6 3. Qc7#
+[FINAL PGN]

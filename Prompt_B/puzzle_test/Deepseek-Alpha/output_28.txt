@@ -1,0 +1,30 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 3 moves.
+
+2. **List promising candidate moves for Black**:  
+   Black has several options to deliver checks or set up threats. The most promising moves involve using the queen or rook to attack the White king or restrict its mobility.  
+
+3. **Calculate concrete lines for exactly 3 moves**:  
+   - **Candidate move 1: 1... Qg3+**  
+     This move forces White's king to move to h1 (the only legal square).  
+     After 2. Kh1, Black can play 2... Qxh3+, forcing White to block with 3. Qh4.  
+     Finally, Black delivers checkmate with 3... Qg2#.  
+
+   - **Candidate move 2: 1... Rc1**  
+     This move does not deliver immediate checks or threats and allows White to escape with moves like Qf5+. It does not lead to a forced mate in 3.  
+
+   - **Candidate move 3: 1... Qg5**  
+     This move does not deliver immediate checks and allows White to escape with moves like Qf3+. It does not lead to a forced mate in 3.  
+
+4. **Verify the chosen line**:  
+   The line starting with 1... Qg3+ is forced and leads to checkmate in exactly 3 moves.  
+   - After 1... Qg3+, White's king is forced to move to h1.  
+   - After 2... Qxh3+, White is forced to block with Qh4.  
+   - After 3... Qg2#, the White king is checkmated.  
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]  
+1... Qg3+ 2. Kh1 Qxh3+ 3. Qh4 Qg2#  

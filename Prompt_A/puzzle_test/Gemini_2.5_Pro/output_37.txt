@@ -1,0 +1,40 @@
+An analysis of the position `r1bk3r/pppq1ppp/5n2/4N1N1/2Bp4/Bn6/P4PPP/4R1K1 w - - 0 1`. White is to move and find a mate in 4.
+
+**White's Strengths:**
+*   Extremely active knights on e5 and g5, both pointing at the weak f7 square and the area around the black king.
+*   A powerful bishop on c4, controlling key diagonals and restricting the black king.
+*   A rook on e1 controlling the open e-file, preventing the black king from escaping via e8.
+
+**Black's Weaknesses:**
+*   The king on d8 is exposed and lacks defenders.
+*   The f7 pawn is a critical weakness, targeted by multiple white pieces.
+*   Black's pieces are somewhat uncoordinated for defense.
+
+**Candidate Moves and Thought Process:**
+
+1.  **1. Nxf7+**: This is the most forcing and logical first move. It's a check, and it attacks the black queen on d7. Black's response is forced.
+    *   `1... Qxf7`: The king cannot move (c7 is covered by the bishop on c4, e8 by the rook on e1), so capturing the knight is the only legal move.
+
+2.  After `1... Qxf7`, the position is `r1bk3r/ppp2ppp/5n2/6N1/2Bp4/Bn6/P4PPP/4R1K1 w - - 0 2`. White must continue the attack relentlessly. The knight on g5 is now the key attacker.
+    *   **2. Ne6+**: This is a brilliant follow-up. It's another check, and it's a knight sacrifice. This move forces the black king into a mating net or forces a pawn capture that further weakens the king's position. Black has two main responses:
+        *   A) `2... fxe6`
+        *   B) `2... Kc7`
+
+3.  **Analyzing Black's responses to 2. Ne6+**:
+
+    *   **Case A: `2... fxe6`**
+        *   This opens the e-file for White's bishop.
+        *   **3. Bxe6+**: White recaptures with a check. The bishop now controls the crucial d8 and d6 squares. Black's king is forced to move.
+        *   `3... Kc7`: This is the only legal move for the king (e8 is still controlled by the rook on e1).
+        *   **4. Re7#**: The rook delivers the final blow. The king on c7 is trapped. It cannot move to b8 (blocked), d8 (bishop on e6), b7 (pawn), c6 (pawn), d6 (bishop on e6), or b6 (pawn). This is checkmate.
+
+    *   **Case B: `2... Kc7`**
+        *   The king tries to escape to the queenside.
+        *   **3. Nc5+**: This is a powerful check that drives the king further into a trap. The knight on c5 controls key escape squares like a5 and d6.
+        *   `3... Kb6`: This is Black's only legal move.
+        *   **4. Re7#**: The rook again delivers checkmate. The king on b6 is attacked by the rook. All escape squares are covered: a5 (knight on c5), b5 (bishop on c4), c5 (knight), c6 (pawn), c7 (rook), a6 (pawn), and a7 (pawn). This is checkmate.
+
+Both of Black's main defenses lead to a forced mate on White's 4th move. The sequence starting with `1. Nxf7+` is decisive.
+
+[FINAL PGN]
+1. Nxf7+ Qxf7 2. Ne6+ fxe6 3. Bxe6+ Kc7 4. Re7#

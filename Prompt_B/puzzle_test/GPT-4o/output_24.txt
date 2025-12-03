@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   Black is to move, and the goal is to checkmate the White king on h1 in exactly 3 moves.
+
+2. **Candidate moves for Black**:  
+   Black has several options to consider, but the most forcing moves involve checks or moves that set up a decisive attack. The most promising candidate moves are:  
+   - 1... Rg1+ (forcing the White king to move to h2)  
+   - 1... Bxf3+ (removing the g3 bishop and opening lines for the rook or knight)  
+
+3. **Analyzing candidate moves**:  
+   - **Line 1: 1... Rg1+**  
+     After 1... Rg1+, White's king is forced to move to h2 (1. Kh2). Black can then play 2... Nxf3+, a discovered check from the rook. White's only legal move is 3. Kh3, and Black delivers checkmate with 3... Bc8#.  
+     This line is a forced mate in 3 moves.  
+
+   - **Line 2: 1... Bxf3+**  
+     If Black starts with 1... Bxf3+, White can respond with 2. Rxf3. Black has no immediate way to force a mate in 3 moves from this position. This line fails to meet the objective.  
+
+4. **Verification of the solution**:  
+   The line 1... Rg1+ 2. Kh2 Nxf3+ 3. Kh3 Bc8# is legal, forces checkmate on the third move, and does not allow for an earlier mate. All other candidate moves fail to deliver mate in exactly 3 moves.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1... Rg1+ 2. Kh2 Nxf3+ 3. Kh3 Bc8#  

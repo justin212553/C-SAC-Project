@@ -1,0 +1,34 @@
+This is a classic example of a king hunt puzzle where the attacking side uses forcing checks and sacrifices to drive the enemy king into a mating net.
+
+### **Initial Analysis:**
+
+*   **White's King:** The white king on h4 is extremely exposed and is the primary target. It is cut off from the rest of the board.
+*   **Black's Attackers:** The black queen on b2 and the rook on g2 are perfectly poised to launch a decisive attack. The rook on g2 controls the g-file, and the queen has access to key squares around the white king.
+*   **White's Defenders:** The white queen on e3 is the main defender, controlling squares like g3 and h3. The pawns on f4 and g4 form a fragile shield.
+
+### **Step-by-Step Thought Process:**
+
+1.  **Finding the First Move:** The most forcing moves are checks. The most natural check is **1... Qf2+**. This forces the white king to the only available square, h5. Other checks like `1... Qf6+` are met by `2. g5`, and `1... Rg3+` is met by `2. hxg3`, both of which complicate matters for Black without a clear follow-up. So, `1... Qf2+` is the clear starting point.
+
+2.  **White's Forced Reply:** After `1... Qf2+`, White has only one legal move: **2. Kh5**. The king is now even more vulnerable on the edge of the board.
+
+3.  **The Decisive Sacrifice:** With the king on h5, Black needs to continue the attack. The move **2... Rg5+** is a brilliant rook sacrifice. It serves multiple purposes:
+    *   It's a forcing check.
+    *   It attacks the king and controls the g-file.
+    *   It forces White to either move the king back into a mating net or capture the rook, which will fatally weaken the pawn structure.
+
+4.  **Analyzing White's Defenses:** White has three responses to `2... Rg5+`:
+    *   **a) 3. Kh4:** This is the worst defense. Black immediately plays **3... Qh2#**. The queen on h2 attacks the king, which is trapped by its own pawn on h3 and the black rook on g5. This is a mate in 3.
+    *   **b) 3. fxg5** or **c) 3. hxg5:** These are White's best attempts to prolong the game. By capturing the rook, White opens a potential escape square for the king on g5. However, this is an illusion. Let's assume White plays **3. fxg5**.
+
+5.  **Closing the Net:** After `3. fxg5`, the white pawn on g5 now blocks the king's escape. Black continues with another precise check: **3... Qf4+**. This move is crucial because it forces the king back to h4 and prevents it from using the g4 square.
+
+6.  **The Final Blow:** White is forced to play **4. Kh4**. Now, with the king back on h4 and the g5 square blocked by White's own pawn, Black delivers the final blow with **4... Qh2#**. The queen on h2 delivers checkmate, covering the king's only potential flight squares (g3 and h3).
+
+This sequence demonstrates a forced mate in 4 against White's best defense.
+
+[FINAL PGN]
+1... Qf2+
+2. Kh5 Rg5+
+3. fxg5 Qf4+
+4. Kh4 Qh2#

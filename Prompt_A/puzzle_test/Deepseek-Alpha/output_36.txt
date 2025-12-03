@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black is to move. The white king is on h4, surrounded by pawns and pieces, limiting its mobility. Black has two rooks (g2 and c7) and a queen (b2) that can coordinate to deliver checks and eventually force mate. White's queen on e3 and pawns provide defensive resources, but they are insufficient to prevent the forced mate.
+
+2. **Key Candidate Moves**: Black's queen and rooks are well-placed to deliver checks. The first move should aim to restrict the white king further while maintaining tempo. The queen on b2 can deliver a check to force the king to move closer to the edge of the board.
+
+3. **Opponent's Forced Responses**: White's king has limited squares to move to, and each check forces it closer to a mating net. White's queen and pawns cannot effectively block the checks or escape the sequence.
+
+4. **Depth Analysis**: The forced mate in 4 requires precise coordination between Black's queen and rooks. Each move must lead to a check or a forced response that narrows White's options.
+
+5. **Solution Path**:
+   - Black starts with **Qf6+**, forcing the white king to move to g3.
+   - Black follows up with **Qd8+**, driving the king to f3.
+   - Black then plays **Qd3+**, forcing the king to e4.
+   - Finally, Black delivers mate with **Re2#**, as the white king is completely surrounded and cannot escape.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf6+ 2. Kg3 Qd8+ 3. Kf3 Qd3+ 4. Ke4 Re2#

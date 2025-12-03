@@ -1,0 +1,77 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate.**
+   - The FEN notation provided is: r4r1k/p5Rp/1p3pb1/2P4N/2B5/P7/6PP/B2n2K1 w - - 0 1
+   - The 'w' in the FEN indicates that White is to move.
+   - The goal is to deliver checkmate to the Black king, which is currently on h8, in exactly 3 moves.
+
+2. **List the most promising candidate moves for the attacking side (White).**
+   - First, observe the position: White has a strong attacking setup with a rook on g7, a knight on h5, a bishop on c4, and another bishop on a1. Black's king is on h8, somewhat exposed, with limited escape squares due to White's control over g7 and h5.
+   - Key observations:
+     - The rook on g7 is already attacking the g-file and can potentially deliver check on h7.
+     - The knight on h5 can move to f6 or g7, potentially attacking key squares near the Black king.
+     - The bishop on c4 controls the a2-g8 diagonal, which includes f7, a critical square near the Black king.
+     - Black's pieces are somewhat passive, with the knight on d1 not immediately threatening, and the rooks and bishop not directly defending the king.
+   - Promising moves for White to initiate an attack:
+     - **Rh7+**: Moves the rook to h7, delivering check to the Black king on h8. This forces the king to move, likely to g8, as other squares are not available.
+     - **Nf6+**: Moves the knight to f6, delivering check. This could force the king to move or force Black to block or capture.
+     - **Be6**: Moves the bishop to e6, attacking f7, a key square near the Black king, potentially setting up a discovered check or other threats.
+   - I will prioritize moves that deliver check immediately, as they force Black to respond, aligning with a forced mate sequence.
+
+3. **For each candidate, calculate a concrete line for exactly 3 moves, assuming reasonable defensive moves by Black.**
+   - **Candidate 1: Rh7+**
+     - Move 1: Rh7+ (White rook moves from g7 to h7, checking the Black king on h8).
+       - Legal move: Yes, the rook can move to h7, and it attacks the king on h8.
+       - Black's response: The Black king must move. Possible squares are g8 (since h7 is occupied by the White rook, and other squares like g7 are not available due to the pawn on g6).
+         - Black plays Kg8.
+     - Move 2: After Kg8, White needs a strong follow-up. The knight on h5 can move to f6, delivering check again.
+       - Nf6+ (Knight moves from h5 to f6, checking the king on g8).
+       - Legal move: Yes, the knight can move to f6, and it attacks the king on g8.
+       - Black's response: The king can move back to h8 or capture the knight with the pawn on g6.
+         - If Black plays Kh8, we proceed to move 3.
+         - If Black plays gxf6, the pawn captures the knight, removing the check, but this opens the g-file for White's pieces.
+     - Move 3 (if Black played Kh8): White can play Rg7#.
+       - Rg7# (Rook moves from h7 to g7, checking the king on h8).
+       - Legal move: Yes, the rook can move to g7.
+       - Checkmate verification: The Black king on h8 is attacked by the rook on g7. Escape squares: g8 is controlled by the knight on f6; h7 is blocked by the White rook's path and Black's own pawn on g6 prevents other escapes. No pieces can block or capture. This is checkmate.
+       - Earlier checkmate check: Move 1 (Rh7+) is check but not mate; Move 2 (Nf6+) is check but not mate as the king can move or capture. Only Move 3 delivers mate.
+     - Move 3 alternative (if Black played gxf6 on Move 2): White can play Rh8#.
+       - Rh8# (Rook moves from h7 to h8, checking the king on g8).
+       - Legal move: Yes, after gxf6, h8 is open.
+       - Checkmate verification: The king on g8 is attacked by the rook on h8. Escape squares: h7 is blocked by Black's pawn; f7 is controlled by White's bishop on c4; g7 is blocked by Black's pawn. No pieces can block or capture. This is checkmate.
+       - Earlier checkmate check: Same as above, no mate before Move 3.
+     - Conclusion for Rh7+: This line works for a mate in 3 against both possible Black responses.
+
+   - **Candidate 2: Nf6+**
+     - Move 1: Nf6+ (Knight moves from h5 to f6, checking the king on h8).
+       - Legal move: Yes, knight to f6 attacks the king.
+       - Black's response: Black can move the king to g8 or capture with gxf6.
+         - If Kg8, proceed to Move 2.
+         - If gxf6, White's attack slows down as the knight is gone, and immediate mate threats are reduced.
+     - Move 2 (if Kg8): White can play Rh7, threatening mate on g7.
+       - Rh7 (Rook to h7, not check yet).
+       - Legal move: Yes.
+       - Black's response: Black can play Kh8 to escape the threat.
+     - Move 3 (if Kh8): White plays Rg7#, as in the previous line.
+       - However, Black has other options on Move 2, like playing a rook to defend. This line is less forcing since Move 2 (Rh7) is not a check, giving Black more defensive options.
+     - Conclusion for Nf6+: This line is less reliable due to Black's potential defenses on Move 2. It does not guarantee a forced mate in 3 as easily as Rh7+.
+
+   - **Candidate 3: Be6**
+     - Move 1: Be6 (Bishop to e6, attacking f7).
+       - Legal move: Yes, but not a check.
+       - Black's response: Black is not forced to respond immediately, and can play moves like Rg8 or others to defend.
+     - This line does not force immediate responses and is unlikely to lead to a mate in 3.
+     - Conclusion for Be6: Not a forcing move, so it’s discarded.
+
+4. **Conclude by choosing the best forced line.**
+   - From the analysis, the move Rh7+ is the most forcing and leads to a guaranteed checkmate in exactly 3 moves, regardless of Black's responses on Move 2 (Kg8 leads to Nf6+ and Rg7#; gxf6 leads to Rh8#).
+   - Verification:
+     - All moves are legal.
+     - Checkmate is delivered on Move 3.
+     - No checkmate occurs before Move 3, as Move 1 and Move 2 are checks but not mates.
+   - Therefore, the chosen line starts with Rh7+.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rh7+ Kg8 2. Nf6+ Kh8 3. Rg7#

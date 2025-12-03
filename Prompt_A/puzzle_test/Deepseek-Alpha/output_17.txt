@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move, and the goal is to deliver checkmate in 2 moves.  
+   - The black king is on h8, and its escape squares are limited.  
+   - White has strong attacking pieces: the queen on e6, rook on d1, and rook on f1.  
+   - Black's defensive pieces include the rook on d8 and bishop on f7, but they are poorly positioned to defend against a decisive attack.  
+
+2. **Candidate Moves**:  
+   - The white queen on e6 is ideally placed to deliver checks. Moves like Qxf6+ or Qe7+ are worth considering.  
+   - The rook on d1 can also deliver checks, such as Rd8+.  
+   - The rook on f1 is well-positioned to support an attack, especially if the black king is forced to move.  
+
+3. **Forced Responses**:  
+   - Black's king has no immediate escape squares, so any check must be met by blocking or capturing the attacking piece.  
+   - Black's rook and bishop are the only pieces that can interpose or defend.  
+
+4. **Solution Path**:  
+   - The move **1. Qxf6+** is a forcing move, as it puts the black king in check and forces Black to respond.  
+   - Black's only legal move is **1... Kg8**, as no other piece can block the check.  
+   - After **1... Kg8**, White can deliver checkmate with **2. Ne7#**, as the knight covers all escape squares for the black king.  
+
+5. **Verification**:  
+   - After 2. Ne7#, the black king is completely surrounded:  
+     - The knight on e7 covers f6, g8, and h8.  
+     - The white queen and rooks control key squares, ensuring no escape.  
+   - This sequence is a forced mate in 2.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qxf6+ Kg8 2. Ne7#

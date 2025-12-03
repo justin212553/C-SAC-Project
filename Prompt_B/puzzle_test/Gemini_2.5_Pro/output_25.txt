@@ -1,0 +1,17 @@
+This is a mate-in-3 problem. White must find a sequence of moves that forces checkmate on the third move, regardless of Black's defense.
+
+1.  **White's first move: 1. Qb6+**
+    This move checks the Black king on a7. It forces the king to move to one of two squares: a5 or b8.
+
+2.  **Black's possible responses and White's continuation:**
+    *   **If Black plays 1... Kxa5:** The king captures the pawn but is drawn further into the open. White continues with **2. Rc5+**. This is a check from the rook, forcing the Black king to its only legal square, a4.
+    *   **If Black plays 1... Kb8:** The king retreats to the corner. White forces the issue with a queen sacrifice, **2. Qd8+**. This check leaves Black with only one legal move: capturing the queen with the rook, **2... Rxd8**.
+
+3.  **Delivering the final checkmate:**
+    *   **In the first variation (after 1... Kxa5 2. Rc5+ Ka4):** White delivers checkmate with **3. Qa5#**. The king on a4 is attacked by the queen. The escape squares b5, b4, and b3 are also controlled by the queen, while the square a3 is blocked by Black's own bishop on f2.
+    *   **In the second variation (after 1... Kb8 2. Qd8+ Rxd8):** White delivers checkmate with **3. Bxd8#**. The king on b8 is attacked by the bishop. The escape squares a8 and c8 are controlled by the White rook on c8, and the squares a7 and c7 are blocked by Black's own pawn on b7.
+
+In both cases, White forces checkmate on the third move.
+
+[FINAL PGN]
+1. Qb6+ Kb8 2. Qd8+ Rxd8 3. Bxd8#

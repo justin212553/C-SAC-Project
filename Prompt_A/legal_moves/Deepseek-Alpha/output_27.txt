@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: The position is analyzed from White's perspective. White has the following pieces: a rook on c7, a pawn on f7, a queen on g2, and a king on h4.
+
+2. **Legal moves for White**:
+   - **Rook (c7)**: The rook can move along the 7th rank or the c-file. Possible moves include Rc8, Rc6, Rc5, Rc4, Rc3, Rc2, Rc1, Rd7, Re7, Rf7, Rg7, Rh7.
+   - **Pawn (f7)**: The pawn is one square away from promotion. It can move to f8 and promote to a queen, rook, bishop, or knight.
+   - **Queen (g2)**: The queen has a wide range of moves. It can move along the g-file, 2nd rank, or diagonals. Possible moves include Qg3, Qg4, Qg5, Qg6, Qg7, Qg8, Qh3, Qh4, Qh5, Qh6, Qh7, Qh8, Qf1, Qf2, Qf3, Qf4, Qf5, Qf6, Qf7, Qf8, Qe2, Qd3, Qc4, Qb5, Qa6.
+   - **King (h4)**: The king can move to g4, g5, h5.
+
+3. **Goal**: Identify one legal move. Among the options, promoting the pawn on f7 to a queen (f8=Q) is a strong move as it creates a second queen and puts the Black king in check.
+
+4. **Conclusion**: The move f8=Q+ is legal and optimal.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. f8=Q+

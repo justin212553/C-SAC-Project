@@ -1,0 +1,28 @@
+To determine the legal move for the given position in FEN format: 5k2/5P2/4PK2/8/8/8/8/8 w - - 0 1, let's follow the step-by-step reasoning process.
+
+1. **Determine which side is to move**: The FEN notation given ends with "w - - 0 1", where "w" indicates that White is to move.
+
+2. **Identify White's pieces on the board**: From the FEN notation, we can see the positions of White's pieces. The position is broken down as follows: 
+   - The last rank (8th rank for White, 1st rank for Black) is empty (8/8).
+   - The second-to-last rank (7th rank for White, 2nd rank for Black) is also empty (8/8).
+   - The third-to-last rank (6th rank for White, 3rd rank for Black) has a White King on f6 and a White Pawn on f7 (4PK2).
+   - The fourth rank from the end for White (5th rank for White, 4th rank for Black) is empty (8/).
+   - The fifth rank from the end for White (4th rank for White, 5th rank for Black) has a Black King on f8 (5k2).
+
+   So, White has a King on f6 and a Pawn on f7.
+
+3. **Consider which of White's pieces can move**:
+   - The White King on f6 can potentially move to e5, e6, e7, f5, f7, g5, g6, or g7. However, it cannot move to e7 because that would put it next to the Black King, which is not allowed due to the rule that a king cannot move onto a square attacked by an opponent's piece, and here it would be moving into check. It also cannot move to f7 because that square is occupied by its own pawn. Other moves like e5, f5, g5 are possible but need checking for legality.
+   - The White Pawn on f7 can potentially move forward to f8, promoting to any piece (since it's on the 7th rank and can promote on the 8th rank).
+
+4. **Check candidate moves for legality**:
+   - For the White King: Moving to e5, e6, f5, g5, or g6 is possible. Let's check if any of these are illegal due to putting the King in check or onto an occupied square. e6 and g6 are adjacent to the Black King and thus illegal. e5, f5, and g5 are potential moves but need to be checked against the rules. 
+   - For the White Pawn on f7, it can promote on f8. The move f8=Q+ is a legal move because it promotes the pawn to a Queen with check.
+
+5. **Pick a legal move**:
+   - The White Pawn can promote to a Queen on f8 with check: f8=Q+. This is a legal and strong move as it puts the Black King in check.
+
+Let's output the chosen move in the required format.
+
+[FINAL PGN]
+1. f8=Q+

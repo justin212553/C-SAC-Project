@@ -1,0 +1,23 @@
+This is a forced checkmate-in-4 puzzle. Here is the step-by-step reasoning to find the solution.
+
+1.  **Initial Assessment:** Black is to move. The White king on h4 is severely exposed. Its own pawns on f4, g4, and h3 form a cage, limiting its escape routes. Black's queen on b2 and rook on g2 are perfectly positioned to launch a decisive attack. The objective is to find a sequence of moves that forces checkmate in exactly four moves.
+
+2.  **Finding the First Move:** The most forcing moves are checks, as they drastically limit the opponent's replies. The most promising check is `1... Qf2+`. This attacks the king and uses the rook on g2 to control the potential escape squares g3 and g5.
+
+3.  **Analyzing White's Forced Reply:** After `1... Qf2+`, White's king has only one legal move. It cannot go to g3 or g5 (controlled by Rg2) and h3 is occupied by its own pawn. Therefore, White is forced to play `2. Kh5`.
+
+4.  **Continuing the Forcing Sequence:** The king is now on h5. Black must continue with another check to maintain the forced nature of the attack. The move `2... Qf5+` is the correct continuation. This check cleverly controls the g6 square, preventing the king from escaping in that direction. White's only legal move is to step back to h6. So, the sequence continues `2... Qf5+ 3. Kh6`.
+
+5.  **Setting up the Final Blow:** With the king on h6, Black delivers another crucial check with the pawn: `3... g5+`. This pawn check is devastating. The king cannot capture the pawn on g5 because it is protected by the queen on f5. The squares h7 and g6 are also controlled by the queen. This leaves White with only one legal move: retreating the king back to h5. The sequence is now `3... g5+ 4. Kh5`.
+
+6.  **Delivering Checkmate:** The previous moves have perfectly maneuvered the White king into a mating net. The final move is `4... Rg4#`. The rook on g4 delivers checkmate. The king on h5 has no escape squares:
+    *   h6 is controlled by Black's pawn on h6.
+    *   g6 is controlled by the queen on f5.
+    *   g5 is controlled by the pawn on g5.
+    *   h4 is controlled by the rook on g4.
+    *   The check cannot be blocked, and the rook cannot be captured.
+
+This entire sequence is forced, and checkmate is delivered on Black's fourth move, satisfying all conditions of the puzzle.
+
+[FINAL PGN]
+1... Qf2+ 2. Kh5 Qf5+ 3. Kh6 g5+ 4. Kh5 Rg4#

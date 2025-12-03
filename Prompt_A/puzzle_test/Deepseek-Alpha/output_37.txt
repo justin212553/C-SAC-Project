@@ -1,0 +1,28 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**: White is to move, and the position is highly tactical. White has a strong attacking setup with the knight on e5 and g5, the bishop on c4, and the rook on e1. Black's king is on c8, and the back rank is vulnerable. The goal is to force checkmate in 4 moves.
+
+2. **Key Candidate Moves**: 
+   - The move **Nxd7+** immediately comes to mind as it forces the black king to move or the rook to block, leading to a decisive attack.
+   - The coordination between White's pieces (knights, bishop, and rook) suggests a sequence of checks that restrict Black's king and lead to mate.
+
+3. **Opponent's Forced Responses**:
+   - After **Nxd7+**, Black has limited options: either move the king to b8 or block with the rook on d7.
+   - White can exploit the back rank and the exposed position of Black's king to deliver checkmate.
+
+4. **Calculation of Variations**:
+   - After **Nxd7+**, if Black plays **Rxd7**, White can follow up with **Be7**, forcing the king to move to b8.
+   - White's rook and bishop can then combine to deliver mate on the back rank.
+
+5. **Verification**:
+   - Each move in the sequence is checked for legality and ensures that Black has no escape from the forced mate.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+```
+1. Nxd7+ Rxd7
+2. Be7 b8
+3. Bd6+ Rc7
+4. Re8#
+```

@@ -1,0 +1,28 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 4 moves. The White king is currently on h1, and Black must deliver checkmate in 4 moves.
+
+2. **List promising candidate moves for Black**:  
+   Black has several options to start the sequence. The most promising move appears to be 1... Ra1+, as it forces the White king to move to g2 (the only legal square). This move initiates a forcing sequence.
+
+3. **Calculate concrete lines for exactly 4 moves**:  
+   After 1... Ra1+, White's king moves to g2. Black can then use the rook and bishop to deliver checks and eventually checkmate. The sequence must ensure that checkmate occurs on the fourth move, not earlier or later.
+
+   - Line 1: 1... Ra1+ 2. Kg2 Bf1+ 3. Kh1 Bh3+ 4. Rc1 Bg2#.  
+     This line delivers checkmate on the fourth move, with the bishop on g2 trapping the White king.
+
+   - Line 2: Other moves (e.g., 1... b4 or 1... e3) do not lead to a forced mate in 4 moves. They either delay the sequence or fail to deliver checkmate.
+
+4. **Verify legality and timing**:  
+   - Every move in the chosen line is legal.  
+   - Checkmate is delivered on the fourth move (4... Bg2#).  
+   - There is no earlier checkmate before move 4, as White has legal moves to respond to each check.
+
+5. **Conclude the best forced line**:  
+   The sequence 1... Ra1+ 2. Kg2 Bf1+ 3. Kh1 Bh3+ 4. Rc1 Bg2# is the correct solution.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]  
+1... Ra1+ 2. Kg2 Bf1+ 3. Kh1 Bh3+ 4. Rc1 Bg2#  

@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black to move. The white king is on h2, and the black queen on g7 has potential to deliver checks. Black also has a rook on c2 and a pawn on f2, which can assist in the attack. White's pieces include a queen on e4, a rook on f1, and a pawn on h3, which are positioned defensively but cannot prevent a forced mate.
+
+2. **Key Candidate Moves**:
+   - Black's queen can deliver checks to the white king, starting with 1... Qg3+.
+   - The white king is forced to move to h1, as other squares are covered or blocked.
+   - Black can then use the rook on c2 to deliver a decisive check, forcing the white king into a corner.
+   - Finally, the black queen can deliver the checkmate.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: Black plays 1... Qg3+, forcing White's king to h1 (the only legal move).
+   - **Move 2**: Black plays 2... Rc1+, forcing White's king to g1 (again, the only legal move).
+   - **Move 3**: Black plays 3... Qg2#, delivering checkmate as the white king is trapped and no piece can block or capture the queen.
+
+4. **Verification**: Each move is legal, and White has no way to escape the forced mate in 3. The sequence is optimal and achieves the goal.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qg3+ 2. Kh1 Rc1+ 3. Kg1 Qg2#

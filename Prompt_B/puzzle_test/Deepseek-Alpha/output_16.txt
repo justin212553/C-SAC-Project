@@ -1,0 +1,29 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on e5 in exactly 2 moves.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several attacking pieces near the White king: the rook on h4, the rook on f6, and the bishop on f3. The h4 rook is particularly well-placed to deliver checks.
+   - Candidate moves include: 1... Rh5+, 1... Rf5+, and 1... Bf4+.
+
+3. **Analyze each candidate move for a forced mate in 2 moves:**
+   - **Line A: 1... Rh5+**
+     - White's king is forced to move to f6 (1. Ke6).
+     - Black can then deliver checkmate with 2... Bf4# (the bishop covers all escape squares).
+     - This line works and delivers mate in exactly 2 moves.
+
+   - **Line B: 1... Rf5+**
+     - White's king can move to d4 (1. Kd4).
+     - Black has no way to deliver checkmate on the second move. This line fails.
+
+   - **Line C: 1... Bf4+**
+     - White's king can move to d4 (1. Kd4).
+     - Black has no way to deliver checkmate on the second move. This line fails.
+
+4. **Verify the solution:**
+   - The move 1... Rh5+ forces the White king to move to e6, and Black's 2... Bf4# delivers checkmate. There is no faster mate, and no defensive moves for White can prevent this sequence.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Rh5+ 2. Ke6 Bf4#

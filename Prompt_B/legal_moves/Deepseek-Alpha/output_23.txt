@@ -1,0 +1,27 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN indicates "w" (White to move).
+
+2. Consider which of White's pieces can move:
+   - White has the following pieces: King (g1), Rook (g7), Knight (h5), Bishop (c4), Bishop (a1), and pawns (c5, g2, h2).
+   - Each piece's potential moves will be checked for legality.
+
+3. Evaluate candidate moves:
+   - The King on g1 can move to h1, h2, or f1, but these squares must be checked for safety.
+   - The Rook on g7 can move along the 7th rank or the g-file.
+   - The Knight on h5 can jump to f6, g7, g3, or f4.
+   - The Bishop on c4 can move diagonally.
+   - The Bishop on a1 can move diagonally.
+   - The pawns on c5, g2, and h2 can advance or capture if possible.
+
+4. Check legality:
+   - The move must follow the piece's movement rules, avoid leaving the King in check, and not land on a square occupied by another White piece.
+
+5. Select one legal move:
+   - After evaluating options, I choose a move that is legal and straightforward.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rg8+

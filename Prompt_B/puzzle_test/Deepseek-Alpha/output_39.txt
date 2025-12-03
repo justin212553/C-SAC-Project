@@ -1,0 +1,39 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   White is to move, and the objective is to checkmate Black's king in exactly 4 moves. Black's king is currently on e8, and White has strong attacking pieces (queen on g3, bishop on g5, and knight on b5) that can coordinate to deliver mate.
+
+2. **Promising candidate moves**:  
+   White has several attacking options, including checks and threats. The most forcing moves are:  
+   - Qc7+: A direct check that forces Black's king to move or the queen to block.  
+   - Nd6+: A knight check that attacks the king and threatens the queen.  
+   - Nc7+: A knight check that attacks the king and rook.  
+   - Other quiet moves like castling or repositioning the queen are less forcing and unlikely to lead to a forced mate in 4.
+
+3. **Concrete calculation of lines**:  
+   Let's analyze the most forcing moves to find a mate in exactly 4 moves:  
+
+   **Line 1: 1. Qc7+**  
+   - 1... Nc6 (blocking the check).  
+   - 2. Nd6# is mate in 2, which is too fast. This line does not satisfy the "mate in 4" condition.  
+
+   **Line 2: 1. Nd6+**  
+   - 1... Kd8 (forced, as the king must move).  
+   - 2. Nxf7+ Ke8 (forced to avoid immediate mate).  
+   - 3. Nd6+ Kd8 (king returns to d8).  
+   - 4. Qc7# delivers checkmate. This line satisfies the "mate in 4" condition.  
+
+   **Line 3: 1. Nc7+**  
+   - 1... Kd8 (forced, as the king must move).  
+   - 2. Qd6 (threatening mate). Black has no good defense, but mate occurs earlier than move 4.  
+
+   **Line 4: Other moves**  
+   Quiet moves or non-checking moves do not lead to a forced mate in 4.  
+
+4. **Verification**:  
+   The line starting with 1. Nd6+ is the only sequence that forces checkmate in exactly 4 moves. All moves are legal, and Black's responses are forced at each step.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1. Nd6+ Kd8 2. Nxf7+ Ke8 3. Nd6+ Kd8 4. Qc7#  

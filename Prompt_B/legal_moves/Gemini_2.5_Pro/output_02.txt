@@ -1,0 +1,24 @@
+1.  **Identify the side to move:** The FEN `5k1K/5qn1/6b1/8/8/8/8/8 b - - 0 1` has `b` as the active color field, which means it is Black's turn to move.
+
+2.  **Analyze the position:**
+    *   White's only piece is the King on h8.
+    *   Black has a King on f8, a Queen on f7, and a Bishop on g6.
+    *   The White King on h8 has no legal moves. The square g8 is attacked by the Black King on f8, and the square g7 is attacked by the Black Queen on f7.
+    *   The White King is not currently in check. If it were White's turn, the game would be a draw by stalemate.
+
+3.  **Find a legal move for Black:** Since it is Black's turn, Black must make a move. A legal move is one that follows the rules of chess and does not result in the player's own king being in check. Black is not in check, so any move that follows the piece's movement rules is legal.
+
+4.  **Evaluate candidate moves:** Black has many legal moves. A particularly strong type of legal move is one that delivers checkmate.
+    *   Consider the Black Queen on f7. It can legally move to g7.
+    *   The move is `...Qg7`.
+    *   This move places the White King on h8 in check.
+    *   We must verify if White has any legal way to get out of check.
+        *   Can the King move? No, as established in step 2, squares g8 and g7 are controlled by Black.
+        *   Can the checking piece be captured? No, White has no pieces that can capture the Queen on g7.
+        *   Can the check be blocked? No, the Queen is adjacent to the King, so the check cannot be blocked.
+    *   Since the White King is in check and there is no legal way to escape it, the move `...Qg7` is checkmate.
+
+5.  **Select the move:** The move `...Qg7#` is a legal move that wins the game for Black. I will choose this move. The FEN indicates this is Black's first move of the game.
+
+[FINAL PGN]
+1... Qg7#

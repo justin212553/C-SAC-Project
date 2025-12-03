@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   Black to move. The position is highly tactical, with Black's queen on e3 and rook on d8 poised to deliver checks. White's king is on h1, and the f1 rook is protecting key squares. Black must aim for a forced checkmate in 2 moves.
+
+2. **Key Candidate Moves**:  
+   - Black's queen on e3 can deliver a check on f3 or h3.  
+   - Black's rook on d8 can support the queen or deliver checks itself.  
+   - The goal is to exploit White's exposed king and limited mobility.
+
+3. **Move Calculation**:  
+   - **1... Qxf3+**: Black's queen sacrifices itself to force White's rook to capture (1. Rxf3).  
+   - **2... Rxd1#**: Black's rook delivers checkmate as the White king is trapped and has no escape squares.
+
+4. **Verification**:  
+   - After 1... Qxf3+, White's only legal move is 2. Rxf3.  
+   - After 2... Rxd1#, the White king is checkmated, as all escape routes are blocked by Black's pieces and pawns.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Qxf3+ 2. Rxf3 Rxd1#

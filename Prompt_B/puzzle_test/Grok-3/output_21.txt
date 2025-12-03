@@ -1,0 +1,53 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate.**
+   - The FEN notation provided is: r5k1/2r4p/4pRpP/qP1p4/3Q2P1/5R2/1P6/1K6 w - - 0 1
+   - The 'w' in the FEN indicates that White is to move.
+   - The goal is to deliver checkmate to the Black king, which is currently on g8, in exactly 3 moves.
+
+2. **List the most promising candidate moves for the attacking side (White).**
+   - White has several powerful pieces in attacking positions: the queen on d4, rooks on f3 and f6, and pawns supporting the attack (e.g., h6 and g4).
+   - Black's king is on g8, with limited escape squares due to White's control over f7 and h7 (via the h6 pawn and rook on f6).
+   - Promising moves for White should focus on delivering checks or restricting Black's king further. Possible candidate moves include:
+     - Qh8+: A direct check on the h-file, attacking the king and potentially forcing it to move.
+     - Rg6+: A check with the rook, attacking along the g-file.
+     - Qd3 or other queen moves to set up threats.
+   - I will prioritize moves that give check immediately to force Black's responses and limit their options.
+
+3. **Calculate concrete lines for exactly 3 moves for each candidate, assuming reasonable defensive moves by Black.**
+   - **Candidate 1: Qh8+**
+     - Move 1: Qh8+ (legal move, queen moves from d4 to h8, checking the Black king on g8).
+     - Black's only legal response is Kf7 (king moves to f7 to escape check; other squares like h7 are blocked by White's h6 pawn, and f8 is attacked by the rook on f6).
+     - Move 2: After Kf7, White can play Qh7+ (legal move, queen to h7, checking the king on f7).
+     - Black's only legal response is Ke8 (king moves to e8; f8 is still attacked by the rook on f6, and f6 is occupied by White's rook).
+     - Move 3: After Ke8, White can play Qg8# (legal move, queen to g8, checking the king on e8; Black's king has no escape squares: d7 is attacked by the queen, e7 is attacked by the rook on f6, and f7/f8 are attacked by the rook on f3 and queen).
+     - Verification:
+       - Move 1 (Qh8+): Not checkmate, as Black can move the king.
+       - Move 2 (Qh7+): Not checkmate, as Black can move the king to e8.
+       - Move 3 (Qg8#): Checkmate, as Black's king has no legal moves.
+       - This is a mate in 3, no faster (no mate on move 1 or 2), no slower.
+
+   - **Candidate 2: Rg6+**
+     - Move 1: Rg6+ (legal move, rook from f6 to g6, checking the king on g8).
+     - Black's response: Kf7 (only legal move, as h7 is blocked and f8 is attacked).
+     - Move 2: After Kf7, White can play Qh8 (legal, but not check yet, or other moves like Rf3-f5+).
+     - However, after Qh8, Black can play Ke8, and White does not have an immediate mate on move 3 (e.g., Qg8+ Kd7 delays mate).
+     - Alternatively, after Kf7, playing Rf5+ (check) forces Ke8, but then Qh8+ Kd7 again delays mate beyond 3 moves.
+     - Verification: This line does not force mate in exactly 3 moves, as Black can escape or delay.
+
+   - **Other Candidates (e.g., Qd3 or non-check moves):**
+     - Moves that do not give immediate check allow Black to reorganize defenses or counterattack (e.g., with the queen on a5 or rook on c7).
+     - These are less forcing and unlikely to lead to mate in exactly 3 moves, so I will discard them for now.
+
+4. **Conclude by choosing the best forced line.**
+   - The line starting with Qh8+ leads to a forced checkmate in exactly 3 moves:
+     - Move 1: Qh8+ Kf7
+     - Move 2: Qh7+ Ke8
+     - Move 3: Qg8#
+   - This line satisfies all conditions: every move is legal, checkmate is delivered on move 3, and there is no earlier checkmate.
+   - Other lines, such as Rg6+, do not guarantee mate in exactly 3 moves.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qh8+ Kf7 2. Qh7+ Ke8 3. Qg8#

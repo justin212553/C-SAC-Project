@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black to move.
+   - White has a significant material advantage, including two rooks and a knight in active positions.
+   - Black's king is on h8, surrounded by limited escape squares.
+   - White's pieces are well-coordinated for an attack, while Black's pieces are mostly passive.
+   - The goal is to find a forced mate in 4 moves.
+
+2. **Key Candidate Moves**:
+   - Black's king is vulnerable, and White's rooks and knight can deliver checks and control escape squares.
+   - Black's best defensive moves will likely involve delaying the mate by interposing pieces or moving the king if possible.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: Black plays 1... Rc1+ to check White's king. This forces White to respond with 2. Kd2 (the only legal move).
+   - **Move 2**: White's king moves to d2, and Black has no meaningful follow-up to prevent White's attack. White will begin its mating sequence.
+   - **Move 3**: White plays 2. Rf8#, delivering checkmate. The Black king on h8 has no escape squares, and no Black piece can block the check.
+
+4. **Verification**:
+   - The sequence is forced, and no alternative moves for Black can prevent the mate in 4.
+
+--- FINAL PGN ---  
+[FINAL PGN]  
+1... Rc1+ 2. Kd2 Rf8#  

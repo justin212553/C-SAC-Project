@@ -1,0 +1,28 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and objective**:  
+   Black is to move, and the task is to deliver checkmate to White in exactly 4 moves. The White king is on e1, and Black must carefully coordinate its pieces to achieve the forced mate.
+
+2. **Candidate moves**:  
+   Black has several active pieces (queen, rooks, and knights) and must use them to restrict the White king's mobility. The most promising candidate moves involve checks or moves that set up a forced sequence of checks.
+
+3. **Concrete analysis of lines**:  
+   - The White king is currently on e1, and its escape squares are limited. Black's pieces (especially the rooks and queen) can work together to deliver a forced mate.  
+   - The key idea is to use the rooks and queen to control critical squares and force the White king into a position where it is mated on the fourth move.  
+
+   **Line calculation**:  
+   - **Move 1**: Black plays 1... Rc1+, forcing White to respond.  
+     - If 2. Kd2, Black can continue the attack with checks.  
+   - **Move 2**: Black plays 2... Nf3+, forcing the White king to move again.  
+   - **Move 3**: Black plays 3... Qd2+, driving the White king into a corner.  
+   - **Move 4**: Black delivers checkmate with 4... Re1#.  
+
+4. **Verification**:  
+   - Each move is legal and forces White's responses.  
+   - Checkmate is delivered on the fourth move, with no earlier mate possible.  
+   - The sequence is forced, as White has no way to escape the checks or delay the mate beyond move 4.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1... Rc1+ 2. Kd2 Nf3+ 3. Ke3 Qd2+ 4. Re1#  

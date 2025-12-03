@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move and has a clear advantage with active pieces, particularly the rook on a1 and the bishop on c5. Black's king is cornered on h8, and the pawn structure limits its mobility.  
+   - The goal is to deliver checkmate in 4 moves, so White must prioritize forcing moves (checks) to restrict Black's responses.
+
+2. **Key Candidate Moves**:  
+   - The rook on a1 can deliver checks along the 1st rank, while the bishop on c5 can control key squares near the Black king.  
+   - The pawn on e5 can also be used to open lines or deliver checks.  
+
+3. **Move-by-Move Analysis**:  
+   - **Move 1**: White starts with 1. Ra8+, forcing Black's king to move to g7 (the only legal move).  
+   - **Move 2**: White follows up with 2. Bf8+, forcing Black's king back to h8 (again, the only legal move).  
+   - **Move 3**: White plays 3. Bh6, setting up a discovered check and controlling key escape squares. Black has no meaningful counterplay.  
+   - **Move 4**: White finishes with 4. Bg7#, delivering checkmate as the Black king is completely trapped.
+
+4. **Verification**:  
+   - Each move is forcing, and Black has no alternative responses. The sequence leads to a guaranteed mate in 4 moves.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Ra8+ Kg7 2. Bf8+ Kh8 3. Bh6 Rc8 4. Bg7#

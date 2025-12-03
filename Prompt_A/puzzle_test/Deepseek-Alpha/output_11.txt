@@ -1,0 +1,32 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move and must deliver checkmate in 2 moves.  
+   - The black king is on h1, surrounded by limited escape squares.  
+   - White has multiple attacking pieces (queen, rook, bishop) that can coordinate to deliver mate.  
+   - Black has no immediate threats, but White must ensure every move leads to a forced mate.
+
+2. **Candidate Moves**:  
+   - White's queen on d6 is well-placed to deliver checks.  
+   - The rook on f3 can also contribute to the attack.  
+   - The bishop on d5 controls key squares around the black king.  
+
+3. **Key Observations**:  
+   - The black king is trapped on h1, with escape squares g1 and h2 controlled by White's pieces.  
+   - Black's rook on h8 and h2 are passive and cannot defend effectively.  
+   - White must deliver a forcing sequence that ends in checkmate.
+
+4. **Move Calculation**:  
+   - The move **Qd6-f6+** is a strong candidate, as it forces the black king to remain trapped.  
+   - Black's only legal response is **Rh2xf3**, capturing the rook on f3.  
+   - After this, White can deliver checkmate with **Rf6-f1#**, as the rook covers the entire first rank and the black king has no escape.
+
+5. **Verification**:  
+   - All moves are legal and lead to a forced mate in 2.  
+   - Black has no alternative defenses after White's first move.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qf6+ Rxf3  
+2. Rf1#  

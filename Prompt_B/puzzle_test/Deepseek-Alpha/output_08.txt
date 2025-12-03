@@ -1,0 +1,30 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king you must checkmate:**
+   - According to the FEN, it is Black's turn to move ("b" indicates Black to move).
+   - Black must deliver checkmate to the White king on h1.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several pieces that can potentially deliver check: the knight on e5 and the rook on g5.
+   - The rook on g5 is particularly well-placed to deliver a decisive checkmate, as it can move to g1, directly attacking the White king on h1.
+
+3. **For each candidate, calculate a concrete line for exactly 1 move:**
+   - **Move 1: Rg1#**
+     - The Black rook moves to g1, delivering check to the White king on h1.
+     - The White king has no escape squares:
+       - h2 and g2 are controlled by the Black rook.
+       - h1 is under direct attack.
+     - White has no legal moves to block the check or capture the attacking rook.
+     - This is a forced checkmate in 1 move.
+
+4. **Verify that every move is legal and checkmate is delivered:**
+   - The move Rg1 is legal, as the Black rook is unobstructed and can move to g1.
+   - Checkmate is delivered because the White king is completely surrounded and cannot escape or block the check.
+
+5. **Confirm there is no earlier checkmate before move 1:**
+   - Black cannot deliver checkmate in 0 moves, as it is Black's turn to move, and the position requires at least 1 move to deliver checkmate.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... Rg1#

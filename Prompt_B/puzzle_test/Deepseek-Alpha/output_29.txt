@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   White is to move, and the objective is to checkmate Black's king on g8 in exactly 3 moves.
+
+2. **Candidate moves**:  
+   White has several attacking options, including moves like Qxf8+, Ne6+, and others. The goal is to find a sequence that forces checkmate in exactly 3 moves.
+
+3. **Analysis of candidate moves**:  
+   - **1. Qxf8+**: This forces Black to respond with Kxf8. White can then continue with 2. Ba3+, forcing Kg8, and finally 3. Rxf8#, delivering checkmate. This line is forced and achieves the objective in exactly 3 moves.  
+   - Other moves like 1. Ne6+ or 1. Qh4+ do not lead to a forced mate in 3 moves or allow Black to delay the mate beyond 3 moves.
+
+4. **Verification**:  
+   - After 1. Qxf8+ Kxf8, White's 2. Ba3+ forces Black's king to g8 (the only legal move).  
+   - On move 3, White plays 3. Rxf8#, delivering checkmate.  
+   - There is no earlier checkmate, and the sequence is forced.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qxf8+ Kxf8 2. Ba3+ Kg8 3. Rxf8#

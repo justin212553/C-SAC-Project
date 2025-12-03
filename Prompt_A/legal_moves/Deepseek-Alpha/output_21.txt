@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+   - The position shows White has the following pieces: King (b1), Queen (d4), Rook (f3), Rook (f6), and pawn (h6).
+   - The goal is to find one legal move.
+
+2. **King (b1)**: The King on b1 has no legal moves because all adjacent squares (a1, a2, b2, c1, c2) are either occupied or under attack.
+
+3. **Queen (d4)**: The Queen on d4 has multiple potential moves:
+   - It can move along the d-file, the 4th rank, or diagonals. For example, Qd4-a7, Qd4-b6, Qd4-c5, Qd4-d5, Qd4-d6, etc.
+   - These moves need to be checked for legality.
+
+4. **Rook (f3)**: The Rook on f3 can move along the f-file or the 3rd rank. For example, Rf3-f4, Rf3-f5, Rf3-f6, Rf3-f7, etc.
+
+5. **Rook (f6)**: The Rook on f6 can move along the f-file or the 6th rank. For example, Rf6-f7, Rf6-f8, Rf6-e6, Rf6-d6, etc.
+
+6. **Pawn (h6)**: The pawn on h6 can move to h7 or capture on g7 if possible. However, h6-h7 is the only legal move since there is no piece to capture on g7.
+
+7. **Legal move selection**: After analyzing all possible moves, one legal move is selected. For example, Qd4-g7+ delivers check to the Black King.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qd4g7+

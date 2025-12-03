@@ -1,0 +1,57 @@
+To solve this chess puzzle, let's first understand the given position and the task at hand. The position is given in FEN (Forsyth-Edwards Notation) as **r1b1Rbk1/1p3p1p/p2q2pQ/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1 w - - 0 1**. We need to find a checkmate in 3 moves.
+
+First, let's decode the FEN:
+- **r1b1Rbk1**: Black's rook, knight is missing, bishop, white rook (promoted), black king, and a pawn are on the 8th rank.
+- **1p3p1p**: A white pawn is missing, black pawn, three empty squares, black pawn, empty square, black pawn.
+- **p2q2pQ**: Black pawn, two empty squares, black queen, two empty squares, black pawn, white queen.
+- **3P4**: Three empty squares, white pawn.
+- **3Nn3**: Three empty squares, white knight, black knight.
+- **1P1n1PP1**: Empty square, white pawn, empty square, black knight, white pawn, white pawn.
+- **P2B4**: White pawn (or pawns), white bishop.
+- **R5K1**: White rook, five empty squares, white king.
+
+The position is white to move, and there's no castling possible for either side, nor are there any en passant captures available.
+
+Let's analyze the position:
+1. **Material and Piece Development**: White has a significant material advantage with a rook on the 8th rank and a strong presence of pieces. The black king is somewhat exposed.
+
+2. **King Safety**: The black king is on g8, somewhat exposed but currently somewhat defended by the presence of other black pieces and the fact that it's not directly under attack by too many white pieces directly.
+
+3. **White's Pieces**: White has a rook on e8 (which is somewhat exposed but can be used aggressively), a knight on d4, a bishop on c1 (though somewhat restricted), a queen on h6 (very aggressively placed), and other pawns and pieces that can potentially be used.
+
+4. **Checking for Checkmate**: To achieve checkmate in 3, we need to look for a sequence that forces black into a position where they cannot escape checkmate.
+
+Let's directly analyze potential moves:
+- The white queen on h6 is already putting pressure on the black position.
+- The white rook on e8 is in a potentially strong position but is currently pinned against the black king and rook.
+
+The first move should aim at utilizing the existing strong pieces and creating a threat that black cannot ignore.
+
+1. **Qg7+**: This is a potential first move as it puts the queen on g7 with check. The black king is forced to respond.
+
+After **1. Qg7+**, Black's king has limited options. It can move to h8 or f8, but let's examine **1... Kxg7** and other king moves.
+
+For **1... Kxg7**, White can play **2. Nf5+**, checking the king and forcing it to move. However, we need to verify the subsequent moves.
+
+Let's directly check the moves:
+1. **Qg7+** seems like a good starting point. If **1... Kxg7**, then **2. Nf5+ Kg8** (or other moves, but let's check the main line) **3. Re8#**.
+
+Let's verify the sequence:
+1. Qg7+ Kxg7
+2. Nf5+ Kg8
+3. Re8#
+
+This sequence appears to be checkmate in 3.
+
+Let's directly check other initial black responses to **1. Qg7+**:
+- If **1... Kh8**, then we need a different follow-up.
+
+Upon closer inspection, a more straightforward sequence is:
+1. Qg7+ Rxg7
+2. Nf5+ Kg8
+3. Re8#
+
+Let's directly verify the PGN sequence.
+
+[FINAL PGN]
+1. Qg7+ Rxg7 2. Nf5+ Kg8 3. Re8#

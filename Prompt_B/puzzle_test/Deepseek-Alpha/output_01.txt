@@ -1,0 +1,32 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - The FEN indicates it is White's turn to move ("w").
+   - Black's king is on h1, and White must deliver checkmate in exactly 1 move.
+
+2. **List the most promising candidate moves for White:**
+   - White has three pieces that can potentially deliver checkmate: the queen on g2, the knight on g2, and the bishop on g3.
+   - Candidate moves include:
+     - Qg2-h2+
+     - Qg2-f3+
+     - Qg2-g1+
+     - Ng2-f4+
+     - Bg3-h2+
+
+3. **Analyze each candidate move:**
+   - **Qg2-h2+:** This move places the Black king in check, but the king can escape to g1. Not a forced mate.
+   - **Qg2-f3+:** This move places the Black king in check, but the king can escape to g1. Not a forced mate.
+   - **Qg2-g1+:** This move places the Black king in check, but the king can escape to h2. Not a forced mate.
+   - **Ng2-f4+:** This move places the Black king in check, but the king can escape to g1. Not a forced mate.
+   - **Bg3-h2#:** This move places the Black king in check, and it is a forced mate because the Black king has no legal moves. The h2 square is protected by the queen on g2, and the g1 square is protected by the knight on g2. The Black king is completely surrounded.
+
+4. **Verify the solution:**
+   - Bg3-h2# is legal and delivers checkmate in exactly 1 move.
+   - No other move delivers checkmate in 1 move.
+   - There is no earlier checkmate before move 1.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+
+1. Bh2#

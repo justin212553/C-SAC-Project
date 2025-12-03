@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN indicates "w", so it is White's turn to move.
+2. Analyze White's pieces and their potential moves:
+   - The White king on a4 can move to b4, b5, or a5, but these squares need to be checked for legality.
+   - The White rook on c8 can move along the c-file or the 8th rank.
+   - The White queen on f6 can move diagonally, vertically, or horizontally.
+   - The White bishop on g5 can move diagonally.
+   - The White pawn on e5 can move forward to e6 or capture on f6, but f6 is occupied by the White queen.
+3. Check for checks and threats:
+   - The Black queen on h7 and the Black rook on f7 are potential threats.
+   - The White king is not currently in check.
+4. Evaluate a few candidate moves:
+   - Moving the rook to c7 (Rc7) attacks the Black king on a7 and threatens checkmate.
+   - Moving the queen to d8 (Qd8+) delivers check to the Black king.
+   - Moving the bishop to e3 (Be3) develops the piece but does not create an immediate threat.
+5. Select the best move:
+   - Rc7 is a strong move as it creates a direct threat to the Black king.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rc7

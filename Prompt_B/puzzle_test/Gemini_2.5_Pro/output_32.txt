@@ -1,0 +1,31 @@
+This is a mate-in-4 problem. Black is to move and must deliver a forced checkmate in exactly four moves.
+
+### Step-by-step Reasoning:
+
+1.  **Initial Analysis:** The White king is on h1, with its movement restricted. The f1 square is controlled by Black's powerful bishop on c4. The only defender near the king is the knight on g1. Black's primary attacking pieces are the two rooks and the bishop. The key to the attack is to exploit the vulnerable king position.
+
+2.  **First Move (Black): 1... Ra1+**
+    This is the most forcing move. It puts the White king in check and leaves White with only one legal response. The king cannot move to f1 (due to the bishop on c4), so White must block the check.
+    *   **White's Response: 2. Ng1**
+        This is forced. The knight interposes, but in doing so, it becomes pinned by the rook on a1, and the king is completely trapped on h1.
+
+3.  **Second Move (Black): 2... h5!**
+    With the White king immobilized, Black needs to break down the pawn shield. This quiet move is the key. It prepares to play `...h4`, which will attack and undermine the g3 pawn. White has no way to prevent this plan from unfolding. White's possible moves (like moving the rook on c7 or the king to g2) do not stop the impending threat.
+
+4.  **Third Move (Black): 3... h4**
+    Let's assume White plays a waiting move like **3. Rd7**. Black proceeds with the plan.
+    *   **3... h4**: This pawn advance attacks the g3 pawn. White is now forced to act. The most natural response is to capture the pawn. Other moves also lead to a swift mate.
+    *   **White's Response: 4. gxh4**
+        This capture is practically forced. It opens the g-file, but more importantly, it clears the way for Black's other rook to join the attack.
+
+5.  **Fourth Move (Black): 4... R8a2#**
+    This is the final move. The second rook swings to a2, delivering checkmate along the 2nd rank.
+    *   The White king on h1 is under attack from the rook on a2.
+    *   It cannot escape to g2 (controlled by the rook on a2).
+    *   It cannot escape to f1 (controlled by the bishop on c4).
+    *   The check cannot be blocked.
+    *   The checking piece cannot be captured.
+    This is a forced checkmate, achieved on Black's fourth move.
+
+[FINAL PGN]
+1... Ra1+ 2. Ng1 h5 3. Rd7 h4 4. gxh4 R8a2#

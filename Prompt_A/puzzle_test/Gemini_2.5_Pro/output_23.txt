@@ -1,0 +1,29 @@
+This is a classic mating pattern involving multiple sacrifices to clear a critical square.
+
+**Initial Position Analysis:**
+White has a powerful attacking setup against the black king on h8. The rook on g7, knight on h5, and bishop on c4 are all aimed at the kingside. The black king is severely restricted; the g-pawn is on g6, and the h-pawn is on h7, creating a box. The white bishop on c4 controls the crucial g8 escape square. The black bishop on g6 is a double-edged sword: it blocks the white bishop on c4 but also prevents the black king from using the g-file.
+
+**Candidate Moves and Thought Process:**
+
+The most forcing moves are checks, so let's start there.
+
+1.  **Nxf6+**: This is a very promising candidate. It's a check, and it sacrifices the knight to remove the g6-pawn, which is a key defender.
+    *   Black's response is forced: **1... gxf6**. The king cannot move to h7 (attacked by Rg7) or g8 (attacked by Bc4).
+    *   Now, White's attack continues. The f6 square is now occupied by a black pawn, but the g-file is open. White needs to deliver another check. The move **2. Rg8+** is a brilliant rook sacrifice.
+    *   Black's response is again forced: **2... Rxg8**. The king cannot move, so the rook must be captured.
+    *   This sequence of sacrifices has cleared the f6 square. White delivers the final blow with **3. Bxf6#**. The bishop on f6 delivers checkmate. The king on h8 cannot move to h7 (blocked by its own pawn) or g8 (controlled by the other white bishop on a1).
+
+This sequence leads to a forced mate in 3.
+
+Let's check for alternative solutions. What if White sacrifices the rook first?
+
+1.  **Rg8+**: This is another strong checking move.
+    *   Black's only reply is **1... Rxg8**.
+    *   Now White follows up with the knight sacrifice: **2. Nf6+**.
+    *   Again, Black is forced to play **2... gxf6**.
+    *   This leads to the exact same final position, where White plays **3. Bxf6#**.
+
+Both move orders work and are equally valid. The core idea is the double sacrifice on f6 and g8 to allow the bishop to deliver the final checkmate. I will provide the first sequence I analyzed.
+
+[FINAL PGN]
+1. Nxf6+ gxf6 2. Rg8+ Rxg8 3. Bxf6#

@@ -1,0 +1,23 @@
+This is a mate-in-3 puzzle. Black is to move.
+
+The white king on g1 is severely exposed. The black pawn on h3 takes away the h2 escape square, and the king is confined to the back rank. Black's queen on d5 and rooks on f6 and f3 are poised for a decisive attack.
+
+1.  **Black's First Move:** The key is to find the most forcing sequence. Direct checks are the primary candidates.
+    *   `1... Qe4+`: This is a strong check. White has two replies:
+        *   If `2. Kh1`, Black delivers mate in one with `2... R3f1#`. This is a mate in 2, which is faster than the stipulated 3 moves. While a valid way to win, puzzles of this nature usually have a main line that lasts for the specified number of moves against the best defense.
+        *   If `2. Rf2` (the longest defense), Black continues `2... Qxf2+`. White is forced to play `3. Kh1`, and Black mates with `3... R6f1#`. This sequence is a mate in 3.
+    *   `1... Rf1+`: This is a brilliant rook sacrifice. It forces White's response and leads to a single, elegant mating sequence.
+
+2.  **The Main Line:** The most precise and aesthetically pleasing solution, which forces a mate in exactly three moves without shorter variations, begins with the sacrifice.
+    *   **1... Rf1+**: Black sacrifices the rook on f3. This forces the white rook on a1 to capture, as the king has no escape squares from the check.
+    *   **2. Rxf1**: White's only legal move. The rook on a1 captures the black rook on f1.
+    *   **2... Qe4+**: Now the black queen checks the king. The king cannot move to h1 (covered by the queen) or f1 (occupied by its own rook). The only way to escape the check is to block it.
+    *   **3. Rf2**: White's rook from c2 is forced to interpose on f2. This is the only legal move.
+    *   **3... Qxf2#**: Black's queen captures the blocking rook, delivering checkmate. The white king on g1 is attacked by the queen and has no escape squares: f1 and h1 are controlled by the queen, and h2 is blocked by the black pawn on h3.
+
+This sequence is forced from the first move to the last, making it the clear solution to the puzzle.
+
+[FINAL PGN]
+1. ... Rf1+
+2. Rxf1 Qe4+
+3. Rf2 Qxf2#

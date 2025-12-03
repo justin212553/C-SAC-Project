@@ -1,0 +1,29 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king in exactly 2 moves.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several attacking pieces, including the queen on d5 and rook on d1. The White king is on b7, surrounded by pawns and pieces, making it vulnerable to checks and limited in mobility.
+   - Candidate moves include checks with the queen or rook, aiming to restrict the White king's escape routes.
+
+3. **Analyze each candidate move for a forced mate in 2:**
+   - **Move 1: ... Qd7+**
+     - This move checks the White king on b7. The king has no escape squares, and White must block the check with the rook on c8 (Rc8).
+     - After Rc8, Black can deliver checkmate with 2. ... Rxc8#.
+     - This line is forced, as White has no other legal moves after Qd7+.
+
+   - **Other moves:**
+     - Moves like ... Rd2 or ... Qc6+ do not lead to a forced mate in 2 moves. They either allow White to escape or delay the mate beyond 2 moves.
+
+4. **Verify the solution:**
+   - After 1. ... Qd7+, White is forced to play 2. Rc8.
+   - Black then plays 2. ... Rxc8#, delivering checkmate. The White king is completely surrounded and cannot escape.
+
+5. **Confirm no faster mate exists:**
+   - There is no way to deliver checkmate in 1 move, as the White king has pawns and pieces blocking direct attacks. The solution is optimal and satisfies the "mate in 2" condition.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. ... Qd7+ 2. Rc8 Rxc8#

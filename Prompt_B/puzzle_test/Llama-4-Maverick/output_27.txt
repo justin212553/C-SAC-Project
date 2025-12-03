@@ -1,0 +1,56 @@
+1. The side to move is White, and the objective is to checkmate Black's king.
+2. The current position is given in FEN: 5r2/2R2P1k/7p/4q3/7K/8/6Q1/8 w - - 0 1. 
+   - White's king is on h4, and Black's king is on h7.
+   - White's pieces are: R on c7, P on f7, Q on g2, and K on h4.
+   - Black's pieces are: R on f8, Q on e5, P on h6, and K on h7.
+
+3. The most promising candidate moves for White involve using the Queen to potentially checkmate or support a checkmate, and possibly utilizing the Rook on c7.
+
+4. Let's analyze potential moves:
+   - White's Queen on g2 can potentially move to various squares to check or checkmate.
+   - White's Rook on c7 is already somewhat active, controlling the 7th rank.
+
+5. Step-by-step analysis:
+   - The Black king is on h7, so we need to find a way to checkmate it.
+   - One potential checkmating pattern involves using the White Queen to checkmate on h5 or a similar square, but this requires clearing the way or using a discovered check.
+   - The White Rook on c7 is somewhat pinned because of the Black Rook on f8, but it's still a powerful piece that can potentially participate in a checkmate or force a weakness.
+
+6. Let's examine a potential line:
+   - 1. Qg2-g5: This move puts the Queen in a more active position and potentially sets up for a checkmate.
+   - After 1. Qg5, Black's response could be 1...Qxg5+, forcing 2. Kxg5.
+   - However, we need to check if this leads to a checkmate in 3.
+
+7. Detailed analysis of a potential checkmate:
+   - 1. Qc2+ Kg8 (Forced to avoid checkmate or significant material loss) 
+     - If 1...Qf5+, then 2. g4+ doesn't work because it doesn't lead to a quick checkmate.
+   - A more promising line starts with 1. Qg3 (though this isn't directly a check), aiming to potentially checkmate or force a weakness.
+
+8. Let's directly analyze a potential checkmate:
+   - 1. Qh2+ Kg8 (1...Qh5+ 2. Qxh5# is a quick checkmate, so Black will likely play Kg8)
+   - 2. Qc7 (using the Queen to potentially checkmate or force a weakness, but this loses the Queen)
+   - A better line is needed.
+
+9. Upon closer inspection:
+   - 1. Qh2+ Kg8
+   - 2. Qh5 (threatening checkmate) and then Black can respond, but White has 3. Qf7#.
+
+10. Let's verify the line:
+    - 1. Qh2+ Kg8
+    - 2. Qh5
+    - 3. Qf7#
+
+    This line seems promising.
+
+11. Checking legality and checkmate:
+    - 1. Qh2+ is legal.
+    - 1...Kg8 is a reasonable response.
+    - 2. Qh5 is legal and puts White in a good position to checkmate.
+    - 2...Rxf7 is a possible response, but then White can checkmate with 3. Qf7#.
+
+12. Let's directly check the moves:
+    - 1. Qh2+ Kg8
+    - 2. Qh5 Rxf7
+    - 3. Qf7#
+
+[FINAL PGN]
+1. Qh2+ Kg8 2. Qh5 Rxf7 3. Qxf7#

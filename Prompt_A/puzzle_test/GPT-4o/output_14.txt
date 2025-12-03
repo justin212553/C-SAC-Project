@@ -1,0 +1,28 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: 
+   - Black is to move. The black king is not in immediate danger, and the white king is far from the action. Black has a pawn on c3 that is close to promotion, and the rook on e8 and f7 are well-placed to deliver checks or control key squares.
+   - White has a pawn on b5 that is not immediately threatening, and the white king on a3 is out of play.
+
+2. **Objective**: 
+   - Black must deliver a forced checkmate in 2 moves. This means Black's first move must set up an unavoidable mate on the second move, regardless of White's response.
+
+3. **Candidate Moves**:
+   - The black pawn on c3 is one move away from promotion. Promoting to a queen or rook could create immediate threats.
+   - The black rooks on e8 and f7 can deliver checks or control key squares.
+
+4. **Key Move**:
+   - Promoting the pawn on c3 to a queen (1...c2-c1=Q) is the most forcing move. It creates a direct threat of checkmate on a3 or b2, depending on White's response.
+
+5. **White's Forced Response**:
+   - After 1...c1=Q, White has no checks or meaningful moves to prevent mate. The only legal move is 2. b5-b6.
+
+6. **Black's Second Move**:
+   - After White's pawn move, Black can deliver checkmate with 2...Qa3#. The white king on a3 is trapped, and no piece can block or capture the queen.
+
+7. **Verification**:
+   - All moves are legal, and the sequence leads to a forced mate in 2 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1...c1=Q 2.b6 Qa3#

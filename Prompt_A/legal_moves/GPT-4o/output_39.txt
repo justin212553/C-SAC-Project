@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Analyze all moveable pieces for White**:
+   - **King (e1)**: Can move to f1, d1, or castle kingside (O-O) or queenside (O-O-O).
+   - **Queen (g3)**: Can move to h4, h3, h2, g4, f4, f3, f2, e5, e3, d6, d3, c7, c3, b8, b3, a7, or a3.
+   - **Rook (h1)**: Can move to h2, h3, h4, h5, h6, h7, h8, or castle kingside (O-O).
+   - **Rook (a1)**: Can move to a2, a3, a4, a5, a6, a7, or a8.
+   - **Bishop (g5)**: Can move to h6, f6, f4, e3, or d2.
+   - **Knight (b5)**: Can move to a7, a3, c7, c3, d6, or d4.
+   - **Knight (d4)**: Can move to b3, b5, c2, c6, e2, e6, f3, or f5.
+   - **Pawn (a2)**: Can move to a3 or a4.
+   - **Pawn (c3)**: Can move to c4.
+   - **Pawn (f2)**: Can move to f3 or f4.
+   - **Pawn (g2)**: Can move to g3 or g4.
+   - **Pawn (h2)**: Can move to h3 or h4.
+
+2. **Evaluate legality of moves**:
+   - All moves listed above are legal, as no piece is pinned and no move places the White king in check.
+
+3. **Select one legal move**:
+   - For simplicity, choose a straightforward move: White castles kingside (O-O).
+
+--- FINAL PGN OUTPUT ---
+
+[FINAL PGN]
+1. O-O

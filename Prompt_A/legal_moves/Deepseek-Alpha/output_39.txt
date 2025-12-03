@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn**: Analyze all moveable pieces for White.
+   - **Pawn moves**: 
+     - The pawns on c3, f2, and g2 are blocked and cannot move forward.
+     - The pawn on h2 can move to h3 or h4.
+   - **Knight moves**:
+     - The knight on b5 can move to a7, c7, d6, d4, or a3.
+     - The knight on d4 can move to b5, b3, c6, e6, e2, or f3.
+   - **Bishop moves**:
+     - The bishop on g5 can move to h6, f6, e7, d8, h4, or f4.
+   - **Queen moves**:
+     - The queen on g3 can move to h4, h3, h2, h1, g4, f4, f3, f2, e5, d6, c7, b8, or capture the pawn on b2.
+   - **Rook moves**:
+     - The rook on h1 can move to h2, h3, h4, h5, h6, h7, h8, or f1.
+   - **King moves**:
+     - The king on e1 can move to d1, f1, or castle kingside (O-O).
+
+2. **Legal moves**: All moves listed above are legal. For simplicity, I will select one legal move.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. O-O

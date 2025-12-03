@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN string ends with "w", indicating it is White's turn to move.
+2. Identify White's pieces and their potential moves:
+   - White has a knight on e4, a rook on g4, and a king on g2.
+   - The knight can move in an "L" shape to valid squares within the board.
+   - The rook can move horizontally or vertically to unoccupied squares or capture enemy pieces.
+   - The king can move one square in any direction to unoccupied squares.
+3. Evaluate candidate moves:
+   - The knight on e4 can move to c3, c5, d2, d6, f2, f6, g3, or g5. All these squares are within the board, and none are occupied by White's pieces.
+   - The rook on g4 can move to g5, g6, g7, g8, g3, g2, g1, h4, or f4. All these moves are valid and do not leave the king in check.
+   - The king on g2 can move to f1, f2, f3, g1, h1, h2, or h3. All these moves are valid and do not leave the king in check.
+4. Select one legal move: I will choose a move for the rook, as it has many options. Moving the rook to g5 is a simple and effective choice.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rg5

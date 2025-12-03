@@ -1,0 +1,29 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on h1 in exactly 3 moves.
+
+2. **List promising candidate moves for Black:**
+   - Black has several attacking pieces: the rook on g2, the knight on h4, and the bishop on c5. The White king is somewhat exposed on h1, and Black can use checks to force the king into a vulnerable position.
+   - Candidate moves include: 1... Rg1+, 1... Nf3+, and 1... Bxf3.
+
+3. **Calculate concrete lines for exactly 3 moves:**
+   - **Line 1: 1... Rg1+**
+     - White must respond with 2. Rxg1 (forced, as the king cannot move).
+     - Black plays 2... Bxf3+, attacking the king and forcing 3. Rg2.
+     - Black delivers checkmate with 3... Bxg2#.
+
+   - **Line 2: 1... Nf3+**
+     - White can respond with 2. Rxf3 or 2. Bxf3. In either case, Black cannot deliver checkmate in exactly 3 moves, as the White king escapes.
+
+   - **Line 3: 1... Bxf3**
+     - White can respond with 2. Rxf3 or 2. Bxf3. Similar to Line 2, Black cannot force checkmate in exactly 3 moves.
+
+4. **Verify the solution:**
+   - Line 1 (1... Rg1+) is the only sequence that forces checkmate in exactly 3 moves. All moves are legal, and checkmate is delivered on the third move without any faster alternative.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1... Rg1+ 2. Rxg1 Bxf3+ 3. Rg2 Bxg2#

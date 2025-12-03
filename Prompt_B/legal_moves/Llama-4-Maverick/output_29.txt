@@ -1,0 +1,29 @@
+To determine the move to be played, let's first analyze the given FEN position: r1b1Rbk1/1p3p1p/p2q2pQ/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1 w - - 0 1
+
+1. **Identify the side to move**: The FEN notation indicates that it's White's turn to move because the letter 'w' is specified before the last two fields that denote the castling rights and the en passant square.
+
+2. **Understand the position**: The given position is r1b1Rbk1/1p3p1p/p2q2pQ/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1. Let's decode it:
+   - The Black king is on g8, and it's somewhat exposed but currently not in check.
+   - White has a Rook on e8, which is a strong position as it pins the Black king to the back rank and potentially puts pressure on it.
+   - White has a Queen on h6, which is actively placed and potentially putting pressure on Black's position, especially the pawn on g6 and f8.
+   - There's a White Knight on d4, which controls several central squares and is relatively active.
+
+3. **Analyze potential moves**:
+   - The White Rook on e8 can potentially move along the e-file, but it's already quite active.
+   - The White Queen on h6 is in an aggressive position. It can potentially move to other squares, but we need to check for legality.
+   - The White Knight on d4 can move to various squares (b3, b5, c2, c6, e2, e6, f3, f5), and its moves should be considered.
+   - Other White pieces like the Bishop on b2, the pawns, and the Rook on a1 also have potential moves.
+
+4. **Checking specific moves**:
+   - Let's consider the White Queen's potential moves. The Queen on h6 can potentially move to g7 (Qg7#), which is checkmate because the Black king cannot escape the check due to being hemmed in by its own pawns and the White Rook controlling the e-file. This move is worth checking for legality.
+
+5. **Legality check of Qg7#**:
+   - The Queen is on h6, and moving to g7 is a diagonal move, which is legal for a Queen.
+   - The target square g7 is occupied by a Black pawn, so it's a capture, which is allowed.
+   - The move doesn't put the White King in check because the Black pieces cannot directly attack it from their current positions.
+   - After Qg7#, the Black King is in checkmate, making it a valid and winning move.
+
+6. **Conclusion**: The move Qg7# is a legal and decisive move. It checkmates the Black King.
+
+[FINAL PGN]
+1. Qg7#

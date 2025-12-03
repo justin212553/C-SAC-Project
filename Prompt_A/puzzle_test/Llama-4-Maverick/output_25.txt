@@ -1,0 +1,39 @@
+To solve this checkmate in 3, let's first understand the given position defined by the FEN: **2R5/kp3r1q/p4Q2/P3P1B1/K7/8/5b2/8 w - - 0 1**.
+
+1. **Understanding the Position:**
+   - The FEN indicates it's White's turn.
+   - The material is quite imbalanced, but focusing on the checkmate is key.
+   - White has a significant presence on the board with a Queen, a Rook, and a Bishop actively placed.
+   - Black's King is somewhat exposed on 'a8', and there's a potential weakness with the Black King being somewhat confined by its own pawns and pieces.
+
+2. **Analyzing the Position:**
+   - White's Queen is on 'f6', which is quite active and potentially threatening to Black's position.
+   - The White Rook on 'c8' is somewhat pinned against the Black Rook on 'f8', but it can potentially be used to exert pressure or make a decisive move.
+   - The Bishop on 'b5' is also active and could potentially be used to support a mating attack or restrict Black's movements.
+   - The White King is on 'a4', which is somewhat exposed but also somewhat safe due to the presence of other White pieces and the fact that Black's pieces are not directly threatening it.
+
+3. **Identifying Candidate Moves:**
+   - The goal is to checkmate in 3 moves. The first move should significantly restrict Black's options and potentially put Black in a position where they are forced to respond in a specific way.
+   - The White Queen on 'f6' is already in an aggressive position. It can potentially move to 'd8' or 'c6' to put pressure on Black's position.
+   - Checking if there's a direct check or a forcing move that can be played.
+
+4. **Calculating the Sequence:**
+   - Let's examine potential first moves:
+     - **1.Qc6+**: This move puts the Queen on 'c6', checking the Black King. The Black King can't capture the Queen due to the Rook on 'c8'. The only legal move for Black is to play **1...Kb8**.
+     - After **1...Kb8**, White can play **2.Rc7**, threatening checkmate and forcing Black to respond. Black's best response is likely to be **2...Qe8** or **2...Qg8**, but White has a strong follow-up.
+     - A potential checkmate sequence could involve using the Queen and Rook to corner the Black King.
+
+5. **Finding the Checkmate:**
+   - After **1.Qc6+ Kb8**, White plays **2.Rb8+**. This forces **2...Kxb8** (as other moves lose material or are illegal).
+   - Then, White can play **3.Qd8#**, checkmating Black.
+
+Let's put the sequence together:
+1. The first move is **1.Qc6+**, checking the Black King.
+2. Black responds with **1...Kb8**.
+3. White continues with **2.Rb8+**, forcing **2...Kxb8**.
+4. Finally, **3.Qd8#**.
+
+So, the sequence is: **1.Qc6+ Kb8 2.Rb8+ Kxb8 3.Qd8#**
+
+[FINAL PGN]
+1.Qc6+ Kb8 2.Rb8+ Kxb8 3.Qd8#

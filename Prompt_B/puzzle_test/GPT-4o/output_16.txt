@@ -1,0 +1,33 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on e5 in exactly 2 moves.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several attacking pieces: the rook on h4, the rook on f6, and the bishop on f3. The White king is exposed on e5, and Black can use checks to force it into a vulnerable position.
+   - Candidate moves include: 1... Rh5+, 1... Rf5+, and 1... Bf4+.
+
+3. **Analyze each candidate move:**
+   - **Line 1: 1... Rh5+**
+     - White's king must move to f6 (1. Ke6 is illegal due to the rook on f6).
+     - After 2... Bf4#, the White king is checkmated. The bishop on f3 covers e5 and g5, while the rook on h5 covers the entire fifth rank.
+     - This line delivers checkmate in exactly 2 moves.
+
+   - **Line 2: 1... Rf5+**
+     - White's king must move to e6 (1. Ke5 is illegal due to the rook on f5).
+     - After 2... Bf4#, the White king is checkmated. The bishop on f3 covers e5 and g5, while the rook on f5 covers the entire fifth rank.
+     - This line also delivers checkmate in exactly 2 moves.
+
+   - **Line 3: 1... Bf4+**
+     - White's king must move to f6 (1. Ke6 is illegal due to the rook on f6).
+     - After 2... Rh5#, the White king is checkmated. The rook on h5 covers the fifth rank, and the bishop on f4 covers e5 and g5.
+     - This line delivers checkmate in exactly 2 moves.
+
+4. **Verify the solution:**
+   - All three lines deliver checkmate in exactly 2 moves, but 1... Rh5+ is the most direct and intuitive move. It forces the White king into a position where Black can deliver checkmate with 2... Bf4#.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1... Rh5+ 2. Kf6 Bf4#

@@ -1,11 +1,13 @@
 # C-SAC Project
 
+<!-- <img src="images/C-SAC.png" width="1400" > -->
+
 ### Author: [Wonseuk Lee](https://github.com/justin212553)
 
 University of California, Irvine Master of Computer Science
 Pennsylvania State University, University Park, Bachelor of Science, Computer Science
 
-> Still not employed :(
+<!-- > Still not employed :( -->
 
 ## Table of Content
 - [Introduction](#introduction)

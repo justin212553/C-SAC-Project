@@ -1,0 +1,17 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn**: Analyze all moveable pieces for White.
+   - **Rooks**: The rook on c7 can move to c8, c6, b7, d7, or capture f7. The rook on a1 can move to a2, a3, a4, a5, a6, a7, a8, b1, c1, d1, e1, f1, or capture a2.
+   - **Knights**: The knight on d5 can move to b6, c7, e7, f6, f4, e3, c3, or b4.
+   - **Bishops**: The bishop on g5 can move to h6, f6, e7, d8, h4, f4, e3, or d2. The bishop on h5 can move to g6, f7, e8, g4, or f3.
+   - **King**: The king on h1 can move to g1 or g2.
+   - **Pawns**: The pawn on e4 can move to e5. The pawn on c3 can move to c4. The pawn on h3 can move to h4. The pawn on g3 can move to g4.
+
+2. **Legal moves**: Evaluate all legal moves for White. Ensure no move places the White king in check.
+
+3. **Output one legal move**: Select one legal move from the list above.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. c7xf7

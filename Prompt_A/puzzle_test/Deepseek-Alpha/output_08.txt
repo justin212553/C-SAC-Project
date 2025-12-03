@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - Black to move.  
+   - The white king is on h1, and the white rook is on f1.  
+   - Black has a rook on g5 and a knight on e5.  
+   - The black king is on g7.  
+
+2. **Goal**:  
+   - Find a move that delivers checkmate in one move.  
+
+3. **Key Candidate Moves**:  
+   - Black's rook on g5 can move to g1, delivering a check.  
+   - The white king on h1 has no escape squares due to the black knight on e5 controlling f3 and g4.  
+   - The white rook on f1 cannot block the check or capture the black rook on g1.  
+
+4. **Verification**:  
+   - After 1...Rg1#, the white king is in check and has no legal moves.  
+   - The position satisfies the conditions for checkmate.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1... Rg1#  

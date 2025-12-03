@@ -1,0 +1,23 @@
+This is a mate-in-3 puzzle for Black.
+
+**Initial Position Analysis:**
+White's king on h2 is vulnerable. It is hemmed in by its own pieces (Rook on f1, pawn on h3) and threatened by Black's pieces (Queen on g7, Rook on c2, and especially the f2 pawn). Black's king on h5 is also somewhat exposed but plays a crucial role in restricting the white king. The white queen on e4 is a powerful defender and attacker, but it's currently unable to prevent the mating sequence.
+
+**Candidate Moves Evaluation:**
+The most forcing and promising move for Black is to promote the f-pawn.
+
+1.  **`1... f1=Q+`**: This is a check and a promotion. White's response is forced. The king cannot move to any safe square (g1, g2, h1 are all attacked by the new queen), so White must capture the new queen.
+2.  **`2. Rxf1`**: This is White's only legal move.
+
+Now, the position is: `8/6q1/8/7k/4Q3/7P/2r4K/5R2 b - - 1 2`. Black needs to find a move that forces mate on the next turn (a mate-in-2 from this position).
+
+The key is to find a check that forces mate regardless of White's reply.
+
+3.  **`2... Qg4+`**: This brilliant check is the solution. It forces White into one of two losing replies:
+    *   **Case A: `3. Kh1`**: If the king retreats to h1, Black delivers mate with **`3... Qg2#`**. The king on h1 is trapped. The g1 square is covered by the white rook on f1, and the h2 and g2 squares are covered by the black queen.
+    *   **Case B: `3. hxg4+`**: If White captures the queen with the h-pawn, it results in a discovered check from Black's rook on c2. Black then delivers a surprising mate with **`3... Kh4#`**. The white king on h2 is checked by the rook on c2. It cannot escape to h1 (covered by the rook on c2), g1 (covered by the rook on f1), g2 (blocked by the white pawn now on g4), or g3 (covered by the black king on h4).
+
+In both variations, Black forces checkmate on the third move.
+
+[FINAL PGN]
+1... f1=Q+ 2. Rxf1 Qg4+ 3. Kh1 Qg2#

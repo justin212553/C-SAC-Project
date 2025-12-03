@@ -1,0 +1,29 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on h8 in exactly 2 moves.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several pieces that can deliver checks or set up a forced mate: the queen on d3, the rook on f6, and the bishop on d4.
+   - The key idea is to use these pieces to restrict the White king's movement and deliver checkmate on the second move.
+
+3. **Analyze candidate moves and calculate concrete lines:**
+   - **Candidate move 1: 1... Qf1+**
+     - White is forced to play 2. Rg8 (blocking the check).
+     - Black then plays 2... Qf7#, delivering checkmate. The White king is trapped on h8, and no piece can block or capture the queen.
+
+   - **Candidate move 2: 1... Qe4+**
+     - White can respond with 2. Kg8 (moving the king).
+     - Black cannot deliver checkmate on the second move, as the White king escapes to g8. This line fails.
+
+   - **Candidate move 3: 1... Qg3+**
+     - White can respond with 2. Rg8 (blocking the check).
+     - Black cannot deliver checkmate on the second move, as the White king escapes to h8. This line fails.
+
+4. **Verify the solution:**
+   - The line starting with 1... Qf1+ is the only one that forces checkmate in exactly 2 moves.
+   - Every move is legal, and checkmate is delivered on the second move without any earlier mate.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf1+ 2. Rg8 Qf7#

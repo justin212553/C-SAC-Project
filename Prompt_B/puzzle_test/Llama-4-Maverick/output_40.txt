@@ -1,0 +1,36 @@
+1. The given FEN is r3k2r/pQ3pp1/2p3q1/3n4/1n1P2bp/4P3/1P1NNPPP/R1B1KB1R b - - 0 1. 
+   - The side to move is Black.
+   - The White king is to be checkmated.
+
+2. The most promising candidate moves for Black are those that put pressure on the White king and potentially lead to a checkmate. 
+   - The Black pieces that can potentially attack the White king are the queen on g6, the bishop on g4, and potentially the rook on h8 if it can move to the h-file or f8 if it can participate in the attack.
+
+3. Let's analyze the position:
+   - The White king is on e1, and it's not castled. The most vulnerable spot for the White king is the f-file and potentially the e-file if Black can open it up.
+   - Black's queen on g6 is somewhat active and can potentially move to g2 or f5 to put pressure on the White position.
+   - The Black bishop on g4 is somewhat pinned against the White knight on e2, but it can still potentially move.
+
+Let's start with calculating a concrete line:
+1... Qg2 (threatening checkmate) is a potential starting move because it directly attacks the White position and puts pressure on the f1 square.
+
+Let's examine a potential line:
+1... Qg2
+2. Nf1 (forced to deal with the threat) Qxf1+ (check)
+3. Kxf1 Bh3+ (check, forcing the White king to move to a worse position)
+4. Ke1 Rf1# (checkmate)
+
+Let's verify:
+- 1... Qg2 is legal.
+- 2. Nf1 is a reasonable defensive move by White.
+- 2... Qxf1+ is legal and puts White in check.
+- 3. Kxf1 is forced to get out of check.
+- 3... Bh3+ is legal and puts White in check again.
+- 4. Ke1 Rf1# is checkmate.
+
+Now, let's check if there's a faster checkmate or if this line meets the "exactly 4 moves" criterion:
+- The line takes exactly 4 moves, as required.
+
+Let's format the final output according to the instructions.
+
+[FINAL PGN]
+1... Qg2 2. Nf1 Qxf1+ 3. Kxf1 Bh3+ 4. Ke1 Rf1#

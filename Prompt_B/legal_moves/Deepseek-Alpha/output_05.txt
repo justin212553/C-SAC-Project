@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN string ends with "w", indicating it is White's turn to move.
+
+2. Consider which of White's pieces can move:
+   - White has a king on a1, rooks on h7 and c5, pawns on b4, c4, and c5, and a bishop on g4.
+   - The king can move to b1 or b2.
+   - The rook on h7 can move along the h-file or capture on h8.
+   - The rook on c5 can move along the c-file or the 5th rank.
+   - The pawns on b4 and c4 can advance one square forward, and the pawn on c5 can capture on b6.
+   - The bishop on g4 can move diagonally.
+
+3. Check legality of candidate moves:
+   - Ensure the move follows the piece's movement rules.
+   - Ensure the move does not leave White's king in check.
+   - Ensure the move does not land on a square occupied by White's own pieces.
+
+4. Select one legal move:
+   - A straightforward legal move is "Rh8", where the rook on h7 captures the black rook on h8.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rh8

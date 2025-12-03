@@ -1,0 +1,50 @@
+To solve this Mate in 3 problem, let's first understand the given position and the pieces involved.
+
+The FEN notation **8/6q1/8/7k/4Q3/7P/2r2p1K/5R2 b - - 0 1** breaks down as follows:
+- The position is: Black king on h5, Black queen on g7, Black rook on c2, Black pawn on f2, White king on g2, White queen on e4, White rook on f1, White pawn on h3.
+- It's Black's turn to move.
+
+First, let's assess the position:
+1. **Black is to move and checkmate in 3 is required.** So, we need to find a sequence where Black's first move, followed by White's response, and then Black's second move, leads to a checkmate on the third move.
+
+2. **Assessing the pieces and their potential:**
+   - Black has a queen, a rook, and a pawn that can potentially be used to checkmate.
+   - White's king is somewhat exposed on g2, but there are pieces that can potentially defend it or counter-attack.
+
+3. **Key Observations:**
+   - The White king is on g2, which is somewhat vulnerable to checks from the Black queen and rook.
+   - The Black pawn on f2 is a potential weakness for White but also a passed pawn that could promote.
+   - The White queen on e4 is actively placed and can potentially check or pin Black pieces.
+
+4. **Let's analyze potential first moves for Black:**
+   - The Black queen on g7 can potentially move to various squares, but it needs to do so in a way that sets up a checkmate.
+   - The Black rook on c2 is somewhat pinned because of the White queen's influence on the fourth rank and the potential for the White rook to move to c1. However, it can still move along the second rank.
+   - The Black pawn on f2 is a candidate for moving forward, potentially promoting or supporting a checkmate.
+
+5. **Potential Checkmate Patterns:**
+   - To checkmate, we need to look for patterns that involve the White king being in a position to be checkmated with no legal moves left.
+
+Let's directly analyze potential moves:
+1. **1...Qg3+** is a potential first move because it puts the White king in check and forces a response. If **2.Kf1**, then Black can play **Qf2#** or look for alternatives that could lead to checkmate. However, we need to verify if this sequence is possible and if it leads to a checkmate in 3.
+
+Let's examine the moves:
+- **1...Qg3+ 2.Kf1 Qf2#** is a checkmate in 2, not 3. So, we need to look for an alternative.
+
+Let's directly check a potential sequence:
+- If Black plays **1...Rc1**, it attacks the White rook and potentially sets up a discovered check or pins the rook. However, White can respond with **2.Rxc1**, and then we need to find a checkmate.
+
+Let's directly analyze a potential sequence:
+1. **1...Qg3+ 2.Kf1 Qf2#** is too quick. Let's consider an alternative first move: **1...Qd4**. This move attacks the White queen and potentially opens up new lines.
+
+However, a more promising line seems to be:
+1. **1...Qg3+ 2.Kf1 Rc1+**, here White is forced to respond, and then **3...Qf2#** is not possible because of the interposed move. Let's directly check the correct sequence.
+
+Let's directly verify the moves:
+1...Qg3+ is a good starting point. 
+- **1...Qg3+ 2.Kf1 Rc1+ 3.Rxc1 Qf2#**
+
+Let's format this into PGN:
+```
+[FINAL PGN]
+1... Qg3+ 2.Kf1 Rc1+ 3.Rxc1 Qf2#
+```

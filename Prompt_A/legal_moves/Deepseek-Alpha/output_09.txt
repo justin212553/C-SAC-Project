@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. Analyze the position:
+   - White's king is on e6.
+   - White's pawn is on f7.
+   - White's other pawn is on f6.
+   - Black's king is on f8.
+
+2. Determine legal moves for White:
+   - The pawn on f7 can promote to a queen, rook, bishop, or knight by moving to f8.
+   - The king on e6 can move to d6, d7, e7, f7, or f5, but some of these squares are occupied or illegal.
+
+3. Best move:
+   - Promoting the pawn on f7 to a queen (f8=Q) is the most logical move, as it creates a decisive material advantage and puts Black in check.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. f8=Q+

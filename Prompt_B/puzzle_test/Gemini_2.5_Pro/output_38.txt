@@ -1,0 +1,29 @@
+This is a forced checkmate-in-4 puzzle for Black.
+
+### Step-by-step Reasoning:
+
+1.  **Initial Move (Black's 1st move):** The most critical weakness in White's position is the f2 square. It is attacked by Black's knights on e4 and g4, and the bishop on c5. It is defended only by the queen on d2 and the king on d1. The most forcing move is to exploit this weakness with a check: `1... Nxf2+`.
+
+2.  **White's Response (White's 1st move):** White is in check. The king on d1 has no legal moves (e1 is covered by the rook on e8, c1 is blocked by the bishop, e2 is covered by the knight on g4, and c2 is covered by the bishop on c5). The checking knight on f2 can be captured by the queen. Capturing with the king (`Kxf2`) is illegal because the knight on g4 also controls the f2 square. Therefore, White's only legal move is `2. Qxf2`.
+
+3.  **Black's Second Move:** After `2. Qxf2`, Black continues the attack with another forcing check. The move `2... Nxe3+` is a discovered check from the bishop on c5. The knight moves from g4 to e3, opening the c5-g1 diagonal.
+
+4.  **White's Second Move:** The white king on d1 is now in check from the bishop on c5. It must move. Let's examine the escape squares:
+    *   `Ke1` is illegal (controlled by the rook on e8).
+    *   `Kc1` is blocked by White's own bishop.
+    *   `Kc2` is illegal (controlled by the bishop on c5).
+    *   The only legal square is `Ke2`. So, White is forced to play `3. Ke2`.
+
+5.  **Black's Third Move:** The white king is now on e2. Black needs to deliver another check to continue the mating sequence. The knight on e4 moves to c4, giving check: `3... Nc4+`.
+
+6.  **White's Third Move:** The king on e2 is checked by the knight on c4. White has three possible king moves: `Kd1`, `Kd3`, or `Kf3`. The mate in 4 works against all of them. We will follow the most natural retreat. Let's assume White plays `4. Kd1`.
+
+7.  **Black's Fourth and Final Move:** With the white king back on d1, Black delivers the final blow with `4... Nf2#`. The king on d1 is attacked by the knight on f2. All of its potential escape squares are controlled or blocked:
+    *   e1 is controlled by the rook on e8.
+    *   c1 is blocked by the bishop on c1.
+    *   e2 is controlled by the knight on c4.
+    *   c2 is controlled by the bishop on c5.
+    This is checkmate. The other variations (`4. Kd3 Nb2#` and `4. Kf3 Ng4#`) also lead to mate on the fourth move.
+
+[FINAL PGN]
+1... Nxf2+ 2. Qxf2 Nxe3+ 3. Ke2 Nc4+ 4. Kd1 Nf2#

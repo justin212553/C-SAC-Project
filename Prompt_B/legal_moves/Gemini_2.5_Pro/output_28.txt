@@ -1,0 +1,18 @@
+This is a chess position puzzle. My goal is to find a single legal move for the side whose turn it is to play.
+
+**Step-by-step reasoning:**
+
+1.  **Identify the side to move:** I will first examine the FEN string: `8/6q1/8/7k/4Q3/7P/2r2p1K/5R2 b - - 0 1`. The 'b' in the FEN string indicates that it is Black's turn to move.
+
+2.  **Analyze the position for Black:** Black's pieces are the King on h5, the Queen on g7, the Rook on c2, and a pawn on f2. The Black king is somewhat exposed on h5. White's queen on e4 controls key squares around the king, such as g4 and f5.
+
+3.  **List candidate legal moves:** I will now consider possible moves for Black's pieces to ensure they are legal. A move is legal if it follows the piece's movement rules and does not result in the player's own king being in check.
+    *   **King on h5:** The king can move to any adjacent square that is not attacked by an opponent's piece. Let's check the square h6. The White queen on e4 does not attack h6. The White rook on f1 does not attack h6. The White king on h2 and pawn on h3 also do not attack h6. Therefore, moving the king from h5 to h6 is a legal move.
+    *   **Queen on g7:** The queen has many possible moves. For example, it can move to h7 (`...Qh7`). This square is not occupied by a Black piece, and the move does not place the Black king in check. This is a legal move.
+    *   **Rook on c2:** The rook can move along the c-file or the 2nd rank. For example, it can move to c3 (`...Rc3`). This is a legal move. It could also move to c1, delivering a check to the White king (`...Rc1+`), which is also a legal move.
+    *   **Pawn on f2:** The pawn is on the verge of promotion. It can move forward to f1 and promote to a Queen, Rook, Bishop, or Knight. For example, `...f1=Q+` is a legal move that promotes the pawn and puts the White king in check.
+
+4.  **Select one legal move:** From the list of legal moves I have identified, I will choose one to output. The move `Kh5-h6` (written as `Kh6` in standard notation) is a simple and demonstrably legal move.
+
+[FINAL PGN]
+1. ... Kh6

@@ -1,0 +1,29 @@
+This is a mate-in-4 puzzle. The black king on h5 is extremely exposed, and White's queen and rook are poised to deliver a decisive attack.
+
+**Initial Analysis:**
+White's primary attacking pieces are the Queen on b7 and the Rook on g7. The black king's position on h5 is precarious. The key is to coordinate the queen and rook to trap the king. Black's queen on e6 is a dangerous defender and a potential counter-attacking piece, so White's moves must be forcing checks.
+
+**Candidate Moves Evaluation:**
+
+1.  **1. Qf3+**: This is a strong candidate. It forces the king to move or a pawn to block.
+    *   If **1... g4**, White continues with **2. hxg4+ fxg4 3. Qf7+**. Now, Black has three replies, but all lead to mate on the next move:
+        *   3... Qxf7 4. Rg5#
+        *   3... Kg6 4. Qg7#
+        *   3... Kh4 4. Qg6#
+    *   If **1... Kh4**, White continues with **2. Qg3+ Kh5 3. Rg5+**. Black's replies are again met with mate:
+        *   3... Kxg5 4. Qf4#
+        *   3... Kh4 4. Qg4#
+        *   3... fxg5 4. Qf3#
+    This move works, but it has several variations.
+
+2.  **1. Rg5+**: This is a brilliant rook sacrifice. It's a highly forcing move that drastically simplifies the position and leads to a single, elegant mating sequence.
+    *   **1... Kxg5**: This is Black's only legal move. The king is drawn into the open on g5.
+    *   **2. Qf3+**: White's queen now joins the attack with a check. The black king is forced to h4. **2... Kh4** is the only move.
+    *   **3. Qg3+**: Another check, forcing the king back to h5. **3... Kh5** is again the only move.
+    *   **4. Qh3#**: The queen delivers the final blow. The king on h5 is trapped. The squares g6, g4, and h4 are all controlled by the white queen.
+
+**Conclusion:**
+Both `1. Qf3+` and `1. Rg5+` lead to a forced mate in 4. However, the line starting with the rook sacrifice `1. Rg5+` is more typical of a composed chess puzzle due to its forcing nature, where each of Black's responses is forced, leading to a single, beautiful conclusion. This will be the chosen solution.
+
+[FINAL PGN]
+1. Rg5+ Kxg5 2. Qf3+ Kh4 3. Qg3+ Kh5 4. Qh3#

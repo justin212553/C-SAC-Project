@@ -1,0 +1,17 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black is to move. The white king is on h1, and the black pieces are well-positioned to deliver a quick checkmate. The black queen on e3 and the rook on d8 are key attacking pieces. White's king has limited mobility due to its position in the corner and the surrounding pawns and pieces.
+
+2. **Candidate Moves**: 
+   - The black queen can deliver a check on f3 or g1.
+   - The black rook on d8 can also be used to deliver a check, but it seems less direct.
+
+3. **Key Move**: The move 1... Qxf3+ is the most forcing, as it puts the white king in check and forces a response. White has only one legal move after this: 2. Kg1.
+
+4. **Follow-up Move**: After 2. Kg1, the black rook can deliver a decisive checkmate with 2... Rxd1#. The white king has no escape squares, and no piece can block or capture the attacking rook.
+
+5. **Verification**: The sequence 1... Qxf3+ 2. Kg1 Rxd1# is a forced mate in 2 moves. No other black move achieves checkmate in 2.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qxf3+ 2. Kg1 Rxd1#

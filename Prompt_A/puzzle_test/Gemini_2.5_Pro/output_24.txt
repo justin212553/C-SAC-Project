@@ -1,0 +1,30 @@
+This is a mate-in-3 puzzle. Let's analyze the position for Black.
+
+The White King on h1 is severely restricted. The h2-pawn is in front of it, and the g1 square is controlled by Black's Bishop on c5. This suggests that a check on the back rank or from the g-file could be decisive.
+
+Let's examine the most forcing moves for Black, which are checks.
+
+**Candidate Move 1: 1... Nf3+**
+This move seems very strong. The King on h1 is in check and has no escape squares (g1 is covered by the Bishop on c5, h2 is blocked by a pawn). White is forced to capture the Knight.
+*   If `2. gxf3`, Black plays `2... Rg1#`. The Rook on g1 is protected by the Bishop on c5, and the King has no escape.
+*   If `2. Bxf3`, Black again plays `2... Rg1#` with the same result.
+This line leads to a checkmate in 2 moves. While it is a valid mate, puzzles often have a unique length, so there might be a longer, more complex solution, or this is simply a mate-in-2 mislabeled as a mate-in-3. Let's search for a 3-move solution.
+
+**Candidate Move 2: 1... Rg1+**
+This is the other possible check. It's a Rook sacrifice.
+*   White's only legal move is to capture the Rook: `2. Rxg1`. The King cannot capture because the Bishop on c5 protects the g1 square. The Rook on f1 must capture.
+*   After `2. Rxg1`, the White Rook on g1 is now pinned to the King by the Black Bishop on c5. This pin is the key to the position.
+*   Now, Black needs to find a move that forces mate on the next turn. A direct check like `2... Ng2+` doesn't work because White can play `3. hxg2`, and there is no follow-up mate.
+*   The correct move is the quiet, preparatory move: `2... Bxf3`. This move removes the White Bishop on g3, which was a key defender. By removing this Bishop, Black creates an unstoppable mating threat.
+*   Black now threatens `3... Ng2#`. Let's see if White can stop this.
+    *   The Knight on h4 will land on g2, checking the King. The King cannot move.
+    *   Can the Knight be captured on g2? The pawn on h2 would normally be able to capture, but it is blocked by the pinned White Rook on g1. This is the critical point of the combination.
+    *   There is no other way for White to prevent the Knight from coming to g2 or to defend against the check.
+*   White can try `3. gxf3`, capturing the Bishop, but this does not stop the threat. Black simply responds with `3... Ng2#`. The pawn on f3 does not change the fact that the h2-pawn is blocked. Any other move by White is also futile, as Black will deliver mate with `3... Ng2#`.
+
+Therefore, the forced sequence is a beautiful combination involving a sacrifice, a pin, and removing the guard.
+
+[FINAL PGN]
+1... Rg1+
+2. Rxg1 Bxf3
+3. gxf3 Ng2#

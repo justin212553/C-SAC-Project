@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black to move.
+   - White's king is on a2, and Black's king is on a5. Black has a pawn on a4, which restricts the White king's mobility.
+   - Black's queen on f3 and bishop on g4 are well-placed to deliver checks and coordinate an attack.
+   - White's rook on f2 and queen on h1 are defensive pieces, but they are not ideally placed to prevent a quick mate.
+
+2. **Key Candidate Moves**:
+   - Black's queen and bishop can work together to deliver a forced mate. The most forcing move is 1... Qb3+, as it forces the White king to move to a1 (the only legal move).
+   - After 1... Qb3+ Ka1, Black can play 2... Be6, cutting off the White king's escape and preparing for a decisive checkmate.
+   - White has no meaningful defensive moves after 2... Be6, and Black can deliver mate with 3... Qa2#.
+
+3. **Verification of the Sequence**:
+   - 1... Qb3+ forces 2. Ka1.
+   - 2... Be6 is a quiet move but sets up an unstoppable mate.
+   - White has no checks or ways to prevent 3... Qa2#.
+   - The sequence is forced and leads to mate in 3.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qb3+ 2. Ka1 Be6 3. Qa2#

@@ -1,0 +1,32 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move and has a significant material advantage, with a queen, rook, and pawns against White's rook and pawns.
+   - The White king is on g1, and it is relatively exposed. Black's queen and rook are well-positioned to deliver checks and coordinate for a forced mate.
+   - The White rook on c2 and the pawn on d4 are defensive resources, but they are insufficient to prevent a quick mate.
+
+2. **Key Candidate Moves**:
+   - Black's queen and rook can work together to deliver checks and restrict the White king's movement.
+   - The move 1... Qh1+ immediately forces the White king to h1, as it is the only legal move.
+   - After 2. Kxh1, Black can play 2... Rf1#, delivering checkmate with the rook supported by the queen.
+
+3. **Verification of the Sequence**:
+   - After 1... Qh1+, White has no choice but to capture the queen with 2. Kxh1.
+   - The rook move 2... Rf1# is a clean checkmate, as the White king on h1 has no escape squares, and no other White pieces can block or capture the rook.
+
+4. **Conclusion**:
+   - The solution is a forced mate in 3 moves, starting with 1... Qh1+.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+[Event "Mate in 3"]
+[Site "Chess Puzzle"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+
+1... Qh1+ 2. Kxh1 Rf1# 0-1
+[FINAL PGN]

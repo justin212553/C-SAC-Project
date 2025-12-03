@@ -1,0 +1,36 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - The FEN indicates it is Black's turn to move ("b" in the FEN string).
+   - Black must deliver checkmate to the White king on h1.
+
+2. **List the most promising candidate moves for Black:**
+   - Black has several pieces that can potentially deliver check or checkmate: the rook on g5 and the knight on e5.
+   - The rook on g5 is particularly well-placed to deliver a decisive check along the h-file.
+
+3. **Calculate concrete lines for exactly 1 move:**
+   - **Candidate move 1: Rg5-h5**
+     - This move places the White king in check.
+     - The White king on h1 has no escape squares because:
+       - g1 is controlled by the Black rook on h5.
+       - h2 is blocked by the White pawn.
+       - The White rook on f1 cannot block the check or capture the Black rook on h5.
+     - Therefore, this move results in immediate checkmate.
+
+   - **Candidate move 2: Ne5-g4**
+     - This move places the White king in check.
+     - However, the White king can escape to h2, so this is not a forced mate in 1.
+
+   - **Candidate move 3: Ne5-f3**
+     - This move places the White king in check.
+     - However, the White king can escape to h2, so this is not a forced mate in 1.
+
+4. **Verify that Rg5-h5 is the best move:**
+   - Rg5-h5 is legal and delivers checkmate immediately.
+   - No other move delivers checkmate in exactly 1 move.
+   - There is no faster checkmate before move 1.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1... Rh5#

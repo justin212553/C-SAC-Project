@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move and has a significant material advantage, with an active rook on g7, a knight on h5, and a bishop on c4. Black's king is on h8, and its mobility is restricted by its own pieces and White's threats.
+   - Black's bishop on g6 and rook on f8 are defensive pieces, but they are limited in scope. The knight on d2 is far from the action.
+
+2. **Key Candidate Moves**:
+   - White's rook on g7 is well-placed to deliver checks or control key squares.
+   - The knight on h5 can deliver a check on f6 or g7, potentially forcing the Black king into a vulnerable position.
+   - The bishop on c4 can support the attack by controlling critical squares around the Black king.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: White can start with 1. Rg8+, forcing the Black king to move to h7 (the only legal move).
+   - **Move 2**: After 1... Kh7, White can play 2. Nxf6+, a discovered check from the bishop on c4. The Black king is forced to move back to h8 (the only legal move).
+   - **Move 3**: White delivers checkmate with 3. Rxf8#. The Black king is trapped, and no Black piece can block or capture the attacking rook.
+
+4. **Verification**:
+   - Each move in the sequence is forced, and the final position is a checkmate. The Black king has no escape squares, and no Black piece can intervene.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rg8+ Kh7 2. Nxf6+ Kh8 3. Rxf8#

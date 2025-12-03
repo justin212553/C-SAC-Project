@@ -1,0 +1,27 @@
+This is a mate-in-2 problem. White is to move and checkmate the Black king on e4.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze the Black King's Position:** The Black king on e4 is extremely exposed. Let's examine its potential escape squares:
+    *   d5, f5, f4, and e3 are all controlled by the White rook on f3.
+    *   e5 is controlled by the White bishop on f6.
+    *   d3 is occupied by a Black pawn.
+    *   The only available escape square for the king is **d4**.
+
+2.  **Identify White's Goal:** To deliver checkmate in two moves, White's first move must prevent the king from escaping to d4 while setting up a decisive check for the second move. A direct check is unlikely to work, as it would allow the king to move immediately. For example, `1. Re3+` is met by `1... Kd4`, and there is no follow-up mate.
+
+3.  **Find the Key Move (Move 1):** The most logical approach is to take away the d4 square. The move `1. Rh4` accomplishes this perfectly.
+    *   `1. Rh4` is a quiet move (not a check).
+    *   It places the Black king in a "mating net." After `1. Rh4`, the king has no legal moves. All squares around it are controlled: d5 (Rf3), f5 (Rf3), f4 (Rf3), e3 (Rf3), d4 (Rh4), and e5 (Bf6).
+    *   Black is now in zugzwang: any move they make will lead to an immediate checkmate.
+
+4.  **Analyze Black's Possible Replies and White's Mating Move (Move 2):** We must consider Black's two main types of responses.
+
+    *   **Case A: Black makes a move that does not interfere with the White bishop on f6.** For example, Black plays `1... d2`, or moves the knight (`1... Nc4`), or a pawn (`1... a6`). In this scenario, the king's cage remains intact. White can now deliver checkmate with `2. Re3#`. The rook on f3 moves to e3, checking the king. The king cannot capture the rook or move to any of the controlled squares.
+
+    *   **Case B: Black tries to create an escape square by blocking the White bishop.** The only way to do this is by moving the rook on e8 along the e-file, for example, `1... Re5`. This move blocks the bishop's control over the e5 square. However, this self-block allows a different mate. White plays `2. R3f4#`. The rook from f3 moves to f4, delivering check. The king cannot escape because d4 is covered by the rook on h4, and the newly "free" square e5 is now occupied by Black's own rook.
+
+In all variations, White delivers checkmate on the second move. The initial move `1. Rh4` is the correct and only solution.
+
+[FINAL PGN]
+1. Rh4 d2 2. Re3#

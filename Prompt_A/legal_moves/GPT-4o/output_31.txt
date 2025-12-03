@@ -1,0 +1,16 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn to move.** Analyze all possible moves for White.
+2. **King (g1):** The king on g1 can move to h1 or h2. Both are legal moves.
+3. **Rook (a1):** The rook on a1 can move along the a-file or the first rank. Possible moves are a2, a3, a4, a5, a6, a7, a8, b1, c1, d1, e1, f1, g1, and h1.
+4. **Bishop (c5):** The bishop on c5 can move diagonally. Possible moves are b6, a7, d6, e7, b4, a3, d4, and e3.
+5. **Pawn (b4):** The pawn on b4 can move to b5.
+6. **Pawn (e4):** The pawn on e4 can move to e5.
+7. **Pawn (f3):** The pawn on f3 cannot move forward as the square f4 is occupied.
+8. **Pawn (g2):** The pawn on g2 can move to g3 or g4.
+9. **Pawn (h2):** The pawn on h2 can move to h3 or h4.
+
+After analyzing all possible moves, I will select one legal move to output in PGN format.
+
+--- FINAL PGN ---
+1. e5

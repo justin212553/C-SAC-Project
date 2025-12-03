@@ -1,0 +1,19 @@
+This is a classic back-rank mate scenario.
+
+1.  **Analyze the White King's position:** The White king is on g1. Its own pawns on f2, g2, and h2 severely restrict its movement. It cannot move to f2 or g2. The only potential escape squares along the back rank are f1 and h1.
+
+2.  **Identify Black's attacking piece:** Black's only piece is the rook on e4.
+
+3.  **Look for checking moves:** The goal is to find a check that the White king cannot escape from.
+    *   The most direct check is to move the rook to the first rank.
+    *   Moving the rook to e1 (Re1) places the White king in check.
+
+4.  **Verify if the check is a checkmate:**
+    *   **Can the king move?** The king on g1 is attacked by the rook on e1. It cannot move to f1 or h1 because the rook controls the entire first rank. It cannot move to f2 or g2 because those squares are occupied by its own pawns.
+    *   **Can the check be blocked?** There are no White pieces that can move between the king on g1 and the rook on e1.
+    *   **Can the checking piece be captured?** There are no White pieces that can capture the rook on e1.
+
+Since the king cannot escape, the check cannot be blocked, and the checking piece cannot be captured, the move Re1 is checkmate.
+
+[FINAL PGN]
+1... Re1#

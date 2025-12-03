@@ -1,0 +1,41 @@
+1. The given FEN is 6k1/2R5/4p1pp/8/5PPK/P3Q2P/1q4r1/8 b - - 0 1. 
+   - The side to move is Black because it's indicated by 'b' in the FEN string.
+   - The objective is to checkmate White's king.
+
+2. The White king is on g4, and it's somewhat exposed. Black has a queen on b2 and a rook on g2, which are potentially active pieces. The Black king is on g8.
+
+3. To start, let's assess the material and position:
+   - Black has a queen and a rook (total material: 9 points) versus White's queen and rook (total material: 9 points), so material is equal.
+   - Black is to move and needs to checkmate White in exactly 4 moves.
+
+4. Let's list promising candidate moves for Black:
+   - Moving the Black queen or rook to potentially attack the White king or restrict its movement.
+   - Specifically, checking if there's a direct check or a forcing sequence that could lead to checkmate.
+
+5. Candidate moves include:
+   - Qd4+ (or other checks with the queen)
+   - Rxg3+ (a potential sacrifice to expose the White king further)
+
+6. Let's analyze the candidate move 1... Rxg3+:
+   - 1... Rxg3+ 2. Kxg3 (forced, as it's a check) Qg2+ 
+   - 2... Qg2+ 3. Kf4 (or Kh4, but Kf4 is more likely to be checkmated quickly due to the positioning of Black's pieces and pawns) Qf3+ 
+   - 3... Qf3+ 4. Ke5 Qe4#
+
+7. Checking the line:
+   - 1... Rxg3+ is legal.
+   - 2. Kxg3 is forced.
+   - 2... Qg2+ is legal and checks the king.
+   - 3. Kf4 is a reasonable response, though other moves like Kh4 could be considered, Kf4 is a valid move to analyze for checkmate.
+   - 3... Qf3+ is legal and checks the king.
+   - 4. Ke5 Qe4# is checkmate.
+
+8. Verifying the conditions:
+   - Every move is legal.
+   - Checkmate is delivered on the final move.
+   - There's no checkmate before move 4 in this line.
+
+Let's directly examine the move sequence:
+1... Rxg3+ 2. Kxg3 Qg2+ 3. Kf4 Qf3+ 4. Ke5 Qe4#
+
+[FINAL PGN]
+1... Rxg3+ 2. Kxg3 Qg2+ 3. Kf4 Qf3+ 4. Ke5 Qe4#

@@ -1,0 +1,48 @@
+To solve this problem, let's first analyze the given position defined by the FEN: **8/6q1/8/7k/4Q3/7P/2r2p1K/5R2 b - - 0 1**
+
+First, we need to understand what the FEN notation tells us:
+- The position is: 8/6q1/8/7k/4Q3/7P/2r2p1K/5R2
+- It's black's turn to move (b)
+- There are no castling rights for either side, and there's no en passant square (- -)
+
+Let's break down the position:
+1. **8/6q1/8/7k/4Q3/7P/2r2p1K/5R2**
+   - The board is represented from White's perspective (8th rank to 1st rank).
+   - Black's king is on h5, and White's king is on h2.
+   - Black has a queen on g7 and a rook on c2, and a pawn on f2.
+   - White has a queen on e4 and a rook on f1, and a pawn on h3.
+
+Given it's Black's turn, we need to analyze the possible moves for Black.
+
+1. **Black's King (h5):** The king can potentially move to h4, h6, g5, g4 (if not for the White Queen), g6. However, we need to check for legality considering the White Queen's influence. The White Queen on e4 controls several squares, including g4 and potentially puts the Black King in a somewhat precarious position, but the king can still potentially move to g5 or h4 or h6. Let's check:
+   - h4 is not possible due to the White Queen's control (though it's not directly adjacent, the move to g4 is controlled, and h4 is somewhat exposed but directly it's controlled by the Queen's potential move).
+   - h6 and g5 are possible.
+   - g4 is directly under attack by the White Queen, so it's not a valid move.
+
+2. **Black's Queen (g7):** The queen can move along the 7th rank or the g-file. It can potentially capture the White Queen on e4 or move to other squares. Let's check:
+   - The queen can capture the White Queen on e4, which is a valid move (Qxe4).
+
+3. **Black's Rook (c2):** The rook can move along the c-file or the 2nd rank. Let's check:
+   - It can potentially move to c1 (capturing the White Rook on f1), or other squares along the 2nd rank, or up and down the c-file.
+
+4. **Black's Pawn (f2):** The pawn can potentially move forward to f1, promoting to a piece.
+
+Let's directly analyze the moves:
+- The Black Queen can capture the White Queen: Qxe4.
+- Other moves involve checking the king's and other pieces' movements, but capturing the White Queen is a straightforward and significant move.
+
+Let's check if **Qxe4** is a valid move and if it puts the White King in check or checkmate.
+
+After **Qxe4**, White's King on h2 is in check because the Black Queen now controls the e4 square and potentially puts the King in a vulnerable position, but the King is on h2. The White King is not directly on the e4 square or on the same rank, file, or diagonal that would make it directly in check by Qe4 alone. However, we need to verify if there are any interposing pieces or if the King can escape.
+
+The move **Qxe4+** is considered. The White King is on h2, and the Black Queen on e4 can potentially put it in check if the path were clear, but here it's not directly checking because the King is not on the same rank, file, or diagonal. Still, **Qxe4** is a strong move.
+
+Let's directly examine the validity and check for check or checkmate:
+- **1... Qxe4** is a valid move.
+
+The PGN for this move, considering it's Black's first move and White hasn't moved yet in this scenario, is simply the Black move preceded by the move number and followed by the appropriate notation for check if applicable.
+
+Since **Qxe4** doesn't directly check the White King, the notation is simply **1... Qxe4**.
+
+[FINAL PGN]
+1... Qxe4

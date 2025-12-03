@@ -1,0 +1,35 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - White is to move, as indicated by the FEN string.
+   - White must deliver checkmate to the Black king on h5 in exactly 4 moves.
+
+2. **List promising candidate moves for White:**
+   - White has two active pieces: the queen on b7 and the rook on g7. Both can deliver checks and coordinate to attack the Black king.
+   - Candidate moves include:
+     - 1. Qf3+ (centralizing the queen and checking the king)
+     - 1. Qf7+ (directly attacking the king)
+     - 1. Rh7 (preparing to restrict the Black king's movement)
+
+3. **Analyze each candidate move:**
+   - **Line A: 1. Qf3+**
+     - 1... g4 blocks the check.
+     - White cannot force a mate in exactly 4 moves from here, as the Black king has too much mobility.
+   - **Line B: 1. Qf7+**
+     - 1... Qg6 blocks the check.
+     - White cannot force a mate in exactly 4 moves from this position either.
+   - **Line C: 1. Rh7**
+     - This move threatens immediate checkmate on g7 or h6, forcing Black to respond defensively.
+     - Black's best response is 1... Qg6 to block the g-file.
+     - White can then play 2. Qf3+ to force the Black king to move.
+     - After 2... Kg6, White can play 3. Qc6+ to drive the king to h5.
+     - Finally, 4. Qxh6# delivers checkmate.
+
+4. **Verify the solution:**
+   - The line starting with 1. Rh7 is the only one that forces checkmate in exactly 4 moves.
+   - All moves are legal, and checkmate is delivered on the fourth move.
+   - There is no earlier checkmate in this line.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rh7 Qg6 2. Qf3+ Kg6 3. Qc6+ Kh5 4. Qxh6#

@@ -1,0 +1,49 @@
+To solve this chess puzzle, let's first understand the given position and the task at hand. The position is given in FEN (Forsyth-Edwards Notation) as **1k6/1p6/5r2/3q2p1/Qp1P4/4PrPp/2R4P/R5K1 b - - 0 1**. We need to find a forced checkmate in 3 moves.
+
+First, let's decode the FEN notation:
+- **1k6**: The black king is on b8.
+- **1p6**: There's a black pawn on b7.
+- **5r2**: A black rook is on f6.
+- **3q2p1**: The black queen is on d5, and there's a black pawn on g5.
+- **Qp1P4**: The white queen is on a4, and there's a white pawn on d4, and a black pawn on b4.
+- **4PrPp**: A white pawn on g3, a black pawn on f3, and a white rook or other piece on e3 is not possible due to the presence of other pieces; hence, it's likely indicating a white pawn or piece on e3, but given the context, it's a white pawn or the presence of a piece that isn't directly visible. However, the 'P' indicates a white pawn on e3. There's also a black pawn on h3.
+- **2R4P**: A white rook on c2 and a white pawn on h2.
+- **R5K1**: A white rook on a1 and the white king on g1.
+
+Given it's black's turn and we're looking for a Mate in 3, we need to analyze the position:
+
+1. The black king is somewhat safe on b8, but it can be potentially exposed.
+2. The white king is on g1, somewhat safe but needs to be checked for potential vulnerabilities.
+3. Black has a significant material advantage and active pieces.
+
+Let's analyze potential moves:
+- The black queen on d5 is well-placed, exerting influence on the center and potentially towards the white king.
+- The black rooks are also active, with one on f6 and potentially the other could be developed or used effectively.
+- The presence of pawns on f3 and h3 suggests a potential weakness around the white king if it were to be exposed.
+
+To achieve checkmate in 3 moves, we need to look for a sequence that:
+1. Puts the white king in a vulnerable position.
+2. Ensures that the white king cannot escape the checkmate.
+
+Let's directly analyze potential checkmate sequences:
+1. **1... Qd1+** (Putting the white king in check, forcing it to move or block with a piece)
+   - If **2. Kg2**, then Black can play **Qe2+**.
+     - If **3. Kg1**, then **Rf1#**.
+
+Let's verify the move sequence and ensure it's legal and leads to checkmate.
+
+1. The initial position is given, and it's black's turn.
+2. **1... Qd1+** is a check. The white king must respond.
+3. The most likely response to **1... Qd1+** is **2. Kg2** because it gets the king out of the check and into a relatively safer position, though still potentially vulnerable.
+4. Then, **2... Qe2+** puts the king in check again.
+5. The king can move back to **g1**, and then **3... Rf1#** is checkmate.
+
+So, the sequence is:
+1... Qd1+
+2. Kg2 Qe2+
+3. Kg1 Rf1#
+
+Let's format this according to the PGN notation.
+
+[FINAL PGN]
+1... Qd1+ 2. Kg2 Qe2+ 3. Kg1 Rf1#

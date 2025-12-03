@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+2. **Pieces on the board**:
+   - White King (g1): No legal moves due to being surrounded by its own pieces or controlled squares.
+   - White Rook (g7): Can move along the 7th rank or capture on g6.
+   - White Knight (h5): Can move to f6, g7, f4, or g3.
+   - White Bishop (c4): Can move along its diagonals.
+   - White Pawn (c5): Cannot move forward as c6 is blocked.
+   - White Pawn (h2): Can move to h3.
+   - White Pawn (a3): Cannot move forward as a4 is blocked.
+   - White Bishop (a1): Can move along its diagonals.
+
+3. **Legal moves**:
+   - Rook (g7): Capturing on g6 is a legal move.
+   - Knight (h5): Moving to f6 is a legal move.
+   - Bishop (c4): Moving to f7 is a legal move.
+   - Pawn (h2): Moving to h3 is a legal move.
+
+4. **Choosing a move**: Among the legal moves, I will select one valid move to output.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rxg6+

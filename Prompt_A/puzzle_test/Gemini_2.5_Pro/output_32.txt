@@ -1,0 +1,18 @@
+This is a classic example of a forced checkmate sequence involving multiple pieces to trap the enemy king. The key is to use a series of checks to drive the king into a mating net, followed by a quiet move to set up the final blow.
+
+1.  **`1... Ra1+`**: The most forcing move. This check forces the white king away from the corner and onto the g-file. White's only legal move is to step forward.
+2.  **`2. Kg2`**: White's only reply. The king is now more exposed.
+3.  **`2... Bf1+`**: Another check, this time with the bishop. This move is crucial as it takes away the g1 and h1 squares and forces the king further up the board into a more precarious position.
+4.  **`3. Kh3`**: Again, this is White's only legal move. The king cannot go to f3 because of the e4 pawn. The king is now on the h-file, seemingly safer, but it's actually walking into a trap.
+5.  **`3... Kh7`**: This is the brilliant quiet move that seals the deal. It does three things:
+    *   It prepares to swing the rook from a1 to g1 for the final checkmate.
+    *   It prevents the white king from escaping via g4.
+    *   It protects the g8 square, solidifying Black's own king safety.
+    White is now helpless against the coming `...Rg1#`. White's rook on c7 is a spectator and cannot intervene.
+6.  **`4. (any move) Rg1#`**: Whatever White plays, Black delivers checkmate with the rook. The white king on h3 is attacked by the rook on g1. All escape squares are covered: g2 by the bishop on f1, h2 and h4 by the rook on g1, and g4 by the black king on h7.
+
+[FINAL PGN]
+1... Ra1+
+2. Kg2 Bf1+
+3. Kh3 Kh7
+4. Rc8 Rg1#

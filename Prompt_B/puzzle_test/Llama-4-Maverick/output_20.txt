@@ -1,0 +1,35 @@
+1. The position is given in FEN: 2R5/1KP1R3/1PnP1Q1P/Pn1q2P1/p4P2/8/1pp2ppp/1k1r4 b - - 0 1. 
+   - The side to move is Black (b).
+   - The White king is to be checkmated.
+
+2. The most promising candidate moves for Black are those that could potentially attack the White king or force a checkmate. 
+   - The Black pieces that can potentially attack are: the Queen on d5, the Knight on b6, the Knight on b4, and potentially the pawns.
+   - The White king is on c7, so we need to find a way to attack it.
+
+3. Let's analyze the candidate moves:
+   - The Black Queen on d5 can potentially move to c6 or d7 to attack the White king, but it's currently pinned by the White Queen on f7. However, we can consider moves that break this pin or utilize other pieces.
+   - The Knights can potentially jump into attacking positions.
+
+4. Let's examine potential first moves for Black:
+   - Qc6+ is a potential check, but White can respond with Qc6 (if it were not for the Knight on b6, which can potentially block or capture).
+   - Nb4-d5+ is not possible due to the pawn on c6 being controlled by White's d6 pawn, but we can consider other Knight moves.
+   - A more promising line involves checking with the Queen or using the Knights to create a mating net.
+
+5. Upon closer inspection:
+   - 1... Qc6+ is a strong candidate because it directly attacks the White king. 
+   - If 1... Qc6+, then 2. Qxc6 is not possible due to the Knight on b6, so White's response is limited. 
+   - After 1... Qc6+, White can play 2. Kb8 or other moves, but we need to verify if there's a checkmate.
+
+6. Let's analyze the line:
+   - 1... Qc6+ 
+   - 2. Kb8 Rd8#. This is checkmate.
+
+7. Verifying the moves:
+   - 1... Qc6+ is legal and puts White in check.
+   - 2. Kb8 Rd8# is checkmate, and there's no checkmate before move 2.
+
+8. Concluding the best forced line:
+   - The sequence 1... Qc6+ 2. Kb8 Rd8# is a forced checkmate in exactly 2 moves.
+
+[FINAL PGN]
+1... Qc6+ 2. Kb8 Rd8#

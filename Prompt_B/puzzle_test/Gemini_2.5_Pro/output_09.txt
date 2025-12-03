@@ -1,0 +1,16 @@
+This is a mate-in-1 puzzle. Here is the step-by-step reasoning:
+
+1.  **Analyze the position of the Black king:** The Black king is on f8. We need to assess its available squares.
+2.  **Check escape squares:**
+    *   The squares e8 and g8 are controlled by the White king on e6.
+    *   The squares e7 and g7 are controlled by the White king on e6.
+    *   The square f7 is controlled by the White pawn on f7.
+3.  **Identify the tactical situation:** The Black king has no legal moves. The position is currently a stalemate. If White makes any move that is not a check, the game will be a draw. Therefore, White must deliver checkmate on this turn to win.
+4.  **Find checking moves:** The only way for White to deliver check is by promoting the pawn on f7. The pawn can promote to a Queen, Rook, Bishop, or Knight.
+5.  **Evaluate the promotions:**
+    *   **1. f8=Q+**: The new Queen on f8 puts the Black king in check. The king has no escape squares (as determined in step 2). The Queen cannot be captured because it is protected by the White king on e6. This is checkmate.
+    *   The same logic applies to promoting to a Rook (1. f8=R#), a Bishop (1. f8=B#), or a Knight (1. f8=N#). All result in checkmate.
+6.  **Conclusion:** Promoting the pawn to any piece delivers a forced checkmate in one move. The most common and standard solution is promoting to a Queen.
+
+[FINAL PGN]
+1. f8=Q#

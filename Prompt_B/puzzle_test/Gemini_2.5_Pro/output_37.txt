@@ -1,0 +1,20 @@
+This is a mate-in-4 problem. White is to move. The Black king is on d8, severely restricted and under heavy attack from White's knights, bishop, and rook. The Black queen on d7 and bishop on c8 are both pinned, rendering them useless for defense.
+
+Here is the step-by-step reasoning to find the forced mate:
+
+1.  **1. Nexf7+**: White's most forcing move is to capture the f7 pawn with the knight on e5, delivering a check. This move attacks the king and also threatens the pinned queen on d7 with the other knight on g5. Black's response is forced. The king cannot move to c7 (controlled by the d4-pawn) or e7 (controlled by the knight on g5).
+2.  **1... Ke8**: This is Black's only legal move. The king is now on e8, still in a precarious position.
+3.  **2. Re8+**: White continues the assault with a brilliant rook sacrifice. This check is designed to eliminate the key defending knight on f6.
+4.  **2... Nxe8**: Black has no choice but to capture the rook. This removes the f6-knight from its defensive post, but places another knight on e8.
+5.  **3. Ng7+**: White now delivers another check with the knight from g5. The Black king on e8 is attacked. The king cannot retreat to d8 because that square is controlled by the White knight on f7.
+6.  **3... Kf8**: Black's only escape is to f8. The king appears to be fleeing, but it is walking into the final mating net.
+7.  **4. Ne6#**: This is the final, decisive move. The knight on g5 moves to e6, delivering a lethal double check. The king on f8 is attacked by the knight on e6, and it is also in a discovered check from the knight on f7. In a double check, the king must move. However, all of its potential escape squares are controlled:
+    *   e8 is controlled by the knight on e6.
+    *   g8 is controlled by the knight on f7.
+    *   e7 is controlled by the pawn on d4.
+    *   g7 is controlled by the pawn on h2.
+
+The king has no legal moves, and the checks cannot be blocked or the checking pieces captured. This is checkmate.
+
+[FINAL PGN]
+1. Nexf7+ Ke8 2. Re8+ Nxe8 3. Ng7+ Kf8 4. Ne6#

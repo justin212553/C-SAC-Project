@@ -1,0 +1,36 @@
+This is a mate-in-2 puzzle where Black is to move.
+
+**1. Initial Position Analysis:**
+*   **White's King:** The white king is on b1. Its movement is severely restricted. The square a1 is controlled by the black rook on d1, and a2 is controlled by the black pawn on a4.
+*   **Black's Pieces:** Black has a powerful attack building up with two pawns on the second rank (b2 and c2), ready to promote. The queen on d5, rook on d1, and knights on b5 and c6 all contribute to the attack and control key squares around the white king.
+*   **White's Pieces:** White's pieces are mostly on the defensive or out of play concerning their king's safety. The primary threat from White is the pawn on c7, which is one square away from promoting.
+
+**2. Candidate Moves Evaluation:**
+Black must act decisively to deliver mate in two moves and nullify White's promotion threat. The most forcing moves are checks, and the most obvious checks involve promoting the c-pawn.
+
+*   **Candidate 1: 1... c1=Q+**
+    This is a powerful check. Let's analyze White's possible responses:
+    *   The white king cannot move: Ka1 is illegal due to the rook on d1, and Ka2 is illegal due to the pawn on a4.
+    *   The check cannot be blocked.
+    *   The only legal move for White is to capture the new queen: **2. Rxc1**.
+
+*   **3. Finding the Mate:**
+    After White's forced move `2. Rxc1`, it is Black's turn again. The board state has changed, and we need to find the checkmating move.
+    *   Black can now promote the b-pawn: **2... b1=Q#**.
+    *   Let's verify if this is checkmate. The new black queen on b1 attacks the white king on b1.
+        *   Can the king escape?
+            *   To a1: No, controlled by the rook on d1.
+            *   To a2: No, controlled by the pawn on a4.
+            *   To c1: No, occupied by White's own rook.
+            *   To c2: No, controlled by the black pawn on c2.
+        *   Can the checking piece be captured? No.
+        *   Can the check be blocked? No.
+    *   Therefore, 2... b1=Q# is indeed checkmate.
+
+**Conclusion:**
+The move 1... c1=Q+ forces a unique response from White, after which Black delivers checkmate with another promotion. The sequence is forced and leads to mate in two moves.
+
+*(Note: This puzzle has multiple solutions, as promoting the c-pawn to a Rook, Bishop, or Knight also leads to a forced mate in 2. The Queen promotion is the most standard and direct solution.)*
+
+[FINAL PGN]
+1... c1=Q+ 2. Rxc1 b1=Q#

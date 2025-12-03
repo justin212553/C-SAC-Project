@@ -1,0 +1,25 @@
+This is a mate-in-3 problem. Black is to move and checkmate the White king on a2.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze the initial position:** The White king on a2 is severely restricted. The Black pawn on a4 prevents it from moving to a3. The White pawn on b2 blocks the b2 square. The king's only potential escape squares are on the b-file (b1) or moving to a1. Black's queen on f3 and rook on c1 are perfectly placed to launch a decisive attack.
+
+2.  **Identify candidate moves for Black:** The most forcing moves are checks. Let's examine them.
+    *   `1... Rc2+`: This check forces a response. White can play `2. Ka1` or `2. Kb1`. If `2. Ka1`, Black plays `2... Qa3#`. If `2. Kb1`, Black plays `2... Qb3#`. In both cases, this is a mate in 2, which is not the required solution. We need a mate in exactly 3 moves.
+    *   `1... Qb3+`: This is another strong check. The White king is attacked and cannot move to b1, b2, or b3. Its only legal move is to retreat to the corner.
+
+3.  **Calculate the main line:**
+    *   **1... Qb3+**: This is the correct first move. It forces the White king to a specific square without allowing a mate on the next move.
+    *   **2. Ka1**: This is White's only legal response. The king is now on a1, trapped behind its own pawn on b2.
+
+4.  **Find the key second move for Black:** Now, with the White king on a1, Black must find a move that sets up an unstoppable checkmate for the third move. A direct check like `2... Qa2+` is not possible. The key is to create an unavoidable threat.
+    *   **2... Rc2**: This is a brilliant quiet move. It is not a check, which is why this is a mate in 3 and not a mate in 2. This move creates a deadly threat: `3... Qa2#`.
+
+5.  **Analyze White's responses to Black's second move:** White is now in zugzwang and cannot stop the mate. Let's consider White's possible defenses against the threat of `3... Qa2#`.
+    *   The only piece that can interact with the Black rook on c2 is the White queen. If White plays **3. Qxc2**, Black simply recaptures with **3... Qxc2#**. The king on a1 is checked by the queen on c2, and the escape squares b1 and b2 are controlled by the queen and the b2-pawn, respectively.
+    *   If White tries any other move, for example, **3. Rf1**, Black ignores it and delivers the original threat: **3... Qa2#**. The king on a1 is checked by the queen on a2, and again, the escape squares b1 and b2 are covered.
+
+Therefore, the sequence starting with `1... Qb3+` leads to a forced checkmate on Black's third move, fulfilling the condition of the problem.
+
+[FINAL PGN]
+1... Qb3+ 2. Ka1 Rc2 3. Qxc2 Qxc2#

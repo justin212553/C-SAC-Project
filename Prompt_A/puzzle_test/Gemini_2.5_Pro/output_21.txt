@@ -1,0 +1,17 @@
+An analysis of the position reveals that the Black king on g8 is severely restricted by White's h6-pawn and the rook on f6. White's primary goal is to deliver a decisive blow before Black can generate counterplay with their queen on a5, specifically via checks like ...Rc1+ followed by ...Qa1+.
+
+A direct attacking move like 1. Rf7 seems promising. If Black plays 1... Kxf7, then 2. Qf6+ Kg8 3. Qg7# is mate. However, Black has a critical defensive resource: the counter-check 1... Rc1+. After 2. Kxc1 Qa1+, the White king is forced to move, and the forced mate in 3 is averted.
+
+This observation leads to the key idea: White's first move must not only set up the attack but also neutralize Black's counterplay.
+
+The move **1. Qe5!** accomplishes both objectives perfectly.
+1.  It prepares the devastating sacrifice on f7.
+2.  Crucially, it controls the c3-square. Now, if Black tries 1... Rc1+, White plays 2. Kxc1, and there is no follow-up check with ...Qa1+. White can then deliver mate on the next move with 3. Rf7#.
+
+With Black's main counter-threat nullified, White's attack is unstoppable. If Black plays any other move, for instance, 1... Qxb5, White proceeds with the main plan:
+**2. Rf7!** This rook sacrifice forces the Black king into the open.
+**2... Kxf7** This is Black's only legal move.
+**3. Qf6#** The queen delivers checkmate. The king on f7 is attacked and cannot escape: f8 is covered by the rook on f3, g8 and g6 are covered by the h6-pawn, and the remaining squares (e8, e7, g7) are all covered by the white queen.
+
+[FINAL PGN]
+1. Qe5! Qxb5 2. Rf7 Kxf7 3. Qf6#

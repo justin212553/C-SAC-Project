@@ -1,0 +1,29 @@
+This is a classic checkmate problem that requires a precise sequence of forcing moves. The White king is severely exposed, and Black's pieces are perfectly positioned to launch a decisive attack.
+
+### Step-by-step Reasoning:
+
+1.  **Black's First Move: 1... Rc1+**
+    This is the most forcing move, checking the White king on e1. White has only one legal move, as the f1 square is controlled by Black's bishop on g4.
+
+2.  **White's Reply: 2. Kd2**
+    Forced. The king is driven out into the open on d2.
+
+3.  **Black's Second Move: 2... Rd1+**
+    Black continues the attack with another check, this time with the rook from a8. This move cuts off the king's retreat along the first and second ranks and the d-file. White's king is forced to move again. The squares e3 and c2 are covered by the d4-knight, while e2 and e1 are covered by the g4-bishop and d1-rook respectively. The only escape is to c3.
+
+4.  **White's Reply: 3. Kc3**
+    Forced. The king is pushed further up the board.
+
+5.  **Black's Third Move: 3... Nb5+**
+    The knight delivers a crucial check, further restricting the White king. The squares c4 (covered by the g4-bishop) and d2 (covered by the d1-rook) are unavailable. The b2 square is blocked by a white pawn. The only legal move is to b4.
+
+6.  **White's Reply: 4. Kb4**
+    Forced. The king is now on the edge of the board, with very few squares left.
+
+7.  **Black's Fourth Move: 4... a5#**
+    This quiet-looking pawn move delivers the final blow. The king on b4 is in check from the pawn on a5. All of its potential escape squares are controlled: a3, a4, and c3 are covered by the knight on b5; c4 is covered by the bishop on g4; c5 is covered by the pawn on c6; and b3 is blocked by White's own pawn. This is a checkmate.
+
+The entire sequence is forced, and checkmate is delivered on exactly the 4th move.
+
+[FINAL PGN]
+1... Rc1+ 2. Kd2 Rd1+ 3. Kc3 Nb5+ 4. Kb4 a5#

@@ -1,0 +1,36 @@
+This is a mate-in-2 puzzle. My goal is to find a move for White that forces checkmate on the very next turn, no matter how Black responds.
+
+### 1. Initial Position Analysis
+*   **White's Strengths:** The white king on c7 is a powerful attacking piece, controlling b6 and b7. The c6 pawn is a thorn in Black's side, controlling b7 and d7. The two rooks on e1 and f2 are ready to swing into the attack.
+*   **Black's Situation:** The black king on a6 is severely restricted. Its only potential escape squares are a5 and b5. Black has only three legal moves in the position: `...Ka5`, `...Kb5`, and `...b3`.
+*   **The Goal:** I need to find a first move for White that covers all three of Black's possible replies with a checkmate on the second move.
+
+### 2. Candidate Move Evaluation
+
+First, I'll consider direct checks:
+*   `1. Ra2+`: Black replies `1...Kb5`. Now White has no immediate checkmate. For example, `2. Rb2+` is met by `2...Ka4`. This line doesn't work.
+*   Other checks like `Re6+` or `Rf6+` also allow `1...Kb5` and fail to force mate on the next move.
+
+Since direct checks don't work, the key move must be a "quiet" move—one that doesn't give check but creates an unstoppable threat. The main weakness for Black is the king's lack of mobility and the vulnerability of the b-file. This suggests controlling the b-file is the right idea.
+
+Let's analyze moves that control the b-file:
+*   **Candidate 1: `1. Rb2`** (This move can only be made by the rook on f2).
+    This move takes away the b5 escape square from the black king and prepares for the other rook to deliver the final blow. Let's check Black's three possible responses:
+    1.  If `1...b3`: White plays `2. Ra1#`. The rook from e1 moves to a1. The king on a6 is trapped. The b5 square is covered by the rook on b2, b6 by the white king, and a5 by the rook on a1.
+    2.  If `1...Kb5`: The king moves out, but it's a fatal mistake. White plays `2. Ra1#`. The king on b5 is attacked by the rook on a1. All escape squares are covered: a4, a5, a6 by the rook on a1; b6 by the king on c7; c5 by the pawn on c6; and c4 by the pawn on d3.
+    3.  If `1...Ka5`: The king moves to the side. White again plays `2. Ra1#`. The king on a5 is attacked. The escape squares b5 and b6 are covered by the rook on b2 and the king on c7, respectively. The squares a4, b4, and a6 are all covered by the attacking rook on a1.
+
+    Since `1. Rb2` leads to a forced checkmate against every possible reply, it is a valid solution.
+
+*   **Candidate 2: `1. Rb1`** (This can be played by either rook, so let's specify `1. Rfb1`).
+    This also seems strong. It controls b5 and sets up threats.
+    1.  If `1...b3`: White plays `2. Rea2#`.
+    2.  If `1...Kb5`: White plays `2. Reb2#`.
+    3.  If `1...Ka5`: White plays `2. Rea2#`.
+    This also works. The puzzle appears to have multiple solutions (a "cook"), which is unusual for composed problems. However, my task is to provide a solution, and `1. Rb2` is a clean and effective one.
+
+### 3. Final Choice
+I will select `1. Rb2` as the solution. It's an unambiguous move that creates a single, consistent mating pattern (`2. Ra1#`) against all of Black's defenses.
+
+[FINAL PGN]
+1. Rb2 Kb5 2. Ra1#

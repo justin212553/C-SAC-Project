@@ -1,0 +1,32 @@
+1. The given FEN is 4r3/5r2/3p1p2/1P6/8/K1p5/P1k5/8 b - - 0 1. 
+   - The side to move is Black because the FEN ends with "b".
+   - The White King is on a3, and it is the king that needs to be checkmated.
+
+2. To start, we need to identify the pieces available to Black and their potential moves.
+   - Black has a king on c2, a pawn on c3, and two rooks on e8 and f7.
+   - The most promising candidate moves involve using the rooks to potentially checkmate the White King.
+
+3. Let's analyze potential checkmates:
+   - The White King is on a3, so we need to get a rook to either a1, b2, or b3 to potentially checkmate it, considering the King's limited mobility.
+   - One potential checkmate could involve Rea8 (or Rfa8) followed by another rook move to checkmate.
+
+4. Let's examine a potential line:
+   - 1... Rea8+ (This move puts the White King in check and limits its response.)
+     - The White King can only move to b4 because other moves are not legal (a4 is not possible due to Rb8+ being a potential follow-up, and moving to a2 or a1 would be checkmate or illegal).
+   - 1... Rea8+ 2. Kb4 Rb8# (This delivers checkmate as the White King cannot escape the check on b8.)
+
+Let's verify:
+- 1... Rea8+ is legal.
+- 2. Kb4 is a legal response by White.
+- 2... Rb8# is checkmate.
+
+Now, let's check if there's an alternative:
+- Another potential first move is Rfa8, but it doesn't lead to a quicker checkmate than Rea8+.
+
+Let's verify the line:
+1. The move 1... Rea8+ is legal and puts White in check.
+2. The response Kb4 is forced because other moves like Ka4 or Ka2 are either illegal or lead to immediate checkmate.
+3. The final move Rb8# is checkmate.
+
+[FINAL PGN]
+1... Rea8+ 2. Kb4 Rb8#

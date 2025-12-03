@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN indicates "w", so it is White's turn to move.
+2. Analyze White's pieces and their potential moves:
+   - White has a king on b8, a rook on d8, pawns on b7, c7, and g7, a knight on b4, a knight on c3, and a queen on d4.
+   - The king on b8 has no legal moves because it is surrounded by its own pieces or squares controlled by Black.
+   - The rook on d8 can move along the d-file or the 8th rank, but some squares are blocked by its own pieces.
+   - The pawns on b7, c7, and g7 can potentially move forward, but their paths may be blocked.
+   - The knight on b4 can jump to several squares, but some may be occupied or illegal.
+   - The knight on c3 can also jump to several squares.
+   - The queen on d4 has many potential moves along ranks, files, and diagonals.
+3. Evaluate a few candidate moves:
+   - The rook on d8 can move to d7, but this square is occupied by its own pawn.
+   - The pawn on b7 can move to b8 and promote to a queen, rook, bishop, or knight. This is a legal move.
+   - The knight on b4 can jump to a6, c6, d5, or d3. Some of these squares are occupied or controlled by Black.
+   - The queen on d4 can move to several squares, but some are blocked or controlled by Black.
+4. Select one legal move: Promoting the pawn on b7 to a queen is a strong and legal move.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. b8=Q

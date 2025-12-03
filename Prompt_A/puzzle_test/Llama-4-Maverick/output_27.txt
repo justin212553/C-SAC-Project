@@ -1,0 +1,36 @@
+To solve this checkmate in 3, let's first understand the given position defined by the FEN: **5r2/2R2P1k/7p/4q3/7K/8/6Q1/8 w - - 0 1**.
+
+1. **Understanding the Position:**
+   - The FEN indicates it's White's turn.
+   - The position is: White has a Rook on c7, a Pawn on f7, a Queen on g2, and a King on h4. Black has a Rook on f8, a Queen on e5, a Pawn on h6, and a King on h7.
+   - The task is to find a checkmate in 3 moves.
+
+2. **Initial Assessment:**
+   - The Black King is on h7, and it's somewhat exposed but has the h6 Pawn for some cover.
+   - White's pieces are relatively active, with the Rook on c7 being somewhat pinned against the Black Rook on f8, but it's not a traditional pin since the Black Rook can't move without potentially being captured or exposing the King further.
+   - The White Queen on g2 is well-placed to potentially deliver checkmate or support other pieces.
+
+3. **Analyzing Potential Moves:**
+   - The first move should aim at either directly checking the King or setting up for a checkmate.
+   - **1. Qg7+** is an intuitive first move because it puts the Queen in a strong attacking position and forces Black's response.
+     - If **1... RxQg7**, then **2. f8=Q** (promoting the Pawn to a Queen) could potentially lead to a checkmate or a very strong attack.
+       - After **2... Qe4+** (trying to get some counterplay or escape), White can play **3. Qg8#** or a similar checkmating move.
+     - If **1... Qg7}, White can consider **2. Qe4+** followed by a checkmate.
+
+4. **Checking the Variations:**
+   - Let's verify if **1. Qg7+** is the correct start:
+     - **1. Qg7+ Rxg7**
+     - **2. f8=Q Qe4+** (Black tries to check to gain time or escape)
+     - **3. Qg8#** (checkmate)
+   - For **1... Qxg7**, White can play **2. Qc6** or a similar move to start a checkmate sequence.
+
+5. **PGN Sequence:**
+Let's directly analyze and verify the most promising line.
+
+After analyzing, we find that:
+1. Qg7+ Rxg7
+2. f8=Q Qe4+
+3. Qg8#
+
+[FINAL PGN]
+1. Qg7+ Rxg7 2. f8=Q Qe4+ 3. Qg8#

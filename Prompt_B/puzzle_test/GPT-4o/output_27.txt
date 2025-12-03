@@ -1,0 +1,28 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move, and the goal is to checkmate the Black king on h7 in exactly 3 moves.
+
+2. **List the most promising candidate moves for White:**
+   - White has several checks available: Qg6+, Qc2+, and Qg8+. Among these, Qg6+ appears most forcing as it directly attacks the Black king and limits its mobility.
+
+3. **Calculate concrete lines for exactly 3 moves:**
+   - **Line 1: 1. Qg6+ Kh8**
+     - Black's king is forced to move to h8 (the only legal square).
+     - White can then play 2. Qxh6+ Kg8, forcing the Black king to g8.
+     - Finally, 3. Qg7# delivers checkmate. The Black king is trapped, and no earlier mate occurs.
+
+   - **Line 2: 1. Qg6+ Kh8 2. Qxh6+ Qh5**
+     - If Black tries to interpose with 2... Qh5 instead of moving the king, White can still play 3. Qxh5#, delivering checkmate on the third move.
+
+4. **Verify that no earlier checkmate occurs:**
+   - In all variations, checkmate is delivered on the third move, and there is no faster mate.
+
+5. **Conclude the best forced line:**
+   - The sequence 1. Qg6+ Kh8 2. Qxh6+ Kg8 3. Qg7# is the cleanest and most forcing line.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1. Qg6+ Kh8 2. Qxh6+ Kg8 3. Qg7#

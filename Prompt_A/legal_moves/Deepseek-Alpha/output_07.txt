@@ -1,0 +1,17 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn to move.** Analyze all possible moves for White.
+2. **Pieces available to move:**
+   - Knight on e4
+   - Rook on g4
+   - King on g2
+3. **Legal moves for each piece:**
+   - **Knight on e4**: Can move to c3, d2, d6, f2, f6, g3, g5.
+   - **Rook on g4**: Can move to g5, g6, g7, g8, h4, f4, e4, d4, c4, b4, a4.
+   - **King on g2**: Can move to f2, f3, g3, h3, h2.
+4. **Choose one legal move**: For simplicity, select a straightforward move. Let's move the rook from g4 to g5.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rg5

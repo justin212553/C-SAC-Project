@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on h1 in exactly 2 moves.
+
+2. **List promising candidate moves for Black:**
+   - Black has several attacking options, but the most promising involve utilizing the queen and rook to deliver checks and control key squares around the White king.
+
+3. **Analyze candidate moves and calculate concrete lines:**
+   - **Candidate 1: 1... Qxf3+**
+     - Black sacrifices the queen to force White's king into a vulnerable position.
+     - If White responds with 2. Kg1, Black can deliver checkmate with 2... Ne2#.
+     - This line satisfies the requirement of mate in 2 moves.
+   - **Candidate 2: 1... Qh3**
+     - This move threatens mate but does not lead to a forced mate in 2 moves, as White can defend with 2. Bg3.
+   - **Candidate 3: 1... Rd6**
+     - This move does not deliver immediate checks and fails to force mate in 2 moves.
+
+4. **Verify the best forced line:**
+   - The line starting with 1... Qxf3+ is the only one that guarantees checkmate in exactly 2 moves, regardless of White's response.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1... Qxf3+ 2. Kg1 Ne2#

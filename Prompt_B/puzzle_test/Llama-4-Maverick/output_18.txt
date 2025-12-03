@@ -1,0 +1,39 @@
+1. The given FEN is 3r1rk1/ppp2ppp/8/8/3nP3/2QPqP2/PP3B1P/3R1R1K b - - 0 1. 
+   - The side to move is Black because it's indicated by 'b' in the FEN string.
+   - The White king is the one to be checkmated.
+
+2. The Black pieces are: a rook on d8, a rook on f8, three pawns on b7, c7, and d7, three pawns on f7, g7, and h7, a knight on d4, and a queen on e3.
+   - The most promising candidate moves involve checking the White king or setting up a checkmate. 
+   - The White king is on h1, so we look for pieces that can potentially check or attack it.
+
+3. Candidate moves for Black:
+   - The Black queen on e3 is already attacking the White king indirectly and can potentially deliver checkmate or a strong check.
+   - The Black rooks can potentially participate in an attack on the White king, but they are somewhat restricted by the need to maintain the defense of the Black king on g8.
+   - The Black knight on d4 can potentially jump into a strong position.
+
+4. Let's analyze potential checkmate patterns:
+   - The White king is on h1, and it's supported by a rook on f1 and other pieces. 
+   - A direct checkmate seems challenging due to the presence of the White rook on f1 and the bishop on f2.
+   - However, we can look for a sequence that forces checkmate.
+
+Let's directly examine potential moves:
+- The Black queen is on e3, and it's already putting pressure on the White position. 
+- A potential checkmate could involve the queen and other Black pieces coordinating.
+
+One potential line involves:
+1... Qg1+ (forcing Rxg1 due to the check)
+   - If 1... Qg1+, then 2. Rxg1 Nf3#
+
+Let's verify:
+- 1... Qg1+ is legal.
+- 2. Rxg1 is forced because it's the only move to get out of check.
+- 2... Nf3# is checkmate.
+
+So, the line is:
+1... Qg1+ 
+2. Rxg1 Nf3#
+
+Let's format this according to the PGN notation.
+
+[FINAL PGN]
+1... Qg1+ 2. Rxg1 Nf3#

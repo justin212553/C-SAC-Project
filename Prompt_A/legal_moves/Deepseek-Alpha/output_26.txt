@@ -1,0 +1,16 @@
+--- THOUGHT PROCESS START ---
+
+1. **Black to move**: Analyze all black pieces and their legal moves.
+   - **King on a5**: The black king can move to a6 or b5. However, moving to a6 or b5 does not result in any special advantage or check.
+   - **Pawn on a4**: The pawn cannot move forward as it is blocked by the white pawn on a3.
+   - **Pawn on e4**: The pawn cannot move forward as it is blocked by the white queen on h2.
+   - **Bishop on g4**: The bishop can move to several squares: f3, h3, f5, h5, e6, d7, c8. However, none of these moves result in a check or significant advantage.
+   - **Queen on f3**: The queen can move to several squares, including f4, f5, f6, f7, f8, g4, h5, h7, h8, e2, d1, etc. Moving the queen to h1 results in a check.
+   - **Rook on c1**: The rook can move to several squares, including c2, c3, c4, c5, c6, c7, c8, b1, a1, etc. However, none of these moves result in a check or significant advantage.
+
+2. **Best move**: The best move for black is **Qh1+**, delivering a check to the white king on a2.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Qh1+

@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **Black to move**: Analyze all black pieces and their legal moves.
+
+   - **King (e8)**: The black king is on e8. It can move to d8 or f8, but both squares are under attack by white pieces. Castling kingside (O-O) is legal since the king and rook have not moved, and there are no pieces between them.
+   - **Rook (h8)**: The rook on h8 can move horizontally or vertically. It can move to h7, h6, h5, h4, h3, h2, or h1.
+   - **Queen (g6)**: The queen on g6 can move diagonally, horizontally, or vertically. It has several options, such as capturing the pawn on b1, moving to g5, g4, h5, or h7.
+   - **Knight (b4)**: The knight on b4 can jump to a2, a6, c2, c6, or d3.
+   - **Knight (d5)**: The knight on d5 can jump to b6, b4, c3, e3, f4, or f6.
+   - **Bishop (g4)**: The bishop on g4 can move diagonally. It can capture the knight on e2 or move to f3, h3, or h5.
+   - **Pawn (a7)**: The pawn on a7 can move to a6.
+   - **Pawn (c6)**: The pawn on c6 can move to c5.
+   - **Pawn (g7)**: The pawn on g7 can move to g6 or g5.
+   - **Pawn (f7)**: The pawn on f7 can move to f6 or f5.
+
+2. **Legal move selection**: From the above analysis, one legal move is castling kingside (O-O).
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... O-O

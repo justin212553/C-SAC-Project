@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move. The black king is on a7, and the black queen is on h7. Black has limited mobility due to the white pieces dominating key squares.  
+   - White has a strong attacking position with the rook on c8, queen on f6, and bishop on g5. The pawn on e5 can also be used to restrict black's king movement.  
+
+2. **Goal**:  
+   - White must deliver checkmate in 3 moves. This requires forcing the black king into a position where it cannot escape checks or block them effectively.  
+
+3. **Candidate Moves**:  
+   - The white rook on c8 can deliver a check on c7, forcing the black king to move.  
+   - The white queen on f6 can deliver checks on squares like d8 or b6, depending on the position.  
+   - The bishop on g5 can also be used to control key squares.  
+
+4. **Move-by-Move Analysis**:  
+   - **Move 1**: White plays 1. Rc7+. This forces the black king to move to a6 (the only legal move).  
+   - **Move 2**: White plays 2. Be3+. This check forces the black king to move to b5 (again, the only legal move).  
+   - **Move 3**: White plays 3. Qb6#. This delivers checkmate as the black king is completely surrounded and has no escape squares.  
+
+5. **Verification**:  
+   - Each move is legal and forces the black king into a progressively worse position, culminating in checkmate on the third move.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rc7+ Ka6 2. Be3+ Kb5 3. Qb6#

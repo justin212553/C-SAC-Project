@@ -1,0 +1,28 @@
+This is a mate-in-4 problem. Here is the step-by-step reasoning process to find the solution:
+
+1.  **Initial Analysis:** White is to move. The Black king on h8 is severely restricted. Its own pawns on h7 and g6, along with the pinned f7-pawn, create a cage. The White bishop on c5 is a monster, pinning the g7-pawn and controlling key squares around the king. The White rook on a1 can swing over to the back rank to launch a decisive attack. Black's only active piece is the rook on c2, but it's not involved in the defense of the king. The knight on g8 is the king's sole guardian.
+
+2.  **Identifying the Key Move:** The most forcing and promising move for White is `1. Ra8+`. This check immediately forces Black's hand and initiates the mating sequence. Black has two legal responses: interposing with the knight (`1... Nf8`) or moving the king (`1... Kg7`).
+
+3.  **Analyzing Black's Defenses:**
+
+    *   **Case A: Black plays `1... Nf8`**
+        This is Black's primary defense. The knight blocks the check but also blocks the f8 escape square for its own king.
+        *   `2. Rxf8+`: White must remove this key defender. This exchange sacrifice is decisive.
+        *   `2... Kg7`: This is the only legal move for the Black king.
+        *   `3. Rg8+`: White continues with another check, using the newly positioned rook to drive the king into a mating net.
+        *   `3... Kh6`: Again, Black has only one legal move. The king is forced to h6.
+        *   `4. Bf8#`: This is the final move. The bishop delivers checkmate. The king on h6 is attacked and has no escape squares: g7 is covered by the rook on g8, h7 is blocked by a pawn, h5 is covered by the bishop on f8, and g5 is covered by the pawn on e4.
+
+    *   **Case B: Black plays `1... Kg7`**
+        The king tries to escape via g7.
+        *   `2. Ra7+`: White continues to hound the king with checks.
+        *   `2... Kh6`: This is the most stubborn defense (moves like `2... Kf8` or `2... Kh8` lead to mate even faster, e.g., `2... Kf8 3. Rf7+ Kg8 4. Rg7#`).
+        *   `3. Rh7+`: Another check, forcing the king further out.
+        *   `3... Kg5`: The only legal move.
+        *   `4. h4#`: The pawn delivers a beautiful checkmate, with all escape squares covered by White's rooks and pawns.
+
+4.  **Conclusion:** Both of Black's main responses to `1. Ra8+` lead to a forced checkmate in exactly 4 moves. The line beginning with `1... Nf8` is chosen for the final answer as it involves more forced moves for Black.
+
+[FINAL PGN]
+1. Ra8+ Nf8 2. Rxf8+ Kg7 3. Rg8+ Kh6 4. Bf8#

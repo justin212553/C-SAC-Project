@@ -1,0 +1,30 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move and has a strong attacking position.
+   - The black king is on g8, and its escape routes are limited due to its own pieces and White's control of key squares.
+   - White's queen on h6 and rook on e8 are well-placed for delivering checks and coordinating a mating attack.
+   - Black's knight on e4 and bishop on f8 are defensive pieces, but they are not sufficient to prevent a forced mate.
+
+2. **Candidate Moves**:
+   - The most forcing move is 1. Rxf8+, as it immediately checks the black king and forces a response.
+   - Other moves like 1. Ne6+ or 1. Qxf8+ are less forcing or do not lead to a quick mate.
+
+3. **Black's Forced Responses**:
+   - After 1. Rxf8+, Black must recapture with 1... Kxf8, as no other move is legal.
+   - This brings the black king to f8, where it is more exposed.
+
+4. **Continuation**:
+   - After 1... Kxf8, White can play 2. Ba3+, a discovered check using the bishop on b2.
+   - Black's only legal move is 2... Qxa3, capturing the bishop.
+
+5. **Final Move**:
+   - White finishes with 3. Bxa3#, delivering checkmate with the bishop on a3.
+
+6. **Verification**:
+   - Each move in the sequence is forcing, and Black has no alternatives to avoid checkmate.
+   - The sequence is a clean mate in 3 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rxf8+ Kxf8 2. Ba3+ Qxa3 3. Bxa3#

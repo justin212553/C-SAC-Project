@@ -1,0 +1,29 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 4 moves.
+
+2. **List promising candidate moves for Black**:  
+   Black has several attacking options, including checks and threats. The position is complex, but the most promising moves involve exploiting White's exposed king and weak squares around it.
+
+3. **Calculate concrete lines for exactly 4 moves**:  
+   Black must deliver checkmate on the fourth move, ensuring no faster mate occurs. The key idea is to use the queen and other pieces to force the White king into a vulnerable position.
+
+   - **Candidate move 1**: 1... Nd3+  
+     This move forces White's king to move or the knight to be captured. It opens up attacking possibilities for Black's queen and other pieces.
+
+     Line:  
+     1... Nd3+ 2. Kd1 (forced) Qf5 3. e4 Qxe4 4. Qc2#  
+
+     This line delivers checkmate on the fourth move, with no faster mate possible.
+
+   - **Candidate move 2**: 1... Qb1+  
+     This move also forces White's king to move or the rook to block. However, it does not lead to a forced mate in 4 moves.
+
+4. **Verify legality and checkmate**:  
+   The line 1... Nd3+ 2. Kd1 Qf5 3. e4 Qxe4 4. Qc2# is legal, forces White's moves, and delivers checkmate on the fourth move. No faster mate is possible.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]  
+1... Nd3+ 2. Kd1 Qf5 3. e4 Qxe4 4. Qc2#  

@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king in exactly 4 moves.
+
+2. **List promising candidate moves for Black:**
+   - Black has several options to initiate checks or threats, but the most forcing move appears to be 1... Qf2+, as it immediately forces the White king to move or block the check.
+
+3. **Calculate concrete lines for exactly 4 moves:**
+   - After 1... Qf2+, White's king is forced to move to h5 (1. Kh5). Black can then continue with 2... Qg3+, forcing White's king to g6 (2. Kg6). Black follows up with 3... Qxf4, setting up a decisive threat. Finally, Black delivers checkmate with 4... Qg5#.
+
+4. **Verify legality and checkmate conditions:**
+   - Each move in the sequence is legal.
+   - Checkmate is delivered on the fourth move (4... Qg5#), and there is no earlier checkmate before move 4.
+   - White has no reasonable defense to avoid the forced mate in 4.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf2+ 2. Kh5 Qg3+ 3. Kg6 Qxf4 4. Qg5#

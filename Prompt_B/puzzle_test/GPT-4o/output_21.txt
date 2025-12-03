@@ -1,0 +1,34 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - White is to move.
+   - The goal is to checkmate the Black king on g8 in exactly 3 moves.
+
+2. **List promising candidate moves for White:**
+   - White has several attacking pieces (queen on d4, rook on f3, rook on f6) that can coordinate to deliver checkmate.
+   - Candidate moves include checks like Qh5+, Rf8+, and others.
+
+3. **Analyze each candidate move:**
+   - **Move 1: Qh5+**
+     - Black's king has only one legal move: 1... Kh8.
+     - White can then play 2. Rf8#, which is a checkmate in 2 moves, not 3. This line is too fast and does not satisfy the "mate in 3" condition.
+   - **Move 1: Rf8+**
+     - Black's king has only one legal move: 1... Rxf8.
+     - White can then play 2. Qg7#, which is a checkmate in 2 moves, not 3. This line is also too fast.
+   - **Move 1: Qg7+**
+     - Black's king has only one legal move: 1... Rxg7.
+     - White can then play 2. Rf8#, which is a checkmate in 2 moves, not 3. This line is too fast as well.
+   - **Move 1: Qf6**
+     - This move is not a check, but it sets up a forced mate in 3.
+     - Black has no checks or meaningful defenses. For example:
+       - If 1... Qe1+ 2. Ka2, Black still cannot stop mate.
+       - If 1... Qxb5+ 2. Rb3, Black is still helpless.
+     - On the next move, White can deliver a forced mate with Rf8+ and Qg7#.
+
+4. **Verify the final line:**
+   - The move 1. Qf6 is quiet but forces Black into a hopeless position.
+   - Black's best defense is irrelevant, as White will deliver mate in exactly 3 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qf6 Qe1+ 2. Ka2 Qb4 3. Qg7#

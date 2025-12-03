@@ -1,0 +1,35 @@
+To solve this Mate in 2 problem, let's first understand the given position defined by the FEN: **3k4/7p/pp1P1rp1/4K3/7r/1P1N1b2/P7/R3R3 b - - 0 1**.
+
+1. **Understanding the Position**: The FEN indicates it's Black's turn. The position is: 
+   - Black King on d8, 
+   - White King on e5, 
+   - Black pawns on h7, a6, b6, and g6, 
+   - White pawn on d6, 
+   - Black Rooks on g6 and h4, 
+   - White Knight on d3, 
+   - Black Bishop on f3, 
+   - White pawns on b3 and a2, 
+   - White Rooks on a1 and e1.
+
+2. **Assessing the Position**: The Black King is on d8, somewhat exposed but with the potential support of its pieces. The White King is on e5, somewhat centralized but potentially exposed due to the presence of Black Rooks. The White pawn on d6 is quite advanced and could be a factor in controlling key squares.
+
+3. **Looking for Checkmate Patterns**: To achieve checkmate in 2 moves, we need to consider the final position where the Black King is checkmated and work backward. The checkmate could be delivered by a piece or a pawn.
+
+4. **Analyzing Black's Moves**: Since it's Black's turn, we need to find a move that could potentially lead to checkmate in the next move (White's turn). The Black pieces that can potentially attack are the Rooks on g6 and h4, and the Bishop on f3.
+
+5. **Checking Potential Moves**:
+   - The Rook on h4 is already attacking the White King indirectly and can potentially move to e4 or h5 to put the White King in check. However, we need to check if this leads to a checkmate.
+   - The Rook on g6 can potentially move to g5 or other squares to put pressure on White.
+   - The Bishop on f3 is pinning the White Knight against the King, which is a significant threat.
+
+6. **Identifying the Checkmate**: 
+   - If Black moves the Bishop from f3 to e2 (Be2), it puts the White King in check. White's King has limited options due to its position and the presence of other Black pieces. The only legal move for White would be to capture the Bishop with Kxe2. Then, Black can play Rh5#, checkmating the White King.
+
+7. **PGN Sequence**: Let's verify the moves:
+   1. ... Be2+
+   2. Kxe2 Rh5#
+
+Let's format this into PGN.
+
+[FINAL PGN]
+1... Be2+ 2.Kxe2 Rh5#

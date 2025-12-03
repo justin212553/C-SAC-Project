@@ -1,0 +1,33 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move.
+   - White has a strong attacking position with the rook on h7, the rook on a6, and the bishop on e8, all coordinated to deliver a checkmate.
+   - Black's king is on c3, and it is vulnerable due to limited escape squares.
+   - Black's queen on d3 and bishop on d4 are active but cannot prevent the inevitable mate.
+
+2. **Key Candidate Moves for Black**:
+   - Black must make a move, but no matter what, White has a forced mate in 2.
+   - Black's moves are limited to the queen or bishop since the king has no legal moves.
+
+3. **White's Forced Responses**:
+   - White can deliver checkmate in 2 moves regardless of Black's choice.
+   - The key idea is to use the rook on h7 and the bishop on e8 to coordinate a decisive attack.
+
+4. **Move-by-Move Analysis**:
+   - If Black plays 1... Qxh7, White responds with 2. Rxh7#.
+   - If Black plays 1... Qf3, White responds with 2. Rh3#.
+   - If Black plays 1... Qe4, White responds with 2. Rh4#.
+   - If Black plays 1... Bc5, White responds with 2. Rh3#.
+   - Any other move by Black also leads to a forced mate in 2.
+
+5. **Conclusion**:
+   - The solution is a forced mate in 2 moves, with White delivering checkmate on the second move regardless of Black's defense.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qxh7 2. Rxh7#
+1... Qf3 2. Rh3#
+1... Qe4 2. Rh4#
+1... Bc5 2. Rh3#
+[FINAL PGN]

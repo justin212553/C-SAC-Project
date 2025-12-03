@@ -1,0 +1,15 @@
+**Step-by-step reasoning:**
+
+1.  **Identify the side to move:** The FEN string is `2R5/kp3r1q/p4Q2/P3P1B1/K7/8/5b2/8 w - - 0 1`. The 'w' indicates that it is White's turn to move.
+2.  **Analyze the position:** The White king is on a4 and is not in check. White has several pieces that can move: the King (Ka4), Rook (Rc8), Queen (Qf6), Bishop (Bg5), and the e-pawn (e5).
+3.  **Identify candidate moves:** I will look for a simple, clearly legal move.
+    *   The White Rook on c8 can move to c7. This move, `Rc7+`, would put the Black King on a7 in check.
+    *   The White Queen on f6 can capture the Black Rook on f7. This move, `Qxf7+`, would also put the Black King in check.
+    *   The White King on a4 can move to a3, b3, b4, or b5, as none of these squares are under attack.
+4.  **Select one legal move and verify it:** I will choose the move `Rc7+`.
+    *   **Piece Movement:** A rook can move any number of unoccupied squares along a rank or file. Moving from c8 to c7 is a valid one-square move along the c-file.
+    *   **King Safety:** Moving the rook from c8 to c7 does not expose the White King on a4 to any attack. Therefore, the move is legal from the perspective of White's king safety.
+    *   **Legality Check:** The move is a standard rook move, does not leave the king in check, and moves to an empty square. It is a legal move. It also happens to be a check to the opponent's king.
+
+[FINAL PGN]
+1. Rc7+

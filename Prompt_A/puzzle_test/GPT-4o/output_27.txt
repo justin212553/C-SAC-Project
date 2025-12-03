@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move and has a significant material advantage, with a queen and rook against Black's rook and pawns.
+   - Black's king is on h7, and White's queen and rook are well-positioned to deliver checks.
+   - The goal is to find a forced mate in 3 moves.
+
+2. **Candidate Moves**:
+   - White's queen and rook can coordinate to deliver checks and restrict the Black king's movement.
+   - The move 1. Qg8+ is a forcing move, as it puts the Black king in check and limits its options.
+
+3. **Black's Forced Responses**:
+   - After 1. Qg8+, Black's king must move to h8 (the only legal move).
+   - White can then play 2. f8=Q+, promoting the pawn to a queen and delivering another check.
+   - Black's only response to 2. f8=Q+ is to block with 2... Qg7.
+
+4. **Final Move**:
+   - White can then deliver checkmate with 3. Qgxg7#.
+
+5. **Verification**:
+   - Each move in the sequence is forcing, and Black has no alternative responses.
+   - The sequence ends in checkmate on the third move.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qg8+ Kh8 2. f8=Q+ Qg7 3. Qgxg7#

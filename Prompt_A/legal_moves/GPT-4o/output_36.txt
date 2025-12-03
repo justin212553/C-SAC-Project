@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. **Black to move**: Analyze all black pieces and their legal moves.
+   - **Queen on b2**: The queen can move to several squares. It has the ability to move diagonally, horizontally, or vertically. Possible moves include capturing on a3 (Qxa3), moving to c3 (Qc3+), or other squares like b3, b4, b5, etc.
+   - **Rook on g2**: The rook can move vertically or horizontally. Possible moves include g1, g3, g4, etc.
+   - **King on g8**: The king can move one square in any direction. Possible moves include h7, h8, f8, etc.
+
+2. Evaluate the position for checks or captures:
+   - The queen can deliver a check by moving to c3 (Qc3+).
+   - The queen can also capture the pawn on a3 (Qxa3), but this does not deliver a check.
+   - The rook does not have any immediate checks or captures.
+   - The king has no aggressive moves and is limited to defensive positioning.
+
+3. Prioritize checks and active moves:
+   - The move Qc3+ is a forcing move that puts the white king in check. This is the most active and logical move for black in this position.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qc3+ 

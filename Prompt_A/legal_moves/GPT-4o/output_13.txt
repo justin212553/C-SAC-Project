@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: The position is analyzed from White's perspective. The pieces available to move are:
+   - King on c7
+   - Pawn on c6
+   - Pawn on d3
+   - Rook on f2
+   - Rook on e1
+
+2. **Legal moves for each piece**:
+   - **King (c7)**: Can move to b6, b7, b8, c6, c8, d6, d7, or d8. However, some squares are occupied or illegal.
+   - **Pawn (c6)**: Can promote by moving to c7 (c7=Q, c7=R, c7=B, or c7=N).
+   - **Pawn (d3)**: Can move to d4.
+   - **Rook (f2)**: Can move along the f-file or the 2nd rank.
+   - **Rook (e1)**: Can move along the e-file or the 1st rank.
+
+3. **Best move**: Promoting the pawn on c6 to a queen (c7=Q) is the most logical move, as it creates a powerful advantage.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. c7=Q

@@ -1,0 +1,21 @@
+This is a mate-in-4 problem. White is to move and checkmate the Black king on h5.
+
+**Step-by-step reasoning:**
+
+1.  **1. Qf7+**: White starts with a forcing check. The queen on f7 attacks the king on h5 and also cuts off key escape squares like g6, f6, f5, and f4 for later in the sequence. Black's only legal move is to move the king out of check.
+    *   **1... Kh4**: This is the only legal square for the Black king.
+
+2.  **2. g4+**: White continues the attack with a pawn check. This move is crucial as it forces Black's response and prepares to open the h-file. The Black king cannot capture the pawn on g4 because the g-file is controlled by the White rook on g7.
+    *   **2... hxg4**: Black is forced to capture the pawn with `hxg4`, opening the h-file for White's rook.
+
+3.  **3. Rh7+**: With the h-file now open, White brings the rook into the attack with a check. The Black king on h4 is under attack and has very limited options. It cannot capture the rook on h7, nor can it move to g3 or h3 due to White's pawns.
+    *   **3... Kg5**: The only legal move for the Black king is to step forward to g5.
+
+4.  **4. h4#**: White delivers the final blow with a pawn move. The pawn on h4, supported by the pawn on g3, attacks the Black king on g5. The king has no escape squares:
+    *   h6 is blocked by Black's own pawn.
+    *   g6, f6, f5, and f4 are all controlled by the White queen on f7.
+    *   g4 is controlled by the White pawn on h3.
+    This is a forced checkmate in exactly four moves.
+
+[FINAL PGN]
+1. Qf7+ Kh4 2. g4+ hxg4 3. Rh7+ Kg5 4. h4#

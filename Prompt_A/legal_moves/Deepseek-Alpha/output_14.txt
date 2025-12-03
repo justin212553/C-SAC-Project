@@ -1,0 +1,14 @@
+--- THOUGHT PROCESS START ---
+
+1. **Black to move**: Analyze all black pieces and their legal moves.
+   - **King on c2**: The black king can move to b1, b2, c1, or d1. However, c1 and d1 are blocked by the black pawn and rook, respectively.
+   - **Rook on e8**: The black rook can move along the e-file or the 8th rank. Possible moves are e7, e6, e5, e4, e3, e2, e1, f8, g8, and h8.
+   - **Rook on f7**: The black rook can move along the f-file or the 7th rank. Possible moves are f6, f5, f4, f3, f2, f1, e7, g7, and h7.
+   - **Pawn on c3**: The black pawn can move to c2.
+
+2. **Legal move selection**: Any of the above moves are legal. For simplicity, we will choose one move to output in PGN format.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... c2+

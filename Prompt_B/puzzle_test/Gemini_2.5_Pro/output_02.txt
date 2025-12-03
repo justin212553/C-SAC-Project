@@ -1,0 +1,18 @@
+**Step-by-step reasoning:**
+
+1.  **Analyze the position of the White king:** The White king is on h8.
+2.  **Identify escape squares:** We must check which squares the White king can move to.
+    *   The square g8 is controlled by the Black king on f8.
+    *   The square g7 is controlled by the Black queen on f7.
+    *   The square h7 is controlled by the Black bishop on g6.
+3.  **Conclusion on king safety:** The White king has no legal moves. This means any move by Black that puts the White king in check will be checkmate, as long as the checking piece cannot be legally captured or the check blocked.
+4.  **Find checking moves for Black:**
+    *   The Black queen on f7 can deliver check from several squares. Let's examine them.
+    *   Moving the queen along the 7th rank: 1... Qe7+, 1... Qd7+, 1... Qc7+, 1... Qb7+, 1... Qa7+. In all these cases, the queen delivers check, cannot be captured, the check cannot be blocked, and the king has no escape squares. These are all checkmate.
+    *   Moving the queen to another diagonal: 1... Qe8+. This move also delivers check along the a4-e8 diagonal. The queen cannot be captured, the check cannot be blocked, and the king has no escape squares. This is also checkmate.
+    *   Other queen checks like 1... Qg8+ or 1... Qh7+ are not mate because the king can capture the queen (Kxh8 or Kxh7).
+    *   The Black bishop can check with 1... Bh7+, but this is not mate as the king can capture the bishop (Kxh7).
+5.  **Select the final move:** Any of the identified checkmating moves (Qe7#, Qd7#, Qc7#, Qb7#, Qa7#, or Qe8#) is a correct solution. We will choose 1... Qe8#.
+
+[FINAL PGN]
+1... Qe8#

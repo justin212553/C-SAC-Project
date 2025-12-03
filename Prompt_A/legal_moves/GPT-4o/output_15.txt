@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+2. **Pieces available to move**:
+   - King on d1: Can move to c1, c2, e1, or e2.
+   - Rook on h5: Can move along the h-file or the 5th rank.
+   - Rook on f3: Can move along the f-file or the 3rd rank.
+   - Bishop on f6: Can move diagonally.
+   - Pawn on h2: Can move to h3.
+   - Pawn on g3: Can move to g4.
+   - Pawn on a3: Can move to a4.
+3. **Legal moves**:
+   - The Rook on h5 can deliver check by moving to h4.
+   - Other moves do not immediately create a tactical advantage or check.
+4. **Best move**: Rh4+ (Rook moves to h4, delivering check to the Black King).
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rh4+

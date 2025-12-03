@@ -1,0 +1,34 @@
+This is a mate-in-2 problem. Black is to move and checkmate the White king.
+
+**Step-by-step reasoning:**
+
+1.  **Analyze the position:** The White king on h1 is exposed. The key defenders are the queen on c3, the bishop on f2, and the rooks on d1 and f1. Black's queen on e3 and knight on d4 are poised for a decisive attack. The Black rooks on d8 and f8 also control important files.
+
+2.  **Identify candidate moves for Black:** The most forcing moves are checks, as they severely limit White's responses.
+    *   `1... Qxf2+`: This check forces `2. Kxf2`. After the king moves to f2, Black can check again with the knight (`...Nxf3+` or `...Ne2+`), but the king can escape to g1, g2, or g3. This does not lead to a mate in 2.
+    *   `1... Ne2+`: This check forces the king to move. White can play `2. Kh2` or `2. Kg1`. If `2. Kh2`, Black mates with `2... Qf2#`. However, if White plays `2. Kg1`, Black has no immediate checkmate. For example, `2... Qf3` is met by `3. Qxf3`. Since White has a response that avoids mate on the second move, this is not a forced mate in 2.
+    *   `1... Qf3+`: This is the most promising candidate. It is a check that forces the White king's response.
+
+3.  **Calculate the line for `1... Qf3+`:**
+    *   Black plays `1... Qf3+`. The White king on h1 is in check.
+    *   The king cannot move to g2, as it is covered by the Black queen on f3.
+    *   The check cannot be blocked or the queen captured.
+    *   White's only legal move is `2. Kg1`.
+
+4.  **Find the mating move:**
+    *   After `1... Qf3+ 2. Kg1`, the White king is on g1.
+    *   Black can now play `2... Ne2#`.
+    *   This is checkmate because:
+        *   The king on g1 is attacked by the knight on e2.
+        *   The king cannot escape:
+            *   f1 is controlled by the Black rook on f8.
+            *   h1 is controlled by the Black queen on f3.
+            *   f2 is controlled by the knight on e2.
+            *   g2 and h2 are controlled by the queen on f3.
+        *   The checking knight on e2 cannot be captured.
+        *   A knight check cannot be blocked.
+
+This sequence forces checkmate in exactly two moves.
+
+[FINAL PGN]
+1... Qf3+ 2. Kg1 Ne2#

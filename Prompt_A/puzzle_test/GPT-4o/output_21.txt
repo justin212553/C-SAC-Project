@@ -1,0 +1,27 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move.
+   - Black's king is on g8, and it is relatively exposed.
+   - White has a strong attacking position with the queen on d4, rooks on f6 and f3, and a pawn on h6 threatening to promote.
+   - Black's pieces are mostly passive, with the rook on c7 and the queen on a5 not contributing to the defense.
+
+2. **Key Candidate Moves**:
+   - White's queen and rooks are well-placed to deliver checks and coordinate a mating net.
+   - The pawn on h6 is a key asset, as it restricts the black king's mobility.
+   - The first move should ideally be a forcing check to limit Black's responses.
+
+3. **Move-by-Move Analysis**:
+   - **1. Rf8+**: This move forces the black king to h7 (the only legal move).
+   - **1... Kh7**: Black's king moves to h7.
+   - **2. Qh8+**: White's queen delivers a check, forcing the black king to g6 (the only legal move).
+   - **2... Kg6**: Black's king moves to g6.
+   - **3. Qf6#**: White's queen delivers checkmate, supported by the rook on f8.
+
+4. **Verification**:
+   - After 3. Qf6#, the black king has no escape squares, and no black piece can block or capture the queen. This is a forced mate in 3.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rf8+ Kh7 2. Qh8+ Kg6 3. Qf6#

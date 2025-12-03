@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   The FEN string indicates "b" (Black) is to move.
+
+2. Consider which Black pieces can move:
+   - Black has a king on g8, a bishop on c5, a knight on h4, and pawns on a6, c4, and g7. Additionally, there is a rook on g2.
+   - Each of these pieces will be evaluated for possible legal moves.
+
+3. Evaluate potential moves:
+   - The king on g8 can move to h7 or f7, but it must avoid moving into check.
+   - The bishop on c5 can move diagonally, but it must avoid squares occupied by Black's own pieces.
+   - The knight on h4 can jump to f3, g2, or f5, but it must avoid illegal moves.
+   - The rook on g2 can move along the g-file or the second rank, but it must avoid squares occupied by Black's own pieces.
+   - The pawns on a6, c4, and g7 can move forward (or capture diagonally if applicable).
+
+4. Select one legal move:
+   - After evaluating the position, I choose the move "Rxa2". The rook on g2 captures the pawn on a2, which is a legal move.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... Rxa2

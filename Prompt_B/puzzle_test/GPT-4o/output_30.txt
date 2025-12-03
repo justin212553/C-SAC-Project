@@ -1,0 +1,30 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 3 moves.
+
+2. **Initial observations**:  
+   - Black's queen on h3 is well-placed to deliver checks or support an attack.  
+   - The White king on g1 is somewhat exposed, with limited mobility due to its own pawns and pieces.  
+   - Black's rook on e1 and bishop on b7 are also active and can contribute to the attack.  
+   - White's pieces (e.g., knight on e5 and queen on d3) are not in a position to defend effectively.  
+
+3. **Candidate moves for Black**:  
+   - The most forcing move is 1... Qg2+, as it immediately puts the White king in check and forces a response.  
+   - Other moves, such as 1... Qh5 or 1... Bc8, are less forcing and do not lead to a clear mate in 3.  
+
+4. **Calculation of the forced line**:  
+   - **1... Qg2+**:  
+     - White must respond with 2. Bxg2 (the only legal move).  
+   - **2... Rxe1+**:  
+     - This is a check, and White must respond with 3. Qf1 (the only legal move to block the check).  
+   - **3... Rxf1#**:  
+     - Black's rook delivers checkmate, as the White king has no escape squares and no pieces can block or capture the rook.  
+
+5. **Verification**:  
+   - The sequence 1... Qg2+ 2. Bxg2 Rxe1+ 3. Qf1 Rxf1# is a forced mate in 3 moves.  
+   - There is no earlier mate, as Black's moves are all checks, and White's responses are forced.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qg2+ 2. Bxg2 Rxe1+ 3. Qf1 Rxf1#

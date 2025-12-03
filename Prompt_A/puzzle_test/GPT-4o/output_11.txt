@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move and must deliver checkmate in 2 moves.
+   - White has a significant material advantage, including a queen, rook, and bishop, while Black's king is exposed and has limited mobility.
+   - Black's pieces include two rooks and a bishop, but they are poorly coordinated and cannot effectively defend the king.
+
+2. **Key Candidate Moves**:
+   - White's queen and rook are well-placed to deliver checks and coordinate for a quick mate.
+   - The Black king is trapped on h1, with no escape squares due to White's pieces and Black's own pieces blocking potential moves.
+   - The most forcing moves involve checks, as they limit Black's responses.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: White can play 1. Qg3+, a forcing move that puts the Black king in check. The Black king has no legal moves, so Black must block the check.
+   - **Black's Response**: The only legal move is 1... Rxg3, capturing the queen.
+   - **Move 2**: White plays 2. Rf1#, delivering checkmate. The Black king is trapped on h1, with no escape squares, and no piece can block the check or capture the rook.
+
+4. **Verification**:
+   - All moves are legal.
+   - The sequence leads to a forced checkmate in 2 moves, satisfying the puzzle's requirements.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. Qg3+ Rxg3 2. Rf1#

@@ -1,0 +1,38 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   White is to move, and the goal is to checkmate the Black king on c8 in exactly 4 moves.
+
+2. **Initial position analysis**:  
+   - Black's king is on c8, surrounded by pawns and pieces, with limited mobility.  
+   - White has strong attacking pieces: the knight on e5, the knight on g5, and the bishop on a3.  
+   - Black's pieces are mostly passive, and the queen on d7 is the main defender.  
+
+3. **Candidate moves**:  
+   White's first move should aim to create immediate threats while forcing Black into a defensive position. Promising candidates include:  
+   - 1. Be6: A direct threat to the Black queen and king.  
+   - 1. Nxd7: Captures the queen, but this does not lead to a forced mate in 4.  
+   - 1. Nef7: A check that forces the Black king to move or the rook to block.  
+
+4. **Concrete calculation of lines**:  
+   - **Line A: 1. Be6**  
+     1. Be6 Qxe6 (forced, as the queen is attacked)  
+     2. Nxe6 dxe6 (forced, as the knight is attacking the king)  
+     3. Nf7 Re8 (only move to delay mate)  
+     4. Nd6# (checkmate).  
+
+   - **Line B: 1. Nef7+**  
+     1. Nef7+ Kb8 (forced, as the king must move)  
+     2. Bd6 Qxd6 (forced, as the queen must capture the bishop)  
+     3. Nxd6 cxd6 (forced, as the knight is attacking the king)  
+     4. Bxd6# (checkmate).  
+
+   - **Line C: 1. Nxd7**  
+     This move captures the queen but does not lead to a forced mate in 4.  
+
+5. **Verification**:  
+   Both Line A and Line B result in checkmate on the 4th move. However, Line A (1. Be6) is more forcing and direct, as it immediately attacks the Black queen and king.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Be6 Qxe6 2. Nxe6 dxe6 3. Nf7 Re8 4. Nd6#

@@ -1,0 +1,27 @@
+This is a mate-in-2 problem. Black is to move.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze the position of the White King:** The White king is on a3. It is severely restricted by its own pawns on a2 and b5. The Black king on c2 controls the squares b2, b3, and b4. The only potential escape square for the White king is a4.
+
+2.  **Identify Black's objective:** Black must deliver checkmate in two moves. This means the first move must set up a situation where, regardless of White's response, Black can deliver a decisive check on the second move.
+
+3.  **Evaluate candidate moves for Black:**
+    *   A key idea is to use one rook to control the escape square a4 and the other rook to deliver the check.
+    *   Let's consider the most forcing move: a check. The move **1... Ra7+** puts the White king in check.
+
+4.  **Analyze White's forced response:**
+    *   After **1... Ra7+**, the White king cannot move. The only legal move for White is to block the check with the b-pawn.
+    *   Therefore, White is forced to play **2. b6**.
+
+5.  **Find the mating move for Black:**
+    *   After 1... Ra7+ 2. b6, the White king on a3 is completely trapped.
+    *   The escape square a4 is still controlled by the Black rook on a7 (the b6 pawn does not stop the rook's control along the rank).
+    *   The squares b2, b3, and b4 are all controlled by the Black king on c2.
+    *   With the White king immobilized, any check delivered by Black's other rook (from e8) will be checkmate.
+    *   A simple and effective move is **2... Re3#**. The rook on e3 attacks the king, which has no legal moves. This is checkmate.
+
+This sequence is forced and results in checkmate on the second move as required.
+
+[FINAL PGN]
+1... Ra7+ 2. b6 Re3#

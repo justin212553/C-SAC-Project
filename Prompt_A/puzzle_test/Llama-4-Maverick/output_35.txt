@@ -1,0 +1,48 @@
+To solve this checkmate in 4, let's first analyze the given position defined by the FEN: **8/1Q4R1/p3q2p/5ppk/8/4P1PP/2r5/6K1 w - - 0 1**.
+
+1. **Understanding the Position**: White is to move. The position of the pieces is as follows: White has a Queen on b7, a Rook on g7, pawns on e3, f3, and g3. Black has a Queen on e6, pawns on a6, h6, f5, and g5, a Rook on c2, and the King on h5.
+
+2. **Assessing the Material and Position**: Materially, White is slightly ahead but the position is sharp due to the presence of heavy pieces and the exposed Black King. The task is to find a checkmate in 4 moves.
+
+3. **Identifying Key Pieces and Threats**: The White Queen and Rook are well-placed to potentially attack the Black King. The Black King is somewhat exposed on h5, with pawns in front but lacking sufficient protection from other pieces.
+
+4. **Analyzing Potential Moves**:
+   - The White Queen can potentially move to various squares to attack or support other pieces.
+   - The White Rook on g7 is already somewhat aggressively placed and can potentially move along the g-file or back to g1 to support other maneuvers.
+
+5. **Checking for Immediate Threats and Opportunities**:
+   - The Black King is on h5, and a potential checkmate could involve using the White Queen and Rook to corner it.
+   - The presence of the White pawn on g3 and the Black pawn on g5 suggests that a potential mating pattern could involve playing on the kingside.
+
+6. **Exploring Potential Checkmate Patterns**:
+   - One potential checkmate pattern involves using the Rook to check on g5 and then following up with a Queen check that leads to checkmate.
+
+7. **Calculating Specific Moves**:
+   - **Rxg5+** is an attractive first move because it puts the Black King in check and has the potential to weaken its position further if Black captures.
+   - If Black plays **Qxg5**, then **Qf7+** (or a similar Queen move) could be considered, but we need to verify the subsequent moves.
+   - Upon **Rxg5+**, if Black responds with **Kh4**, we need a follow-up that leads to checkmate.
+
+Let's directly analyze the moves:
+1. Rxg5+ Kh4 (Forced to avoid checkmate)
+2. Qe4+ (Threatening checkmate and utilizing the Queen effectively) Qg4 (Forced to block the check)
+3. Qh7+ (Putting the King in a more vulnerable position) Bh2+ is not possible, so Kg4 is considered, but actually, the King goes to a more exposed position or is forced into a checkmate pattern.
+   Upon reevaluation: 
+   1. Rxg5+ Kh4
+   2. Qe4+ f4 (or Qg4, but f4 is more likely as Qg4 allows Qxg4+ Kxg4, and it's not a straightforward checkmate)
+   3. gxf4+ (Opening up the g-file and putting the King in a vulnerable position) Kh5 (or other moves, but they lead to similar or worse outcomes)
+   4. Qh7#
+
+Let's directly check the sequence:
+1. Rxg5+ Kh4
+2. Qe4+ Qg4
+3. Qxg4+ fxg4
+4. Rxg4#
+
+So, the sequence is:
+1. Rxg5+ Kh4
+2. Qe4+ Qg4
+3. Qxg4+ fxg4
+4. Rxg4#
+
+[FINAL PGN]
+1.Rxg5+ Kh4 2.Qe4+ Qg4 3.Qxg4+ fxg4 4.Rxg4#

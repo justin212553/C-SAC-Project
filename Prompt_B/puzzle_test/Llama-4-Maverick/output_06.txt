@@ -1,0 +1,30 @@
+1. The given FEN is: k7/8/8/1pp3b1/2p5/K7/7r/8 b - - 0 1. 
+   - The side to move is Black (b).
+   - The White king is on a3, which needs to be checkmated.
+
+2. The Black pieces are: a king on a8, pawns on b5, c4, c5, and a rook on h2, a bishop on g5.
+   - The most promising candidate moves for Black to potentially checkmate White involve checking the White king with either the rook or the bishop.
+
+3. Let's analyze the candidate moves:
+   - The White king is on a3. It can potentially be checked by a piece on b3, b2, or c3 if it were not for the pieces currently in place. However, the most direct checks would come from a Black piece moving to a square that puts the White king in check.
+   - The Black rook on h2 can potentially move to a2 to check the White king.
+   - The Black bishop on g5 can potentially move to a square that checks the White king if it's on the diagonal.
+
+4. Checking the candidate moves:
+   - **1... Rh3+**: This move puts the White king in check. The White king can try to move to b4 or b2. 
+     - If 2. Kb4, then the king is still in check, and there are no legal moves to get out of check (e.g., capturing the rook is not possible due to the presence of other Black pieces controlling or occupying the necessary squares). 
+     - If 2. Kb2, the king is still in check, and there are no valid moves to escape the check.
+   - Checking the legality and outcome of **1... Rh3+**:
+     - It's a legal move.
+     - After 1... Rh3+, White has no legal moves to escape the checkmate on the next move because the Black pieces are well-placed to ensure the White king cannot escape.
+
+5. Verifying checkmate:
+   - After **1... Rh3+**, White cannot escape checkmate. For instance, 2. Kb2 (or Kb4) allows checkmate. Let's verify:
+     - 2. Kb4 c3# is checkmate.
+     - Other White moves are not possible or do not escape checkmate.
+
+6. Concluding the best forced line:
+   - The move **1... Rh3+** is followed by checkmate on the next move regardless of White's response.
+
+[FINAL PGN]
+1... Rh3#

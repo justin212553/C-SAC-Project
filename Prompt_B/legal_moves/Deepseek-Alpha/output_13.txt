@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN indicates "w", meaning White is to move.
+2. Analyze White's pieces and their potential moves:
+   - White has pawns on c6, d3, and f3.
+   - White has rooks on f2 and e1.
+   - White's king is on c7.
+3. Evaluate legal moves for each piece:
+   - The pawn on c6 can move to c7 (promotion) or capture on b7.
+   - The pawn on d3 can move to d4.
+   - The pawn on f3 can move to f4.
+   - The rook on f2 can move along the f-file or horizontally on rank 2.
+   - The rook on e1 can move along the e-file or horizontally on rank 1.
+   - The king on c7 can move to b7, b6, or d7.
+4. Ensure the move does not leave the king in check or violate movement rules.
+5. Select one legal move: I will choose the pawn promotion move c7.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. c7=Q

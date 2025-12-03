@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black to move. The white king is on a2, and the black king is on a5. Black has a rook on c1, a bishop on g4, and a queen on f3. White has a rook on f2, a bishop on f7, and a queen on h2. Black's pieces are well-coordinated, and the white king is vulnerable due to limited mobility.
+
+2. **Goal**: Find a forced checkmate in 3 moves. Black must deliver checks that restrict White's responses and lead to an inevitable mate.
+
+3. **Candidate Moves**:
+   - Black's queen on f3 can deliver checks, and the rook on c1 can also be used to attack.
+   - The bishop on g4 can support attacks or block escape routes for the white king.
+
+4. **Move-by-Move Analysis**:
+   - **Move 1**: Black plays 1... Qd1+. This forces White to respond with 2. Rf1 (blocking the check).
+   - **Move 2**: Black plays 2... Be6+. This forces White to move the king to a1 (the only legal move).
+   - **Move 3**: Black plays 3... Qxf1#. This is checkmate, as the white king is completely trapped.
+
+5. **Verification**: Each move is legal, and White has no way to escape the checkmate sequence. The solution is forced and meets the "mate in 3" requirement.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qd1+ 2. Rf1 Be6+ 3. Ka1 Qxf1#

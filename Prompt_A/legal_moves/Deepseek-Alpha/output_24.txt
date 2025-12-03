@@ -1,0 +1,17 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move**: Black.
+2. **Analyze all moveable pieces**:
+   - **Black King (g8)**: Cannot move as all adjacent squares are either occupied or under attack.
+   - **Black Bishop (c5)**: Can move to several squares (b4, a3, d4, e3, f2, etc.).
+   - **Black Knight (h4)**: Can move to f3, f5, g2, etc.
+   - **Black Pawn (c4)**: Can move to c3.
+   - **Black Pawn (g7)**: Cannot move (blocked by g3).
+   - **Black Pawn (h7)**: Cannot move (blocked by h2).
+   - **Black Rook (g2)**: Can move to g1, g3, g4, etc.
+3. **Legal moves**: After analyzing all pieces, there are multiple legal moves. For simplicity, I will choose one legal move.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... c3

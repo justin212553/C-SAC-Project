@@ -1,0 +1,16 @@
+This is a classic mate-in-3 puzzle that involves a series of forced moves, including a discovered check.
+
+1.  **Black's First Move:** The key is to force the white king into a mating net. The most forcing move is a check. The move `1... Qc4+` is the strongest candidate. It puts the white king in check and is supported by the pawn on a4. White's king has no escape squares (a1 and b1 are controlled by the rook on c1), so White is forced to block.
+
+2.  **White's Forced Response:** The only legal move for White is to block the check with the b-pawn: `2. b3+`. This move not only blocks the check from the queen but also delivers a check to the black king on a5.
+
+3.  **Black's Second Move:** Black is now in check and must respond. The only legal move is to capture the checking pawn: `2... axb3+`. This capture is a discovered check from the rook on c1, which now attacks the white king on a2.
+
+4.  **White's Second Forced Response:** The white king is under attack from the rook on c1. The square a1 is also controlled by the rook, so the king's only escape is `3. Kb1`.
+
+5.  **Black's Final Move:** With the white king on b1, Black can deliver the final blow. The king is trapped by its own pawn on b2, the black pawn on b3 (controlling a2), and the black rook on c1 (controlling the c-file and a1). The move `3... Qd3#` delivers checkmate, as the queen attacks the king on b1, and there are no escape squares or ways to block the check.
+
+[FINAL PGN]
+1... Qc4+
+2. b3+ axb3+
+3. Kb1 Qd3#

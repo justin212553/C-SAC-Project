@@ -1,0 +1,24 @@
+This is a classic chess puzzle that requires finding a precise sequence of forcing moves. The black king is exposed, and several white pieces are poised for an attack.
+
+### Initial Assessment:
+The white king on h1 is under some pressure from the black knight on e1 and the rooks on a2 and f2. However, White has a powerful attacking setup against the black king on e8. The rook on c7, the knight on d5, and the two bishops on g5 and h5 form a deadly attacking constellation. The key is to find a sequence of checks that leaves the black king with no escape.
+
+### Candidate Moves & Analysis:
+
+1.  **1. Nf6+**: This is a very tempting move. It's a double check from the knight and the bishop on g5, which is extremely forcing. Black's king must move.
+    *   If **1... Kf8**, White continues with **2. Rc8+ Kg7**, leading to **3. Rg8#**. This is a mate in 3.
+    *   If **1... Kd8**, White can play **2. Ra8+ Kc7**, followed by **3. Nd7#**. This is also a mate in 3.
+    *   Since both of Black's responses lead to a mate in 3, this move is technically a faster solution. However, the puzzle specifically asks for a mate in 4, which implies there is a different, specific sequence that takes exactly four moves. In puzzle-solving, one must find the solution that matches the stipulated length.
+
+2.  **1. Rc8+**: This is another strong checking move. Let's analyze the consequences.
+    *   **1... Ke7**: This is Black's only legal move. The king is checked by the rook, and all other squares on the back rank are controlled by the rook, while d7 is controlled by the knight on d5.
+    *   **2. Re8+**: White continues the chase. The rook moves from c8 to e8, delivering another check. Again, Black's response is forced. The king cannot retreat to the 8th rank (controlled by the rook) or move to d7 (controlled by the knight). The only escape is f6.
+    *   **2... Kf6**: The king is forced further into the open.
+    *   **3. Ne7+**: A brilliant knight check. The knight moves from d5 to e7. The king on f6 is now under attack. We must check all its escape squares: e5 is covered by the e4-pawn, g5 and h6 are covered by the bishop on g5, g6 is covered by the bishop on h5, and h7 is covered by the knight itself. The only square left is g7.
+    *   **3... Kg7**: Black's king is forced to this square.
+    *   **4. Rg8#**: The final blow. The rook moves to g8, delivering checkmate. The king on g7 is trapped. The rook on g8 covers the g-file and the 8th rank. The knight on e7 covers h7. The bishop on g5 covers f6 and h6. The bishop on h5 covers g6. There is no escape.
+
+This sequence is a forced mate in exactly four moves, matching the puzzle's requirement.
+
+[FINAL PGN]
+1. Rc8+ Ke7 2. Re8+ Kf6 3. Ne7+ Kg7 4. Rg8#

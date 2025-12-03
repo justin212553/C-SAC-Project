@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black to move.
+   - The Black king is on d8, and it is relatively constrained by its own pawns and pieces.
+   - White's rook on e1 and knight on d3 are well-placed to deliver checks and control key squares.
+   - Black's rook on h4 and bishop on f3 are active but cannot prevent a quick mate.
+
+2. **Key Candidate Moves**:
+   - Black's first move must be analyzed to determine how White can force a mate in 2 moves.
+   - Black has limited options to delay the mate, as the White pieces dominate critical squares.
+
+3. **Black's First Move**:
+   - If Black plays 1... Rh5+ (a check), White's king moves to f6, setting up a forced mate.
+   - If Black plays any other move (e.g., 1... Rf5 or 1... Bb7), White can deliver mate immediately.
+
+4. **White's Response**:
+   - After 1... Rh5+, White plays 2. Kf6, and Black has no way to prevent mate on the next move.
+
+5. **Conclusion**:
+   - The solution is forced, and White delivers mate in 2 moves regardless of Black's defense.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Rh5+ 2. Kf6 Rf5#

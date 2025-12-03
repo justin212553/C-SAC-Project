@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White has a strong attacking position with the queen, rooks, and pawns creating threats against Black's king on g8.  
+   - Black's king is confined to the back rank, with limited mobility due to White's pieces and pawns.  
+   - The key to solving this puzzle is leveraging White's active pieces to deliver a forced checkmate in 3 moves.
+
+2. **Candidate Moves**:  
+   - White's queen and rooks are well-placed to deliver checks and control key squares.  
+   - The pawn on g5 can also be used to restrict Black's king further.  
+   - The move sequence must ensure that Black has no escape routes or defensive resources.
+
+3. **Move-by-Move Analysis**:  
+   - **Move 1**: White starts with 1. Qh8+, forcing Black's king to move to f7 (the only legal move).  
+   - **Move 2**: White follows up with 2. Qg7+, forcing Black's king back to g8 (again, the only legal move).  
+   - **Move 3**: White delivers the final blow with 3. Rf8#, checkmating Black's king.  
+
+4. **Verification**:  
+   - Each move is forced, and Black has no way to escape the checkmate sequence.  
+   - The final position after 3. Rf8# is a checkmate, as Black's king is completely surrounded and has no legal moves.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. Qh8+ Kf7 2. Qg7+ Kg8 3. Rf8#

@@ -1,0 +1,23 @@
+This is a mate-in-3 problem. White is to move.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze the position and identify threats:** White has a powerful attack building on the f-file with two rooks and a queen aimed at the Black king. The h6-pawn severely restricts the king's escape squares. Black's main counter-threat is the queen on a5, which can deliver a dangerous check with `...Qa1+`. Many of White's aggressive first moves, like `1. R3f7` or `1. b6`, fail because Black can respond with `1... Qa1+`, forcing the White king to move and delaying the mate beyond three moves.
+
+2.  **Find the key move:** The solution must address Black's `...Qa1+` threat while continuing the attack. The most effective way to do this is a quiet king move. The move `1. Ka1!` sidesteps the check from Black's queen.
+
+3.  **Evaluate Black's responses:** After `1. Ka1`, Black is left without any checks and cannot stop White's primary threat. White threatens `2. Rf8+` followed by `3. Rxf8#`. Let's see how Black can try to defend:
+    *   Black cannot add a defender to the f8 square in time.
+    *   Black cannot block the f-file.
+    *   Black cannot capture any of the key attacking pieces (Qd4, Rf3, Rf6).
+    *   Any other move, such as `1... Qxb5` or `1... e5`, does not alter White's plan.
+
+4.  **Execute the mating sequence:** Regardless of Black's move, White proceeds with the forced combination.
+    *   White plays `2. Rf8+`. This is a check from the rook on f3.
+    *   Black's only legal move is to capture the rook: `2... Rxf8`. The king cannot move to h7 because of the h6-pawn.
+    *   White delivers the final blow with `3. Rxf8#`. The second rook captures on f8, delivering checkmate. The king is trapped, and the rook on f8 is protected by the queen on d4.
+
+This sequence is a forced checkmate in exactly three moves.
+
+[FINAL PGN]
+1. Ka1 Qxb5 2. Rf8+ Rxf8 3. Rxf8#

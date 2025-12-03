@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+   - White's pieces: Queen on g2, Rook on c7, and King on h4.
+   - Black's pieces: King on h7, Rook on f8, and Queen on e5.
+
+2. **Legal moves for White**:
+   - **Queen (g2)**:
+     - Can move along the g-file, 2nd rank, or diagonals.
+     - Possible moves: Qg3, Qg4, Qg5, Qg6, Qg7, Qg8, Qf3, Qe4, Qd5, Qc6, Qb7, Qa8, Qh3, Qh4, Qh5, Qh6, Qh7.
+   - **Rook (c7)**:
+     - Can move along the c-file or 7th rank.
+     - Possible moves: Rc8, Rc6, Rc5, Rc4, Rc3, Rc2, Rc1, Rd7, Re7, Rf7, Rg7, Rh7.
+   - **King (h4)**:
+     - Can move one square in any direction.
+     - Possible moves: Kg4, Kg5, Kh5, h3.
+
+3. **Goal**: Find one legal move. Any move is acceptable as long as it adheres to the rules of chess.
+
+4. **Select a move**:
+   - Choose a simple and legal move. For example, Qg6+ (Queen moves to g6 and gives check to the Black King).
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qg6+

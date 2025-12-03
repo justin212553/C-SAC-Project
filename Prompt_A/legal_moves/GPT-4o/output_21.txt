@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+   - **King (b1)**: The king on b1 has no legal moves because all adjacent squares are either occupied or under attack.
+   - **Queen (d4)**: The queen on d4 can move to several squares, but we need to evaluate each for legality. It can move along the d-file, 4th rank, or diagonals.
+   - **Rook (f3)**: The rook on f3 can move along the f-file or 3rd rank.
+   - **Rook (f6)**: The rook on f6 can move along the f-file or 6th rank.
+   - **Pawn (b2)**: The pawn on b2 can move to b3.
+   - **Pawn (h6)**: The pawn on h6 can promote by moving to h7 or h8.
+
+2. **Legal moves**:
+   - The pawn on h6 can move to h7 or promote to a queen, rook, bishop, or knight on h8.
+   - The queen on d4 can move to d5, d6, d7, d8, c3, b2, a1, e5, f6, g7, or h8.
+   - The rook on f3 can move to f4, f5, f7, f8, e3, d3, c3, b3, or a3.
+   - The rook on f6 can move to f5, f4, f3, f2, f1, e6, d6, c6, b6, or a6.
+   - The pawn on b2 can move to b3.
+
+3. **Best move**:
+   - Promoting the pawn on h6 to a queen on h8 delivers checkmate. This is the most forcing move and ends the game immediately.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. h8=Q#

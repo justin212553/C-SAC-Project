@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN indicates "w" (White to move).
+
+2. Consider which of White's pieces can move:
+   - White has the following pieces: King (g1), Rook (g7), Knight (h5), Bishop (c4), Bishop (a1), and pawns (g2, h2, a3, c5).
+   - Each piece's potential moves will be checked for legality.
+
+3. Evaluate candidate moves:
+   - The King on g1 can move to h1 or h2, but moving to h2 would place it adjacent to the Black bishop on g6, which is not ideal.
+   - The Rook on g7 can move along the 7th rank or capture the pawn on b7.
+   - The Knight on h5 can move to f6, g7, or other squares, but f6 is a strong candidate as it attacks the Black bishop on g6.
+   - The Bishop on c4 can move along diagonals, but no immediate threats or captures are available.
+   - The Bishop on a1 can move along diagonals, but it is currently blocked by pawns.
+   - The pawns can move forward, but none can capture or promote.
+
+4. Select one legal move:
+   - Moving the Knight from h5 to f6 is a strong candidate as it attacks the Black bishop on g6 and does not leave the White king in check.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Nf6

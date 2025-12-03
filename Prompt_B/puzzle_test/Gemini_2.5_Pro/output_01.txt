@@ -1,0 +1,28 @@
+Here is a step-by-step reasoning process to find the forced checkmate:
+
+1.  **Analyze the board and the objective.** The goal is to find a single move for White that checkmates the Black king.
+
+2.  **Locate the Black king and assess its safety.** The Black king is on h1. We need to examine its potential escape squares:
+    *   **g1:** This square is controlled by the White king on f1.
+    *   **g2:** This square is occupied by the White knight on g2.
+    *   **h2:** This square is controlled by the White queen on f2.
+
+3.  **Observe the current state.** The Black king has no legal moves. This means the position is currently a stalemate. However, the task is to deliver checkmate. Any move that puts the Black king in check without opening up an escape route will be checkmate.
+
+4.  **Identify candidate moves that deliver check.** We need to find a move that attacks the Black king on h1.
+    *   Moving the queen to e1 (`Qe1`) attacks the king along the first rank.
+    *   Moving the queen to g1 (`Qg1`) attacks the king from an adjacent square.
+    *   Moving the queen to h2 (`Qh2`) attacks the king from an adjacent square.
+    *   Moving the bishop to h2 (`Bh2`) attacks the king along the b8-h2 diagonal.
+
+5.  **Evaluate a candidate move for checkmate.** Let's analyze the move `1. Qe1`.
+    *   The move `1. Qe1` places the Black king in check.
+    *   We must verify if Black has any way to escape the check.
+        *   **Can the king move?** As established in step 2, all adjacent squares (g1, g2, h2) are controlled or occupied by White's pieces. The king cannot move.
+        *   **Can the check be blocked?** There are no Black pieces on the board to place between the White queen on e1 and the Black king on h1.
+        *   **Can the checking piece be captured?** There are no Black pieces that can capture the queen on e1.
+
+6.  **Conclusion.** Since the king is in check and there is no legal move to escape the check, the move `1. Qe1` is checkmate. Other moves like `Qg1#`, `Qh2#`, and `Bh2#` also lead to an immediate checkmate following the same logic. We will select one of these valid solutions.
+
+[FINAL PGN]
+1. Qe1#

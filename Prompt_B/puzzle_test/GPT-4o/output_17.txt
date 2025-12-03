@@ -1,0 +1,33 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move.
+   - The target is to checkmate the Black king on h8 in exactly 2 moves.
+
+2. **List the most promising candidate moves for White:**
+   - White has several checks and attacking moves to consider:
+     - Qxf6+ (captures the f6 bishop with check).
+     - Nxf6 (captures the f6 bishop, threatening mate).
+     - Qe7 (threatens mate on f6 or g7).
+     - Ne7 (threatens mate on g8 or f6).
+     - Other moves like Rd3 or Rd4 are not forcing and do not lead to checkmate in 2 moves.
+
+3. **Analyze each candidate move:**
+   - **1. Qxf6+:**
+     - Black's only legal response is 1...Kg8.
+     - White can then play 2. Ne7#, delivering checkmate. This is a forced mate in 2 moves.
+   - **1. Nxf6:**
+     - Black's only legal response is 1...Kg7.
+     - White cannot deliver checkmate on the second move, so this line fails.
+   - **1. Qe7:**
+     - Black can respond with 1...Bxd5 or 1...Kg8, and White cannot deliver checkmate on the second move. This line fails.
+   - **1. Ne7:**
+     - Black can respond with 1...Qd7 or 1...Bxd5, and White cannot deliver checkmate on the second move. This line fails.
+
+4. **Verify the best line:**
+   - The move 1. Qxf6+ forces 1...Kg8, and White delivers checkmate with 2. Ne7#. This is the only line that guarantees mate in exactly 2 moves.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qxf6+ Kg8 2. Ne7#

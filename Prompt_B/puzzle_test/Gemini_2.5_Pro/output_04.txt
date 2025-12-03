@@ -1,0 +1,20 @@
+This is a mate-in-1 puzzle. Black is to move and must checkmate the White king.
+
+1.  **Analyze the White King's Position:** The White king is on g1. Its movement is restricted by its own pawns on f2, g2, and h2. The only potential escape squares for the king are f1 and h1.
+
+2.  **Identify Black's Attacking Piece:** Black's only active piece is the rook on e4. This rook is the only piece that can deliver check to the White king.
+
+3.  **Evaluate Candidate Moves:** We need to find a move for the rook that puts the White king in check and simultaneously removes all its escape squares.
+    *   Moving the rook along the 4th rank to deliver check (e.g., `... Rg4+` or `... Rf4+`) is insufficient. For example, after `1... Rg4+`, the king can simply move to h1.
+    *   The most promising line of attack is along the e-file. The rook can move down the e-file to e1.
+
+4.  **Verify the Solution:** Let's consider the move `1... Re1`.
+    *   This move places the White king in check from the rook on e1.
+    *   The king cannot capture the rook.
+    *   No White piece can block the check.
+    *   The king's escape squares, f1 and h1, are both controlled by the rook on e1.
+    *   The king cannot move to f2, g2, or h2 as they are occupied by its own pawns.
+    *   Since the king is in check and has no legal moves, the move `1... Re1` is checkmate.
+
+[FINAL PGN]
+1... Re1#

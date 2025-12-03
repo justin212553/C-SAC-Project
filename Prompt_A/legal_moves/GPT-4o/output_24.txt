@@ -1,0 +1,16 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move**: Black.
+2. **Analyze all moveable pieces for Black**:
+   - **King (g8)**: The Black king can move to h8 or h7. However, h7 is under attack by the White knight on d8, so only g8-h8 is legal.
+   - **Bishop (c5)**: The Black bishop can move to several squares: b4, a3, d4, e3, f2, or d6. All these squares are unoccupied and legal.
+   - **Knight (h4)**: The Black knight can move to f3, f5, or g6. All these squares are unoccupied and legal.
+   - **Rook (g2)**: The Black rook can move to g1, g3, g4, g5, g6, g7, f2, e2, d2, c2, b2, or a2. All these squares are unoccupied and legal.
+   - **Pawn (c4)**: The Black pawn can move to c3 (a single square forward). This is a legal move.
+
+3. **Legal moves**: After analyzing all Black pieces, there are multiple legal moves available. For simplicity, I will select one legal move to output.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... c3

@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   Black to move. The position is highly tactical, with Black having a strong attacking setup. The White king is exposed on g1, and Black has multiple pieces (queen, rook, and bishop) that can coordinate to deliver a forced checkmate. The key is to exploit the weak squares around the White king and ensure that every move leads to a forced mate.
+
+2. **Candidate Moves**:  
+   - The Black queen on h3 is ideally placed to deliver checks. Moves like ...Qxf1+ or ...Qh1+ are worth considering.  
+   - The Black rook on e1 can also join the attack, especially with moves like ...Rxf1+.  
+   - The Black bishop on b7 can control key squares, such as g2, to restrict the White king's mobility.  
+
+3. **Move-by-Move Analysis**:  
+   - **Move 1**: Black starts with 1...Qh1+, forcing White to respond with 2.Kxh1 (the only legal move).  
+   - **Move 2**: Black plays 2...Ne3+, a discovered check from the rook on e1. White is forced to move the king to g1 (2.Kg1).  
+   - **Move 3**: Black finishes with 3...Rxf1#, delivering checkmate as the White king is completely trapped.  
+
+4. **Verification**:  
+   - Each move is forced, and White has no way to escape the sequence. The final position after 3...Rxf1# is a checkmate, as the White king has no legal moves and is attacked by the Black rook.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1...Qh1+ 2.Kxh1 Ne3+ 3.Kg1 Rxf1#

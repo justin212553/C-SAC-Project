@@ -1,0 +1,27 @@
+The position is given by the FEN: 8/7R/k7/2P5/1PP3B1/8/8/K7 w - - 0 1.
+
+1.  **Identify the side to move:** The 'w' in the FEN string indicates that it is White's turn to move.
+
+2.  **Analyze the position:**
+    *   White's pieces: King on a1, Rook on h7, Bishop on g4, Pawns on b4, c4, c5.
+    *   Black's pieces: King on a6.
+    *   The Black King on a6 is not currently in check, but it is trapped. Its potential escape squares are all controlled by White's pieces:
+        *   a7 and b7 are attacked by the Rook on h7.
+        *   b6 is attacked by the Pawn on c5.
+        *   a5 and b5 are attacked by the Pawn on b4.
+    *   Since the Black King has no legal moves, any move by White that delivers check will be checkmate, provided the checking piece cannot be captured.
+
+3.  **Identify candidate moves:** White has many legal moves. We need to choose just one.
+    *   **King moves:** The King on a1 can move to a2, b1, or b2. For example, `Ka2` is a legal move.
+    *   **Rook moves:** The Rook on h7 has many legal moves along the 7th rank and h-file. For example, `Rh6` is a legal move. A particularly strong move is `Rb7`.
+    *   **Bishop moves:** The Bishop on g4 can move along its diagonals. For example, `Bf5` is a legal move.
+    *   **Pawn moves:** The pawn on b4 can move to b5. The pawn on c5 can move to c6. The pawn on c4 is blocked. For example, `b5` is a legal move.
+
+4.  **Select and verify a legal move:** Let's choose the move `Rb7`.
+    *   **Movement rule:** A rook moves horizontally and vertically. Moving the Rook from h7 to b7 is a legal horizontal move.
+    *   **Check:** The move `Rb7` attacks the Black King on a6, putting it in check.
+    *   **Legality:** As established in step 2, the Black King has no escape squares. The checking piece on b7 cannot be captured (Black has no other pieces) and the check cannot be blocked. Therefore, the move results in checkmate.
+    *   The move `Rb7` is a legal move.
+
+[FINAL PGN]
+1. Rb7#

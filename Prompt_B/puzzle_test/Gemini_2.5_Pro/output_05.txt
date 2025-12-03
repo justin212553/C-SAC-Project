@@ -1,0 +1,16 @@
+**Step-by-step reasoning:**
+
+1.  **Analyze the target:** The Black king is on a6.
+2.  **Identify the king's escape squares:** We must check all squares adjacent to the Black king to see if it can move.
+    *   The square a7 is attacked by the White rook on h7.
+    *   The square b7 is attacked by the White rook on h7.
+    *   The square b6 is attacked by the White pawn on c5.
+    *   The square b5 is attacked by the White pawn on c4.
+    *   The square a5 is attacked by the White pawn on b4.
+3.  **Evaluate the situation:** The Black king has no legal moves. This means any move by White that puts the king in check will result in checkmate, provided the checking piece cannot be captured and the check cannot be blocked. Since Black has no other pieces, this condition is automatically met.
+4.  **Find a checking move:** We need to find a legal move for White that attacks the a6 square.
+    *   The White pawn on b4 can move forward to b5. From b5, the pawn attacks the Black king on a6.
+5.  **Confirm the checkmate:** The move `b5` puts the Black king in check. As established, the king has no escape squares, and the check cannot be blocked or the checking piece captured. Therefore, `b5` is checkmate.
+
+[FINAL PGN]
+1. b5#

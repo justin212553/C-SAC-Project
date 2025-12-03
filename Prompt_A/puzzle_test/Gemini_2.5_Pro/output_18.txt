@@ -1,0 +1,24 @@
+An analysis of the position reveals a forced checkmate sequence for Black.
+
+The White king on h1 is in a precarious position, with limited escape squares. The key to the puzzle lies in exploiting the pin on the f2-bishop by the Black rook on f8. This pin prevents the bishop from participating in the defense on the f-file.
+
+Black's most forcing move is a queen sacrifice.
+
+1.  **... Qxf3+**: This move forces White's hand. The queen checks the king and attacks the f3-pawn.
+    *   White cannot capture with the bishop (`Bxf3`) because the bishop is pinned to the king by the rook on f8.
+    *   The king has no escape squares.
+    *   Therefore, White's only legal move is to capture the queen with the g-pawn.
+
+2.  **gxf3**: White is forced to accept the sacrifice. This move, however, fatally weakens the light squares around the king and opens the g-file.
+
+3.  **... Nf3#**: With the g-pawn moved, the Black knight from d4 can now jump to f3, delivering a decisive checkmate.
+    *   The king is attacked by the knight.
+    *   The king cannot move to h2, as it is controlled by the knight on f3.
+    *   The king cannot move to g1, as it is controlled by the rook on f8.
+    *   The knight on f3 cannot be captured.
+
+This sequence is a classic example of a queen sacrifice to break down the opponent's pawn structure and deliver mate with the remaining pieces.
+
+[FINAL PGN]
+1... Qxf3+
+2. gxf3 Nf3#

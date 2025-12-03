@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN string ends with "w", indicating it is White's turn to move.
+
+2. Identify White's pieces and their potential moves:
+   - White has the following pieces: a king on h4, a queen on g2, and a rook on c7.
+   - The king can move one square in any direction, provided it does not move into check or onto a square occupied by a White piece.
+   - The queen can move diagonally, horizontally, or vertically any number of squares, provided it does not move through or onto a square occupied by a White piece.
+   - The rook can move horizontally or vertically any number of squares, provided it does not move through or onto a square occupied by a White piece.
+
+3. Evaluate potential moves:
+   - The king on h4 has limited mobility due to the Black queen on e5 and the Black rook on f8. Moving the king to g4, g5, or h5 would place it in check, so these moves are illegal. The king can safely move to h3.
+   - The queen on g2 can move to several squares. For example, it can capture the Black pawn on h6, which is a legal move.
+   - The rook on c7 can move to several squares. For example, it can move to c8, which is a legal move.
+
+4. Select one legal move:
+   - Among the legal moves, I choose the queen capturing the pawn on h6.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Qxh6+

@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+Let me analyze the given chess position using the provided FEN: r4r1k/p5Rp/1p3pb1/2P4N/2B5/P7/6PP/B2n2K1 w - - 0 1. The goal is to find a forced checkmate in 3 moves for White. I will systematically evaluate the position, identify key candidate moves, and ensure that every response by Black leads to checkmate within the specified number of moves.
+
+First, let's understand the position. White has a strong attacking setup with a rook on g7, a knight on h5, a bishop on c4, and another bishop on a1. The king is on g1, which is relatively safe for now. Black's king is on h8, somewhat exposed, with a rook on f8, another rook on a8, a knight on d1, a bishop on f6, and pawns on a7, b6, and g6. Notably, Black's king has limited mobility due to the pawn on g6 and White's rook on g7 controlling the g-file. The squares around Black's king (g8, h7) are critical for potential checkmating threats.
+
+Since it's a mate in 3, White needs to deliver checkmate on the third move, meaning the first two moves must set up an unstoppable threat, and Black's responses must be forced or limited in such a way that mate is inevitable. I will look for moves that either deliver a check or create a decisive threat, forcing Black to respond in a way that allows mate on the next move.
+
+Let's consider the key pieces for the attack. The rook on g7 is already attacking the g-file, and moving it to g8 would deliver a check (Rg8+). If I play 1. Rg8+, Black's king can only move to h7 (Kh7), as g8 is occupied by the rook and f7 is not available due to the pawn structure and lack of control. After 1. Rg8+ Kh7, I need to find a way to deliver mate in two more moves. One idea is to bring the knight into the attack. The knight on h5 can move to f6, attacking h7, but Black's bishop on f6 currently controls that square. However, after Black's king moves to h7, I can consider other knight moves or use other pieces. Let's try 2. Nf6+ after 1. Rg8+ Kh7. This gives check, and Black's king must move back to h8 (Kh8), as h6 is not a legal square due to the pawn on g6. Then on move 3, I can play Rh8#, as the rook moves to h8, delivering checkmate since the king cannot escape (h7 is controlled by the knight on f6, and g7 is not available). This seems promising, but I need to confirm if Black has any other responses.
+
+After 1. Rg8+ Kh7 2. Nf6+, Black's only legal move is Kh8, as moving to g8 is blocked by the rook, and h6 is not possible. Then 3. Rh8# works, as the rook delivers check on h8, and the king cannot move to g8 (rook), h7 (knight), or any other square. This line seems to work, but I must ensure there are no other Black responses after the first move. After 1. Rg8+, Black's only legal move is Kh7, as the rook on f8 cannot interpose (it’s pinned or not in the right position), and no other piece can block the check. So, this line appears forced.
+
+However, I should explore other candidate moves to ensure I haven't missed a simpler or alternative solution. Another idea is to use the bishop on c4 to attack along the diagonal. For instance, moving the bishop to d5 or e6 could threaten mate on f7 or g8, but Black's pieces (like the knight on d1 or rook on f8) might interfere. Let's test 1. Bd5, threatening Be6# or Bxf7#. Black can respond with moves like Rfe8 or Nf2, potentially delaying the mate. This doesn't seem as forcing as the rook check.
+
+Another possibility is using the knight immediately, like 1. Nf6, attacking the bishop and threatening Nh7#. But Black can respond with Bxh2+ or other moves, and it doesn't lead to immediate mate. Similarly, moving the rook to h7 (1. Rh7+) forces Black's king to g8, but then finding mate in two is tricky, as Black has more space to maneuver.
+
+Returning to my initial line: 1. Rg8+ Kh7 2. Nf6+ Kh8 3. Rh8#. This sequence is clean and forced. After 1. Rg8+, Black must play Kh7. Then 2. Nf6+ forces Kh8, and 3. Rh8# delivers mate, as the king is trapped. I need to double-check if Black has any interpositions or other moves. After 2. Nf6+, Black cannot play Bxh2+ because the bishop is on f6 and moving it would not stop the threat (actually, the bishop is on f6, so it’s pinned or irrelevant here). No other Black piece can interfere with the check or the mate.
+
+To be thorough, let's visualize the final position after 3. Rh8#. White's rook is on h8, knight on f6, controlling h7, and Black's king on h8 cannot move. The pawn on g6 prevents escape to h6, and no Black piece can capture the rook or block. This is indeed checkmate.
+
+I am confident this is the correct solution, as it meets the mate-in-3 requirement with forced moves at each step. I will now present the final PGN sequence as instructed.
+
+[FINAL PGN]
+1. Rg8+ Kh7 2. Nf6+ Kh8 3. Rh8#

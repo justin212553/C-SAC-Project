@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move.
+   - White's king is on h2, and Black's king is on h5.
+   - Black has a queen on g7 and a rook on c2, while White has a queen on e4 and a rook on f1.
+   - Black's f2 pawn is close to promotion but cannot advance immediately due to White's control of the f-file.
+
+2. **Objective**:
+   - Black must deliver a forced checkmate in 3 moves.
+
+3. **Key Candidate Moves**:
+   - Black's queen and rook are the primary attacking pieces. The goal is to coordinate them to trap White's king on the h-file.
+   - The White king has limited mobility due to its position on h2 and the surrounding pieces.
+
+4. **Move-by-Move Analysis**:
+   - **Move 1**: Black plays 1... Qg2+.
+     - This forces White's king to move to h1, as it is the only legal move.
+   - **Move 2**: Black plays 2... Rc1+.
+     - This forces White to block the check with 3. Qe1, as it is the only legal move.
+   - **Move 3**: Black plays 3... Rxe1#.
+     - The rook captures the queen on e1, delivering checkmate. The White king on h1 is completely trapped.
+
+5. **Verification**:
+   - Each move is forced, and the sequence leads to a checkmate in 3 moves.
+   - The solution is correct and satisfies the "Mate in 3" condition.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... Qg2+ 2. Kh1 Rc1+ 3. Qe1 Rxe1#

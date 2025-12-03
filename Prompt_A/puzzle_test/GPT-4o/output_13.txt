@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: 
+   - White has a significant material advantage, including a rook on f2 and another rook on e1, which can deliver checks and control key squares.
+   - Black's king is on a6, and its mobility is limited due to the pawns and White's pieces.
+   - Black's pawns on b4 and a7 are not immediately threatening, and White's pawns on c6 and d3 are well-placed but not directly relevant to the mate in 2.
+
+2. **Key Candidate Moves**:
+   - White needs to deliver a forced mate in 2. The first move must set up an unavoidable checkmate on the second move.
+   - Candidate moves include rook maneuvers that restrict the Black king's movement and prepare for a decisive checkmate.
+
+3. **Move-by-Move Analysis**:
+   - **1. Ra1**: This move places the rook on a1, cutting off the Black king's escape to the a-file. The Black king is now restricted to b5 and b6.
+     - If Black plays 1...b3, White can respond with 2. Rxa6#, delivering checkmate as the Black king has no escape squares.
+     - If Black plays 1...Kb5, White can respond with 2. Ra5#, delivering checkmate as the Black king is trapped by its own pawns and White's rook on f2.
+
+4. **Verification**:
+   - All other White moves fail to deliver a forced mate in 2.
+   - The sequence 1. Ra1 followed by either 2. Rxa6# or 2. Ra5# is the only solution.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Ra1 b3 2. Rxa6#
+1. Ra1 Kb5 2. Ra5#
+[FINAL PGN]

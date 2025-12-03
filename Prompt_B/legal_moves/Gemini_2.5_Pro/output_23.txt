@@ -1,0 +1,19 @@
+1.  **Identify the side to move:** The FEN string `r4r1k/p5Rp/1p3pb1/2P4N/2B5/P7/6PP/B2n2K1 w - - 0 1` has a "w" after the piece placement, which indicates it is White's turn to move.
+
+2.  **Analyze White's pieces and potential moves:**
+    *   **King on g1:** Can move to f1 or h1.
+    *   **Rook on g7:** This is an attacking piece. It can move along the 7th rank or the g-file. A key candidate move is capturing the pawn on g6 (`Rxg6`).
+    *   **Knight on h5:** This is another attacking piece. It can move to f6, delivering check (`Nf6+`), or to g3.
+    *   **Bishop on c4:** This piece controls important diagonals and puts pressure on Black's kingside. It can move to b5, a6, d5, e6, or capture on f7 or g8.
+    *   **Pawn on c5:** This pawn can advance to c6.
+    *   **Other pieces (Bishop on a1, Pawns on a3, h2, g2):** These pieces have legal moves as well (e.g., `h3`, `a4`, `Bf6`), but the most active pieces are the ones around the Black king.
+
+3.  **Verify the legality of a candidate move:** Let's choose the move `Rxg6`.
+    *   **Movement Rule:** A rook can capture an opponent's piece on a square it can legally move to. The rook on g7 can move to g6, which is occupied by a black pawn. This is a legal capture.
+    *   **King Safety:** After White plays `Rxg6`, is the White king on g1 in check? The Black pieces are a rook on a8, a rook on f8, a knight on d1, and a pawn on b6. None of these pieces can attack the g1 square after `Rxg6`. Therefore, the move does not leave the king in check.
+    *   **Conclusion:** `Rxg6` is a legal move.
+
+4.  **Select the final move:** Based on the verification, `Rxg6` is a perfectly legal move for White.
+
+[FINAL PGN]
+1. Rxg6

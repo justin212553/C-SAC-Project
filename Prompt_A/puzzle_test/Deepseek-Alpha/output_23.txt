@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move and has a significant advantage due to active pieces, particularly the rook on g7 and the knight on h5.  
+   - Black's king is on h8, surrounded by limited escape squares. The bishop on g6 is a key defender, and the rook on f8 provides some protection.  
+   - White's goal is to deliver checkmate in 3 moves, exploiting the coordination of the rook, knight, and bishop.
+
+2. **Candidate Moves**:  
+   - The knight on h5 can deliver a check on f6, forcing Black's king to move or the bishop to capture.  
+   - The rook on g7 can deliver checks along the g-file, but Black's bishop on g6 blocks direct access.  
+   - The bishop on c4 can potentially join the attack, but immediate checks with the knight and rook seem more forcing.
+
+3. **Move-by-Move Analysis**:  
+   - **Move 1**: White plays 1. Nf6+. This is a forcing move, as it puts the Black king in check. Black has only one legal response: 1... Bxf6.  
+   - **Move 2**: White plays 2. Bxf6+. This check removes the defender (bishop) and forces Black's king to move to h7.  
+   - **Move 3**: White plays 3. Rg8#. The rook delivers checkmate, as the Black king is trapped with no escape squares.
+
+4. **Verification**:  
+   - Each move is forcing, and Black has no alternative responses. The sequence leads to a guaranteed checkmate in 3 moves.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. Nf6+ Bxf6 2. Bxf6+ Kh7 3. Rg8#

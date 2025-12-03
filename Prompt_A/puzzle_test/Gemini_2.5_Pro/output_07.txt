@@ -1,0 +1,28 @@
+This is a mate-in-one puzzle. My goal is to find a single move for White that delivers an unavoidable checkmate to the Black king.
+
+1.  **Analyze the position:**
+    *   White's pieces: King on g2, Rook on g4, Knight on e4.
+    *   Black's pieces: King on h8, Rook on f8, Rook on g8, pawns on f7, g7, h7.
+    *   The Black king on h8 is severely restricted. The White rook on g4 controls the key squares h7 and g8, preventing the king from moving there.
+    *   The Black rook on g8 is pinned to the king by the White rook on g4. It cannot move.
+    *   Crucially, the Black pawn on g7 is also pinned to the king by the White rook on g4. This means the g7-pawn cannot move off the g-file, as doing so would illegally expose its own king to check.
+
+2.  **Identify candidate moves:**
+    I need to find a move that puts the Black king in check, from which it cannot escape. The most likely candidates will be checks delivered by the knight or the rook.
+
+    *   **Rg6+:** This is a check. The king cannot move to h7 or g8 (controlled by the rook). However, the king can escape to g7. So, this is not mate.
+    *   **Ng5+:** This is a check. The king cannot move to h7 or g8 (controlled by Rg4) or g7 (controlled by Ng5). However, the pawn on h7 can legally capture the knight with `hxg5`. So, this is not mate.
+    *   **Nf6+:** This is a check. Let's analyze this move thoroughly:
+        *   **King's escape squares:** The king on h8 has three potential squares: g8, h7, and g7.
+            *   g8 is attacked by the White rook on g4.
+            *   h7 is attacked by the White rook on g4.
+            *   g7 is attacked by the White knight on f6.
+            *   Therefore, the king has no legal moves.
+        *   **Blocking the check:** A knight's check cannot be blocked.
+        *   **Capturing the checking piece:** The only Black piece that attacks the f6 square is the pawn on g7. However, as identified in the initial analysis, the g7-pawn is absolutely pinned to the king by the rook on g4. Moving the g7-pawn to capture the knight (`gxf6`) is an illegal move because it would expose the Black king to a check from the rook on g4.
+
+3.  **Conclusion:**
+    The move `Nf6+` puts the Black king in check. The king has no escape squares, the check cannot be blocked, and the checking knight cannot be legally captured. Therefore, `Nf6` is checkmate.
+
+[FINAL PGN]
+1. Nf6#

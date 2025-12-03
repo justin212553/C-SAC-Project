@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   White is to move, and the objective is to checkmate Black's king on g8 in exactly 3 moves.
+
+2. **Candidate moves**:  
+   White has several attacking options, particularly involving the queen on h6, the rook on e8, and the knight on d4. The Black king is somewhat exposed, and White's pieces are well-coordinated for an attack. The most forcing moves involve checks, as they limit Black's responses.
+
+3. **Analysis of candidate moves**:  
+   - **1. Rxf8+**: This is a forcing move, as it delivers check. Black must respond with 1... Qxf8.  
+   - After 1... Qxf8, White can play 2. Qxf8+ Kxf8, forcing the Black king to move to f8.  
+   - Finally, 3. Ba3# delivers checkmate, as the bishop on a3 covers all escape squares for the Black king.  
+
+   This sequence is forced, and checkmate is delivered on the third move. No earlier checkmate is possible, as each move is necessary to force the Black king into a position where it can be mated.
+
+4. **Verification**:  
+   - After 1. Rxf8+, Black has no choice but to capture the rook with 1... Qxf8.  
+   - After 2. Qxf8+, Black must capture the queen with 2... Kxf8.  
+   - The final move, 3. Ba3#, is a legal checkmate, as the Black king has no escape squares.  
+
+   There are no alternative defenses for Black that prevent this sequence, and no faster mate is possible.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rxf8+ Qxf8 2. Qxf8+ Kxf8 3. Ba3#
+[FINAL PGN]

@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move, and the goal is to checkmate Black's king on a7 in exactly 3 moves.
+
+2. **List the most promising candidate moves for White:**
+   - White has several attacking options, including checks and threats. The most forcing moves are:
+     - Qb6+ (direct check to the Black king)
+     - Be3 (preparing to control key squares)
+     - Rc7 (threatening checks and controlling the 7th rank)
+
+3. **Analyze each candidate move:**
+   - **Line 1: 1. Qb6+**
+     - 1... Ka8 (forced, as the king has no other legal move)
+     - 2. Rc8# (checkmate on move 2, which is too fast for the "mate in 3" requirement).
+
+   - **Line 2: 1. Be3**
+     - This move does not deliver a check and allows Black to defend with moves like 1... Bxe3 or 1... Ka8. It does not lead to a forced mate in 3.
+
+   - **Line 3: 1. Rc7**
+     - 1... Rxc7 (forced, as the rook is under attack and Black has no other reasonable defense)
+     - 2. Be3+ Ka8 (forced, as the king has no other legal move)
+     - 3. Qd8# (checkmate on move 3, fulfilling the "mate in 3" requirement).
+
+4. **Verify the chosen line:**
+   - The sequence 1. Rc7 Rxc7 2. Be3+ Ka8 3. Qd8# is legal and forces checkmate in exactly 3 moves.
+   - No earlier checkmate is possible in this line, and all moves are forcing.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rc7 Rxc7 2. Be3+ Ka8 3. Qd8#

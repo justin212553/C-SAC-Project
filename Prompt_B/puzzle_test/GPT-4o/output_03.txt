@@ -1,0 +1,27 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king you must checkmate:**
+   - White is to move, and the goal is to checkmate the Black king on g8 in exactly 1 move.
+
+2. **List the most promising candidate moves for White:**
+   - White has the rook on e5 and the king on b4. The rook can deliver checks, while the king cannot directly check the Black king. Candidate moves include:
+     - Rook moves: Re8+, Re7+, Re6+, etc.
+
+3. **For each candidate, calculate a concrete line for exactly 1 move:**
+   - **Re8+:** This move places the Black king in check. The Black king on g8 has no legal moves because all escape squares (f8, h8, h7, f7) are controlled by White's rook or blocked by Black's own pawns. This results in immediate checkmate.
+   - **Other rook moves (e.g., Re7+, Re6+):** These moves do not deliver checkmate in 1 move, as the Black king can escape or the position does not result in checkmate.
+
+4. **Verify legality and checkmate:**
+   - **Re8+** is legal and delivers checkmate because:
+     - The Black king is in check and has no escape squares.
+     - Black has no other pieces that can block the check or capture the attacking rook.
+   - No faster checkmate exists before move 1, and no other move achieves checkmate in exactly 1 move.
+
+5. **Conclude by choosing the best forced line:**
+   - The move Re8+ is the only move that delivers checkmate in exactly 1 move.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1. Re8#

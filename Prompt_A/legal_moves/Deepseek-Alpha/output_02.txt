@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. Analyze all black's moveable pieces:
+   - The black king on f8 can move to e8, e7, g7, or g8.
+   - The black queen on g7 can move to any square along the g-file, the 7th rank, or diagonals it controls.
+   - The black knight on g2 can move to f4, e3, e1, h4, or h1.
+   - The black bishop on g6 can move to any square along its diagonals.
+
+2. Evaluate legal moves:
+   - The black king has legal moves to e8, e7, g7, and g8.
+   - The black queen has numerous legal moves, such as g6, g5, g4, etc.
+   - The black knight has legal moves to f4, e3, e1, h4, and h1.
+   - The black bishop has legal moves to h5, f5, e4, etc.
+
+3. Select one legal move:
+   - For simplicity, choose a move for the black knight: Ng2-h4.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Ng2-h4

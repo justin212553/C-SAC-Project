@@ -1,0 +1,15 @@
+This is a mate-in-1 puzzle for Black.
+
+1.  **Analyze the White King's position:** The White King is on h8. It is completely trapped.
+    *   The g8 square is controlled by the Black King on f8.
+    *   The h7 and g7 squares are controlled by the Black Queen on f7.
+2.  **Identify the current state:** Since the White King has no legal moves and is not currently in check, the position is a stalemate.
+3.  **Find the winning move:** Black's goal is to deliver a check. Because the White King has no escape squares, any legal check will be checkmate.
+4.  **Evaluate candidate moves for Black:**
+    *   The Black Queen on f7 can deliver check from multiple squares. For example, moving along the 7th rank to e7 (`...Qe7+`), d7 (`...Qd7+`), etc., delivers a check that White cannot escape, block, or capture.
+    *   Moving the Queen along the diagonal, for instance to g8 (`...Qg8+`) or e8 (`...Qe8+`), also results in checkmate.
+    *   Moving the Bishop or the King does not deliver a check and would maintain the stalemate.
+5.  **Conclusion:** Any move by the Black Queen that puts the White King in check is a valid solution. A simple and clear example is `...Qe7#`. The Queen on e7 attacks the King on h8, and the King has no legal moves to escape the attack.
+
+[FINAL PGN]
+1... Qe7#

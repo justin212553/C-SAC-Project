@@ -1,0 +1,36 @@
+This is a mate-in-2 problem. Let's analyze the position step-by-step.
+
+**1. Initial Position Analysis:**
+*   White is to move.
+*   The Black king is on c2. Let's examine its potential escape squares: b1, d1, d2, and d3.
+*   The White knight on c3 controls b1, d1, and d3.
+*   The White queen on d4 controls d1 and d2.
+*   Therefore, the Black king is completely trapped and has no legal moves. This suggests that the solution might involve a zugzwang, where White makes a quiet move, forcing Black into a position where any reply leads to mate.
+
+**2. Identifying Black's Threats:**
+*   Although Black's king is trapped, Black is not without resources. The Black queen on f3 creates two critical threats if White makes a simple waiting move:
+    1.  `...Qxc3+`: This is a check because the White king on b8 is on the same diagonal.
+    2.  `...Qd1+`: This is a check because the White king is on the 8th rank.
+*   A simple waiting move like `1. a6` would fail to `1... Qxc3+`, and after `2. Qxc3`, it is not mate. Similarly, a move like `1. Ka7` fails to `1... Qd1+`. The correct move for White must neutralize these threats while keeping the Black king trapped.
+
+**3. Evaluating Candidate Moves:**
+*   **Quiet Moves:** As established, most quiet moves fail because they allow one of Black's two checking replies.
+*   **Checks and Sacrifices:** Since quiet moves are problematic, let's explore forcing moves like checks and sacrifices.
+    *   Consider the move `1. Qb6+`. This is a powerful check.
+    *   How can Black respond to `1. Qb6+`?
+        *   The king cannot move (all escape squares are covered).
+        *   The check cannot be blocked.
+        *   The only legal move is to capture the queen: `1... Qxb6`.
+
+**4. The Final Sequence:**
+*   After the forced reply `1... Qxb6`, White must deliver checkmate on the second move.
+*   The White pawn on c7 can now advance and promote. White plays `2. c8=Q#`.
+*   Let's verify if this is checkmate:
+    *   The newly promoted queen on c8 delivers a check to the king on c2.
+    *   The king's escape squares are still covered: b1, d1, and d3 by the knight on c3; d2 by the rook on d8.
+    *   The check cannot be blocked by any Black piece.
+    *   The new queen on c8 cannot be captured.
+*   This is a forced checkmate in exactly two moves.
+
+[FINAL PGN]
+1. Qb6+ Qxb6 2. c8=Q#

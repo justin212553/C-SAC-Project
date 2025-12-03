@@ -1,0 +1,63 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king you must checkmate.**
+   - The FEN string provided is: r5k1/pb4bp/1p1N1pp1/3nN3/3p4/P2Q2Pq/1P3P1P/R1B1rBK1 b - - 0 1
+   - The 'b' in the FEN indicates that Black is to move.
+   - Therefore, Black is the attacking side, and the goal is to checkmate the White king in exactly 3 moves.
+   - The White king is currently on g1.
+
+2. **List the most promising candidate moves for the attacking side (Black).**
+   - Black has several pieces in attacking positions, including the queen on h3, rook on e1, knight on d5, and bishop on g7, all near the White king.
+   - The White king is on g1, somewhat exposed, with limited escape squares due to Black's pieces and White's own pawns on f2 and h2.
+   - Promising moves for Black could involve checks or threats that force White's responses, leading to a forced mate.
+   - Candidate moves to consider:
+     - **Qxh2+**: A direct check by capturing the h2 pawn, forcing the White king to move.
+     - **Rxf1+**: A check by capturing the f1 bishop, potentially forcing the king to a vulnerable square.
+     - **Qxg3+**: A check by capturing the g3 pawn, attacking the king and potentially opening lines.
+   - I will prioritize moves that deliver check immediately to limit White's options and force specific responses.
+
+3. **For each candidate, calculate a concrete line for exactly 3 moves, assuming the opponent plays reasonable defensive moves.**
+   - **Candidate 1: Qxh2+**
+     - Move 1: Black plays Qxh2+. This is a legal move as the queen on h3 can capture the pawn on h2, and it delivers check to the White king on g1.
+     - White's only legal response is Kxh2 (king captures queen on h2), as the king cannot move to f1 (occupied by White's bishop) or h1 (attacked by Black's rook on e1).
+     - Move 2: Black plays Rh1+. This is legal as the rook on e1 can move to h1, delivering check to the White king on h2.
+     - White's only legal move is Kg2 (king to g2), as h3 is attacked by Black's bishop on g7, and h1 is occupied by Black's rook.
+     - Move 3: Black plays Rh2#. This is legal as the rook on h1 can move to h2, and it delivers checkmate because the White king on g2 has no escape squares: g1 is attacked by Black's knight on d5 (via e3), f1 is occupied by White's bishop, f2 is occupied by White's pawn, f3 is attacked by Black's knight on d5, g3 is attacked by Black's bishop on g7, and h3 is also attacked by the bishop on g7.
+     - Verification:
+       - Every move is legal.
+       - Checkmate is delivered on move 3 (Rh2#).
+       - There is no earlier checkmate: after Qxh2+, White is in check but not checkmated; after Rh1+, White is in check but can move to g2.
+     - This line works as a mate in 3.
+
+   - **Candidate 2: Rxf1+**
+     - Move 1: Black plays Rxf1+. This is legal as the rook on e1 can capture the bishop on f1, delivering check to the White king on g1.
+     - White has two responses: Kxf1 or Kh1.
+       - If Kxf1: Black can play Qh1+ (move 2), forcing Ke2 (only legal move), then Black plays Qxg3 (move 3), but this is not checkmate as the king can move to d3 or other squares.
+       - If Kh1: Black can play Qxh2+ (move 2), forcing Kxh2, then Rh1+ (move 3), but this is only check, not checkmate, as the king can move to g2 (similar to the first line but delayed).
+     - Verification:
+       - This does not lead to a forced mate in exactly 3 moves, as neither response from White results in checkmate on move 3.
+     - This candidate fails.
+
+   - **Candidate 3: Qxg3+**
+     - Move 1: Black plays Qxg3+. This is legal as the queen on h3 can capture the pawn on g3, delivering check to the White king on g1.
+     - White has responses like Kh1 or hxg3.
+       - If Kh1: Black plays Qh3+ (move 2), forcing Kg1, then Qxh2+ (move 3), but this is not checkmate as the king can capture the queen.
+       - If hxg3: Black plays Rxf1+ (move 2), forcing Kh2, then Rh1# (move 3), but this is checkmate on move 3. However, I need to ensure all White responses lead to mate.
+       - If White plays fxg3: Black plays Rxf1+ (move 2), forcing Kh2, then Rh1# (move 3), which again works.
+     - However, after Qxg3+, White can also play Bg2, blocking the check. Then Black does not have a clear mate in 2 more moves.
+     - Verification:
+       - This does not lead to a forced mate in 3 because White has a defensive resource (Bg2) that prevents the mate.
+     - This candidate fails.
+
+4. **Conclude by choosing the best forced line.**
+   - From the analysis, the only line that guarantees a forced checkmate in exactly 3 moves, with no earlier mate and no defensive escape for White, is the first candidate: starting with Qxh2+.
+   - The sequence is:
+     - Move 1: Qxh2+
+     - Move 2: Rh1+
+     - Move 3: Rh2#
+   - This satisfies all conditions: every move is legal, checkmate occurs on move 3, and there is no mate before move 3.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Qxh2+ 2. Kxh2 Rh1+ 3. Kg2 Rh2#

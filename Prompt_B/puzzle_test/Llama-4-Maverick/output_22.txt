@@ -1,0 +1,73 @@
+1. The given FEN is 1k6/1p6/5r2/3q2p1/Qp1P4/4PrPp/2R4P/R5K1 b - - 0 1. 
+   - The side to move is Black.
+   - The White king is to be checkmated.
+
+2. The most promising candidate moves for Black are:
+   - Qd8# (if possible)
+   - Moving the Black queen to other potentially checking squares
+   - Using the Black rooks or other pieces to support the queen or deliver checkmate
+
+Let's analyze the position:
+- The Black queen is on d5, and it has potential checking moves.
+- The White king is on g1, so we need to get the Black queen or another piece to checkmate it.
+
+First, let's list the pieces and their possible moves:
+- Black queen on d5 can move to various squares.
+- Black rook on f6 can potentially move to f1 or other squares to check or support checkmate.
+- Black rook on f3 is somewhat pinned but can still move along the f-file or potentially to other squares.
+
+Let's examine potential checking moves and supporting moves for Black:
+1. The Black queen can potentially check the White king on certain squares.
+2. The Black rooks can support the queen or directly check the king.
+
+Let's start with the most promising candidate moves:
+1. Qd5-g2+ or Qd5-f3+ (to check the White king directly or indirectly).
+2. Rf3-f1+ (to potentially checkmate or force a response).
+
+Let's analyze a potential line:
+1... Qd5-g2+ 
+   - 2. Rxg2 (forced to get out of check) Rf1#
+   - This line checkmates in 2 moves, not 3.
+
+Let's try another line:
+1... Rf3-f1+
+   - 2. Rxf1 (forced) Qd5-g2#
+   - Again, this checkmates in 2 moves.
+
+To achieve a checkmate in exactly 3 moves, we need a different approach.
+
+Let's consider:
+1... Qd5-e4 (threatening Qe4-e1# or other checks)
+   - 2. d5 (trying to block or counter) Qe1+ 
+   - 3. Rxe1 Rf1#
+
+However, let's directly analyze a potential 3-move checkmate:
+1... Qd5-f3
+   - Threatening Qf3-g2# or Rf3-f1# is not immediately possible due to the White rook on c2.
+   - 2. Qc2 (or other moves) could be met with a checkmate or a strong threat.
+
+Let's directly check a potential 3-move sequence:
+1... Qd5-a5 (or other moves that set up for a potential checkmate)
+   - Doesn't directly lead to an obvious checkmate in 3.
+
+Let's directly examine a potential checkmate:
+1... Qd5-f3
+   - 2. Qc2 Qg2+ 
+   - 3. Rxg2 Rf1#
+
+Let's verify this line:
+1... Qd5-f3
+   - 2. Qc2 (or other moves like Qd1, but Qc2 is more reasonable to block the check) Qg2+ 
+   - 3. Rxg2 Rf1#
+
+This line seems to work.
+
+Let's verify the legality and checkmate:
+1. 1... Qf3 is legal.
+2. 2. Qc2 is a reasonable response.
+3. 2... Qg2+ is legal and a check.
+4. 3. Rxg2 is forced.
+5. 3... Rf1# is checkmate.
+
+[FINAL PGN]
+1... Qd5-f3 2. Qa4-c2 Qf3-g2+ 3. Rc2xg2 Rf6-f1#

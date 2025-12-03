@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   White is to move, and the goal is to checkmate the Black king on h8 in exactly 2 moves.
+
+2. **List promising candidate moves for White**:  
+   White has several attacking options, particularly involving the queen and rook. The most promising moves are checks, as they force Black's responses.  
+   - Candidate moves: Qh5+, Qxf6+, Qe7+, and Rd4.
+
+3. **Analyze each candidate move for a forced mate in 2**:  
+   - **1. Qh5+**:  
+     Black's king is forced to move to g8 (1... Kg8).  
+     White can then deliver checkmate with 2. Qf7#.  
+     This line works and satisfies the condition of mate in 2.  
+
+   - **1. Qxf6+**:  
+     Black can respond with 1... Kg8. White has no way to deliver checkmate on the second move. This line fails.  
+
+   - **1. Qe7+**:  
+     Black can block the check with 1... Rde8. White cannot deliver checkmate on the second move. This line fails.  
+
+   - **1. Rd4**:  
+     This move does not deliver check and allows Black to defend. It fails to meet the requirement of mate in 2.  
+
+4. **Verify the best line**:  
+   The sequence 1. Qh5+ Kg8 2. Qf7# is legal, forces Black's moves, and delivers checkmate on the second move. There is no faster mate, and no other candidate move achieves the objective.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]  
+1. Qh5+ Kg8 2. Qf7#  

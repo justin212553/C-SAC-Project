@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move, and White has a significant material advantage, including two rooks and a queen.
+   - Black's king is on b1, surrounded by its own pawns and pieces, limiting its mobility.
+   - White's queen on f6 and rook on c8 are well-placed to deliver checks and control key squares.
+
+2. **Key Candidate Moves for Black**:
+   - Black's options are limited due to the cramped position of its king. The most forcing move is 1... c1=Q, promoting the pawn to a queen and threatening counterplay.
+
+3. **White's Response**:
+   - After 1... c1=Q, White can deliver a forced checkmate in one move with 2. Qb2#.
+   - The White queen on b2 will check the Black king on b1, and the Black king has no escape squares due to its own pawns and White's pieces controlling key squares.
+
+4. **Verification**:
+   - No other Black move prevents the forced mate in 2. For example:
+     - If Black plays 1... Qd4 or any other queen move, White can still deliver mate with Qb2#.
+     - If Black moves the rook (1... Rd2 or 1... Rd4), the result is the same: Qb2#.
+
+5. **Conclusion**:
+   - The solution is a forced mate in 2 moves, starting with Black's pawn promotion to a queen.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1... c1=Q 2. Qb2#

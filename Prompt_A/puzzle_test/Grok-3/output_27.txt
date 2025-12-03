@@ -1,0 +1,53 @@
+--- THOUGHT PROCESS START ---
+
+Let me analyze the given chess position using the provided FEN: **5r2/2R2P1k/7p/4q3/7K/8/6Q1/8 w - - 0 1**. The goal is to find a forced checkmate in 3 moves for White. I will systematically evaluate the position, identify key candidate moves, and ensure that every response by Black leads to checkmate within the specified number of moves.
+
+First, let's understand the position:
+- White pieces: King on h4, Queen on g2, Rook on c7, Pawn on f7.
+- Black pieces: King on h7, Queen on e5, Rook on f8, Pawn on h6.
+- It's White's turn to move.
+- The board shows that Black's king is somewhat exposed on h7, near the edge, which is often a good target for checkmate patterns. White has a strong attacking force with the queen, rook, and a pawn on f7 that is close to promotion.
+
+My objective is to deliver checkmate in 3 moves, meaning White makes 3 moves, and Black makes 2 moves in between, resulting in checkmate on White's third move. I need to find a sequence where every possible response by Black is met with a forced checkmate.
+
+### Step 1: Identify Candidate Moves for White's First Move
+I’ll look for moves that either deliver check, threaten checkmate, or force Black into a limited set of responses. Given the position, here are some observations:
+- The pawn on f7 can promote to a queen or other piece by moving to f8. Promoting to a queen would place it on f8, attacking the black rook and potentially threatening checkmate.
+- The rook on c7 can move to various squares, potentially to h7 to attack the black king directly.
+- The queen on g2 has a lot of mobility and can move to squares like h3 or f3 to target the black king or coordinate with other pieces.
+- The white king on h4 is not under immediate threat and might not need to move unless necessary for the mate.
+
+Let’s test the pawn promotion first:
+- **1. f8=Q**: This promotes the pawn to a queen, attacking the black rook on f8. Black must respond. Possible Black moves:
+  - Black can capture the new queen with **1... Rxf8**, but then White can play **2. Qg7+** (queen to g7, check). Black's king can only move to h8 (**2... Kh8**), and then White can play **3. Qxh6#** (capturing the pawn on h6 with checkmate, as the black king has no escape squares). This works.
+  - Black could move the king with **1... Kg6** (to escape the potential threats). Then White can play **2. Qg7+** (check), forcing Black's king to move to f5 (**2... Kf5**), and White can deliver checkmate with **3. Qf3#** (queen to f3, checkmate, as the black king is trapped with no legal moves). This also works.
+  - Black could move the queen, say **1... Qd4+**, giving check to White's king. White's king moves to h5 (**2. Kh5**), and now Black has no effective checks or defenses. White can play **3. Qg7#** (queen to g7, checkmate, as the black king on h7 is trapped). This sequence also leads to mate in 3.
+  - Other Black queen moves (like **1... Qe6**) or rook moves don't prevent White from following up with similar checkmate threats.
+
+This move, **1. f8=Q**, seems promising as it forces Black into responses that all lead to checkmate on move 3. Let me double-check other first moves to ensure there isn't a better or alternative solution.
+
+Alternative first move: **1. Rh7+** (rook to h7, check). Black's king must move to g6 (**1... Kg6**). Then White can play **2. Qf3+** (check), forcing Black's king to f5 (**2... Kf5**), and then **3. Qh3#** (checkmate). This also works. If Black plays **1... Kxh7** after **1. Rh7+**, then **2. Qg7+** (check), Black moves to h8 (**2... Kh8**), and **3. Qxh6#** (checkmate). So this also leads to mate in 3.
+
+Another candidate: **1. Qg7+** (queen to g7, check). Black's king moves to h8 (**1... Kh8**), then White plays **2. Qxh6+** (check), Black moves back to g8 (**2... Kg8**), and White has no immediate checkmate on move 3 (e.g., **3. Rg7+** is check but not mate). This doesn't work for mate in 3.
+
+After testing, both **1. f8=Q** and **1. Rh7+** seem to work. However, I notice that **1. f8=Q** is more forcing as it introduces a new piece and creates multiple threats, and it consistently leads to mate against all Black responses. In chess puzzles, especially mate in 3, there is often a unique solution intended by the composer. Since **1. f8=Q** is elegant (promoting a pawn to a queen is a thematic element in many puzzles), I’ll proceed with that as the primary solution.
+
+### Step 2: Verify All Black Responses After 1. f8=Q
+- **1... Rxf8**: Then **2. Qg7+ Kh8 3. Qxh6#** (mate, as explained).
+- **1... Kg6**: Then **2. Qg7+ Kf5 3. Qf3#** (mate, as the king is trapped on f5, attacked by the queen, and Black's pieces can't block or capture).
+- **1... Qd4+**: Then **2. Kh5** (king moves out of check), and Black has no useful moves to prevent **3. Qg7#** (mate, as the black king on h7 is trapped by the white queen on g7 and king on h5).
+- Other Black queen moves like **1... Qe6**: White still plays **2. Qg7+ Kh8 3. Qxh6#** (mate).
+- Black pawn move **1... h5**: Irrelevant, White plays **2. Qg7+ Kh8 3. Qxh6#** (mate).
+
+In all cases, Black cannot prevent the checkmate on move 3. Therefore, the sequence starting with **1. f8=Q** is correct.
+
+### Step 3: Confirm Legality and Notation
+All moves are legal:
+- **1. f8=Q** is a valid promotion.
+- Subsequent moves like **Qg7+** and **Qxh6#** are within the queen's movement rules.
+- Black's responses are also legal within the rules of chess.
+
+I will now present the solution in PGN format as instructed, ensuring proper move numbers and notations for checks and checkmate.
+
+[FINAL PGN]
+1. f8=Q+ Rxf8 2. Qg7+ Kh8 3. Qxh6#

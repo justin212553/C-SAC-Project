@@ -1,0 +1,33 @@
+This is a complex tactical position where the white king is extremely exposed. Black can force a checkmate by a series of checks, including several powerful double checks.
+
+**1... Nf3+**
+This is the key starting move. It's a double check from the knight on f3 and the bishop on h4. In a double check, the king is the only piece that can move. White has three legal moves for the king: Kd1, Kd2, and Kf1. The puzzle asks for a mate in 4, which implies we must find the solution against White's best defense (the one that lasts the longest).
+
+*   If 2. Kd2, Black plays 2... Bf5+ (a discovered check from the rook on c2). White's king is forced to move again, and no matter where it goes (Kc1, Kc3, or Ke3), Black delivers checkmate on the next move (3... Rc2#, 3... Rc1#, or 3... Re2# respectively). This is a mate in 3.
+*   If 2. Kf1, Black plays 2... Rxf2+, another double check (from the rook and the bishop on h4). White's only move is 3. Ke1, which is met by 3... Re2#, a checkmate. This is also a mate in 3.
+
+**2. Kd1**
+This is White's longest defense, forcing the mate to take four moves.
+
+**2... Rxf2+**
+Black continues the assault with another devastating double check, this time from the rook on f2 and the bishop on h4. Once again, the king is forced to move. White's only legal square is e1.
+
+**3. Ke1**
+The king is driven back to the first rank.
+
+**3... Re2+**
+A simple rook check. The white king is now forced back to d1, its only escape square.
+
+**4. Kd1**
+The king is trapped.
+
+**4... Re1#**
+This is the final blow. The rook on e1 delivers checkmate. The king on d1 has no escape squares:
+*   c1 is controlled by the rook on c2.
+*   c2 is controlled by the knight on d4.
+*   d2 is controlled by the knight on f3 and the bishop on g4.
+*   e1 is controlled by the bishop on h4 and the knight on f3.
+*   e2 is controlled by the knight on d4 and the bishop on g4.
+
+[FINAL PGN]
+1... Nf3+ 2. Kd1 Rxf2+ 3. Ke1 Re2+ 4. Kd1 Re1#

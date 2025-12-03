@@ -1,0 +1,20 @@
+1.  **Identify the side to move:** The FEN `8/8/8/8/8/6B1/5QN1/5K1k w - - 0 1` has a 'w' after the piece placement, which indicates that it is White's turn to move.
+
+2.  **Analyze the position:** The Black king is on h1. It is not currently in check. The squares adjacent to the Black king are g1 and h2. The square g1 is controlled by the White king on f1. The square h2 is controlled by the White knight on g2. The square g2 is occupied by the White knight. Therefore, the Black king has no legal moves. If White cannot deliver check, the game is a stalemate.
+
+3.  **List candidate moves for White:** We need to find any single legal move. Let's examine the possible moves for each of White's pieces.
+    *   **King on f1:** Can legally move to e1, e2, or g1. For example, `Kf1-e2` is a legal move.
+    *   **Queen on f2:** Has many legal moves. It can move along the f-file (e.g., `Qf2-f5`), the 2nd rank (e.g., `Qf2-d2`), or its diagonals (e.g., `Qf2-e3`). A notable move is `Qf2-h2`.
+    *   **Knight on g2:** Can legally move to e1, e3, f4, or h4. For example, `Ng2-f4` is a legal move.
+    *   **Bishop on g3:** Can legally move along its diagonals. For example, `Bg3-f4` or `Bg3-h2`.
+
+4.  **Verify the legality of a chosen candidate move:** Let's select the move `Qf2-h2`.
+    *   **Movement:** A queen can move diagonally, so moving from f2 to h2 is a valid queen move.
+    *   **Destination Square:** The square h2 is empty, so the move is possible.
+    *   **King Safety:** The move does not expose the White king on f1 to an attack.
+    *   **Result:** The move places the Black king on h1 in check. As established in step 2, the Black king has no escape squares. The checking piece (the queen on h2) cannot be captured, and the check cannot be blocked. Therefore, `Qf2-h2` is not only a legal move but also delivers checkmate.
+
+5.  **Select one legal move for the final output:** The move `Qf2-h2` is a perfectly legal move.
+
+[FINAL PGN]
+1. Qh2+

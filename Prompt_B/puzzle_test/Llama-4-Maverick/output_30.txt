@@ -1,0 +1,40 @@
+1. The given FEN is: r5k1/pb4bp/1p1N1pp1/3nN3/3p4/P2Q2Pq/1P3P1P/R1B1rBK1 b - - 0 1. 
+   - The side to move is Black.
+   - The White king is to be checkmated.
+
+2. The most promising candidate moves for Black are those that put the White king in a vulnerable position or directly threaten it. 
+   - The Black pieces that can potentially attack the White king are the Queen (h3), the Rook (e1), the Knight (d5), and potentially the Bishop (c8) or the Pawn (g6) if moved.
+
+3. Let's analyze the position:
+   - The White king is on g1, and it's somewhat exposed.
+   - The Black Queen on h3 is already in an attacking position.
+   - A potential checkmate could involve the Black Queen and other pieces coordinating to attack the White king.
+
+4. Let's examine potential moves:
+   - The Black Queen is already attacking the White king indirectly. A check with Qg2+ is possible.
+   - The Black Rook on e1 is already pinning the White Queen against the White king, which is a strong pressure.
+
+5. Let's consider a line starting with Qg2+:
+   - 1... Qg2+ 
+   - The White king can move to f2 or h2 (since Kg2 is not possible due to the pin by Re1 and the attack by Qh3).
+   - If 2. Kf2, then Qf3+ or other strong moves could follow.
+   - If 2. Kh2, then a potential checkmate could be achieved with the right follow-up.
+
+6. Let's analyze 1... Qg2+ 2. Kh2:
+   - 2... Nf4 (threatening checkmate and preparing to deliver it).
+   - 3. Any move by White, and Black can potentially checkmate.
+
+7. Let's verify a concrete line:
+   - 1... Qg2+ 2. Kh2 Nf4
+   - 3. Qd2 (or any other move) Rh1#
+
+8. Checking the line:
+   - 1... Qg2+ is legal.
+   - 2. Kh2 Nf4 is legal and sets up a checkmate.
+   - 3. Qd2 Rh1# is checkmate.
+
+9. Let's put the moves together:
+   - 1... Qg2+ 2. Kh2 Nf4 3. Qd2 Rh1#
+
+[FINAL PGN]
+1... Qg2+ 2. Kh2 Nf4 3. Qd2 Rh1#

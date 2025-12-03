@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN string ends with "b", indicating it is Black's turn to move.
+
+2. Identify Black's pieces and their possible moves:
+   - Black has a king on g7, a knight on e5, and a rook on g5.
+   - The king can move one square in any direction, provided the destination square is not occupied by a Black piece or under attack.
+   - The knight can move in an "L" shape to any valid square that is not occupied by a Black piece.
+   - The rook can move horizontally or vertically to any valid square that is not occupied by a Black piece.
+
+3. Evaluate candidate moves:
+   - The king on g7 can move to f6, f7, f8, g6, h6, h7, or h8. However, some of these squares may be invalid due to being attacked or occupied.
+   - The knight on e5 can move to c4, c6, d3, d7, f3, f7, g4, or g6. These moves must be checked for legality.
+   - The rook on g5 can move along the g-file or the 5th rank, provided the destination square is not occupied by a Black piece.
+
+4. Select one legal move:
+   - After considering the above, I will choose a move for the rook, as it has several straightforward options.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... Rxg2

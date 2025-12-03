@@ -1,0 +1,33 @@
+1. The side to move is White, and the objective is to checkmate Black's king.
+2. The current position is given in FEN: 7r/8/2KQ4/3B4/8/r4R2/7r/4b1nk w - - 0 1. Let's analyze it:
+   - Black's king is on g1.
+   - White pieces: King on c6, Queen on d6, Bishop on d5, Rook on f3.
+   - Black pieces: Rooks on h8, h2, a3, Bishop on e1, Knight on h1.
+
+3. Candidate moves for White:
+   - The White Queen is well-placed on d6 and can potentially move to deliver checkmate or check.
+   - The White Rook on f3 is somewhat pinned because of the Black Rook on a3, but it can still move.
+   - The White Bishop on d5 is somewhat restricted but can potentially be used.
+
+4. Let's examine potential checks and checkmates:
+   - The Black king is on g1, so we need to look for checks that can lead to checkmate. 
+   - Qg3+ is a potential check because it puts the Queen on a file where it can potentially deliver checkmate or force a response that could be followed up by another piece.
+
+5. Let's analyze the move Qg3+:
+   - 1. Qg3+ Kh1 (forced, as the king must move out of check)
+   - Now, we need a checkmate on the second move. 
+   - The White Rook on f3 can potentially deliver checkmate on f1.
+
+6. Checking the line:
+   - 1. Qg3+ Kh1
+   - 2. Rf1#
+
+Let's verify:
+- Every move is legal.
+- Checkmate is delivered on the final move (Rf1#).
+- There's no earlier checkmate before move 2.
+
+The line 1. Qg3+ Kh1 2. Rf1# is a forced checkmate in 2 moves.
+
+[FINAL PGN]
+1. Qg3+ Kh1 2. Rf1#

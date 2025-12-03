@@ -1,0 +1,32 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move.
+   - The objective is to checkmate the Black king on h8 in exactly 4 moves.
+
+2. **List the most promising candidate moves for White:**
+   - White has several attacking options, including advancing the e-pawn, moving the rook, or using the bishop to deliver checks or control key squares.
+
+3. **Analyze candidate moves and calculate concrete lines:**
+   - The Black king is restricted to the h-file, and Black's pieces (rook on c2 and pawns) have limited mobility. White must carefully coordinate its pieces to deliver checkmate in exactly 4 moves.
+
+   - **Candidate 1: 1. Bf8**
+     - This move threatens to control key squares around the Black king. Black's responses are limited.
+     - Line: 1. Bf8 Kg8 2. Ra8 h5 3. Bh6 Rc1+ 4. Bxc1#
+     - This line delivers checkmate on move 4.
+
+   - **Candidate 2: 1. Ra8**
+     - This move directly threatens the Black king but does not lead to a forced mate in 4 moves. Black can delay with pawn moves or rook checks.
+
+   - **Candidate 3: 1. e6**
+     - Advancing the e-pawn does not lead to a forced mate in 4 moves. Black can respond with Rc1+ or Kg8.
+
+4. **Verify the chosen line:**
+   - The line starting with 1. Bf8 is the only one that forces checkmate in exactly 4 moves, assuming best defense by Black.
+   - Each move is legal, and checkmate is delivered on the 4th move without any earlier mate.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+
+1. Bf8 Kg8 2. Ra8 h5 3. Bh6 Rc1+ 4. Bxc1#

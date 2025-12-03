@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   Black is to move, and the position is highly tactical. Black has a strong attack with the queen and rooks, while White's king is exposed on g1. Black's pieces are well-coordinated, and the goal is to deliver a forced checkmate in 3 moves.
+
+2. **Key Candidate Moves**:  
+   - Black's queen on d5 and rook on f6 are ideally placed to deliver checks and control key squares.  
+   - The rook on f6 can move to f1, delivering a check and forcing White's king to move.  
+   - The queen can then deliver decisive checks, leading to mate.  
+
+3. **Opponent's Forced Responses**:  
+   - White's king has limited mobility due to Black's control of key squares.  
+   - White's pieces (rook on c2 and pawns) cannot effectively defend against the attack.  
+
+4. **Move-by-Move Analysis**:  
+   - **Move 1**: Black plays 1...Rf1+, forcing White's king to move to g2 (the only legal move).  
+   - **Move 2**: Black plays 2...Qxd4+, delivering a check and forcing White's king to move to h3 (again, the only legal move).  
+   - **Move 3**: Black plays 3...Qh4#, delivering checkmate as the White king is trapped and cannot escape.  
+
+5. **Verification**:  
+   - Each move is legal and forces White's responses.  
+   - The sequence ends in checkmate on the third move, fulfilling the puzzle's requirement.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1...Rf1+ 2.Kg2 Qxd4+ 3.Kh3 Qh4#

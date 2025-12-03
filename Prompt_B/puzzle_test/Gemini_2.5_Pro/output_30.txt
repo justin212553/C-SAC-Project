@@ -1,0 +1,22 @@
+This is a mate-in-3 problem. Black is to move. The White king is on g1 and is under severe attack from the Black queen on h3, the rook on e1, and the knight on d5.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze Black's most forcing moves.** The most forcing moves are checks. Let's examine the candidate checks and other highly tactical moves.
+    *   `1... Rxf1+`: This leads to `2. Kxf1`, and after `2... Ne3+` (discovered check), White's king escapes via `3. Ke2`. This does not lead to a forced mate.
+    *   `1... fxe5`: This is a strong move that removes the defending knight on e5. If White responds with `2. f3`, Black has `2... Qh1+ 3. Kf2 Qxh2#`. However, White has other defenses like `2. g4` or `2. Qd1` which prevent a mate in 3 moves. Therefore, this move is not forcing enough.
+    *   `1... Ne3+`: This is a discovered check from the queen on h3. The king on g1 is attacked. This move is extremely forcing, leaving White with only two legal responses.
+
+2.  **Calculate White's responses to the most promising move, `1... Ne3+`.**
+    *   **Case A: White plays `2. Kh1`.** The king moves to the corner to escape the queen's check. However, this allows Black to deliver a swift checkmate with `2... Qg2#`. The queen on g2 is protected by the bishop on b7, and the king on h1 is trapped (g1 is covered by the knight on e3, and h2 is covered by the queen). This is a mate in 2.
+    *   **Case B: White plays `2. f3`.** White blocks the queen's check with the f-pawn. This is the only other legal move. This defense prolongs the game compared to moving the king to h1.
+
+3.  **Follow the line where White offers the most resistance.** Since the problem asks for a mate in *exactly* 3 moves, we follow the line where White survives the longest.
+    *   After `1... Ne3+ 2. f3`, Black continues the attack with `2... Nxf1+`. This move captures the bishop on f1 and delivers a check with the knight.
+    *   White is forced to recapture with `3. Kxf1`.
+    *   Now, Black delivers the final blow with `3... Qh1#`. The White king on f1 is checked by the queen. All escape squares are covered: the rook on e1 controls e1 and e2, while the queen on h1 controls g1 and g2. This is checkmate.
+
+4.  **Conclusion.** The move `1... Ne3+` forces checkmate. While one of White's responses leads to a mate in 2, the best defense (`2. f3`) leads to a mate in 3. In chess problems of this type, the solution is determined by the longest path to a forced mate. Thus, the correct sequence is the one that results in a mate on the 3rd move.
+
+[FINAL PGN]
+1... Ne3+ 2. f3 Nxf1+ 3. Kxf1 Qh1#

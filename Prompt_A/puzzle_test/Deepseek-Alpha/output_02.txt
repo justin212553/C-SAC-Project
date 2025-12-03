@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - Black is to move.  
+   - The white king is on h7, and the black king is on f8.  
+   - Black has a queen on g7 and a bishop on g6.  
+   - White has no other pieces besides the king.  
+
+2. **Objective**:  
+   - Black must deliver a forced checkmate in one move.  
+
+3. **Candidate Moves**:  
+   - Black's queen and bishop are well-positioned to deliver a checkmate.  
+   - The key move is **Qh7#**, as the black queen moves to h7, directly attacking the white king.  
+   - The white king on h7 has no escape squares due to the black bishop on g6 controlling g8 and the black king on f8 controlling g7.  
+
+4. **Verification**:  
+   - After **Qh7#**, the white king is in check and has no legal moves.  
+   - This is a forced checkmate in one move.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Qh7#

@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king on g1 in exactly 3 moves.
+
+2. **List promising candidate moves for Black:**
+   - Black has several attacking pieces: the queen on d5, rook on f6, and pawns on b4 and g5. The White king is somewhat exposed on g1, and Black can use checks to force it into a vulnerable position.
+   - Candidate moves include: Qxd4+, Qg2+, Qh1+, and Rf1+.
+
+3. **Calculate concrete lines for exactly 3 moves:**
+   - **Line 1:** 1... Qxd4+ forces White to respond with 2. Rf2 (blocking the check). Black can then play 2... Qxf2+, forcing the White king to move to h1. Finally, 3... Qf1# delivers checkmate.
+   - **Line 2:** 1... Qg2+ allows White to block with 2. Rxg2, but this does not lead to mate in 3 moves.
+   - **Line 3:** 1... Qh1+ forces White to respond with 2. Kxh1, but this also does not lead to mate in 3 moves.
+   - **Line 4:** 1... Rf1+ forces White to respond with 2. Kxf1, but Black cannot deliver mate in 3 moves from this position.
+
+4. **Verify the chosen line:**
+   - In Line 1, every move is legal, and checkmate is delivered on the third move. There is no faster checkmate, and the sequence is forced.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1... Qxd4+ 2. Rf2 Qxf2+ 3. Qf1#

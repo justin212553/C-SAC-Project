@@ -1,0 +1,38 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - White is to move, as indicated by the FEN.
+   - The goal is to checkmate Black's king on h5 in exactly 4 moves.
+
+2. **List promising candidate moves for White:**
+   - White has two powerful attacking pieces: the queen on b7 and the rook on g7. Both can deliver checks and coordinate to trap the Black king.
+   - Candidate moves include checks like 1. Qf3+, 1. Qf7+, and 1. Qb4+.
+
+3. **Analyze concrete lines for exactly 4 moves:**
+   - **Line 1: 1. Qf3+**
+     - 1... g4 (blocking the check).
+     - 2. hxg4+ fxg4.
+     - 3. Qh1+ Kg5.
+     - 4. Qh4# (checkmate).
+     - This is a forced mate in 4 moves.
+
+   - **Line 2: 1. Qf7+**
+     - 1... Qg6 (blocking the check).
+     - 2. Rxg6 f4.
+     - 3. Qf5+ Kh4.
+     - 4. Qg4# (checkmate).
+     - This line results in mate in 4 but is not forced, as Black has other defensive options.
+
+   - **Line 3: 1. Qb4+**
+     - 1... g4 (blocking the check).
+     - 2. hxg4+ fxg4.
+     - 3. Qh1+ Kg5.
+     - 4. Qh4# (checkmate).
+     - This is another forced mate in 4 moves.
+
+4. **Verify the best line:**
+   - Both 1. Qf3+ and 1. Qb4+ lead to forced mate in 4 moves. However, 1. Qf3+ is more direct and intuitive, as it immediately centralizes the queen and forces Black's responses.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qf3+ g4 2. hxg4+ fxg4 3. Qh1+ Kg5 4. Qh4#

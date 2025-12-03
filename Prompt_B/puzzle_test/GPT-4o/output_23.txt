@@ -1,0 +1,35 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move, and the goal is to checkmate the Black king on h8 in exactly 3 moves.
+
+2. **List promising candidate moves for White:**
+   - White has several attacking pieces: the rook on g7, the knight on h5, and the bishop on c4. The Black king is somewhat restricted, with limited escape squares due to White's pieces and pawns.
+   - Candidate moves include checks like 1. Rxg6+, 1. Rg8+, and 1. Nxf6+.
+
+3. **Analyze concrete lines for exactly 3 moves:**
+   - **Line A: 1. Rxg6+**
+     - Black responds 1... Bxg6 (forced, as the king cannot move).
+     - White plays 2. Nxf6, delivering a check. Black must move the king to h8 (2... Kh8).
+     - White finishes with 3. Nxe8#, delivering checkmate. This line works and is exactly 3 moves.
+
+   - **Line B: 1. Rg8+**
+     - Black responds 1... Rxg8 (forced).
+     - White plays 2. Nxf6, delivering a check. Black must move the king to h8 (2... Kh8).
+     - White finishes with 3. Nxe8#, delivering checkmate. This line also works and is exactly 3 moves.
+
+   - **Line C: 1. Nxf6+**
+     - Black responds 1... Bxf6 (forced).
+     - White plays 2. Rxg6+, delivering a check. Black must move the king to h8 (2... Kh8).
+     - White finishes with 3. Rg8#, delivering checkmate. This line also works and is exactly 3 moves.
+
+4. **Verify no earlier checkmate before move 3:**
+   - In all lines, checkmate is delivered on the third move, and there is no faster forced mate.
+
+5. **Choose the best forced line:**
+   - All three lines are valid, but Line A (1. Rxg6+) is the most straightforward and intuitive.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Rxg6+ Bxg6 2. Nxf6 Kh8 3. Nxe8#

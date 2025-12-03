@@ -1,0 +1,34 @@
+1. The side to move is Black, and the White king is the one to be checkmated.
+2. The most promising candidate moves for Black are those that involve checking or threatening the White king directly, or those that significantly improve the position of Black's pieces. Given the current position (FEN: b2N2k1/6pp/p7/2b5/2p4n/1P3PB1/P5rP/R4R1K b - - 0 1), let's analyze the pieces:
+   - Black has a bishop on c5, a knight on h4, a rook on g2, and other pieces that are somewhat restricted or less directly involved in the immediate attack.
+   - White's king is on h1, which is relatively safe but can be vulnerable to certain checks or sacrifices.
+
+3. Let's examine potential moves:
+   - The Black rook on g2 is already putting pressure on White's position, particularly on g2 and potentially along the second rank.
+   - The Black knight on h4 is somewhat exposed but can potentially move to f3 or g2 (though g2 is occupied by Black's own rook), or it can be used to support other pieces.
+   - The bishop on c5 is well-placed to potentially exert influence on the kingside if the position opens up.
+
+Let's consider a potential checkmate:
+1. ... RxP+ is an attractive starting move because it involves a sacrifice that could open up the White king's position. Let's analyze: 
+   - 1... RxP+ 2. RxR (forced to recapture) 
+   - Then, we need a move that either checks or sets up for checkmate. 
+   - 2... Nf3 is a strong follow-up, putting the knight in a powerful position, attacking the White rook on f1 and potentially setting up for a checkmate or a strong check.
+
+Let's analyze the line:
+1. ... RxP+ 
+2. RxR Nf3
+   - Now, White's best move is likely 3. Rxf3, but this is not sufficient to prevent checkmate.
+   - After 2... Nf3, if White plays 3. Rxf3, then 3... Bh3# is a checkmate.
+
+Let's verify:
+- Every move is legal.
+- Checkmate is delivered on the final move (3... Bh3#).
+- There's no earlier checkmate before move 3.
+
+The sequence is:
+1... RxP+
+2. RxR Nf3
+3. Rxf3 Bh3#
+
+[FINAL PGN]
+1... RxP+ 2. RxR Nf3 3. Rxf3 Bh3#

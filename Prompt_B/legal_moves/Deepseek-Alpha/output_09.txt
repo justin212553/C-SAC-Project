@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move:
+   - The FEN string ends with "w", indicating it is White's turn to move.
+
+2. Consider which of White's pieces can move:
+   - White has a king on e6, a pawn on f7, and another pawn on e6. The king and pawns are the only pieces to consider.
+
+3. Evaluate possible moves for the king:
+   - The king on e6 can move to d6, d7, e7, f7, f6, or f5. However, f7 is occupied by a White pawn, so the king cannot move there.
+
+4. Evaluate possible moves for the pawns:
+   - The pawn on f7 can move forward to f8 and promote to a queen, rook, bishop, or knight.
+   - The pawn on e6 cannot move forward because e7 is occupied by the White king.
+
+5. Check legality of candidate moves:
+   - Moving the pawn from f7 to f8 is legal and results in promotion.
+   - Moving the king to d6, d7, e7, f6, or f5 is also legal.
+
+6. Choose one legal move:
+   - Promoting the pawn from f7 to f8 is a strong move, as it creates a powerful piece.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. f8=Q

@@ -1,0 +1,37 @@
+To solve this checkmate in 3, let's first understand the given position defined by the FEN: **r5k1/pb4bp/1p1N1pp1/3nN3/3p4/P2Q2Pq/1P3P1P/R1B1rBK1 b - - 0 1**.
+
+1. **Understanding the Position**: The FEN indicates it's Black's turn. The position is quite sharp with several pieces developed on both sides. White has a Knight on d6 and another on e5, which are quite active. Black has a Queen on h3, which is somewhat exposed but also putting pressure on White's position, particularly on f1 and potentially on g2 if White's King were on g2 or similar.
+
+2. **Assessing the Material and Threats**: Materially, it's roughly balanced, but the key is the activity and coordination of the pieces. Black's Queen on h3 is active, and the presence of other Black pieces like the Bishop on g7 and the Rook on e1 (once it moves) could become threatening. White's Knights are well-placed, and the Queen on d3 is somewhat centralized.
+
+3. **Identifying the Checkmate Pattern**: To achieve checkmate in 3, we need to look for a sequence that leads to an unavoidable checkmate. The Black Queen is already on h3, which is a good starting point. We need to look for a way to utilize the other pieces effectively.
+
+4. **Analyzing Moves**:
+    - The Black Queen on h3 is already putting pressure. A potential checkmate could involve using the Rook and other pieces to support it.
+    - The move ...Qg2+ seems like a potential starting point because it checks the White King and could lead to a forced sequence.
+    - After ...Qg2+, White's King has limited options; it can go to e2 or potentially h2 if not for other pieces interfering.
+    - Upon ...Qg2+, White's best response seems to be Kg2 or Ke2. However, we need to check if it leads to a checkmate.
+
+Let's analyze the move ...Qg2+:
+1... Qg2+ 
+2. Ke2 (Best response, as going to h2 or other squares might be even worse or not possible due to other threats)
+
+After 2. Ke2, we need a strong follow-up:
+2... Qf3+ or other moves could be considered, but let's directly analyze the best possible sequence.
+
+Upon deeper inspection:
+1... Qg2+
+2. Ke2 (Forced to avoid immediate checkmate or heavy loss)
+2... Nf4+ 
+3. Kd1 (or other moves, but this is relatively better)
+3... Rxe1#
+
+Let's directly verify this sequence:
+1... Qg2+
+2. Ke2 Nf4+
+3. Kd1 Rxe1#
+
+This sequence appears to be checkmate in 3.
+
+[FINAL PGN]
+1... Qg2+ 2. Ke2 Nf4+ 3. Kd1 Rxe1#

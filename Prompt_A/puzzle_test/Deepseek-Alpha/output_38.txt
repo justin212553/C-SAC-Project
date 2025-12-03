@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black to move. The position is highly tactical, with Black having an opportunity to exploit the exposed White king on c1 and the weak back rank. Black's pieces are well-coordinated, especially the knights and the rook on e8, which can deliver checks and control key squares.
+
+2. **Key Candidate Moves**: 
+   - Black's immediate threats involve delivering checks with the knights or rook to force White's king into a vulnerable position.
+   - The knight on e4 is particularly powerful, as it can deliver checks and control escape squares for the White king.
+   - The rook on e8 can also play a decisive role in delivering the final blow.
+
+3. **Opponent's Forced Responses**:
+   - White's king is restricted in movement due to the placement of Black's pieces and the pawn structure. White's responses will likely involve blocking checks or moving the king to avoid immediate mate.
+
+4. **Sequence Calculation**:
+   - Black's first move should aim to deliver a check and force the White king into a vulnerable position.
+   - Each subsequent move should limit White's options further, culminating in a forced checkmate.
+
+5. **Verification**:
+   - Ensure all moves are legal and lead to the desired mate in 4.
+   - Confirm that White has no way to escape the sequence.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Be3+ 2. fxe3 Rc8 3. Qd3 Nxd3+ 4. Kd2 Rc2#

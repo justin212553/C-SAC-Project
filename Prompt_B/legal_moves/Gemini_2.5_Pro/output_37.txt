@@ -1,0 +1,19 @@
+**Step-by-step reasoning:**
+
+1.  **Identify the side to move:** The FEN string `r1bk3r/pppq1ppp/5n2/4N1N1/2Bp4/Bn6/P4PPP/4R1K1 w - - 0 1` contains the character 'w', which indicates that it is White's turn to move.
+
+2.  **Analyze the position and find candidate moves:** The position is highly tactical. White has a strong attack brewing against the Black king. The f7-square is a critical weakness, attacked by three white pieces: the Knight on e5, the Knight on g5, and the Bishop on c4. The Black Queen on d7 is also attacked by the Knight on e5. This presents several promising candidate moves for White.
+
+3.  **Select a candidate move:** A natural and powerful move is to capture the weak pawn on f7. Let's consider the move where the Knight from e5 captures the pawn on f7.
+
+4.  **Verify the legality of the chosen move:**
+    *   **Piece Movement:** A Knight on e5 can legally move to the f7 square.
+    *   **Destination Square:** The f7 square is occupied by an enemy pawn, so capturing it is a legal action.
+    *   **King Safety:** Moving the Knight from e5 does not expose the White king on g1 to any attack. Therefore, the move does not place White's own king in check.
+    *   **Check:** After the Knight moves to f7, it attacks the Black king on d8. This means the move is a check.
+    *   **Notation:** Since two Knights (from e5 and g5) can move to f7, the move must be disambiguated. The correct notation is `Nexf7+`.
+
+5.  **Conclusion:** The move `Nexf7+` is a legal and forcing move for White.
+
+[FINAL PGN]
+1. Nexf7+

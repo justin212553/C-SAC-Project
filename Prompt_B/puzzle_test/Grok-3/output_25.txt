@@ -1,0 +1,70 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate.**
+   - The FEN string provided is: 2R5/kp3r1q/p4Q2/P3P1B1/K7/8/5b2/8 w - - 0 1
+   - The 'w' in the FEN indicates that White is to move.
+   - The goal is to deliver checkmate to the Black king, which is currently on a7.
+
+2. **List the most promising candidate moves for the attacking side (White).**
+   - White's pieces are: King on a4, Queen on f6, Rook on c8, Bishop on g5, and pawns on a5 and e5.
+   - Black's pieces are: King on a7, Queen on h7, Rook on f7, Bishop on f2, and pawns on a6 and b7.
+   - Since the goal is mate in 3, I need to look for aggressive moves that either deliver check or set up an unavoidable checkmate.
+   - Promising moves for White include:
+     - Moves with the Queen (f6) to deliver check or threaten mate.
+     - Moves with the Rook (c8) to control key files or ranks.
+     - Coordination between pieces to trap the Black king.
+   - Candidate moves to consider:
+     - Qxf7: Capturing the rook on f7, attacking the king indirectly and potentially opening lines.
+     - Qh8+: Delivering check with the queen, forcing a response.
+     - Qg7+: Delivering check, attacking the king directly.
+     - Rb8+: Delivering check with the rook, targeting the king on a7.
+
+3. **For each candidate, calculate a concrete line for exactly 3 moves, assuming reasonable defensive moves by Black.**
+   - I will analyze each candidate move step by step, ensuring the sequence is exactly 3 moves (White move, Black move, White move) and results in checkmate on the third move, not earlier.
+   - I will also ensure that Black's responses are the most reasonable attempts to defend.
+
+   **Candidate 1: Qxf7**
+   - Move 1: Qxf7 (White captures the rook on f7, attacking the Black queen on h7 indirectly and threatening mate on a7 via Qa7#).
+   - Black's response: Black must prevent Qa7#. The Black king can move to b8 or b6 (since a8 is controlled by the White rook on c8, and a6 is blocked by Black's own pawn). Alternatively, Black can move the queen to block or counterattack.
+     - If Black plays Kb8: Then White can play Qa7+ (move 2), and Black's only move is Kc8 (move 2), and White plays Qc7# (move 3). This works as mate in 3.
+     - If Black plays Kb6: Then White plays Qa7+ (move 2), Black must play Kc5 (move 2), and White can play Qc7# (move 3). This also works.
+     - If Black plays Qh8 (to block the rook on c8): Then White plays Qa7+ (move 2), Black must play Kb8, and White plays Qb7# (move 3). This works too.
+   - Verification:
+     - Move 1 (Qxf7) is legal and does not deliver check or mate (no mate on move 1).
+     - Move 2 (Qa7+) delivers check but not mate yet.
+     - Move 3 delivers mate in all variations (Qc7# or Qb7# depending on Black's response).
+     - This line seems promising as a forced mate in 3.
+
+   **Candidate 2: Qh8+**
+   - Move 1: Qh8+ (White delivers check with the queen on h8, attacking the Black king on a7 via the a7-h1 diagonal).
+   - Black's response: The Black king must move. Possible moves are Kb8 or Kb6.
+     - If Kb8: White can play Qa1+ (move 2), Black must play Kc8, and White plays Qc3# (move 3). However, Qa1+ is not a legal move because the White king is on a4, blocking the a-file. This line fails.
+   - This candidate is invalid due to an illegal move, so I discard it.
+
+   **Candidate 3: Qg7+**
+   - Move 1: Qg7+ (White delivers check with the queen on g7, attacking the Black king on a7).
+   - Black's response: The Black king must move to Kb8 or Kb6.
+     - If Kb8: White can play Qa1+ (move 2), but again, this is illegal because the White king is on a4. This line fails.
+   - This candidate also fails due to an illegal move.
+
+   **Candidate 4: Rb8+**
+   - Move 1: Rb8+ (White delivers check with the rook on b8, attacking the Black king on a7).
+   - Black's response: The Black king must move to Kb6 (since a8 is not possible due to the rook on b8).
+     - After Kb6: White can play Qd8 (move 2), threatening Qd4#. Black can respond with Qh3 (move 2) to block, but White can play Qd4# (move 3). However, Black has other moves like b6 or a5 to delay, and it's unclear if mate is forced on move 3 in all lines.
+   - This line is less clear and risks not being a forced mate in exactly 3 moves, so I prioritize the first candidate.
+
+4. **Verification of the best line (Qxf7).**
+   - Let's double-check the Qxf7 line for legality and forced mate:
+     - Move 1: Qxf7 (legal, captures Black rook on f7, no check or mate yet).
+     - Black's possible responses:
+       - Kb8: Then Qa7+ (legal, check), Black plays Kc8 (only move), White plays Qc7# (mate on move 3).
+       - Kb6: Then Qa7+ (legal, check), Black plays Kc5 (only move), White plays Qc7# (mate on move 3).
+       - Qh8 (or other queen moves to block): Then Qa7+ (check), Black plays Kb8, White plays Qb7# (mate on move 3).
+     - In all cases, mate is not delivered before move 3, and mate is forced on move 3.
+   - No other White move on move 2 delivers mate faster, and Black cannot escape the mating net.
+
+**Conclusion:**
+The best forced line for mate in exactly 3 moves starts with Qxf7. This move sets up an unavoidable checkmate by controlling key squares and forcing the Black king into a position where it cannot escape.
+
+[FINAL PGN]
+1. Qxf7+ Kb8 2. Qa7+ Kc8 3. Qc7#

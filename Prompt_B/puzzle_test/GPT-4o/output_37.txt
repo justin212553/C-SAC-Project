@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   White is to move, and the goal is to checkmate the Black king on d8 in exactly 4 moves.
+
+2. **List promising candidate moves for White**:  
+   The position suggests attacking moves involving White's queen, knights, and rook. The Black king is somewhat exposed, and White has strong attacking potential. Candidate moves include checks like Qh5+, Nf7+, and Ne6+.
+
+3. **Calculate concrete lines for exactly 4 moves**:  
+   Let's analyze the position systematically to find a forced mate in 4 moves.
+
+   - **Move 1**: White plays 1. Qh5+, forcing Black's king to move to f8 (as g6 is covered by the knight on g5).  
+   - **Move 2**: White plays 2. Nf7+, a discovered check from the queen. Black's king must move to g8 (as e8 is covered by the knight on e5).  
+   - **Move 3**: White plays 3. Nh6+, forcing Black's king to move to h8 (as g7 is covered by the queen on h5).  
+   - **Move 4**: White plays 4. Qf7#, delivering checkmate. The Black king is trapped, and no piece can block or capture the queen.
+
+4. **Verify the solution**:  
+   - Every move is legal.  
+   - Checkmate is delivered on the 4th move.  
+   - There is no earlier checkmate before move 4, as Black has forced responses to each check.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qh5+ Kf8 2. Nf7+ Kg8 3. Nh6+ Kh8 4. Qf7#

@@ -1,0 +1,35 @@
+This is a mate-in-3 problem. White is to move and needs to find a sequence of moves that forces checkmate on the third move, regardless of Black's responses.
+
+### Step-by-step Reasoning:
+
+1.  **Initial Assessment:** White has a powerful attack brewing against the Black king on g8. The White queen on h6, rook on e8, and knight on d4 are all pointing towards the king. Black's knights on e4 and d3 are active but also potential targets. The key is to find a forcing sequence that leaves Black with no escape.
+
+2.  **Candidate Move 1: 1. Qg7+**
+    This is a queen sacrifice and a check, making it a highly forcing move. We must analyze Black's only legal response.
+    *   `1...Nxg7`: Black is forced to capture the queen with the knight on e4. The king has no legal moves.
+
+3.  **Following up on the sacrifice:**
+    After `1...Nxg7`, White's next move must continue the attack relentlessly.
+    *   `2. Nh6+`: This is a devastating double check from the knight (now on h6) and the rook on e8. When a king is in double check, it must move, as it's impossible to block or capture both checking pieces simultaneously.
+
+4.  **Black's Forced Response:**
+    The Black king is on g8 and is attacked by two pieces.
+    *   `2...Kh8`: The king cannot move to f7 because it would still be in check from the rook on e8. The only legal square is h8. This move is forced.
+
+5.  **Delivering the Final Blow:**
+    With the Black king forced into the corner on h8, White can now deliver the checkmate.
+    *   `3. Nf7#`: The knight moves from h6 to f7, delivering a check. This is a classic smothered mate. The king on h8 is not attacked by any other piece, but it has no legal moves:
+        *   It cannot capture the knight on f7.
+        *   The escape squares g8 and h7 are blocked by its own pawns.
+        *   The check cannot be blocked.
+    This is a forced checkmate in exactly three moves.
+
+### Alternative Considerations:
+
+*   **1. Rxe4?**: This move looks promising. If Black plays `1...fxe4`, then `2. Ne6+ Kf7 3. Qg7#` is mate. However, Black is not forced to recapture. Black can play `1...Ndf2+`, which complicates matters and avoids a mate in 3. Therefore, `1. Rxe4` is not a forced mate.
+*   **1. Ne6?**: This move threatens `Qg7#`, but Black can defend with `1...Qe7` or complicate with `1...Ndf2+`, again preventing a forced mate in 3.
+
+The sequence starting with the queen sacrifice `1. Qg7+` is the only one that forces checkmate in exactly three moves.
+
+[FINAL PGN]
+1. Qg7+ Nxg7 2. Nh6+ Kh8 3. Nf7#

@@ -1,0 +1,34 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - The FEN indicates it is White to move.
+   - White must deliver checkmate to the Black king on e4 in exactly 2 moves.
+
+2. **List the most promising candidate moves for White:**
+   - White has several attacking pieces (the rook on h5, the rook on f3, and the bishop on f6) that can coordinate to deliver checkmate.
+   - Candidate moves include:
+     - 1. Rh4+ (a check that forces the Black king to move).
+     - 1. Rf4 (preparing a discovered check with the bishop).
+     - 1. Ke1 (unlikely, as it does not contribute to a forced mate in 2).
+
+3. **Analyze each candidate move:**
+   - **Line 1: 1. Rh4+**
+     - Black's only legal move is 1... Kxf3 (capturing the rook).
+     - White can then play 2. Bh4#, delivering checkmate. The Black king is trapped by its own pawns and White's pieces.
+     - This line works and delivers mate in exactly 2 moves.
+
+   - **Line 2: 1. Rf4**
+     - This move does not give check, so Black can respond with 1... Kd5 or 1... Kd3, escaping immediate threats. This fails to deliver mate in 2.
+
+   - **Line 3: 1. Ke1**
+     - This move does not give check or create a direct threat. Black can respond with 1... Kd5 or 1... Kd3, and White cannot deliver mate in 2. This line fails.
+
+4. **Verify the solution:**
+   - The move 1. Rh4+ forces the Black king to capture the rook (1... Kxf3), after which 2. Bh4# is a clean checkmate.
+   - There are no faster mates, and the solution adheres to the requirement of mate in exactly 2 moves.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+
+1. Rh4+ Kxf3 2. Bh4#

@@ -1,0 +1,32 @@
+To solve this, let's analyze the given FEN position: **5k2/5P2/4PK2/8/8/8/8/8 w - - 0 1**
+
+First, we need to understand what the FEN notation tells us:
+- The position is: Black King on f8, White Pawn on f7, White King on f6, and no other pieces on the board.
+- It's White's turn to move.
+- There are no castling rights, no en passant square, and no half-move clock or move number relevant to our immediate task.
+
+Let's break down the position:
+1. **White King (Kf6):** The White King is on f6. It can potentially move to e5, e6, e7, f5, f7, g5, g6, or g7. However, we need to check if these moves are legal.
+   - Moving to e5, e7, f5, f7, g5, or g7 would be legal if not for the presence of other pieces or being next to the Black King. The Black King is on f8, so the White King cannot move to e7 or g7 because that would put it next to the Black King, which is not allowed as it would put the White King in check.
+   - e6 is occupied by the White King itself, so it's not a valid move.
+   - The White King can move to e5, f5, or g5 without issue.
+
+2. **White Pawn (f7):** The White Pawn is on f7. It can potentially move forward to f8. Since it's on the seventh rank, it can promote to any piece (except a King). However, we need to check the legality of the move.
+   - Moving to f8 would promote the Pawn. The move is legal if it doesn't put the White King in check or result in an illegal position.
+
+Let's examine potential moves:
+- The White King can move to e5, f5, or g5. All these moves are legal.
+- The White Pawn can promote on f8. Since promoting to a Queen would result in checkmate (as Qxf8#), this is a valid and strong move.
+
+Let's consider a valid move for White:
+- **Kf6-e5 (Ke5)** is a valid move but doesn't utilize the potential of the Pawn on f7.
+- **f7-f8=Q# (f8=Q#)** is a checkmate, making it a very strong and valid move.
+
+Given the position and the task to find "one legal move," a checkmate is the most decisive and attractive move.
+
+Let's format this as PGN.
+
+1. f8=Q#
+
+[FINAL PGN]
+1. f8=Q#

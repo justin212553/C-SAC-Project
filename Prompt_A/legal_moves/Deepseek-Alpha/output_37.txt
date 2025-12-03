@@ -1,0 +1,17 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+2. **King (g1)**: The king on g1 has no legal moves because all adjacent squares are either occupied or under attack.
+3. **Rook (e1)**: The rook on e1 can move to e2, e3, e4, e5, e6, e7, or e8. These are all valid moves.
+4. **Knight (e5)**: The knight on e5 can move to c6, d3, d7, f3, f7, or g4. These are all valid moves.
+5. **Knight (g5)**: The knight on g5 can move to e4, e6, f3, f7, or h3. These are all valid moves.
+6. **Bishop (c4)**: The bishop on c4 can move to b5, a6, d3, e2, f1, d5, e6, or f7. These are all valid moves.
+7. **Bishop (a3)**: The bishop on a3 can move to b4, c5, d6, e7, or f8. These are all valid moves.
+8. **Pawn (a2)**: The pawn on a2 can move to a3 or a4. These are valid moves.
+9. **Pawn (g2)**: The pawn on g2 can move to g3 or g4. These are valid moves.
+10. **Pawn (f2)**: The pawn on f2 can move to f3 or f4. These are valid moves.
+
+After analyzing all possible moves, I will select one legal move to output in PGN format.
+
+--- FINAL PGN ---
+1. Nf7#

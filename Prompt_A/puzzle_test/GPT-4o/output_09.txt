@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: 
+   - White has a king on f6 and pawns on f7 and e6.
+   - Black's king is on f8.
+   - White is to move and must deliver checkmate in one move.
+
+2. **Key Candidate Moves**:
+   - White can promote the pawn on f7 to a queen or rook, delivering checkmate immediately. Promoting to a knight or bishop would not result in checkmate, as the black king would still have escape squares.
+
+3. **Opponent's Forced Responses**:
+   - If White promotes the pawn on f7 to a queen or rook, the black king on f8 will have no legal moves, as all adjacent squares (e7, e8, g7, g8) are controlled by White's pieces.
+
+4. **Conclusion**:
+   - The move f7-f8=Q# or f7-f8=R# is a forced mate in one.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. f8=Q# 

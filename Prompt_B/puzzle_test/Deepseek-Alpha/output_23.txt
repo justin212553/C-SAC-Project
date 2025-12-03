@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   White is to move, and the goal is to checkmate Black's king on h8 in exactly 3 moves.
+
+2. **Candidate moves**:  
+   White has several attacking options, but the most forcing moves involve checks or threats to the Black king. The most promising candidates are:  
+   - 1. Rxg6+ (forcing the Black king to move or the g6 pawn to capture).  
+   - 1. Nxf6 (threatening mate on g8).  
+   - 1. Bxf6+ (removing the g6 bishop and opening lines).  
+
+3. **Analysis of candidate moves**:  
+   - **1. Rxg6+**:  
+     After 1... hxg6 (forced), White can play 2. Nxf6, threatening mate on g8. Black has no way to stop 3. Ng8#.  
+     - 2... Rxf6 fails to 3. Bxf6#.  
+     - 2... Rg8 fails to 3. Nxg8#.  
+     This line delivers mate in exactly 3 moves.  
+
+   - **1. Nxf6**:  
+     This threatens mate on g8, but Black can defend with 1... Rxf6, delaying the mate beyond 3 moves.  
+
+   - **1. Bxf6+**:  
+     After 1... Rxf6, White cannot deliver mate in exactly 3 moves.  
+
+4. **Verification**:  
+   The line starting with 1. Rxg6+ is the only one that forces mate in exactly 3 moves, regardless of Black's responses.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1. Rxg6+ hxg6 2. Nxf6 Rxf6 3. Bxf6#  

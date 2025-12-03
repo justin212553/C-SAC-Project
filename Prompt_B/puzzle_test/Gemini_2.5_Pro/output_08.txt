@@ -1,0 +1,22 @@
+This is a mate-in-1 puzzle. My task is to find the single move for Black that results in an immediate checkmate of the White king.
+
+1.  **Analyze the position of the White king:** The White king is on h1. It is surrounded by its own pieces: a rook on g1, a pawn on g2, and a pawn on h2. This means the king has no legal squares to move to. Its only potential escape squares (g1, g2, h2) are all occupied by its own forces.
+
+2.  **Identify Black's attacking pieces:** Black has a rook on g5 and a knight on e5. Both pieces are in a position to attack the White king's position.
+
+3.  **Evaluate candidate moves that deliver check:**
+    *   **Knight checks:**
+        *   `... Nf3+`: This move checks the king. However, White can capture the knight with the g-pawn (`gxf3`). This is not mate.
+        *   `... Ng4+`: This move also checks the king. However, White can capture the knight with either the h-pawn (`hxg4`) or the f-pawn (`fxg4`). This is not mate.
+    *   **Rook checks:**
+        *   `... Rg3+`: This move checks the king along the g-file. However, White can capture the rook with either the h-pawn (`hxg3`) or the f-pawn (`fxg3`). This is not mate.
+        *   `... Rh5+`: This move checks the king along the h-file. Let's analyze this move carefully:
+            *   **Is the king in check?** Yes, the rook on h5 attacks the king on h1.
+            *   **Can the king escape?** No. As established in step 1, the king has no legal moves. The square h2 is attacked by the rook, and g1 and g2 are blocked.
+            *   **Can the check be blocked?** No White piece can move to any square between the rook and the king (h2, h3, h4).
+            *   **Can the checking piece be captured?** No White piece can legally move to h5 to capture the rook.
+
+4.  **Conclusion:** The move `... Rh5+` leaves the White king in check with no legal way to escape. Therefore, it is checkmate.
+
+[FINAL PGN]
+1... Rh5#

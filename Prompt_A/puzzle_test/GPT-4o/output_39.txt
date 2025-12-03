@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**: White is to move. The black king is on e8, and its mobility is restricted by its own pieces. White has a strong attacking position with the queen on g3, the knight on b5, and the bishop on g5. Black's queen on b2 and other pieces are poorly coordinated for defense.
+
+2. **Key Candidate Moves**: The most forcing moves involve checks or threats that limit Black's responses. The queen and knight can combine effectively to deliver checks, while the bishop on g5 can also play a role in the attack.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: White can start with 1. Nc7+, a forcing move that checks the black king. Black has only one legal response: 1... Kd8.
+   - **Move 2**: After 1... Kd8, White can play 2. Nde6+, another check. The black king is forced to move to e8 (2... Ke8).
+   - **Move 3**: White can then deliver 3. Nxg7+, a discovered check using the bishop on g5. The black king is forced to move to f7 (3... Kf7).
+   - **Move 4**: Finally, White delivers checkmate with 4. Be6#. The black king is completely trapped, and no black piece can block or capture the attacking pieces.
+
+4. **Verification**: Each move in the sequence is forcing, and Black has no alternative responses. The sequence leads to a checkmate in 4 moves as required.
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. Nc7+ Kd8 2. Nde6+ Ke8 3. Nxg7+ Kf7 4. Be6#

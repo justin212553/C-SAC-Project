@@ -1,0 +1,24 @@
+This is a mate-in-2 problem. White is to move and checkmate the Black king on h1.
+
+**Step-by-step reasoning:**
+
+1.  **Analyze the initial position:** The Black king on h1 is severely restricted. Its only potential escape square, g2, is controlled by the White bishop on d5. The square g1 is occupied by its own knight. This suggests that a check that cannot be legally met will be checkmate.
+
+2.  **Identify candidate moves for White:** Forcing moves (checks) are the most promising candidates in such a sharp position. Let's examine the possible checks.
+    *   `1. Rf1+`: This check can be blocked by `1...Bf2`. After `1...Bf2`, White can play `2. Rxf2+`, but Black replies with `2...Nxf2`, and there is no mate. Other second moves for White also fail to deliver mate.
+    *   `1. Qg2+`: Black is forced to play `1...Kxg2`. The Black king is now on g2 and has multiple escape squares (f1, f2, f3, h3). White cannot deliver mate on the next move.
+    *   `1. Rf2+`: This is a very strong candidate. The check is delivered by the rook on f2 to the king on h1. Let's analyze Black's possible responses.
+
+3.  **Analyze Black's responses to `1. Rf2+`:**
+    *   The Black king cannot move to g2 because it is controlled by the bishop on d5.
+    *   The check cannot be blocked as there are no squares between the rook on f2 and the king on h1.
+    *   Therefore, Black must capture the checking piece. There are two pieces that can capture the rook on f2: the knight on g1 and the bishop on e1.
+
+4.  **Calculate the variations to checkmate:**
+    *   **Variation A:** If Black plays `1...Nxf2`. The knight on g1 captures the rook. Now, the g1 square is vacant, but the g2 square is still controlled by the White bishop. White can now play `2. Qg2#`. This is checkmate because the queen on g2 attacks the king, the king cannot move to g2 (as it's attacked by the bishop on d5), and the queen on g2 is also protected by the same bishop, so the king cannot capture it. No other Black piece can capture or block the check.
+    *   **Variation B:** If Black plays `1...Bxf2`. The bishop on e1 captures the rook. This move vacates the e1 square. White can now deliver mate with `2. Qe4#`. The queen on e4 attacks the king on h1 along the diagonal. The king cannot move to g2 (controlled by the bishop on d5). The check cannot be blocked (the knight on g1 can move to f3 or e2, but neither square is on the e4-h1 diagonal). The queen on e4 cannot be captured. This is checkmate.
+
+5.  **Conclusion:** The move `1. Rf2+` forces checkmate in two moves, regardless of Black's reply. Both of Black's legal responses lead to a decisive checkmate on White's second move.
+
+[FINAL PGN]
+1. Rf2+ Nxf2 2. Qg2#

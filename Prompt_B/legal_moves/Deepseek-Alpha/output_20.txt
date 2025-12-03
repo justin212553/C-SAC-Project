@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN indicates "b" (Black to move).
+2. Analyze Black's pieces and their potential moves:
+   - Black has pawns on b2, c2, c3, f2, g2, h2, and h7.
+   - Black has knights on b5 and d1.
+   - Black has a queen on d5.
+   - Black has a king on b1.
+3. Evaluate legal moves for each piece:
+   - The pawns can move forward or capture diagonally if possible. For example, the pawn on b2 can promote by moving to b1.
+   - The knights can move in an "L" shape to unoccupied squares or capture enemy pieces.
+   - The queen can move horizontally, vertically, or diagonally to unoccupied squares or capture enemy pieces.
+   - The king can move one square in any direction to unoccupied squares, provided it does not move into check.
+4. Ensure the chosen move does not leave the Black king in check.
+5. Select one legal move: The pawn on b2 can promote to a queen by moving to b1.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1... b1=Q

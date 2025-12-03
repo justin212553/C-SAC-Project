@@ -1,0 +1,21 @@
+An analysis of the position reveals a tactical sequence leading to a forced checkmate.
+
+**Initial Position Analysis:**
+White has a powerful attack brewing against the black king on a7. The white queen on f6, rook on c8, and bishop on g5 are all actively participating. The black king is severely restricted, with the rook on c8 cutting off the b- and c-files from the 8th rank. Black's main defenders are the rook on f7 and the queen on h7.
+
+**Candidate Moves Evaluation:**
+
+1.  **1. Qxf7+**: This is a very strong candidate. It's a check and removes the defending rook on f7. Black's only reply is `1... Qxf7`. After this, White can play `2. Be7#`. The bishop on e7 checks the king on a7, which has no escape squares (a8 and b8 are covered by the rook on c8, and b7 is covered by the bishop). This is a checkmate in 2 moves. While this is the fastest mate, the puzzle specifically asks for a mate in 3, suggesting another intended solution.
+
+2.  **1. Rc7+**: This is the other primary forcing move. The rook checks the king on a7. Black's only legal move is to move the king out of check.
+    *   `1... Kb8` is the only escape square, as a8 is covered by the rook on c8 and b7 is covered by the checking rook on c7.
+
+3.  **Following the main line (1. Rc7+):**
+    *   After `1... Kb8`, White continues the attack with another forcing move: `2. Qxf7+`. This is a queen sacrifice that checks the king on b8 and aims to eliminate Black's queen, which is the last key defender.
+    *   Black is forced to recapture: `2... Qxf7`. The king cannot move to any adjacent squares as they are all controlled by White's pieces (R on c8 and Q on f7).
+    *   Now, White delivers the final blow with `3. Rxf7#`. The rook on c8 moves to f7, capturing the black queen and delivering checkmate. The black king on b8 is trapped. All potential escape squares (a8, c8, a7, b7, c7) are controlled by the two white rooks.
+
+This sequence is a forced mate in exactly three moves, matching the puzzle's requirement.
+
+[FINAL PGN]
+1. Rc7+ Kb8 2. Qxf7+ Qxf7 3. Rxf7#

@@ -1,0 +1,25 @@
+This is a complex position where Black has a powerful attack against the exposed White king. A methodical approach is needed to find the precise mate-in-3 sequence.
+
+### Step-by-step Reasoning:
+
+1.  **Initial Assessment:** Black is to move. The White king on g1 is vulnerable due to Black's heavy pieces (queen on d5, rooks on f3 and f6) and the advanced h-pawn on h3. White's queen is far away on a4, making it difficult for it to participate in the defense.
+
+2.  **Considering Forcing Moves (Checks):** The most forcing moves are checks. Black can play `1... Rf1+` (with either rook). This leads to the sequence `1... Rf1+ 2. Kxf1` (forced) `Qh1#`. This is a checkmate in 2 moves. However, the problem explicitly asks for a mate in *exactly* 3 moves, so this direct approach is not the correct solution.
+
+3.  **Considering "Quiet" Moves:** Since an immediate check leads to a mate-in-2, we must look for a non-checking "quiet" move that sets up an unavoidable mate on the third move. The most promising candidate is `1... b3`.
+
+4.  **Analyzing the Candidate Move `1... b3`:**
+    *   This move attacks the White rook on c2, forcing White to respond. It's a classic decoy/deflection tactic.
+    *   **Main Variation:** White's most direct response is to capture the pawn with `2. Qxb3`. This move, however, pulls the White queen away from the defense of the kingside, specifically the f1-square.
+    *   After `2. Qxb3`, Black continues with a decisive rook sacrifice: `2... Rf1+`.
+    *   White's only legal move is to capture the rook: `3. Kxf1`.
+    *   Now, Black delivers the final blow: `3... Qh1#`. The White king on f1 is attacked by the queen. All escape squares are covered: e1, e2, g1, and g2 are controlled by the Black queen, and f2 is controlled by the Black pawn on g3. This is a checkmate.
+
+5.  **Analyzing White's Other Defenses:**
+    *   If White tries to save the rook instead of capturing the pawn, e.g., `2. Rce2`, Black follows the same plan: `2... Rf1+ 3. Kxf1 Qh1#`. The outcome is the same.
+    *   If White tries a counter-check with `2. Qe8+`, Black simply moves the king with `2... Ka7`. White must still deal with the attack on the c2 rook. If White then plays `3. Qxb3`, Black delivers mate with `3... Rf1#`. The king on g1 is trapped, with the rook on f1 delivering check, the queen on d5 covering h1, and the other rook on f3 covering f2.
+
+6.  **Conclusion:** The quiet move `1... b3` forces a win. By deflecting the White queen, Black sets up a sacrificial combination that leads to a checkmate on the third move, fulfilling all the conditions of the problem.
+
+[FINAL PGN]
+1... b3 2. Qxb3 Rf1+ 3. Kxf1 Qh1#

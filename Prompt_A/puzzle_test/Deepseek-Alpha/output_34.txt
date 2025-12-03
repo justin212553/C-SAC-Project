@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move.
+   - White has a significant material advantage, including two rooks and a knight in active positions.
+   - Black's king is on h8, surrounded by limited escape squares.
+   - White's pieces are well-coordinated for an attack, particularly the rooks on the 7th rank and the knight on e8.
+   - Black's pieces are poorly placed for defense, with the bishop on g4 and the knight on d4 unable to contribute meaningfully to the defense of the king.
+
+2. **Key Candidate Moves**:
+   - Black's moves are limited due to the exposed position of the king. The most forcing moves involve checks or attempts to block White's attack.
+   - White's goal is to deliver checkmate in 4 moves, so the sequence must involve forcing moves (checks) to limit Black's responses.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: Black's best move is 1... Rc1+, forcing White's king to move to d2 (the only legal move).
+   - **Move 2**: White plays 2. Kd2. Black has no meaningful checks or defenses to prevent White's attack.
+   - **Move 3**: White's knight on e8 and rooks on the 7th rank are poised to deliver a decisive attack. White can force mate by coordinating these pieces.
+
+4. **Final Sequence**:
+   - The solution involves precise coordination of White's rooks and knight to deliver a forced mate in 4 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Rc1+ 2. Kd2 Rd1+ 3. Kc3 Rc1+ 4. Kb2 Rxb1#
+[FINAL PGN]

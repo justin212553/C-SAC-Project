@@ -1,0 +1,42 @@
+To solve this chess puzzle, we start by analyzing the given FEN position: **4r3/5r2/3p1p2/1P6/8/K1p5/P1k5/8 b - - 0 1**. The task is to find a forced checkmate in 2 moves.
+
+First, let's decode the FEN:
+- The position is: Black's rook on e8, black's rooks on f7 and e8, black's pawsons on d6 and f6, white's pawn on b5, white's king on a3, black's pawn on c3, white's pawn on a2, and black's king on c2.
+- The corrected understanding of the position is: 
+  - Black: King on c2, Rooks on e8 and f7, Pawns on c3, d6, f6.
+  - White: King on a3, Pawns on a2, b5.
+
+The position is black to move, and we are looking for a checkmate in 2 moves.
+
+1. **Assessing the Position**: The black king is on c2, and it's relatively exposed but supported by its pawns. The white king is on a3, somewhat distant from the black king. White has pawns on a2 and b5. The material is uneven, with Black having a significant advantage in pieces.
+
+2. **Identifying Key Pieces and Potential Moves**:
+   - Black's rooks are very active and can potentially deliver checkmate or support a pawn in doing so.
+   - The black pawns are close to promoting and could potentially be used to checkmate or support a checkmate.
+
+3. **Analyzing Potential Checkmate**:
+   - To achieve checkmate in 2 moves, we need to consider the final position where the black king is in check with no legal moves. Given the current setup, the white king is somewhat out of position to directly participate in preventing the checkmate but can influence through its pawns.
+
+4. **Exploring Black Moves**:
+   - The black rooks can move along the 7th and 8th ranks or potentially capture the white pawns.
+   - The black pawns are relatively stable but can potentially move forward.
+
+5. **Forced Checkmate in 2 Moves**:
+   - The first move should set up a situation where, regardless of White's response, Black can checkmate on the next move.
+   - One potential sequence involves using the rooks to control key squares and potentially checkmate.
+
+Let's directly analyze potential moves:
+- **1... Ra8+** (or other rook moves to the 'a' file) could be a starting point, but we need to verify if it leads to a checkmate in 2.
+- Upon closer inspection, **1... c2** seems promising as it threatens to promote. However, we need to check White's possible responses.
+
+Let's directly examine a potential solution:
+1. Black plays **1... Rf3+**, putting the white king in check. 
+2. White's king has limited options; it can move to **a4** or **b2** (since **2. Kb4** is not possible due to **2... Rb8+** and other potential checks, and moving to the 'a' file further away doesn't help).
+
+If **1... Rf3+ 2. Ka4**, then **2... Ra8#** is checkmate.
+
+Let's verify the PGN sequence:
+1... Rf3+ 2. Ka4 Ra8#
+
+[FINAL PGN]
+1... Rf3+ 2. Ka4 Ra8#

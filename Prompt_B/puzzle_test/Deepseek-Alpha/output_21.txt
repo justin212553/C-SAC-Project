@@ -1,0 +1,41 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - White is to move, as indicated by the FEN.
+   - The goal is to checkmate Black's king on g8 in exactly 3 moves.
+
+2. **List promising candidate moves for White:**
+   - White has several attacking pieces (queen on d4, rook on f6, rook on f3) and can deliver checks or set up threats.
+   - Candidate moves include:
+     - 1. Qh8+ (direct check with the queen)
+     - 1. Rf8+ (check with the rook)
+     - 1. Qe5 (threatening checks and mate)
+     - 1. b6 (pawn move to open lines or distract Black's queen)
+
+3. **Analyze each candidate move:**
+   - **1. Qh8+:**
+     - Black's only legal response is 1... Kxh8.
+     - White can then play 2. Rf8# immediately, which is a mate in 2, not 3. This line is too fast.
+
+   - **1. Rf8+:**
+     - Black's only legal response is 1... Kxf8.
+     - White can then play 2. Qh8+ Ke7 3. Qf8#, which is a mate in 3. This line works.
+
+   - **1. Qe5:**
+     - This move does not deliver a check and allows Black to defend with moves like 1... Rf7 or 1... Qb6. It does not lead to a forced mate in 3.
+
+   - **1. b6:**
+     - This pawn move does not deliver a check or create an immediate threat. Black can respond with 1... Rb7 or 1... Qxb6, and there is no forced mate in 3.
+
+4. **Verify the best line:**
+   - The line starting with 1. Rf8+ is the only one that forces a mate in exactly 3 moves:
+     - 1. Rf8+ Kxf8 (forced)
+     - 2. Qh8+ Ke7 (forced)
+     - 3. Qf8# (checkmate).
+
+5. **Confirm no earlier mate:**
+   - All other lines either fail to deliver mate in 3 or result in a faster mate (e.g., 1. Qh8+ Kxh8 2. Rf8#).
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rf8+ Kxf8 2. Qh8+ Ke7 3. Qf8#

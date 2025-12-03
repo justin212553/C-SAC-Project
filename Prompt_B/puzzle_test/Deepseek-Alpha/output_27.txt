@@ -1,0 +1,27 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - White is to move, and the goal is to checkmate the Black king on h7 in exactly 3 moves.
+
+2. **List promising candidate moves for White:**
+   - White has several checks available: Qg6+, Qc2+, and Qg8+. Among these, Qg6+ appears most forcing as it drives the Black king to a specific square.
+
+3. **Analyze the candidate move Qg6+:**
+   - After 1. Qg6+, Black's king has only one legal move: 1... Kh8.
+   - White can then play 2. Qxh6+ to force the Black king back to h7 (2... Kh7).
+   - Finally, White can deliver checkmate with 3. f8=Q#.
+
+4. **Verify the line step by step:**
+   - Move 1: 1. Qg6+ is legal and forces 1... Kh8.
+   - Move 2: 2. Qxh6+ is legal and forces 2... Kh7.
+   - Move 3: 3. f8=Q# is legal and delivers checkmate. The Black king is trapped on h7 with no escape squares, and no Black piece can block or capture the newly promoted queen.
+
+5. **Confirm there is no earlier checkmate:**
+   - White cannot deliver checkmate in fewer than 3 moves because the Black king has escape squares after the first check, and the forced sequence requires exactly 3 moves to trap the king.
+
+6. **Conclude the best forced line:**
+   - The sequence 1. Qg6+ Kh8 2. Qxh6+ Kh7 3. f8=Q# is a forced mate in 3.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qg6+ Kh8 2. Qxh6+ Kh7 3. f8=Q#

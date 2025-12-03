@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move and has a clear advantage with active pieces, particularly the rook on h5 and the bishop on f6.  
+   - Black's king is exposed on e4, and the pawn structure limits its mobility.  
+   - Black's rook on a8 and knight on d6 are passive and unable to contribute defensively.  
+
+2. **Goal**:  
+   - White must deliver checkmate in 2 moves.  
+
+3. **Candidate Moves**:  
+   - The rook on h5 can deliver a check on h4, forcing the black king to move.  
+   - The bishop on f6 can deliver a decisive check depending on the king's position.  
+
+4. **Move-by-Move Analysis**:  
+   - **Move 1**: White plays 1. Rh4+. This forces the black king to move to f3 (the only legal move).  
+   - **Move 2**: White plays 2. Rf4#. The rook on f4 delivers checkmate as the black king is completely surrounded and has no escape squares.  
+
+5. **Verification**:  
+   - After 1. Rh4+, the black king has no other legal moves except to f3.  
+   - After 2. Rf4#, the black king is checkmated because all adjacent squares are either occupied or attacked by white's pieces.  
+
+--- FINAL PGN ---
+
+[FINAL PGN]
+1. Rh4+ Kf3 2. Rf4#

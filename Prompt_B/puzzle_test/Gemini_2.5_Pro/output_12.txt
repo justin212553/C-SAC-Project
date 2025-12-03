@@ -1,0 +1,38 @@
+This is a mate-in-2 problem. Black is to move. The target is the White king on h8.
+
+### Step-by-step Reasoning:
+
+1.  **Analyze the initial position:** The White king on h8 is severely restricted. The h7 square is occupied by its own rook. The g7 square is controlled by two Black pieces: the rook on f6 and the bishop on d4. This double control of the key escape square g7 is a crucial feature of the position.
+
+2.  **Identify candidate moves:** The most promising moves are forcing checks, as they drastically limit White's replies. Let's consider checks that sacrifice a piece on a square adjacent to the king.
+
+3.  **Candidate move 1: `1... Rh6+`**
+    *   This move is a rook sacrifice. The Black rook from f6 moves to h6, checking the White king.
+    *   We must analyze White's possible responses. The king is in check.
+        *   **King moves:** The king cannot move to h7 (attacked by the rook on h6). The king cannot move to g7 (attacked by the bishop on d4; the rook on f6 has moved, but the bishop still covers g7).
+        *   **Blocking the check:** The check is from an adjacent square and cannot be blocked.
+        *   **Capturing the checker:** The only piece that can capture the rook on h6 is the king. The knight on g8 and the rook on h7 cannot legally move to h6.
+    *   Therefore, White's only legal move is `2. Kxh6`. This move is forced.
+
+4.  **Analyze the position after `2. Kxh6`:**
+    *   The White king is now on h6. The Black rook that was on f6 has been captured. Black is to move.
+    *   Black needs to deliver the final checkmate. The key is that even though the rook from f6 is gone, the bishop on d4 still controls the critical g7 square.
+
+5.  **Find the mating move: `2... Qg6#`**
+    *   Black plays the queen to g6. This delivers check to the king on h6.
+    *   Let's verify if this is checkmate:
+        *   **Is the king in check?** Yes, from the queen on g6.
+        *   **Can the king escape?**
+            *   `Kh7`: Controlled by the queen on g6.
+            *   `Kg7`: Controlled by the bishop on d4.
+            *   `Kg5`: Controlled by the queen on g6.
+            *   `Kh5`: Controlled by the queen on g6.
+            *   The king has no escape squares.
+        *   **Can the check be blocked?** No, the queen is adjacent to the king's potential escape squares.
+        *   **Can the checking piece be captured?** The queen on g6 is protected by the bishop on d4. Therefore, `Kxg6` is illegal. No other White piece can capture the queen.
+    *   Since the king is in check and has no legal moves, `2... Qg6#` is checkmate.
+
+6.  **Conclusion:** The line `1... Rh6+ 2. Kxh6 Qg6#` is a forced checkmate in exactly two moves. Other moves, such as moving the f6-rook elsewhere (`1... Rf1+`), fail because they abandon control of g7, allowing the White king to escape after the subsequent check.
+
+[FINAL PGN]
+1... Rh6+ 2. Kxh6 Qg6#

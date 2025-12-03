@@ -1,0 +1,38 @@
+1. The side to move is White, and the king to be checkmated is Black's king.
+2. The most promising candidate moves for White are those that involve the White Queen and Rooks, as they are the most active and potentially threatening pieces. The current position is given in FEN: r5k1/2r4p/4pRpP/qP1p4/3Q2P1/5R2/1P6/1K6 w - - 0 1. The White pieces are well-placed to potentially attack the Black king.
+
+Let's analyze the position:
+- White has a Queen on d4, a Rook on f3, and another Rook on g6, with a pawn on b2 and another on h6. 
+- Black's king is on g8, somewhat exposed but with a Rook on c7 that could potentially move to defend or interpose.
+
+First, let's consider the White Queen's potential moves, as it's a powerful piece. The Queen can potentially move to various squares, putting it in a position to check or checkmate the Black king.
+
+3. Let's start with the most promising candidate moves:
+- Qd4-h8+ (or other moves that could potentially check or put pressure on the Black king).
+
+Let's analyze a potential line:
+1. Qd8+ (a more promising move than Qh8+, as it directly puts the Queen in a more active position) is not directly available due to the Black Rook on c7, but we can consider Qd7 or other moves that could potentially lead to a checkmate.
+
+Upon closer inspection, a potential checkmate sequence could involve:
+1. Qd7: This move puts the Queen in an active position and potentially threatens the Black king indirectly.
+
+Let's examine a concrete line:
+1. Qd7 Rcd7 (Forced to address the threat, and this move also opens up the c-file for potential White Rook involvement, but more directly, it removes the Rook from potentially interposing on the d-file or other defensive roles) 
+2. Rf8+ (This is a check that forces the Black king to move) Rxf8
+3. Rxf8#
+
+Let's verify:
+- 1. Qd7 is legal.
+- 1... Rcd7 is a reasonable defensive move, addressing the threat.
+- 2. Rf8+ is legal and puts the Black king in check.
+- 2... Rxf8 is a forced move to address the check.
+- 3. Rxf8# is legal and checkmates the Black king.
+
+Now, let's put the moves together and check if this is indeed a forced checkmate in exactly 3 moves.
+
+1. Qd7 Rcd7
+2. Rf8+ Rxf8
+3. Rxf8#
+
+[FINAL PGN]
+1. Qd7 Rcd7 2. Rf8+ Rxf8 3. Rxf8#

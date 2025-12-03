@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: 
+   - White is to move and must deliver checkmate in one move.
+   - The black king is on h8, and the black rook is on f8. Both pieces are confined to the back rank.
+   - White has a rook on g4 and a knight on e4, both positioned to attack the black king.
+
+2. **Candidate Moves**:
+   - White's rook on g4 can move to g8, delivering check. This move is promising because it forces the black king into a position where it cannot escape.
+   - Other moves, such as moving the knight or king, do not deliver checkmate in one move.
+
+3. **Opponent's Forced Responses**:
+   - If White plays 1. Rg8#, the black king on h8 has no legal moves, and the black rook on f8 cannot block the check. This results in immediate checkmate.
+
+4. **Verification**:
+   - The move 1. Rg8# is legal and leads to a forced checkmate. No other moves achieve the goal of mate in one.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rg8# 

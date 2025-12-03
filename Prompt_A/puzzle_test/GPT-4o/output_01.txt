@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: 
+   - White has a queen on f2, a bishop on g3, and a knight on g2. The king is on f1.
+   - Black's king is on h1, and there are no other black pieces on the board.
+   - White is to move and must deliver checkmate in one move.
+
+2. **Key Candidate Moves**:
+   - The white queen on f2 can move to h2, delivering checkmate. The black king on h1 has no escape squares because:
+     - The white bishop on g3 controls the f2 and h2 squares.
+     - The white knight on g2 controls the f4 and h4 squares.
+     - The white queen on h2 would directly attack the black king, and no other black pieces exist to block or capture the queen.
+
+3. **Verification**:
+   - The move Qh2# is legal and delivers checkmate. The black king has no legal moves, and there are no pieces to block or capture the attacking queen.
+
+4. **Conclusion**:
+   - The solution is 1. Qh2#.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qh2# 1-0

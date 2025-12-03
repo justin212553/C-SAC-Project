@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**: White is to move. The black king is on h5, surrounded by limited escape squares. White has a strong queen on b7 and rook on g7, which can coordinate to deliver checks and restrict the black king's movement. Black's queen on e6 and rook on c2 are defensive pieces but cannot effectively protect the king.
+
+2. **Key Candidate Moves**:
+   - The first move should ideally be a check to force the black king into a more restricted position.
+   - Moves like Qf7+ or Qb1+ are worth considering, but Qf3+ seems most forcing, as it drives the black king further into a corner.
+
+3. **Opponent's Forced Responses**:
+   - After Qf3+, the black king is forced to move to g6 (the only legal move).
+   - White can then follow up with Rg6+, forcing the king to h5.
+   - From there, White can deliver a decisive check with Qh5#, leading to mate.
+
+4. **Verification**:
+   - Each move in the sequence is checked to ensure legality and that it leads to a forced mate in 4 moves.
+   - Black has no counterplay or defensive resources to prevent the mate.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qf3+ Kg6 2. Rg6+ Kh5 3. Qh5# 1-0

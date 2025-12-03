@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn**: Analyze all moveable pieces for White.
+   - **Rooks**: The rook on c7 can move to multiple squares along the 7th rank or the c-file. The rook on a1 can move along the a-file or rank 1.
+   - **Knights**: The knight on d5 can jump to several squares (b6, b4, c3, e3, f4, f6).
+   - **Bishops**: The bishops on g5 and h5 can move diagonally to various squares.
+   - **King**: The king on h1 can move to g1 or h2.
+   - **Pawns**: The pawns on e4, c3, h3, and g3 can move forward or capture if applicable.
+
+2. **Legal moves**: Evaluate all possible legal moves for White.
+   - The position is complex, but there are multiple legal moves available. For example:
+     - The rook on c7 can move to c8, delivering check to the Black king on e8.
+     - The knight on d5 can move to f6, delivering check to the Black king.
+     - Other moves are possible, but focusing on checks simplifies the analysis.
+
+3. **Best move**: Choose one legal move to output. Moving the rook from c7 to c8 is a straightforward check.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rc8+

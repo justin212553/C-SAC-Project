@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White is to move and has a clear advantage with the rook on c7, queen on g2, and pawn on f7. Black's king is on h7, and the rook on f8 is the only defensive piece.  
+   - The goal is to deliver checkmate in 3 moves, so White must exploit the coordination between the rook and queen to force the black king into a position where it cannot escape.
+
+2. **Candidate Moves**:  
+   - The rook on c7 can deliver checks, but the queen on g2 is also well-placed to deliver decisive threats.  
+   - The pawn on f7 restricts the black king's mobility, leaving h8 as the only escape square.  
+   - The black rook on f8 can block checks, but it cannot prevent a forced mate sequence.
+
+3. **Move-by-Move Analysis**:  
+   - **Move 1**: White plays Qg7+, forcing the black king to move to h8 (as Kh7 is illegal due to the pawn on f7).  
+   - **Move 2**: White plays Rc8+, forcing the black rook to block with Rf8 (as the king has no legal moves).  
+   - **Move 3**: White plays Qxf8#, delivering checkmate as the black king is completely surrounded and has no escape.
+
+4. **Verification**:  
+   - Each move in the sequence is forced, and Black has no alternative responses.  
+   - The final position after Qxf8# is a checkmate, fulfilling the puzzle's requirement.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qg7+ Kh8 2. Rc8+ Rf8 3. Qxf8#

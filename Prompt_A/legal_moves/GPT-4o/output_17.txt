@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: The position is analyzed from White's perspective. The pieces available to move are:
+   - Queen on e6
+   - Knight on d5
+   - Rook on d1
+   - Rook on f1
+   - Pawns on a2, b2, c2, g2, h2
+   - King on g1
+
+2. **Legal moves**:
+   - **Queen (e6)**: Can move to d7, d6, c4, c8, b3, b6, a2, a4, f5, f6, g4, g6, h3, h6.
+   - **Knight (d5)**: Can move to b6, b4, c7, c3, e7, e3, f6, f4.
+   - **Rook (d1)**: Can move to d2, d3, d4, d5, d6, d7, d8.
+   - **Rook (f1)**: Can move to f2, f3, f4, f5, f6, f7, f8.
+   - **Pawns**: None of the pawns can move forward legally.
+   - **King (g1)**: Can move to h1, h2, f1, f2.
+
+3. **Best move**: Among the legal moves, the most forcing move is **Qxf6+**, capturing the f6 pawn and delivering check to the Black king.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qxf6+

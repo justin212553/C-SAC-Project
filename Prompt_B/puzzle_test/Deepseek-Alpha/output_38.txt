@@ -1,0 +1,23 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   Black is to move, and the objective is to checkmate the White king in exactly 4 moves.
+
+2. **Candidate moves for Black**:  
+   Black has several attacking options, but the most promising involve exploiting the exposed position of the White king on c1 and the coordination of Black's pieces (especially the knight on e4, the bishop on c5, and the rook on e8). The key idea is to force the White king into a vulnerable position and deliver checkmate on the fourth move.
+
+3. **Concrete line calculation**:  
+   - **Move 1**: Black plays 1... Nxd2+, attacking the White king and forcing it to move.  
+   - **Move 2**: After 2. Nxd2 (forced), Black plays 2... Be2, threatening a discovered check with the rook on e8.  
+   - **Move 3**: White has no good defense and must play 3. Re1 to block the threat. Black responds with 3... Rc8+, forcing the White king to move.  
+   - **Move 4**: After 4. Kb1, Black delivers checkmate with 4... Bd3#.  
+
+4. **Verification**:  
+   - All moves are legal.  
+   - Checkmate is delivered on the fourth move (4... Bd3#).  
+   - There is no earlier checkmate before move 4, as White has forced responses to Black's threats.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]  
+1... Nxd2+ 2. Nxd2 Be2 3. Re1 Rc8+ 4. Kb1 Bd3#  

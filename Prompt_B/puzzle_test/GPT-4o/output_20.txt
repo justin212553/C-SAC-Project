@@ -1,0 +1,26 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - Black is to move, and the goal is to checkmate the White king in exactly 2 moves.
+
+2. **List the most promising candidate moves for Black:**
+   - Black's king is on b1, and White's king is on b7. Black has several attacking pieces, including the queen on d5 and rook on d1. The position is complex, but the focus is on delivering checkmate in exactly 2 moves.
+
+3. **Analyze candidate moves:**
+   - The Black queen on d5 can deliver checks, and the rook on d1 can also be used to attack. The pawn structure and White's exposed king suggest that Black's queen and rook are the key pieces for delivering checkmate.
+
+   - **Candidate move 1: 1... Qb3+**
+     - If Black plays 1... Qb3+, White's king is forced to move to a8 (the only legal move).
+     - After 2... Ra1#, the White king is checkmated. This sequence is forced and delivers mate in exactly 2 moves.
+
+   - **Candidate move 2: Other queen or rook moves**
+     - Moves like 1... Qc4+ or 1... Qd4+ do not lead to mate in 2 moves, as White has defensive options.
+
+4. **Verify the solution:**
+   - The line 1... Qb3+ Ka8 2... Ra1# is legal, forces White's king to move, and delivers checkmate on the second move. There is no faster mate, and no defensive moves for White can prevent this sequence.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+
+1... Qb3+ 2. Ka8 Ra1#

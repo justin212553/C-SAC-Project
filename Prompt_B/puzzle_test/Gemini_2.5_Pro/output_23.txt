@@ -1,0 +1,10 @@
+This is a mate-in-3 problem. White has a powerful attacking setup with the rook on g7, the knight on h5, and the bishop on c4 all aimed at the Black king. The key is to find a sequence of forcing moves that leaves Black with no escape.
+
+1.  **White's first move:** The most promising and forcing move is a sacrifice to remove a key defender. The move `1. Rxg6+` accomplishes this. It's a check, and it eliminates the bishop on g6 which protects the h7 square and blocks the g-file.
+2.  **Black's first move:** Black has only one legal response to this check: `1... hxg6`. This recapture is forced. Now, the h-file is open, but the pawn on g6 defends the h7 square.
+3.  **White's second move:** White continues the attack with another sacrifice: `2. Nxf6+`. This is a check from the knight. The Black king cannot move to g8 (attacked by the knight) or h7 (attacked by the pawn on g6). Therefore, Black is forced to capture the knight.
+4.  **Black's second move:** The only legal move is `2... Rxf6`, capturing the knight with the rook. This removes the knight but brings the rook to a square where it can be captured.
+5.  **White's third move:** White delivers the final blow with `3. Bxf6#`. The bishop on c4 captures the rook on f6. The Black king on h8 is in check and has no legal moves. The escape squares g8 and h7 are controlled by the bishop on f6 and the pawn on g6, respectively. The bishop cannot be captured, and the check cannot be blocked. This is checkmate.
+
+[FINAL PGN]
+1. Rxg6+ hxg6 2. Nxf6+ Rxf6 3. Bxf6#

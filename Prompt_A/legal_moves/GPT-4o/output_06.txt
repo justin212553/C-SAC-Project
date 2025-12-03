@@ -1,0 +1,27 @@
+--- THOUGHT PROCESS START ---
+
+1. **Analyze the position from the FEN:**
+   - Black to move.
+   - Black has the following pieces: king on a8, bishop on g5, rook on h2, and pawns on b5 and c4.
+   - White has a king on a3.
+
+2. **Legal moves for Black:**
+   - The black king on a8 can move to b8 or b7.
+   - The black bishop on g5 can move to several squares along its diagonal.
+   - The black rook on h2 can move along the h-file or the second rank.
+   - The black pawns on b5 and c4 can push forward (if legal).
+
+3. **Evaluate all possible moves:**
+   - The black king has two legal moves: Ka8-b8 or Ka8-b7.
+   - The black bishop can move to h4, f4, e3, d2, c1, f6, e7, or d8.
+   - The black rook can move to h1, h3, h4, h5, h6, h7, h8, g2, f2, e2, d2, c2, b2, or a2.
+   - The black pawn on b5 can move to b4.
+   - The black pawn on c4 can move to c3.
+
+4. **Choose one legal move:**
+   - For simplicity, select Rh2-h1 as the move to play.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Rh1

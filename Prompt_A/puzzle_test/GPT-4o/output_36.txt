@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**: Black is to move. The black queen on b2 and rook on g2 are active, but White's pieces (queen on e3, rook on c7, and pawns) dominate the board. White's king is relatively safe on h4, while Black's king on g8 is exposed. The goal is to find a forced mate in 4 moves.
+
+2. **Key Candidate Moves**: Black's queen and rook can deliver checks, but they must be precise to avoid losing tempo. White's counterplay revolves around using the queen and rook to deliver decisive checks or mate.
+
+3. **Move-by-Move Analysis**:
+   - **1... Qf6+**: Black's queen checks the white king, forcing it to move to g3 (the only legal move).
+   - **2. Kg3**: White's king moves to g3, staying safe for now.
+   - **2... Rg3+**: Black's rook delivers a check, forcing White's king to h4 (the only legal move).
+   - **3. Kh4**: White's king retreats to h4.
+   - **3... Qh4#**: Black's queen delivers checkmate, as the white king has no escape.
+
+4. **Verification**: Each move is forced, and the sequence leads to a checkmate in 4 moves. Black's queen and rook coordinate perfectly to trap the white king.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf6+ 2. Kg3 Rg3+ 3. Kh4 Qh4#

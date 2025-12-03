@@ -1,0 +1,15 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: Black is to move, and the goal is to deliver checkmate in 2 moves. The position is highly tactical, with Black's king on c3, White's king on h8, and several powerful pieces in play. Black has a queen on d3 and a rook on f6, while White has two rooks (a6 and h7), a bishop on e8, and a rook on h1.
+
+2. **Key Candidate Moves**: Black's queen and rook are the most active pieces capable of delivering checks. The immediate focus is on forcing White's king into a position where it cannot escape checkmate. The move 1... Qf1+ is a strong candidate because it forces White's king to move to g8 (the only legal square).
+
+3. **Opponent's Forced Response**: After 1... Qf1+, White's king must move to g8. This sets up a position where Black can deliver checkmate on the next move.
+
+4. **Second Move for Checkmate**: After White's king moves to g8, Black can play 2... Rf8#, delivering checkmate. The rook on f8 covers all escape squares for the White king, and the Black queen supports the rook.
+
+5. **Verification**: Every move in the sequence is legal, and the solution leads to a forced checkmate in 2 moves. No other moves for Black achieve the goal in the required number of moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf1+ 2. Kg8 Rf8#

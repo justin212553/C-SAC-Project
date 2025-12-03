@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN string ends with "w", indicating it is White's turn to move.
+
+2. Analyze White's pieces and their potential moves:
+   - White has the following pieces: a rook on c8, a queen on f6, a bishop on g5, and a king on a4.
+   - The rook on c8 can move along the c-file or the 8th rank.
+   - The queen on f6 can move diagonally, vertically, or horizontally.
+   - The bishop on g5 can move diagonally.
+   - The king on a4 can move one square in any direction.
+
+3. Check for legal moves:
+   - The rook on c8 can move to c7, c6, c5, c4, c3, c2, c1, or b8, d8, e8, f8, g8, h8. However, moving to c7 or c6 would place the rook on squares attacked by Black's queen on h7.
+   - The queen on f6 can move to several squares, including f7, f8, g7, g6, g5, h6, h5, e6, d6, c6, b6, a6, e7, d8, etc. Many of these moves are legal.
+   - The bishop on g5 can move to h6, f6, f4, e3, d2, c1, or h4. All these moves are legal.
+   - The king on a4 can move to b4, b3, or a3. All these moves are legal.
+
+4. Select one legal move:
+   - Among the many legal moves, I will choose a simple and safe move for White. Moving the queen to f7 is a strong option, as it puts the Black king on a7 in check.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Qf7+

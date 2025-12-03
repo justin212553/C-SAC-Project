@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+2. **Pieces on the board**:
+   - White King (g1): No legal moves due to being surrounded by its own pieces or controlled squares.
+   - White Rook (g7): Can move along the 7th rank or capture on g6.
+   - White Knight (h5): Can move to f6, g7, f4, or g3.
+   - White Bishop (c4): Can move along its diagonals.
+   - White Pawn (c5): Cannot move forward as c6 is blocked.
+   - White Pawn (a3): Cannot move forward as a4 is blocked.
+   - White Pawn (g2): Can move to g3.
+   - White Bishop (a1): Can move along its diagonals.
+
+3. **Legal moves**:
+   - Rook (g7): Capturing on g6 (Rgxg6+) is a strong candidate as it delivers check.
+   - Knight (h5): Moving to f6 (Nf6+) also delivers check.
+   - Other moves do not deliver immediate threats or checks.
+
+4. **Best move**: Rook captures g6 (Rgxg6+) is the most forcing move, delivering check to the Black King.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Rxg6+

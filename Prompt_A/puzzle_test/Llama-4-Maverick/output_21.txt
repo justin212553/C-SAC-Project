@@ -1,0 +1,39 @@
+To solve this Mate in 3 problem, let's first understand the given position defined by the FEN: **r5k1/2r4p/4pRpP/qP1p4/3Q2P1/5R2/1P6/1K6 w - - 0 1**.
+
+1. **Understanding the Position:**
+   - The position is White to move.
+   - The White King is on b1, and there are White Rooks on f3 and f6, with a White Queen on d4.
+   - The Black King is on g8, with a Black Rook on c7 and another on a8, and a Black Queen on a5.
+
+2. **Assessing the Position:**
+   - White has a significant material advantage and active pieces.
+   - The Black King is somewhat exposed but has some cover from its pieces and pawns.
+   - White's task is to checkmate Black in 3 moves.
+
+3. **Initial Observations:**
+   - The White Rook on f6 is well-placed, potentially pinning or exerting pressure on the Black position.
+   - The White Queen on d4 is active and can potentially move to various squares to attack or support other pieces.
+   - The White Rook on f3 can potentially move to other files or ranks to attack or check the Black King.
+
+4. **Analyzing Potential Moves:**
+   - To checkmate in 3 moves, we need to look for a sequence that forces Black into a position where they cannot avoid checkmate.
+   - The first move should ideally put Black in a difficult position or limit their responses significantly.
+
+5. **Checking Potential First Moves:**
+   - **Qd7:** A potential move, as it puts the Queen in an active position and could potentially force a weakness or directly threaten the Black King.
+   - Other moves like **Rf8+**, **Qe5**, or **Qc4** could also be considered, but we need to verify if they lead to a forced checkmate.
+
+6. **Detailed Analysis:**
+   - Let's examine **1. Qd7**: This move puts the Queen on a strong square, potentially threatening both the Black Rook on c7 and putting pressure on the position. Black's response could be limited to something like **1... Rxd7**, after which White could potentially play **2. Rf8+ Rxf8** (forced) **3. Rxf8#**.
+   - Checking the sequence: **1. Qd7 Rxd7 2. Rf8+ Rxf8 3. Rxf8#** seems to be a valid checkmate sequence.
+
+7. **Verifying the Sequence:**
+   - **1. Qd7** is a strong first move.
+   - **1... Rxd7** is a forced response to capture the Queen.
+   - **2. Rf8+** is check, and **2... Rxf8** is a forced response.
+   - **3. Rxf8#** checkmates the Black King.
+
+The sequence appears to be a valid Mate in 3.
+
+[FINAL PGN]
+1. Qd7 Rxd7 2. Rf8+ Rxf8 3. Rxf8#

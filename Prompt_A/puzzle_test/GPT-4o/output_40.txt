@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - Black is to move, and the position is highly tactical.
+   - White's queen on b7 is very active, threatening multiple checks and attacks.
+   - Black's king is on e8, and its mobility is limited due to the rook on h8 and the pawn structure.
+   - Black has a strong attacking opportunity with the queen on g6 and the knight on b4, which can coordinate with the bishop on g4.
+
+2. **Key Candidate Moves**:
+   - Black's first move should aim to deliver a check or force White into a defensive position.
+   - The move 1... Nc2+ is a strong candidate, as it forces White's king to move or the rook on a1 to capture the knight, leading to a forced sequence.
+
+3. **Opponent's Forced Responses**:
+   - After 1... Nc2+, White has limited options. If 2. Kd1, Black can continue the attack with checks and force a mate. If 2. Rxc2, Black gains tempo and continues the attack.
+
+4. **Sequence Verification**:
+   - The sequence must lead to a forced mate in 4 moves. Each move is checked for legality and effectiveness in reducing White's defensive options.
+
+5. **Final Solution**:
+   - The solution involves precise coordination between Black's queen, knight, and bishop to deliver checkmate.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Nc2+ 2. Kd1 Qd3 3. Qxc6+ Kf8 4. Qxa8 Bxe2#
+[FINAL PGN]

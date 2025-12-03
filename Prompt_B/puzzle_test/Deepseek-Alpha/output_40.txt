@@ -1,0 +1,31 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify the side to move and the king to checkmate:**
+   - Black is to move (b).
+   - The objective is to checkmate the White king in exactly 4 moves.
+
+2. **Analyze the position:**
+   - Black's queen on g6 and bishop on g4 are well-placed for an attack.
+   - Black's knight on b4 can potentially join the attack.
+   - White's king is on e1, and its escape routes are limited due to its own pieces and Black's threats.
+
+3. **Candidate moves for Black:**
+   - The most forcing move is 1... Nc2+, a check that forces White's king to move or the knight to be captured.
+   - Other moves like 1... Qc2 or 1... Nd3+ are less forcing and do not lead to a clear mate in 4.
+
+4. **Calculate the line starting with 1... Nc2+:**
+   - 1... Nc2+ forces 2. Kd1 (the only legal move, as capturing the knight with the rook leads to immediate mate after 2... Qc2#).
+   - 2... Qd3+ (a forcing check, driving the king further into the corner).
+   - 3. Kc1 (the only legal move).
+   - 3... Bxe2 (threatening mate on d1 or c2).
+   - 4. b3 (the only move to delay mate).
+   - 4... Qc2# (checkmate).
+
+5. **Verify the solution:**
+   - The sequence is forced, and checkmate is delivered on the 4th move.
+   - There is no earlier checkmate, and all moves are legal.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Nc2+ 2. Kd1 Qd3+ 3. Kc1 Bxe2 4. b3 Qc2#
+[FINAL PGN]

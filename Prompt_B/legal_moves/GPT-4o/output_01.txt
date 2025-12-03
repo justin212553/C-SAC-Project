@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. Determine which side is to move: The FEN indicates "w", meaning White is to move.
+2. Consider which of White's pieces can move:
+   - White has a king on f1, a queen on g2, and bishops on g6 and f2.
+   - The king can move to e1, e2, f2, or g2, but g2 is occupied by the queen.
+   - The queen can move to any square along the g-file, the second rank, or diagonally, as long as it doesn't land on a square occupied by White's pieces.
+   - The bishop on g6 can move diagonally to f5, e4, h5, or h7.
+   - The bishop on f2 can move diagonally to e3, d4, g3, or h4.
+3. Check legality of candidate moves:
+   - Ensure the move does not leave the king in check or violate movement rules.
+   - All candidate moves are legal since Black's king on h1 cannot attack any of White's pieces.
+
+4. Choose one legal move: I will select "Qg7+" as it is a check and follows all rules.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Qg7+

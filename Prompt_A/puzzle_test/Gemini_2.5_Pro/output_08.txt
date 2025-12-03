@@ -1,0 +1,28 @@
+This is a mate-in-1 puzzle.
+
+**1. Analyze the Position:**
+*   **White's King:** The FEN `.../5RKR` indicates the White pieces on the first rank are a Rook on f1, the King on g1, and a Rook on h1. The King is on g1, not h1. This is a crucial detail.
+*   **White's Pieces:** King on g1, Rooks on f1 and h1, Pawns on f2, g2, h2.
+*   **Black's Pieces:** King on g7, Knight on e5, Rook on g5.
+*   **Turn:** Black to move.
+
+**2. Identify the Key Tactical Element:**
+The Black Rook on g5, the White Pawn on g2, and the White King on g1 are all on the g-file. The pawn on g2 is situated between the enemy rook and its own king. This means the pawn on g2 is **absolutely pinned** and cannot legally move off the g-file, as doing so would expose the White King to a check from the Black Rook.
+
+**3. Evaluate Candidate Moves:**
+We are looking for a move that delivers a check from which White cannot escape.
+
+*   **Candidate 1: 1... Rxg2+**
+    This move delivers check by capturing the pawn. However, the White King can simply recapture with `2. Kxg2`. The g2 square is not attacked by any other Black piece, so this capture is legal. This is not checkmate.
+
+*   **Candidate 2: 1... Nf3+**
+    This move delivers a check with the knight. Let's analyze White's possible responses:
+    *   **Can the King move?** The knight on f3 attacks the squares f1, h1, f2, and h2. The square g2 is blocked by the (pinned) pawn. The King is completely trapped and has no legal moves.
+    *   **Can the check be blocked?** A knight's check cannot be blocked.
+    *   **Can the checking piece be captured?** The only White piece that can attack the f3 square is the pawn on g2. However, as established in step 2, the g2-pawn is pinned to the king by the rook on g5. Moving the pawn to f3 (`gxf3`) is an illegal move because it would put the White King in check from the rook on g5.
+
+**4. Conclusion:**
+Since the King cannot move, the check cannot be blocked, and the checking knight cannot be legally captured, the move `1... Nf3+` is checkmate.
+
+[FINAL PGN]
+1... Nf3#

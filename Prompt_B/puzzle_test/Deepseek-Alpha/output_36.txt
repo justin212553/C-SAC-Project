@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **Side to move and target king**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 4 moves.
+
+2. **Candidate moves for Black**:  
+   Black has several options to start the sequence. The most promising move is 1...Qf2+, as it forces the White king to move and begins a forcing sequence. Other moves like 1...Qb8+ or 1...Qh2+ are less forcing and do not lead to a mate in 4.
+
+3. **Concrete calculation of the line**:  
+   - **1...Qf2+**: Black delivers a check. White's only legal move is 2. Qxf2.  
+   - **2...Rxf2**: Black recaptures the queen, delivering another check. White's only legal move is 3. Rc8+.  
+   - **3...Kf7**: Black moves the king to escape the check. White's only reasonable move is 4. Rc7+.  
+   - **4...Kf6**: Black moves the king, and White has no way to prevent mate on the next move.
+
+4. **Verification**:  
+   - The sequence is forced, and Black delivers checkmate on the fourth move.  
+   - There is no earlier checkmate, as White has defensive moves that delay the mate until move 4.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qf2+ 2. Qxf2 Rxf2 3. Rc8+ Kf7 4. Rc7+ Kf6#

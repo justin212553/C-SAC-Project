@@ -1,0 +1,20 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn**: Analyze all moveable pieces for White.
+   - **King (b8)**: The king can move to a7, c7, or c8. However, c7 and c8 are illegal due to being occupied by White's own pieces. The only legal move is bxa7.
+   - **Rook (d1)**: The rook can move along the d-file or the 1st rank. Legal moves include d2, d3, d4, d5, d6, d7, and d8. Captures are possible on d2 and d4.
+   - **Pawn (b7)**: The pawn can move to b8 and promote to a queen, rook, bishop, or knight. Promotion is possible.
+   - **Pawn (c7)**: The pawn can move to c8 and promote to a queen, rook, bishop, or knight. Promotion is possible.
+   - **Pawn (g7)**: The pawn can move to g8 and promote to a queen, rook, bishop, or knight. Promotion is possible.
+   - **Pawn (h7)**: The pawn can move to h8 and promote to a queen, rook, bishop, or knight. Promotion is possible.
+   - **Knight (b4)**: The knight can move to a2, a6, c2, c6, d3, or d5. Captures are possible on d5.
+   - **Queen (d4)**: The queen can move along the d-file, 4th rank, or diagonals. Legal moves include d5, d6, d7, d8, c3, c5, b2, b6, a1, a7, e3, e5, f2, f6, g1, g7, h8. Captures are possible on d5 and f6.
+
+2. **Goal**: Find one legal move for White. Any legal move is acceptable.
+
+3. **Selection**: Among the legal moves, I will choose **b7-b8=Q** (pawn promotion to queen) as the move to output.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. b7b8=Q

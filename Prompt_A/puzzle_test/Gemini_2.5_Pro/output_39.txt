@@ -1,0 +1,33 @@
+This is a classic checkmate puzzle that showcases the power of coordinating knights. The key is a series of sacrifices and forcing checks to drive the black king into a mating net.
+
+### Initial Assessment:
+White has a strong attacking setup with two active knights (on b5 and d4), a queen on g3, and a bishop on g5. Black's king is on e8 and feels vulnerable. Black's queen on b2 is a major counter-attacking piece, threatening squares like a2 and c3. White must act quickly and decisively.
+
+### Candidate Moves & Analysis:
+
+1.  **Nd6+**: This is the most forcing and promising move. It's a check that sacrifices a knight to open lines and create weaknesses around the black king.
+    *   Black's only legal response is **1... exd6**. This captures the knight but opens the e-file and weakens the dark squares.
+
+2.  After `1... exd6`, White continues the attack. The knight on b5 is now the star player.
+    *   **2. Nc7+**: Another forcing check. The black king is forced to move. It has two options: d8 and f8.
+
+3.  **Case A: Black plays 2... Kd8**
+    *   This is the main line. The king moves towards the queenside, but it's a fatal mistake.
+    *   **3. Ne6+**: This is the brilliant move. The knight that just moved to c7 now hops to e6. This is a **double check**: one from the knight itself, and a discovered check from the rook on a1 along the d-file.
+    *   When a king is in double check, it must move. There is no other option. The king on d8 has only one legal square.
+    *   **3... Ke8**: The king is forced back to its starting square.
+
+4.  Now, White delivers the final blow.
+    *   **4. Nc7#**: The knight returns to c7, delivering a picturesque checkmate. The king on e8 is trapped. The d8 square is covered by the knight on c7, the f8 square is blocked by Black's own bishop, the d7 square is blocked by Black's knight, and the crucial f7 escape square is covered by the white knight on e6.
+
+### Case B: Black plays 2... Kf8
+*   This variation also leads to mate in 4.
+*   After `2... Kf8`, White still plays **3. Ne6+**. This is a single check from the knight.
+*   Black has two responses:
+    *   If **3... fxe6**, White mates with **4. Qf4#**.
+    *   If **3... Kg8**, White mates with **4. Qf3#**.
+
+In all variations, White forces checkmate in 4 moves. The main line is a beautiful example of knight geometry and the power of the double check.
+
+[FINAL PGN]
+1. Nd6+ exd6 2. Nc7+ Kd8 3. Ne6+ Ke8 4. Nc7#

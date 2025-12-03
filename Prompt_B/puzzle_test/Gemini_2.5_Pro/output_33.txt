@@ -1,0 +1,21 @@
+This is a mate-in-4 problem. White is to move.
+
+**Step-by-step reasoning:**
+
+1.  **Initial Assessment:** White has a powerful attacking setup with a rook on c7, a knight on d5, and two bishops on g5 and h5 all aimed at the black king. Black's king is very exposed. However, White's own king is in danger from Black's rooks on the second rank and the knight on e1 (e.g., ...Rf1# is a threat). This means White's moves must be forcing, and a sequence of checks is the most likely path to victory.
+
+2.  **Candidate Move Analysis:** We will analyze the most promising checking moves for White.
+    *   **Candidate A: 1. Re7+**
+        This move seems very strong. Black's only legal reply is `1...Kf8`. Now White can continue with `2. Nf6+`. Black is forced to play `2...gxf6` (the king has no legal moves). This leads to `3. Bh6#`. This entire sequence (`1. Re7+ Kf8 2. Nf6+ gxf6 3. Bh6#`) is a forced mate in 3. Since the problem requires a mate in *exactly* 4 moves, this cannot be the correct solution.
+
+    *   **Candidate B: 1. Nf6+**
+        This is another powerful check. Black has two legal responses: `1...gxf6` and `1...Kf8`. We must verify that both lead to a mate in 4.
+        *   **Line B1: If Black plays `1...gxf6`:**
+            White continues with `2. Re7+`. This forces `2...Kf8`. White follows up with `3. Rf7+`, which forces `3...Kg8`. Now, White delivers the final blow with `4. Bh6#`. The black king on g8 is trapped: the rook on f7 controls the f-file and h8, the pawn on g3 controls h7, and the bishop on h6 delivers the checkmate. This is a forced mate in 4.
+        *   **Line B2: If Black plays `1...Kf8`:**
+            White continues with `2. Re7+`. This forces `2...Kg8`. Now White plays `3. Rg7+`, forcing the king to the corner with `3...Kh8`. Finally, White plays `4. Rh7#`. The rook on h7 is supported by the bishop on h5, and the king's escape squares are covered (g8 by the knight on f6, and g7 by the bishop on h5). This is also a forced mate in 4.
+
+3.  **Conclusion:** Since both of Black's legal replies to `1. Nf6+` lead to a forced checkmate on White's 4th move, this is the correct solution. It fulfills the condition of being a mate in exactly 4 moves, unlike the faster mate-in-3 found after `1. Re7+`.
+
+[FINAL PGN]
+1. Nf6+ gxf6 2. Re7+ Kf8 3. Rf7+ Kg8 4. Bh6#

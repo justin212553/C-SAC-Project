@@ -1,0 +1,25 @@
+This is a mate-in-2 problem. White is to move.
+
+**Step-by-step reasoning:**
+
+1.  **Analyze the position:** The Black king is on a6. It is heavily restricted by the White king on c7 (controlling b6, b7) and the White pawn on c6 (controlling b7). The Black pawn on a7 also helps restrict its own king by controlling b6. The only potential escape square for the Black king is b5.
+
+2.  **Identify candidate moves:** The most forcing moves are checks, as they severely limit Black's possible replies. Let's examine the checks White can deliver.
+    *   `1. Ra1+` (moving the rook from e1). This is a check.
+    *   `1. Rb2+` (moving the rook from f2). This is also a check.
+
+3.  **Calculate the line for `1. Ra1+`:**
+    *   White plays `1. Ra1+`. The Black king is attacked.
+    *   Black must respond. The king cannot move to b5 (attacked by the rook on a1) or b6/b7 (controlled by the White king and pawn). The only legal move for Black is to capture the rook: `1... Kxa7`. This move is forced.
+    *   Now, the Black king is on a7. White must deliver the final checkmate. White plays `2. Ra2#` (moving the other rook from f2).
+    *   Let's verify this is checkmate. The king on a7 is attacked by the rook on a2.
+        *   The king cannot move to a8 (controlled by Ra2).
+        *   The king cannot move to b8 (controlled by Kc7).
+        *   The king cannot move to b7 (controlled by Kc7 and the c6 pawn).
+        *   The king cannot move to b6 (controlled by Kc7 and the Black a7 pawn).
+    *   The king has no escape squares, and the check cannot be blocked or the rook captured. This is a valid forced mate in 2.
+
+4.  **Conclusion:** The line starting with `1. Ra1+` leads to a forced checkmate in exactly two moves.
+
+[FINAL PGN]
+1. Ra1+ Kxa7 2. Ra2#

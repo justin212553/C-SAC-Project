@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: Analyze all possible moves for White.
+2. **Pieces to consider**:
+   - Queen on e6
+   - Knight on d5
+   - Rook on d1
+   - Rook on f1
+   - Pawns on a2, b2, c2, f2, g2, h2
+3. **Legal moves**:
+   - The Queen on e6 can move to several squares, including capturing on f6 (Qxf6+), which delivers check.
+   - The Knight on d5 can move to several squares, but none of them deliver immediate threats.
+   - The Rook on d1 can move along the d-file, but no immediate threats are created.
+   - The Rook on f1 can move along the f-file, but no immediate threats are created.
+   - Pawns can move forward, but no immediate threats are created.
+4. **Best move**:
+   - Qxf6+ is the strongest move, as it delivers check to the Black king and forces a response.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Qxf6+

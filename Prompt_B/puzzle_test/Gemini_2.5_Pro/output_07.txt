@@ -1,0 +1,24 @@
+**Step-by-step reasoning:**
+
+1.  **Analyze the Black King's Position:** The Black king is on h8. We must assess its escape squares.
+    *   The square h7 is occupied by a Black pawn.
+    *   The square g7 is occupied by a Black pawn.
+    *   The square g8 is occupied by a Black rook.
+    *   Therefore, the Black king has no legal moves and is completely trapped in the corner.
+
+2.  **Identify Candidate Checking Moves:** Since the king has no escape squares, any check that cannot be blocked or where the checking piece cannot be captured will result in checkmate. Let's list White's possible checks:
+    *   **Rook checks:** The only checking move for the rook on g4 is `1. Rxg8+`.
+    *   **Knight checks:** The knight on e4 can deliver check from two squares: `1. Nf6+` and `1. Ng5+`.
+
+3.  **Evaluate Each Candidate Move:**
+    *   If White plays `1. Rxg8+`, Black can simply capture the rook with `1...Kxg8`, and it is not checkmate.
+    *   If White plays `1. Nf6+`, the knight is attacked by the Black pawn on g7. Black can play `1...gxf6`, capturing the knight and ending the check. This is not checkmate.
+    *   If White plays `1. Ng5+`, this is a check. We must verify if Black can escape this check.
+        *   **Can the king move?** No, as established in step 1.
+        *   **Can the check be blocked?** No, a knight's check cannot be blocked.
+        *   **Can the knight be captured?** The g5 square is not attacked by any Black piece. The pawns on f7 and h7 attack g6. The rooks on f8 and g8 cannot move to g5. The king cannot capture the knight.
+
+4.  **Conclusion:** The move `1. Ng5+` delivers a check that Black cannot legally respond to. Therefore, it is checkmate.
+
+[FINAL PGN]
+1. Ng5#

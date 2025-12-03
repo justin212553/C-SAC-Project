@@ -1,0 +1,33 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate:**
+   - White is to move, and the goal is to checkmate Black's king on a7 in exactly 3 moves.
+
+2. **List promising candidate moves for White:**
+   - White has several attacking pieces: the queen on f6, rook on c8, and bishop on g5. The Black king is somewhat exposed on a7, and Black's defensive resources include the rook on f7, queen on h7, and bishop on f2.
+   - Candidate moves include checks such as Qh5+, Rc7+, and Qxf7+.
+
+3. **Analyze concrete lines for exactly 3 moves:**
+   - **Line 1: 1. Qh5+ Kf8 2. Qh8+ Qg8 3. Bh6#**
+     - Move 1: White plays Qh5+, forcing Black's king to move to f8 (the only legal move).
+     - Move 2: White plays Qh8+, forcing Black to block with Qg8 (the only legal move).
+     - Move 3: White plays Bh6#, delivering checkmate. The Black king is trapped, and no piece can block or capture the bishop.
+
+   - **Line 2: 1. Rc7+ Rxc7 2. Qxf7 Qxf7 3. Be3#**
+     - Move 1: White plays Rc7+, forcing Black to capture with Rxc7 (the only legal move).
+     - Move 2: White plays Qxf7+, forcing Black to capture with Qxf7 (the only legal move).
+     - Move 3: White plays Be3#, delivering checkmate. The Black king is trapped, and no piece can block or capture the bishop.
+
+   - **Line 3: 1. Qxf7+ Rxf7 2. Rc7+ Rxc7 3. Be3#**
+     - Move 1: White plays Qxf7+, forcing Black to capture with Rxf7 (the only legal move).
+     - Move 2: White plays Rc7+, forcing Black to capture with Rxc7 (the only legal move).
+     - Move 3: White plays Be3#, delivering checkmate. The Black king is trapped, and no piece can block or capture the bishop.
+
+4. **Verify the solution:**
+   - Line 1 (Qh5+ ... Bh6#) is the only line that delivers checkmate in exactly 3 moves without any faster mate. Lines 2 and 3 result in checkmate but are longer than 3 moves or involve unnecessary delays.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+
+1. Qh5+ Kf8 2. Qh8+ Qg8 3. Bh6#

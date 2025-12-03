@@ -1,0 +1,24 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   Black is to move, and the goal is to checkmate White's king in exactly 4 moves.
+
+2. **List promising candidate moves for Black**:  
+   Black's position is dominant, with the White king cornered on h1 and limited mobility. The rook on c7 is White's only active piece. Black's bishop on c4 and rook on a8 are well-placed to deliver checks and control key squares. Candidate moves include advancing pawns, moving the rook, or maneuvering the bishop.
+
+3. **Calculate concrete lines for exactly 4 moves**:  
+   Black must aim to restrict White's king further while setting up a forced checkmate. The key idea is to use the bishop and rook in coordination.  
+
+   - **Move 1**: Black plays 1... Ra1+. This forces White's king to move to g2, as h1 is already occupied.  
+   - **Move 2**: Black plays 2... Bf1+. This forces White's king back to h1, as g2 is attacked by the bishop.  
+   - **Move 3**: Black plays 3... Bh3. This sets up a discovered check and forces White to move the rook to block the check.  
+   - **Move 4**: Black plays 4... Bg2#. The bishop delivers checkmate, as the White king is trapped and all escape squares are covered.
+
+4. **Verify legality and checkmate**:  
+   - All moves are legal.  
+   - Checkmate is delivered on the 4th move, with no earlier mate possible.  
+   - White's defensive options are limited, and the sequence is forced.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Ra1+ 2. Kg2 Bf1+ 3. Kh1 Bh3 4. Bg2#

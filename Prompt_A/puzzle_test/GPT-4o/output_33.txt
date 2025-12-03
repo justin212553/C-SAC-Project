@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:
+   - White is to move and has a significant attacking advantage with active pieces, particularly the rooks, bishops, and knights.
+   - Black's king is on e8, surrounded by limited mobility due to its own pieces and White's threats.
+   - The goal is to find a forced mate in 4 moves.
+
+2. **Key Candidate Moves**:
+   - White has several checks available, such as 1. Rc8+, 1. Nf6+, and 1. Re7+. Among these, 1. Rc8+ appears most forcing, as it immediately limits Black's king's options.
+
+3. **Opponent's Forced Responses**:
+   - After 1. Rc8+, Black's king is forced to move to d7 (1... Kd7), as other squares are either occupied or under attack.
+
+4. **Continuation**:
+   - After 1... Kd7, White can deliver another check with 2. Bg4+. This move forces Black's king to retreat to e8 (2... Ke8), as other moves lead to immediate mate.
+
+5. **Final Moves**:
+   - White can then play 3. Nf6#, delivering checkmate. The knight move is supported by the bishop on g4, and Black's king has no escape.
+
+6. **Verification**:
+   - Each move in the sequence is forcing, and Black has no way to avoid the checkmate in 4 moves.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Rc8+ Kd7 2. Bg4+ Ke8 3. Nf6#

@@ -1,0 +1,23 @@
+This is a mate-in-3 puzzle. White is to move and checkmate the Black king on h7.
+
+**Step-by-step reasoning:**
+
+1.  **White's 1st move: `1. Qg8+`**
+    This is a forcing queen sacrifice. By checking the Black king, White severely limits Black's possible responses. Black's only legal move is to capture the queen.
+
+2.  **Black's 1st move: `1... Kxg8`**
+    This is Black's only legal move. The king is forced onto the g8 square.
+
+3.  **White's 2nd move: `2. f8=Q+`**
+    White promotes the pawn on f7 to a new queen, delivering a check. The Black king on g8 is now attacked by this new queen. The king cannot move to f8, g7, or stay on g8 because of the queen. The only escape square is h7.
+
+4.  **Black's 2nd move: `2... Kh7`**
+    This is again Black's only legal move. The king is forced onto h7.
+
+5.  **White's 3rd move: `3. Rc8#`**
+    White delivers the final blow. The rook moves to c8, delivering checkmate. The Black king on h7 is attacked by the rook. It cannot escape to h8, g8, or g7 because those squares are all controlled by the White queen on f8. The h6 square is blocked by Black's own pawn. The check cannot be blocked or the rook captured. This is checkmate.
+
+This sequence is forced at every step and delivers checkmate on the third move as required.
+
+[FINAL PGN]
+1. Qg8+ Kxg8 2. f8=Q+ Kh7 3. Rc8#

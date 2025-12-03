@@ -1,0 +1,27 @@
+To solve this problem, we need to analyze the given FEN position and identify a legal move for Black.
+
+The given FEN is: **3r1rk1/ppp2ppp/8/8/3nP3/2QPqP2/PP3B1P/3R1R1K b - - 0 1**
+
+Let's break down the position:
+
+- The board is set for Black to move, as indicated by 'b' in the FEN.
+- The current position is: 
+  - Black: King on g8, Queen on e3, Rook on d8, Rook on f8, Knight on d4, Pawns on a7, b7, c7, f7, g7, h7.
+  - White: King on h1, Queen on c3, Rook on d1, Rook on f1, Bishop on f2, Pawns on e4, f3, h2, a2, b2.
+
+Let's analyze the moveable pieces for Black:
+1. **Queen on e3**: The Queen can move. It can potentially capture the White Queen on c3 or the White Pawn on f3 if it weren't for other pieces potentially being in the way or the rules of the move. The Queen can also move along the rank, file, or diagonal. Checking the possible moves: Qxc3 is possible, and so are other moves along the available paths.
+   
+2. **Knight on d4**: The Knight can move. Knights move in an L-shape. Possible moves include c2, c6, b3, b5, f3, f5, e2, e6. The Knight on d4 can potentially capture the White Queen on c3 or the White Pawn on f3. Checking the moves: Nxc2 and Nf3 (or Nxf3) are potential captures.
+
+3. **Rooks on d8 and f8**: The Rooks can potentially move along the rank or file. The Rook on d8 can move along the d-file or the 8th rank. The Rook on f8 can move along the f-file or the 8th rank. Checking the moves: Rd8 can potentially move to d7, d6, d5, etc., or to c8, b8, or a8. Rf8 can potentially move along the f-file.
+
+Let's directly check for a simple and obvious move:
+- The Black Queen is on e3, and it can capture the White Queen on c3. So, **Qxc3** is a valid move.
+
+Now, let's format this move in PGN.
+
+The move number is 1 for Black since it's Black's first move.
+
+[FINAL PGN]
+1... Qxc3

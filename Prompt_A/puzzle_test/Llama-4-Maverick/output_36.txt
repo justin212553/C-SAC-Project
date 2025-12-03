@@ -1,0 +1,59 @@
+To solve this chess puzzle, let's first understand the given position and the task at hand. The position is given in FEN (Forsyth-Edwards Notation) as **6k1/2R5/4p1pp/8/5PPK/P3Q2P/1q4r1/8 b - - 0 1**. We need to find a forced checkmate in 4 moves (Mate in 4) for Black.
+
+First, let's decode the FEN:
+- **6k1**: The Black king is on g8.
+- **2R5**: White has a Rook on c7.
+- **4p1pp**: Black has pawns on e6, g6, and h6.
+- **8**: An empty row.
+- **5PPK**: White has pawns on f4 and g4, and the White king is on h4.
+- **P3Q2P**: White has a pawn on a3, a Queen on e3, and a pawn on g3.
+- **1q4r1**: Black has a Queen on b2 and a Rook on g2.
+- **8 b - - 0 1**: It's Black's turn to move.
+
+The task is to find a checkmate in 4 moves. Let's analyze:
+
+1. **Current Position Assessment**: 
+   - Black is to move.
+   - The Black king is somewhat exposed on g8, but it's not under immediate attack.
+   - Black has a Queen and a Rook that can potentially attack.
+   - White's King is on h4, somewhat exposed, but supported by pawns and the Queen.
+
+2. **Initial Candidate Moves**:
+   - We need to look for moves that could potentially lead to a checkmate. Given that it's Mate in 4, we should start by considering checks or threats that limit White's responses.
+
+3. **Analysis**:
+   - The Black Queen on b2 is somewhat active and can potentially move to attack the White King or put pressure on the position.
+   - The Black Rook on g2 is also active and can potentially be used to deliver checkmate or support other pieces.
+
+Let's directly analyze potential moves:
+- **1... Qe2+** is a potential starting move as it checks the White King and forces a response. 
+- After **1... Qe2+**, White's King can move to h5 (since moving to g5 would be checkmate by Qg2+, and h3 is not a safe square due to the potential for ...Qg2# or similar).
+
+Let's consider the sequence:
+1. ... Qe2+
+2. Kh5
+
+Now, we need to continue the analysis from this point.
+
+After **2. Kh5**, a potential follow-up could involve using the Rook or Queen to deliver checkmate or further expose the White King.
+
+Let's directly evaluate:
+1. ... Qe2+
+2. Kh5 Qh2+ 
+3. Kg5 Qg3+ 
+4. Kf5 Qf4#
+
+Let's verify if this sequence is valid and leads to checkmate.
+
+1. The starting move **1... Qe2+** is legal.
+2. **2. Kh5** is a valid response.
+3. **2... Qh2+** is legal and checks the King.
+4. **3. Kg5** is forced due to the check.
+5. **3... Qg3+** continues the check.
+6. **4. Kf5** is the only move that doesn't immediately lose due to checkmate on the next move.
+7. **4... Qf4#** is checkmate.
+
+So, the sequence is valid.
+
+[FINAL PGN]
+1... Qe2+ 2. Kh5 Qh2+ 3. Kg5 Qg3+ 4. Kf5 Qf4#

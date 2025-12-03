@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. Analyze the position:
+   - White to move.
+   - White has a king on e6 and a pawn on f7.
+   - Black has a king on f8.
+   - The pawn on f7 is one square away from promotion.
+
+2. Legal moves for White:
+   - The pawn on f7 can move to f8 and promote to a queen, rook, bishop, or knight. This move also delivers checkmate because the Black king on f8 has no escape squares.
+   - The White king on e6 has no legal moves because all adjacent squares are either occupied or under attack by the Black king.
+
+3. Best move:
+   - Promoting the pawn on f7 to a queen (f8=Q) is the optimal move, as it delivers checkmate immediately.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. f8=Q# 

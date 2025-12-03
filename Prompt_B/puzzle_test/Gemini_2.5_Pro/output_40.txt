@@ -1,0 +1,33 @@
+This is a forced checkmate puzzle. Here is a step-by-step analysis of the solution:
+
+1.  **Initial Assessment:** The position is highly tactical. Black is to move. White's king on e1 is vulnerable, especially due to the pin on the e2-knight by Black's bishop on g4. Black's knights on d5 and b4 are poised to attack. White's queen on b7 is a major threat, but Black's attack is faster.
+
+2.  **Candidate Move 1: 1... Nd3+**
+    This is the most powerful starting move. It's a double check from the knight on d3 and a discovered check from the bishop on g4. In a double check, the king must move, as it's impossible to block or capture both checking pieces simultaneously.
+
+3.  **White's Forced Response: 2. Kd1**
+    White's king on e1 has only one legal square. The f1-square is controlled by White's own bishop on c1. Therefore, `2. Kd1` is the only possible move.
+
+4.  **Candidate Move 2: 2... Nxf2+**
+    Black continues the attack with another check. The knight on d3 moves to f2, checking the king on d1. This move also adds an attacker to the kingside and prepares for the final combination.
+
+5.  **White's Forced Response: 3. Ke1**
+    The king on d1 is under attack. It cannot move to c1 (controlled by the bishop on c1), c2 (controlled by the pawn on b2), d2 (controlled by the knight on d3), or e2 (controlled by the knight on d3). The only escape is `3. Ke1`.
+
+6.  **Candidate Move 3: 3... N2c2+**
+    Black brings the other knight into the attack. The knight from b4 moves to c2, delivering another check to the king on e1.
+
+7.  **White's Forced Response: 4. Kd1**
+    The king on e1 is checked by the knight on c2. It cannot move to f1 (bishop on c1) or f2 (knight on f2). The only legal move is to retreat to d1 with `4. Kd1`.
+
+8.  **The Final Move: 4... Nd3#**
+    The knight that was on f2 now moves back to d3, delivering the final blow. The king on d1 is in check and has no escape squares:
+    *   c1 is blocked by the bishop.
+    *   c2 is controlled by the knight on c2.
+    *   d2 is controlled by the knight on d3.
+    *   e1 is controlled by the knight on c2.
+    *   e2 is controlled by the knight on c2.
+    The checking piece cannot be captured, and the check cannot be blocked. This is checkmate.
+
+[FINAL PGN]
+1... Nd3+ 2. Kd1 Nxf2+ 3. Ke1 N2c2+ 4. Kd1 Nd3#

@@ -1,0 +1,44 @@
+To solve this Mate in 2 problem, let's first understand the given position and the task at hand.
+
+The FEN notation **3r1rk1/ppp2ppp/8/8/3nP3/2QPqP2/PP3B1P/3R1R1K b - - 0 1** translates to a specific position on the board. Let's decode it:
+- The position is: 
+  - Black: King on g8, Queen on e3, Knight on d4, Rooks on d8 and f8, Pawns on a7, b7, c7, f7, g7, h7.
+  - White: King on g1, Queen on c3, Bishop on f2, Rooks on d1 and f1, Pawns on e4, f3, a2, b2, h2.
+- It's Black's turn to move.
+
+The task is to find a checkmate in 2 moves. To do this, we need to consider the current position and potential moves that could lead to checkmate.
+
+First, let's assess the material and positional balance:
+- Materially, Black has a significant advantage with an extra Knight and a more active Queen.
+- Positionally, Black's pieces are somewhat active, but the White King is somewhat exposed.
+
+To achieve checkmate in 2 moves, we need to:
+1. Identify potential checkmate patterns or threats.
+2. Look for Black's moves that could force White into a position where they cannot avoid checkmate on the next move.
+
+Let's analyze the position:
+- The White King is on g1, which is somewhat exposed but currently protected by the Bishop on f2 and the Rooks on d1 and f1.
+- Black's Queen on e3 is already putting pressure on White's position, particularly on f2 and potentially on g1 if other pieces were not in the way.
+- Black's Knight on d4 could potentially move to a more threatening position.
+- Black's Rooks are somewhat active, with one on d8 and the other on f8.
+
+To checkmate in 2 moves, we need a strong first move that White cannot adequately respond to. Let's consider potential first moves:
+1. **Qg3+**: This move puts the Queen in a more aggressive position and checks the White King. The response to this could be **Kh1**, but then Black could potentially follow up with a strong move.
+2. **Nxf3+**: This move attacks the White King directly and is a discovered check if the Knight moves away from d4. However, we need to check if it's checkmate or leads to it.
+
+Let's examine **Nxf3+** more closely:
+- If **Nxf3+**, then **gxf3** (forced to deal with the check). Now, Black can play **Qg3#**, which is checkmate.
+
+So, the sequence could be:
+1... **Nxf3+**
+2. **gxf3 Qg3#**
+
+Let's verify if this sequence is valid and checkmate:
+- **1... Nxf3+** is a valid move, putting White in check.
+- **2. gxf3** is a forced response to the check.
+- **2... Qg3#** is checkmate.
+
+Thus, the PGN sequence for this solution is:
+
+[FINAL PGN]
+1... Nxf3+ 2.gxf3 Qg3#

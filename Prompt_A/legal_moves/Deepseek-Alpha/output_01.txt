@@ -1,0 +1,16 @@
+--- THOUGHT PROCESS START ---
+
+1. **White's turn to move**: The position is defined by the FEN: **8/8/8/8/8/6B1/5QN1/5K1k w - - 0 1**. White has three pieces: the king on f1, the bishop on g3, and the queen on f2. The black king is on h1.
+
+2. **Legal moves for the king**: The white king on f1 can move to e1, e2, f2, or g2. However, none of these moves deliver check or checkmate.
+
+3. **Legal moves for the bishop**: The bishop on g3 can move along its diagonals. Possible moves include h2, f4, e5, d6, c7, b8, f2, and e1. However, none of these moves deliver check or checkmate.
+
+4. **Legal moves for the queen**: The queen on f2 can move along ranks, files, and diagonals. Possible moves include delivering checkmate by moving to f3. This move places the black king in check, and there are no legal moves for the black king to escape.
+
+5. **Best move**: The move Qf3# delivers checkmate, ending the game.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Qf3# 1-0

@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - Black to move. The white king is on e5, and black has several attacking pieces: the rook on h4, rook on f6, and bishop on f3.  
+   - White's king is exposed, and black can deliver a forced checkmate in 2 moves by coordinating the rooks and bishop.  
+
+2. **Key Candidate Moves**:  
+   - Black's rook on h4 can deliver a check on h5, forcing the white king to move.  
+   - The white king has only one legal move after Rh5+: Ke6.  
+   - After Ke6, black can deliver checkmate with the rook on f6 moving to f5 (Rf5#).  
+
+3. **Opponent's Forced Responses**:  
+   - After Rh5+, white's king is forced to move to e6 (Ke6).  
+   - Black's follow-up move Rf5# is unavoidable and leads to checkmate.  
+
+4. **Verification**:  
+   - All moves are legal and lead to a forced mate in 2.  
+   - No other black moves achieve checkmate in 2 moves.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Rh5+ 2. Ke6 Rf5#

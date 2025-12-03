@@ -1,0 +1,19 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: The position is analyzed from the perspective of White, as it is White's turn.
+2. **Pieces on the board**:
+   - White has a king on a1, pawns on c4 and c5, a bishop on g4, and a rook on h7.
+   - Black has a king on a6.
+3. **Legal moves**:
+   - The rook on h7 can move along the h-file or the 7th rank.
+   - The bishop on g4 can move diagonally.
+   - The pawns on c4 and c5 can advance one square forward.
+   - The king on a1 can move to b1 or b2.
+4. **Goal**: Identify one legal move for White. For simplicity, I will choose a move that progresses White's position.
+
+After evaluating the position, I choose the move **c5-c6**, advancing the pawn closer to promotion.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. c6

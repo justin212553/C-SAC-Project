@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **White to move**: The position is analyzed from White's perspective. The pieces available to move are:
+   - Queen on b7
+   - Rook on g7
+   - Pawn on e3
+   - King on g1
+
+2. **Legal moves for each piece**:
+   - **Queen on b7**: Can move to a6, a8, b8, c6, c7, c8, d5, e4, f3, g2, h1. Captures are possible on e3 (own pawn, not legal) or c2 (opponent's rook).
+   - **Rook on g7**: Can move to g8, g6, g5, g4, g3, g2, g1, h7, f7, e7, d7, c7, b7, a7. No captures are possible.
+   - **Pawn on e3**: Can move to e4 (one square forward).
+   - **King on g1**: Can move to h1, h2, f1, f2.
+
+3. **Best move selection**:
+   - The move Qxc2 (Queen captures the rook on c2) is a strong candidate as it wins material and simplifies the position.
+   - Other moves like Qb8+ or Rg8+ are checks but do not immediately improve White's position as much as Qxc2.
+
+4. **Conclusion**:
+   - The best move is Qxc2, capturing the rook on c2.
+
+--- FINAL OUTPUT INSTRUCTIONS ---
+
+[FINAL PGN]
+1. Qxc2

@@ -1,0 +1,32 @@
+The current position is defined by the FEN: r1b1Rbk1/1p3p1p/p2q2pQ/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1 w - - 0 1
+The goal is to find a forced checkmate in 3 moves for White.
+
+### **Thought Process**
+
+1.  **Initial Assessment:** White has a powerful attack brewing against the Black king on g8. The White queen on h6, the rook on e8 (pinning the f7 pawn), the knight on d4, and the bishop on g2 are all pointing towards the kingside. Black's king is somewhat exposed due to the pawn on g6. Black's knights on d3 and e4 are active but are not sufficient to defend against the coordinated assault. The key to the puzzle is to find a sequence of forcing moves (checks and captures) that leave the Black king with no escape.
+
+2.  **Candidate Move 1: Queen Sacrifice (Qxg6+)**
+    This is the most forcing and promising move. It's a check that sacrifices the queen to break open the pawn structure in front of the Black king. Black has only two legal responses: capturing with the h-pawn or the f-pawn.
+
+3.  **Analysis of Black's Responses to 1. Qxg6+**
+
+    *   **Case A: 1... hxg6**
+        This capture opens the h-file for White's rooks. The position becomes: `r1b1Rbk1/1p3p2/p2q2p1/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1 w - - 0 2`.
+        White must now find a mate in two. The most powerful continuation is a double check.
+        *   **2. Nf5+**: This move is a double check. The knight checks the king directly, and it also uncovers a check from the bishop on g2. When a king is in double check, it must move, as blocking or capturing is impossible against two threats simultaneously.
+        *   **2... Kh8**: This is Black's only legal move. The king cannot go to g7 (attacked by the knight) or h7 (attacked by the bishop).
+        *   **3. Rh8#**: The rook from e8 swings over to h8 to deliver checkmate. The rook is protected by the bishop on b2, and the king on h8 has no escape squares. This sequence is a forced mate in 3.
+
+    *   **Case B: 1... fxg6**
+        This capture opens the f-file and removes the f7 pawn, but the king remains vulnerable. The position becomes: `r1b1Rbk1/1p6/p2q2p1/3P4/3Nn3/1P1n1PP1/PB4BP/R5K1 w - - 0 2`.
+        White again needs to find a mate in two. There are a couple of ways to proceed.
+        *   **2. Re7+**: The rook on e8 moves to e7, delivering a check protected by the bishop on g2. Black has several responses, but all lead to mate.
+            *   If 2... Kh8, then 3. Rh7# (protected by the bishop on g2).
+            *   If 2... Kf8, then 3. Rf7# (protected by the bishop on g2).
+            *   If 2... Qf6 (or ...Nf6), then 3. Rxf6# (protected by the bishop on g2).
+        *   Alternatively, after 1...fxg6, White can also play **2. Nf5+**, which also leads to mate. For example: 2... Kh8 3. Rh8# or 2... gxf5 3. Re7#.
+
+4.  **Conclusion:** The queen sacrifice with **1. Qxg6+** is the correct first move. It forces a response from Black, and in all variations, White can deliver checkmate on the third move. The line starting with 1... hxg6 followed by the double check 2. Nf5+ is particularly elegant and decisive.
+
+[FINAL PGN]
+1. Qxg6+ hxg6 2. Nf5+ Kh8 3. Rh8#

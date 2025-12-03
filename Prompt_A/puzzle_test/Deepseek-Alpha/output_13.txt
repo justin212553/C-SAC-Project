@@ -1,0 +1,22 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**:  
+   - White has a significant material advantage, including two rooks and a passed pawn on c6.  
+   - Black's king is on a6, and the pawns on b4 and a7 are blocking its escape routes.  
+   - White's rooks are well-positioned to deliver checks and control key squares.  
+
+2. **Goal**:  
+   - White must deliver checkmate in 2 moves.  
+
+3. **Candidate Moves**:  
+   - The move **Ra1+** is a strong candidate because it forces the black king to move to b5 (the only legal square).  
+   - After the king moves to b5, White can deliver checkmate with **Re5#**, as the black king will be completely surrounded and unable to escape.  
+
+4. **Verification**:  
+   - After **Ra1+**, Black's king has no other legal moves except **Kb5**.  
+   - After **Re5#**, the black king is checkmated because all escape squares (a4, a5, b4, c4, c5, c6) are controlled by White's rooks and pawns.  
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1. Ra1+ Kb5 2. Re5#

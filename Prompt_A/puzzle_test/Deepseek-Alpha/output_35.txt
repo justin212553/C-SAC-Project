@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Initial Position Analysis**:  
+   White is to move and has a significant material advantage, including two queens and a rook. Black's king is exposed on h5, and White can exploit this vulnerability to deliver a forced checkmate in 4 moves. The key is to use checks to limit Black's responses and drive the king into a position where it cannot escape.
+
+2. **Candidate Moves**:  
+   - White has multiple checks available, such as Qf7+, Qe8+, and Qb8+.  
+   - The move Qf7+ seems promising as it forces the Black king to move to h4, where White can continue the attack.  
+
+3. **Opponent's Forced Responses**:  
+   - After Qf7+, Black's king must move to h4 (Kh4).  
+   - White can then use the rook or queens to continue delivering checks, ensuring Black's king is cornered and eventually mated.  
+
+4. **Sequence Refinement**:  
+   - After Qf7+ Kh4, White can play Qg6+, forcing the king to g3.  
+   - Then, White can deliver Rh7+, forcing the king to f3.  
+   - Finally, Qh5# delivers checkmate, as the Black king is completely surrounded and has no escape squares.  
+
+5. **Verification**:  
+   - Each move in the sequence is legal and forces Black's responses.  
+   - The sequence leads to a guaranteed checkmate in 4 moves.  
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qf7+ Kh4 2. Qg6+ Kg3 3. Rh7+ Kf3 4. Qh5#

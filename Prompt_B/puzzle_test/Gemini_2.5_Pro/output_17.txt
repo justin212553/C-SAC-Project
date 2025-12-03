@@ -1,0 +1,21 @@
+This is a mate-in-2 problem. White is to move.
+
+**Step-by-step reasoning:**
+
+1.  **Analyze the position:** The Black king is on h8. The knight on e5 is a key attacking piece, controlling the g8 escape square. The queen on e6 is also very powerful, pinning the g7-pawn to the king along the e6-h8 diagonal. This pin is crucial, as it prevents the g7-pawn from capturing on f6.
+
+2.  **Evaluate candidate moves:**
+    *   Direct checks are not effective. For example, `1. Qxf6+` is met by `1...gxf6`. Then `2. Ne7+` is not mate because Black can play `2...Qxe7` or `2...Rxe7`.
+    *   The solution must be a quiet move that creates an inescapable mating net.
+
+3.  **Identify the key move:** The correct move is `1. Ng4`. This is a quiet move that repositions the knight and creates a dual threat that Black cannot defend against. The two threats are `2. Qh6#` and `2. Nf6#`.
+
+4.  **Analyze Black's responses to `1. Ng4`:**
+    *   If Black tries to stop the `Qh6#` threat by playing `1...f5` or `1...h6`, White delivers mate with `2. Nf6#`. The knight on f6 is supported by the queen on e6. The g7-pawn cannot capture the knight because it is pinned by the queen. The king's only potential escape square, g8, is also covered by the queen on e6.
+    *   If Black tries to eliminate the knight on e5 with `1...Bxe5`, this removes one of the threats (`Nf6#`) and unguards the g8 square. However, White now plays `2. Qh6#`. The queen on h6 now covers the g8 square itself, and the king is checkmated.
+    *   Any other move by Black (e.g., `1...Qe8`, `1...Rf7`, `1...g6`) does not address the primary threat, and White mates with `2. Qh6#`, as the knight on e5 still covers g8.
+
+5.  **Conclusion:** The move `1. Ng4` forces checkmate in all variations on the next move. A representative line is `1. Ng4 f5 2. Nf6#`.
+
+[FINAL PGN]
+1. Ng4 f5 2. Nf6#

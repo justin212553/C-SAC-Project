@@ -1,0 +1,25 @@
+--- THOUGHT PROCESS START ---
+
+1. **Identify which side is to move and the king to checkmate**:  
+   Black is to move, and the goal is to checkmate the White king in exactly 3 moves.
+
+2. **List promising candidate moves for Black**:  
+   Black has several options to deliver checks or set up threats. The most promising moves involve utilizing the rook on c1, the queen on f3, and the bishop on g4 to coordinate an attack on the White king.
+
+3. **Calculate concrete lines for exactly 3 moves**:  
+   - **Candidate 1: 1... Qb3+**  
+     This move forces White to respond to the check. The White king has only one legal move: 2. Ka1. Black can then deliver another check with 2... Rc2+, forcing 3. Kb1. Finally, 3... Qxb2# delivers checkmate.  
+     This line satisfies the condition of mate in 3 moves.
+
+   - **Candidate 2: 1... Rc2+**  
+     This move also forces White to respond to the check. The White king moves to 2. Ka1. Black can then play 2... Qb3+, forcing 3. Kb1. Finally, 3... Qxb2# delivers checkmate.  
+     This line is identical to Candidate 1 but in a different move order.
+
+   - **Other candidates**: Moves like 1... Qf1+ or 1... Bf5 do not lead to mate in 3 moves, as they fail to force the White king into a position where checkmate is inevitable.
+
+4. **Verify the solution**:  
+   Both Candidate 1 and Candidate 2 lead to forced mate in 3 moves. The move order differs, but the result is the same. Black's queen and rook coordinate to deliver the final blow, while the bishop on g4 prevents White's king from escaping.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1... Qb3+ 2. Ka1 Rc2+ 3. Kb1 Qxb2#

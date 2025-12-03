@@ -1,0 +1,19 @@
+This is a mate-in-3 problem.
+
+1.  **Analyze the position:** Black is to move. The White king is on h2, somewhat exposed. Black has a queen on g7, a rook on c2, and a pawn on f2, which is about to promote. White's queen on e4 and rook on f1 are defensive pieces.
+
+2.  **Identify candidate moves:** The most forcing moves for Black involve checks or promotion.
+    *   `1... Qg1+`, `1... Qg2+`, and `1... f1=Q+` all lead to a forced checkmate in 2 moves. For example, `1... f1=Q+ 2. Rxf1 Qg1#`. Since the problem requires a mate in *exactly* 3 moves, these lines are incorrect. This suggests a more subtle approach is needed.
+    *   The key idea in such puzzles is often an underpromotion, which is less forceful than promoting to a queen but creates a specific mating net that takes longer to execute. Let's consider promoting to a knight.
+
+3.  **Calculate the main line:**
+    *   **1... f1=N+**: Black promotes the pawn to a knight, delivering check. The new knight on f1 attacks g3 and h2. The White king on h2 must move. The only legal square is h1.
+    *   **2. Kh1**: This is White's only possible move.
+    *   **2... Ng3+**: Black plays a second knight check. This is a critical move. The king on h1 is attacked. It cannot move to h2 (covered by the knight) or to g1 and g2 (covered by the Black queen on g7). Therefore, White is forced to capture the knight.
+    *   **3. hxg3**: White's only legal move is to capture the knight with the h-pawn. This move, however, fatally opens the h-file.
+    *   **3... Qh6#**: With the h-file open, the Black queen delivers checkmate from h6. The king on h1 is trapped. It cannot move to g1, g2, or h2 as all squares are controlled by the queen. The check cannot be blocked, and the queen cannot be captured. This is checkmate.
+
+This sequence is forced and results in checkmate on the third move, satisfying the problem's conditions.
+
+[FINAL PGN]
+1... f1=N+ 2. Kh1 Ng3+ 3. hxg3 Qh6#

@@ -1,0 +1,25 @@
+This is a mate-in-4 problem. Here is the step-by-step reasoning process to find the solution.
+
+1.  **Initial Assessment:** White has a formidable attack brewing against the Black king on f8. The knights on d4 and b5, the queen on g3, and the bishop on g5 all point towards the Black monarch. However, White's own king on e1 is slightly exposed, and Black's queen on b2 poses a counter-threat, notably with a potential `...Qb1+`.
+
+2.  **Evaluating Forcing Moves:**
+    *   A direct assault with `1. Nd6+` is very powerful. Black's only legal response is `1... Kd8`. From there, White can force mate in two different ways: `2. Nf7+ Kc8 3. Qc7#` or `2. Qb8+ Nxb8 3. Nc7#`. Both of these lines result in a mate in 3. Since the puzzle requires a mate in *exactly* 4 moves, `1. Nd6+` cannot be the correct first move.
+    *   Similarly, a queen sacrifice with `1. Qc7` leads to a mate in 3 after `1... Nxc7 2. Nd6+ Kd8 3. Nf7#`.
+
+3.  **Finding the Correct Preparatory Move:** Since the most direct attacks are too quick, the solution must begin with a quieter, preparatory move. This move must neutralize Black's counterplay while setting up an unstoppable threat. The best candidate is `1. O-O`.
+    *   Castling kingside (`1. O-O`) achieves several key objectives: it moves the White king to safety on g1, nullifying the `...Qb1+` threat. It also activates the h1-rook, bringing it to f1 to join the attack.
+
+4.  **Analyzing Black's Defenses:** After `1. O-O`, Black is under immense pressure and must find a way to counter White's threats.
+    *   The most stubborn defense is `1... Nc6`. This move challenges the powerful White knight on d4, hoping to disrupt the attack. Other moves, such as `1... Rxa2`, also fail to prevent the mate in 4. For example: `1... Rxa2 2. Rxa2 Qxa2 3. Qc7!`, and Black will be mated on the next move (`3... Nxc7 4. Nd6#` or `3... Ra8 4. Qxc8#`).
+
+5.  **Constructing the Final Mating Sequence:** The main line unfolds as follows:
+    *   **1. O-O Nc6**: Black plays the best defensive try.
+    *   **2. Nxc6 bxc6**: White eliminates the key defender. The recapture is forced.
+    *   **3. Qc7!**: A brilliant queen move. It creates the unstoppable dual threats of `Qd8#` and `Qxc8#`. Black cannot defend both. For example, if `3... Ra7`, then `4. Qxc8#`. Black's only way to prolong the game is to capture the queen.
+    *   **3... Nxc7**: This is forced, as it's the only move that stops an immediate mate.
+    *   **4. Nd6#**: White delivers the final blow. The knight on d6 checks the king. The king has no escape squares: e8 and e7 are covered by the knight on d6, while g8 and g7 are covered by the White queen on g3. This is checkmate.
+
+This sequence forces checkmate in exactly four moves against Black's best possible defense.
+
+[FINAL PGN]
+1. O-O Nc6 2. Nxc6 bxc6 3. Qc7 Nxc7 4. Nd6#

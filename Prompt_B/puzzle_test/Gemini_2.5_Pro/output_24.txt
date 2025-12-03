@@ -1,0 +1,26 @@
+This is a mate-in-3 problem. Black is to move. The White king on h1 is in a precarious position, trapped by its own pawns and attacked by Black's rook, bishop, and knight.
+
+Here is the step-by-step reasoning to find the forced mate:
+
+1.  **Analyze Black's most forcing moves.** Checks are the most forcing, so we should examine them first. The primary candidates are `1... Bxf2+`, `1... Nf3+`, and `1... Rg1+`.
+
+2.  **Evaluate `1... Bxf2+`**.
+    *   This move delivers a check to the White king on h1.
+    *   White cannot move the king. `Kh2` is illegal because the h2-pawn is pinned to the king by the rook on g2. `Kg1` is illegal because the bishop on f2 now attacks that square.
+    *   Therefore, White's only legal move is to capture the bishop: `2. Rxf2`. This move is forced.
+
+3.  **Evaluate the position after `2. Rxf2`**.
+    *   It is Black's turn again. The attack must be continued relentlessly. Black plays `2... Rg1+`.
+    *   This is another check. The king on h1 is attacked by the rook on g1.
+    *   Once again, the king cannot move. `Kh2` is still illegal due to the pin on the h2-pawn. `Kg1` is the square the checking rook is on.
+    *   The only way for White to get out of check is to block it. The only piece that can interpose on the f1 square is the rook on f2.
+    *   Thus, White is forced to play `3. Rf1`.
+
+4.  **Deliver the final blow**.
+    *   After White's forced `3. Rf1`, Black plays the decisive move `3... Rxf1#`.
+    *   This is checkmate. The king on h1 is attacked by the rook on f1. It cannot move to h2 (blocked by its own pawn) or g1 (attacked by the rook). The rook on f1 cannot be captured, and the check cannot be blocked.
+
+This sequence forces checkmate in exactly three moves, with every one of White's responses being forced. Other lines, such as `1... Nf3+`, allow White to defend and escape an immediate mate in 3. For example, after `1... Nf3+ 2. Bxf3`, Black's `2... Bxf2` can be met by `3. Rf2`, preventing the mate.
+
+[FINAL PGN]
+1... Bxf2+ 2. Rxf2 Rg1+ 3. Rf1 Rxf1#

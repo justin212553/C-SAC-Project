@@ -1,0 +1,21 @@
+--- THOUGHT PROCESS START ---
+
+1. **Position Analysis**: White is to move, and the goal is to deliver checkmate in 3 moves. The black king is on g8, surrounded by pieces but has limited mobility. White has strong attacking pieces, including the queen on h6, rook on e8, and knight on d4. Black's defensive resources are limited, and the position suggests a forced sequence.
+
+2. **Key Candidate Moves**:
+   - The white queen on h6 is well-placed to deliver checks and potentially mate.
+   - The rook on e8 can deliver decisive checks, especially since it controls the e-file.
+   - The knight on d4 can assist in cutting off escape squares or delivering checks.
+
+3. **Move-by-Move Analysis**:
+   - **Move 1**: White can start with 1. Qxf8+, forcing Black to respond with 1... Kxf8 (the only legal move).
+   - **Move 2**: After 1... Kxf8, White plays 2. Ne6+, a knight check that forces Black's king to move to g8 (the only legal square).
+   - **Move 3**: Finally, White delivers checkmate with 3. Bg7#, as the bishop on b2 moves to g7, covering all escape squares for the black king.
+
+4. **Verification**:
+   - Each move in the sequence is forced, and Black has no way to avoid checkmate in 3 moves.
+   - The final position after 3. Bg7# is a checkmate, as the black king on g8 is completely surrounded.
+
+--- FINAL PGN ---
+[FINAL PGN]
+1. Qxf8+ Kxf8 2. Ne6+ Kg8 3. Bg7#

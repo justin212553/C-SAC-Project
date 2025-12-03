@@ -1,0 +1,34 @@
+This is a mate-in-4 puzzle. Let's break down the position and find the winning sequence for Black.
+
+**Position Analysis:**
+*   White's king is on f1, somewhat exposed. The pawn on e3 is pinned by the black queen on g6.
+*   White's queen on b7 is a major threat, but it is far from the defensive action around the king.
+*   Black has a powerful attacking force: the queen on g6, two active knights on d5 and b4, and a bishop on g4 pinning the white knight on e2.
+*   The key to the puzzle is to exploit the vulnerability of the white king with a swift and decisive attack.
+
+**Candidate Moves and Thought Process:**
+
+1.  The most forcing and promising move for Black is **1... Nd3+**. This is a check that cannot be met by a capture, as the e3-pawn is pinned by the queen on g6. White's king is forced to move.
+
+2.  White has two legal responses to the check:
+    *   **a) 2. Kg1**: This move looks safer as it moves the king to the corner, but it walks into a quick mate. Black can play **2... Qxg2#**. The knight on e2 cannot capture the queen because it is pinned by the bishop on g4. The king on g1 has no escape squares (f1, f2, h1, h2 are all controlled by Black's queen or the knight on d3). This is a mate in 2.
+    *   **b) 2. Ke1**: Since 2. Kg1 leads to a mate in 2, this is White's only way to prolong the game. The king moves back to the starting square.
+
+3.  After **1... Nd3+ 2. Ke1**, Black needs to find the decisive follow-up. The move is the quiet but deadly **2... Qe4!**. This brilliant move creates an unstoppable threat of ...Qxe2#. The queen now controls key squares and puts the white king in a mating net.
+
+4.  White must now defend against the immediate threat of ...Qxe2#. Let's examine White's options:
+    *   If 3. Ng3 (to block the g-file and attack the bishop), Black plays 3... Qxg2#. This is mate.
+    *   If 3. Ne1 (to block the e-file), Black plays 3... Qxe3#. This is mate, as the e3-pawn was pinned.
+    *   White's best attempt to survive is **3. f3**. This move attacks the bishop on g4 and creates a potential escape square for the king on f2.
+
+5.  Black continues the forcing sequence with **3... Qxe3+**. The e3-pawn is captured with check. The white king on e1 is under attack. The escape square f2 is controlled by the black queen. The only legal move for White is **4. Kf1**.
+
+6.  Finally, Black delivers the checkmate with **4... Qf2#**. The queen is protected by the knight on d3, and the white king on f1 is trapped with no escape squares.
+
+This sequence is a forced mate in four moves.
+
+[FINAL PGN]
+1... Nd3+
+2. Ke1 Qe4
+3. f3 Qxe3+
+4. Kf1 Qf2#

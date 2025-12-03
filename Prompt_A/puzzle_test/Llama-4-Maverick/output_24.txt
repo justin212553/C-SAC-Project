@@ -1,0 +1,31 @@
+To solve this Mate in 3 problem, let's first understand the given position defined by the FEN: **b2N2k1/6pp/p7/2b5/2p4n/1P3PB1/P5rP/R4R1K b - - 0 1**.
+
+1. **Understanding the Position:**
+   - The FEN indicates it's Black's turn.
+   - The position is: Black has a King on e8, a Bishop on c5, a Knight on h4, a pawn on g7, a pawn on h7, and a pawn on a6. White has a Knight on d8 (which is somewhat awkwardly placed), a Bishop on g3, pawns on b3 and h2, and Rooks on a1 and f1, with the King on h1.
+
+2. **Assessing the Position:**
+   - The Black King is somewhat exposed on e8 but is not immediately under attack.
+   - White's Knight on d8 is in a peculiar position, potentially forked or pinned in certain situations, but currently, it's somewhat of a strong piece controlling several squares.
+   - The presence of the White Rooks on the open or semi-open files (a1 and f1) suggests potential for attack along these files.
+   - The Black Knight on h4 is somewhat active, and the Bishop on c5 is putting potential pressure on White's position if it weren't for the Knight on d8.
+
+3. **Identifying Candidate Moves:**
+   - To achieve checkmate in 3, we need to look for moves that put the White King under pressure and potentially expose it to a checkmate sequence.
+   - The Black pieces that can potentially attack the White King or support a checkmate are the Rook on g2, the Knight on h4, and potentially the Bishop on c5 if the Knight on d8 were to move.
+
+4. **Analyzing Potential Checkmate Sequences:**
+   - The White King is on h1, so a potential checkmate could involve a Rook or Queen (if available) checking along the first rank or a diagonal check from a Bishop or Queen.
+   - The Black Rook on g2 is already attacking along the second rank and can potentially move to g1 to check or support a checkmate.
+
+5. **Checking Potential Moves:**
+   - Let's start with **1...Rg1+**. This move puts the White King in check and forces **2.Kxg1** (since Rxg1 is not possible and other moves like Kh2 or Kg2 still result in check from the Knight or other pieces).
+   - After **2.Kxg1**, we need a second move that continues the checkmate sequence. A potential move is **2...Nf3+**, putting the White King in check again.
+   - Following **2...Nf3+**, White's best response is likely **3.Kf1** (or other King moves, but this is a common response to check), and then we need a checkmate.
+   - After **3.Kf1**, **3...Rh1#** is checkmate.
+
+6. **PGN Sequence:**
+   - The sequence is: **1... Rg1+ 2. Kxg1 Nf3+ 3. Kf1 Rh1#**
+
+[FINAL PGN]
+1... Rg1+ 2. Kxg1 Nf3+ 3. Kf1 Rh1#

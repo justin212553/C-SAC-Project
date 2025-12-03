@@ -1,0 +1,18 @@
+--- THOUGHT PROCESS START ---
+
+1. **Black to move**: Analyze all black pieces and their legal moves.
+   - **King (g8)**: The black king has no legal moves because all adjacent squares are either occupied or attacked.
+   - **Rook (e8)**: The rook can move along the e-file to e7, e6, e5, e4, e3, or e2. It can also move along the 8th rank to f8, g8, or h8.
+   - **Bishop (c5)**: The bishop can move diagonally to b4, a3, d4, e3, f2, or d6.
+   - **Knight (e4)**: The knight can jump to c3, d2, f2, g3, g5, f6, d6, or c5.
+   - **Knight (g4)**: The knight can jump to e3, f2, h2, h6, f6, or e5.
+   - **Pawn (a7)**: The pawn can move to a6.
+   - **Pawn (g7)**: The pawn can move to g6.
+   - **Pawn (h7)**: The pawn can move to h6.
+
+2. **Legal move selection**: Any of the above moves is valid. For simplicity, I will select one legal move.
+
+--- THOUGHT PROCESS END ---
+
+[FINAL PGN]
+1... Rxe2
