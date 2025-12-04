@@ -1,6 +1,6 @@
 # C-SAC Project
 
-<!-- <img src="images/C-SAC.png" width="1400" > -->
+<!-- <img src="images/C-SAC.png" width="1200" > -->
 
 ### Author: [Wonseuk Lee (Justin Lee)](https://www.linkedin.com/in/wonseuk-lee-7996651bb/)
 
@@ -72,7 +72,7 @@ Please see an empirical research article (arXiv hyperlink here in future...).for
 
 Below some sample puzzles and raw response are shown including results of evaluations.
 
-<img src="images/sample.png" width="1400" >
+<img src="images/sample.png" width="1200" >
 
 
 
