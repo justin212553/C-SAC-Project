@@ -1,6 +1,6 @@
 # C-SAC Project
 
-<!-- <img src="images/C-SAC.png" width="1200" > -->
+<!-- <img src="images/C-SAC_final.png" width="1200" > -->
 
 ### Author: [Wonseuk Lee (Justin Lee)](https://www.linkedin.com/in/wonseuk-lee-7996651bb/)
 
