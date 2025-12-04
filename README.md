@@ -2,7 +2,7 @@
 
 <!-- <img src="images/C-SAC.png" width="1400" > -->
 
-### Author: [Wonseuk Lee](https://github.com/justin212553)
+### Author: [Wonseuk Lee (Justin Lee)](https://www.linkedin.com/in/wonseuk-lee-7996651bb/)
 
 University of California, Irvine Master of Computer Science
 Pennsylvania State University, University Park, Bachelor of Science, Computer Science
