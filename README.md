@@ -13,7 +13,7 @@ Pennsylvania State University, University Park, Bachelor of Science, Computer Sc
 - [Introduction](#introduction)
 - [Code Structure](#Code-Structure)
 - [Database Properties](#database-properties)
-- [Sample Data](#annotated-sample-images)
+- [Sample Data](#sample-images)
 - [Citing](#citing)
 
 ## Introduction
