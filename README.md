@@ -23,7 +23,7 @@ It was entirely build from scratch and contains code in Python to evaluate reaso
 
 To install all dependencies, please install following dependencies via using this scripts:
 ```
-pip install pandas
+pip install -r requirements.txt
 ```
 
 ## Code Structure
