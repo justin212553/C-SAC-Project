@@ -4,7 +4,7 @@
 
 ### Author: [Wonseuk Lee (Justin Lee)](https://www.linkedin.com/in/wonseuk-lee-7996651bb/)
 
-University of California, Irvine Master of Computer Science
+University of California, Irvine Master of Computer Science  
 Pennsylvania State University, University Park, Bachelor of Science, Computer Science
 
 <!-- > Still not employed :( -->
