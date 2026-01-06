@@ -55,6 +55,7 @@ The structure of repository is the following :
 |   ├── prompter.py                     # Test all puzzles & models with all tests
 |   ├── puzzle_PGN.csv                  # Data of all puzzles
 |   ├── run.bat                         # Executable batch file to run all Python scripts in proper order
+├── Constraint... .pdf                  # Article about this research project
 ├── LICENSE                             # License file
 └── README.md                           # Document you are reading now
 ``` 
@@ -66,7 +67,7 @@ C-SAC Project consists of 40 different unique Mate-in-N puzzle problems. One puz
 
 These puzzles are used to create test prompts to evaluate modern LLMs' iterative sequential reasoning availability and understandability of chess rules. Two types of prompt templates are used to test the robustness towards prompts of this research. LLMs are first evaluated their understandability of chess rules by generating one legal move provided with FEN of puzzles. Then LLMs are evaluated their iterative sequential reasoning availability by solving Mate-in-N puzzles. All response must be made with PGN.
 
-Please see an empirical research article (arXiv hyperlink here in future...).for more detail.
+Please see an empirical research article for more detail.
 
 ## Sample Data
 
