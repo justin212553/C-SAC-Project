@@ -79,5 +79,4 @@ Below some sample puzzles and raw response are shown including results of evalua
 
 ## Citing
 
-If you use this work, please cite the following papers.
-(arXiv hyperlink here in future...) 
+If you use this work, please cite this repository.
